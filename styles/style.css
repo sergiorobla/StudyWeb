@@ -11,6 +11,7 @@ body {
 /* HEADER */
 
 .globalmenu {
+  padding: 5px 0;
   background-color: #f9f9f9;
 }
 
@@ -49,6 +50,11 @@ body {
   border-radius: 10px;
 }
 
+.over {
+  height: 30em;
+  overflow: visible scroll;
+}
+
 .index div {
   padding: 7px 15px;
 }
@@ -67,7 +73,8 @@ body {
 
 /* MAIN INTRODUCTION */
 
-.titleintro {
+.titleintro,
+.titlecontent {
   text-align: center;
 }
 
@@ -76,19 +83,38 @@ body {
   margin-left: 15em;
 }
 
-.secciones h2 {
+.titlecontent + *,
+.content {
+  margin-left: 20em;
+}
+
+.secciones h2,
+.content h2 {
   padding-bottom: 5px;
   border-bottom: solid 1px #0d0d0d;
 }
 
 .titleintro + *,
-.secciones section p {
+.secciones section p,
+.titlecontent + *,
+.content section p {
   text-align: justify;
+  margin-right: 15px;
 }
 
+.recuadro {
+  border: 1px solid black;
+  padding: 1em;
+  background-color: #eeeeee;
+}
+
+#parentsregex {
+  width: 70em;
+  height: auto;
+}
 
 /* FOOTER */
 
-footer{
+footer {
   margin: 0 0 10px 10px;
 }
