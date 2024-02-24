@@ -88,21 +88,21 @@
         ><a href="#nocongrup"><div>No contenido en el grupo🚫</div></a>
         <a href="#defrang"><div>Definiendo rangos🎲</div></a>
         <a href="#joker"><div>Uso del joker 🃏</div></a>
-        <a href="#inicio"> <div>Character Classes🔤</div> </a>
-        <a href="#inicio"><div>Decimal digit💯</div></a>
-        <a href="#inicio"><div>White-space characters〰️</div></a>
-        <a href="#inicio"> <div>Word🔠</div> </a>
-        <a href="#inicio"><div>Carriage returns🛒</div></a>
-        <a href="#inicio"> <div>Quantifiers🏁</div> </a>
-        <a href="#inicio"><div>Shorts Times☁</div></a>
-        <a href="#inicio"><div>Exactly Times🕛</div></a>
-        <a href="#inicio"><div>Greedy VS Lazy🦥</div></a>
-        <a href="#inicio"> <div>Anchors🔱</div> </a>
-        <a href="#inicio"><div>Start and End String⚓</div></a>
-        <a href="#inicio"><div>Word buoundary🚝</div></a>
-        <a href="#inicio"> <div>Alternation⚡</div> </a>
-        <a href="#inicio"> <div>Groups rarunos 🐸</div> </a>
-        <a href="#inicio"> <div>🤓Webs recomendadas🤓</div> </a>
+        <a href="#chacla"> <div>Character Classes🔤</div> </a>
+        <a href="#decdig"><div>Decimal digit💯</div></a>
+        <a href="#whitespace"><div>White-space characters〰️</div></a>
+        <a href="#word"> <div>Word🔠</div> </a>
+        <a href="#carriage"><div>Carriage returns🛒</div></a>
+        <a href="#quanti"> <div>Quantifiers🏁</div> </a>
+        <a href="#short"><div>Shorts Times☁</div></a>
+        <a href="#exact"><div>Exactly Times🕛</div></a>
+        <a href="#grla"><div>Greedy VS Lazy🦥</div></a>
+        <a href="#anchors"> <div>Anchors🔱</div> </a>
+        <a href="#stend"><div>Start and End String⚓</div></a>
+        <a href="#wordbound"><div>Word buoundary🚝</div></a>
+        <a href="#alternation"> <div>Alternation⚡</div> </a>
+        <a href="#gruprarus"> <div>Groups rarunos 🐸</div> </a>
+        <a href="#webrecom"> <div>🤓Webs recomendadas🤓</div> </a>
       </div>
 
       <article class="content">
@@ -746,7 +746,9 @@
           </p>
         </section>
         <section>
-          <h3 id="defrang">2.4 - [set] [^set] Definiendo conjuntos/rangos 🎲</h3>
+          <h3 id="defrang">
+            2.4 - [set] [^set] Definiendo conjuntos/rangos 🎲
+          </h3>
           <h4>
             Seleccionando un conjunto de letras (abecedario al completo) 🔤
           </h4>
@@ -835,9 +837,430 @@
       </article>
       <article class="content">
         <section>
-          <h2>3. Character Classes 🔤</h2>
-          <h3>3.1 - Decimal digit \d & not decimal digit \D 💯</h3>
+          <h2 id="chacla">3. Character Classes 🔤</h2>
+          <h3 id="decdig">3.1 - Decimal digit \d & not decimal digit \D 💯</h3>
+          <h4>Decimal digit 🔢</h4>
+          <p>
+            \d con la d en minúsculas, selecciona cualquier carácter numérico.
+          </p>
+          <p>El patrón \d sería equivalente a utilizar [0-9].</p>
+          <h4>Not a decimal digit 🙅‍♂️</h4>
+          <p>
+            \D con la D en mayúsculas, selecciona cualquier carácter que NO sea
+            un número.
+          </p>
+          <p>El patrón \D sería equivalente a utilizar [^0-9].</p>
         </section>
+        <section>
+          <h3 id="whitespace">
+            3.2 - White-space characters \s & Not-white-space chars \S 〰️
+          </h3>
+          <h4>White space characters \s 〰️</h4>
+          <p>
+            \s con la d en minúsculas, selecciona cualquier carácter que sea un
+            espacio.
+          </p>
+          <h4>Not white space characters \S 🚫〰️</h4>
+          <p>
+            \S con la d en mayúsculas, selecciona cualquier carácter que NO sea
+            un espacio.
+          </p>
+        </section>
+        <section id="word">
+          <h3>3.3 - Word \w & non-word \W 🔠</h3>
+          <h4>Rango por defecto de Word \w 🔡</h4>
+          <p>
+            \w Con la \w en minúsculas se selecciona cualquier carácter de una
+            palabra independientemente de que este sea un número o una letra (a
+            excepción de la ñ)
+          </p>
+          <p>
+            Fijaros que solamente se seleccionan los caracteres de texto (a
+            excepción de la ñ) y/o numéricos. El resto de caracteres, por
+            ejemplo: símbolos de exclamación, @, *… no se seleccionarán.
+          </p>
+          <p class="recuadro">
+            💡 \w es una abreviatura de Word que es equivalente al siguiente
+            patrón de grupo: [a-zA-Z0-9]
+          </p>
+          <h4>Ampliando el rango por defecto de Word \w 🌅</h4>
+          <p>
+            [\wñÑ] es equivalente al siguiente patrón de grupo [a-zñA-ZÑ0-9] .
+            Como necesitamos añadir la ñ, para ello, hemos creado un grupo de
+            tal forma que en ambos patrones estamos haciendo lo mismo de maneras
+            totalmente distintas. Aunque con la primera forma estamos
+            simplificando esto mismo a una forma más reducida.
+          </p>
+          <h4>Rango por defecto de non-word \W 🚫🔠</h4>
+          <p>
+            \W Con la \W en mayúsculas, selecciona cualquier carácter que no sea
+            de una palabra.
+          </p>
+          <p class="recuadro">
+            💡 \W es una abreviatura de Non-word que es equivalente al siguiente
+            patrón de grupo: [^a-zA-Z0-9_]
+          </p>
+          <h4>Ampliando el rango por defecto de non-word \W 🌄</h4>
+          <p>
+            De la misma manera que en el ejemplo anterior con word, podemos
+            ampliar el rango de non-word sin problema.
+          </p>
+          <h4>Alternation 〽</h4>
+          <p>
+            Aunque la manera anterior considero que es mucho más óptima, vamos a
+            ver otra manera de seleccionar un grupo mediante a alternation. En
+            el funcionamiento y el uso de alternaciones nos detendremos un
+            poquito más adelante en su debida sección.
+          </p>
+          <p>
+            \W|a|A|e|E 🡢 Seleccionamos todos los carácteres que no son letras o
+            números a excepción de a, A, e, E.
+          </p>
+        </section>
+        <section id="carriage">
+          <h3>3.4 - Carriage returns y line feeds 🛒</h3>
+          <h4>¿Qué son los retornos de carro? ◀🛒</h4>
+          <p>
+            Los retornos de carro (carriage returns) y saltos de línea (line
+            feeds) son caracteres especiales que se utilizan para controlar el
+            formato del texto en los archivos.
+          </p>
+          <p>
+            En las expresiones regulares, estos caracteres pueden tener
+            significados específicos según la implementación y el contexto en el
+            que se utilicen.
+          </p>
+          <p>
+            Sin embargo, en la mayoría de las implementaciones de expresiones
+            regulares, estos caracteres no pueden ser utilizados directamente en
+            un patrón.
+          </p>
+          <p>
+            La razón principal por la que los retornos de carro y saltos de
+            línea no se pueden usar en un patrón de expresiones regulares es que
+            estos caracteres son considerados parte del propio patrón y no
+            pueden usarse para representar líneas nuevas en el patrón mismo.
+          </p>
+          <p>
+            Esto podría generar ambigüedad y dificultades en la interpretación
+            del patrón.
+          </p>
+          <p class="recuadro">
+            💡 Generalmente usamos las secuencias de escape para representar
+            estos caracteres de manera explícita en el patrón.
+          </p>
+          <h4>
+            ¿Cómo podemos usar estos retornos de carro y saltos de línea? 🆙
+          </h4>
+          <p>
+            Para usar este tipo de expresiones vamos a utilizar el lenguaje de
+            programación JavaScript junto a una herramienta en línea llamada
+            JSBIN, la cual proporciona un entorno de desarrollo y prueba para
+            HTML, CSS y JavaScript.
+          </p>
+          <p>
+            Aquí tenéis el enlace para acceder a dicha plataforma:
+            <a
+              href="https://jsbin.com/hijipuruzu/edit?js,console"
+              target="_blank"
+              >Enlace a la pagina</a
+            >.
+          </p>
+          <p>
+            Vamos a configurarla de tal manera que vamos a tener las pestañas de
+            JavaScript y la de la consola de output.
+          </p>
+          <img src="../images/regexp/jsoutput.png" id="jsoutput" alt="" />
+          <h4>Horizontal tab \t 🔭</h4>
+          <p>
+            \t en minúscula se utiliza para añadir tabulaciones dentro de un
+            texto.
+          </p>
+          <p>
+            Si añadimos una tabulación \t entre el Hola, y el ¿Qué tal? el
+            resultado será el siguiente:
+          </p>
+          <img src="../images/regexp/t.png" id="t" alt="" />
+          <h4>New line \n 🆕</h4>
+          <p>
+            \n en minúscula se utiliza para añadir una new line (salto de línea)
+            dentro de un texto.
+          </p>
+          <p>El resultado será el siguiente:</p>
+          <img src="../images/regexp/n.png" id="n" alt="" />
+        </section>
+      </article>
+      <article class="content">
+        <section id="quanti">
+          <h2>4. Quantifiers 🏁</h2>
+          <h3 id="short">
+            4.1 - 0 or more times (*), 1 or more times (+), 0 or 1 time (?) ☁
+          </h3>
+          <h4>¿Qué son los quantifiers/cuantificadores? ⌛</h4>
+          <p>
+            Los cuantificadores dentro de las expresiones regulares (regex) son
+            caracteres especiales que se utilizan para especificar la cantidad
+            de veces que un elemento debe coincidir en una cadena de texto.
+          </p>
+          <p class="recuadro">
+            💡 Los cuantificadores permiten hacer que su patrón regex sea más
+            flexible y conciso. Además, especifican con qué frecuencia debe
+            coincidir una expresión regular o parte de ella.
+          </p>
+          <p>Basándonos sobre el siguiente texto:</p>
+          <p>
+            AB <br />
+            A_B <br />
+            A__B <br />
+            A___B <br />
+            A____B
+          </p>
+          <p>
+            Con este patrón, estamos buscando los que literalmente tengan A_B:
+          </p>
+          <img src="../images/regexp/q1.png" id="q1" alt="" />
+          <p>
+            Pero ¿Cómo haríamos si quisiéramos seleccionar todos los elementos
+            que tengan AB los que tengan barras bajas de por medio y los que no?
+          </p>
+          <h4>0 or more times * 🕗</h4>
+          <p>
+            * define que el patrón o la parte del patrón definida debe coincidir
+            cero o más veces. Vamos a ver un ejemplo:
+          </p>
+          <p>
+            Por ejemplo, A_*B buscará coincidencias con AB sin ninguna _ o con
+            múltiples _ en una fila.
+          </p>
+          <img src="../images/regexp/q2.png" id="q2" alt="" />
+          <p class="recuadro">
+            💡 Si nos fijamos, estamos seleccionado todos los AB, ya que con el
+            _* le estamos especificando que nos seleccioné todos los elementos
+            ya tenga 0, 1 o múltiples coincidencias.
+          </p>
+          <img src="../images/regexp/q3.png" id="q3" alt="" />
+          <h4>0 or 1 time ? 🕕</h4>
+          <p>
+            ? define que el patrón o la parte del patrón definida debe estar
+            presente 1 vez o ninguna. Vamos a ver un ejemplo:
+          </p>
+          <img src="../images/regexp/q4.png" id="q4" alt="" />
+        </section>
+        <section id="exact">
+          <h3>
+            4.2 - Exactly n times {n}, at least n times {n,} and from n to m
+            times {n,m} 🕛
+          </h3>
+          <h4>Exactly n times {n} 🕛</h4>
+          <p>
+            {n} define que el patrón o la parte del patrón definida debe
+            coincidir n veces. Vamos a ver un ejemplo:
+          </p>
+          <p>
+            Con este patrón A_{2}B, estamos buscando los casos que literalmente
+            tengan literalmente dos __ entre AB:
+          </p>
+          <img src="../images/regexp/q5.png" id="q5" alt="" />
+          <h4>At least n times {n,} 🕕</h4>
+          <p>
+            {n,} define que el patrón o la parte del patrón definida debe
+            coincidir n o más veces. Vamos a ver un ejemplo:
+          </p>
+          <p>
+            Con este patrón A_{2,}B, estamos buscando los casos que literalmente
+            tengan literalmente dos __ o más _ entre AB:
+          </p>
+          <img src="../images/regexp/q6.png" id="q6" alt="" />
+          <h4>From n to m times {n,m} 🕖</h4>
+          <p>
+            {n,m} define que el patrón o la parte del patrón definida debe
+            coincidir dentro del rango de n veces a m veces. Vamos a ver un
+            ejemplo:
+          </p>
+          <img src="../images/regexp/q7.png" id="q7" alt="" />
+        </section>
+        <section id="grla">
+          <h3>4.3 - Greedy/codicioso VS Lazy/Perezoso 🦥</h3>
+          <p>
+            La principal diferencia entre "greedy" (codicioso) y "lazy"
+            (perezoso) en el contexto de expresiones regulares es cómo manejan
+            las repeticiones. Estos términos se aplican a los cuantificadores,
+            como *, +, ?, {n,m}, etc., y afectan la forma en que se realiza la
+            coincidencia en el texto.
+          </p>
+          <h4>Greedy/Codicioso 💰</h4>
+          <p>
+            Greedy = ‘Codicioso’ intentará matchear la cadena más larga posible.
+            Es decir, si tiene varias opciones donde parar irá hasta la más
+            lejana ya que es codicioso y tiene muchas ganas de trabajar.
+          </p>
+          <p>Basándonos sobre el siguiente texto:</p>
+          <p>stackoverflow</p>
+          <p>
+            Con greedy (el codicioso) llegaremos a la o más lejana de las dos
+            que tenemos:
+          </p>
+          <img src="../images/regexp/q8.png" id="q8" alt="" />
+          <h4>Lazy/Perezoso 🦥</h4>
+          <p>
+            Lazy = ‘Perezoso’ intentará coger la cadena más cercana posible. Es
+            decir, si tiene varias opciones donde parar irá hasta la más cercana
+            ya que es perezoso y no tiene muchas ganas de trabajar.
+          </p>
+          <p>
+            Con el lazy (el perezoso), en cambio, queremos acabar cuanto antes.
+            Por lo que cogemos la cadena más corta posible. Vamos a ver un
+            ejemplo:
+          </p>
+          <img src="../images/regexp/q9.png" id="q9" alt="" />
+        </section>
+      </article>
+      <article class="content">
+        <section>
+          <h2 id="anchors">5. Anchors 🔱</h2>
+          <h3 id="stend">
+            5.1 - Start at beginning of String (^) & end of String ($) ⚓
+          </h3>
+          <p>
+            Existen mecanismos, es decir ciertos caracteres ($ y ^) mediante a
+            los cuales podemos comprobar/”anclar” si una cadena empieza o acaba
+            por un patrón. Os explicamos como funcionan.
+          </p>
+          <h4>Start at beginning of String ^ ⚓</h4>
+          <p>^ el patrón empieza por…</p>
+          <p>Basándonos sobre el siguiente texto:</p>
+          <p>
+            abc <br />
+            babc <br />
+            cabcde <br />
+            ddeabc
+          </p>
+          <p>
+            Si escribimos el patrón abc, vemos que se matchearán todos los casos
+            en los que abc esté presente. Independientemente de si está al
+            inicio, al final o en el centro de la cadena.
+          </p>
+          <img src="../images/regexp/a1.png" id="a1" alt="" />
+          <p>
+            En cambio, si queremos matchear solamente los casos que empiecen por
+            abc , debemos de añadir el ^ antes del texto. Vamos a ver un
+            ejemplo:
+          </p>
+          <img src="../images/regexp/a2.png" id="a2" alt="" />
+          <h4>End of String $ 🚢</h4>
+          <p>$ El patrón acaba con…</p>
+          <p>
+            Si queremos seleccionar las cadenas de texto que acaban pro bc, el
+            regex para hacer el match sería el siguiente:
+          </p>
+          <img src="../images/regexp/a3.png" id="a3" alt="" />
+          <h4>Combinando ^ con $ 🚢⚓</h4>
+          <p>
+            Existe también la posibilidad de que $ y ^ convivan dentro de un
+            mismo patrón.
+          </p>
+          <p>
+            Por ejemplo, el siguiente ejemplo solo matcheará los casos en los
+            que la línea empiece y acabe por abc:
+          </p>
+          <img src="../images/regexp/a4.png" id="a4" alt="" />
+        </section>
+        <section>
+          <h3 id="wordbound">
+            5.2 - Word buoundary \b & not word boundary \B 🚝
+          </h3>
+          <h4>Word buoundary \b sin texto ⚓</h4>
+          <p>
+            \b en minúscula y sin ir englobada sobre un texto (\bTEXT\b)
+            representa un límite de palabra (word boundary). Es decir, actúa
+            como un ancla que marca la posición entre caracteres de palabra
+            (alfanuméricos) y caracteres que no son de palabra (como espacios,
+            signos de puntuación, etc.).
+          </p>
+          <p>
+            Inicialmente, si utilizamos \b sin nada más en el siguiente texto
+            podemos observar que se selecciona el inicio y fin de cada una de
+            las palabras.
+          </p>
+          <h4>Word buoundary \b con texto ⚓📋</h4>
+          <p>
+            \b en minúscula, representa un límite de palabra (word boundary)
+            actúa como delimitador de palabras lo que nos permite delimitar una
+            palabra de inicio a fin, evitando que se cuelen subcadenas de dentro
+            de otras palabras más largas. De tal forma que nos garantiza que
+            estamos buscando palabras exactas en lugar de partes de palabras.
+            Esto es especialmente útil en escenarios como la búsqueda y
+            reemplazo de palabras en un texto.
+          </p>
+          <p class="recuadro">
+            💡 Englobando una palabra con \b nos aseguramos que seleccionaremos
+            única y exclusivamente las palabras contenidas entre las dos
+            \bWORD\b de tal manera que solamente seleccionaremos las que
+            empiecen y acaben de tal forma. Y no las que contengan dicha
+            palabra.
+          </p>
+          <h4>Not word boundary \B caracteres de entre palabras 📖</h4>
+          <p>
+            La secuencia de escape \B matcheará a cualquier carácter siempre que
+            no este no se encuentre en el límite de palabra. En otras palabras,
+            coincide con posiciones dentro de palabras o entre caracteres que
+            son todos alfanuméricos.
+          </p>
+        </section>
+      </article>
+      <article class="content">
+        <section>
+          <h2 id="alternation">6. Alternation ⚡</h2>
+          <h3>6.1 - Alternation |</h3>
+          <p>
+            | la alternación dentro de las expresiones regulares se refiere a la
+            capacidad de especificar múltiples alternativas sobre el patrón que
+            busca en una cadena de texto. Para ello, se utiliza el operador de
+            barra vertical | separando cada una de las alternativas.
+          </p>
+          <h3>
+            6.2 - Match y match matchea la expresión completa o sino no se
+            matchea 🎯
+          </h3>
+          <p>
+            La construcción (?(exp)yes|no) es parte de las expresiones regulares
+            condicionales y permite definir un patrón que coincide con "yes" si
+            la expresión condicional exp es verdadera y con "no" si es falsa.
+            Aquí tienes un ejemplo de cómo usar esta construcción en una
+            expresión regular:
+          </p>
+          <img src="../images/regexp/alt1.png" id="alt1" alt="" />
+        </section>
+      </article>
+      <article class="content">
+        <section>
+          <h2 id="gruprarus">7. Groups rarunos 🐸</h2>
+          <ol>
+            <li>
+              \L$1: Todas las palabras en el grupo coincidente se cambiarán a
+              minúsculas.
+            </li>
+            <li>
+              \l$1: La primera letra en el grupo coincidente estará en
+              minúscula, el resto permanecerá sin cambios.
+            </li>
+            <li>
+              \U$1: Todas las palabras en el grupo coincidente se cambiarán a
+              mayúsculas.
+            </li>
+            <li>
+              \u$1: La primera letra en el grupo coincidente estará en
+              mayúscula, el resto permanecerá sin cambios.
+            </li>
+          </ol>
+        </section>
+      </article>
+      <article class="content">
+        <h2>🥩Chuletita Cheat sheet🥩</h2>
+        <img src="../images/regexp/chuleta.png" id="chuleta" alt="" />
+      </article>
+      <article class="content">
+        <h2 id="webrecom">🤓Webs recomendadas🤓</h2>
       </article>
     </main>
     <footer>
