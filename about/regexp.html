@@ -80,14 +80,14 @@
         ><a href="#historia"> <div>Historia🕰️</div> </a
         ><a href="#pqsirven"> <div>¿Para qué sirven?🎯</div> </a
         ><a href="#ejemplo"> <div>Ejemplo de búsqueda🔍</div> </a
-        ><a href="#bootstrap"> <div>¿Qué son los motores?🚀</div> </a
-        ><a href="#javascript"> <div>¿Qué es el pattern y match?🎯</div> </a
-        ><a href="#mysql"> <div>Single Characters🔡</div> </a
-        ><a href="#java"> <div>La estrella de Kleene🌟</div> </a
-        ><a href="#springboot"> <div>Contenido en el grupo🔣</div> </a
-        ><a href="#react"><div>No contenido en el grupo🚫</div></a>
-        <a href="#inicio"><div>Definiendo rangos🎲</div></a>
-        <a href="#inicio"><div>Uso del joker 🃏</div></a>
+        ><a href="#motores"> <div>¿Qué son los motores?🚀</div> </a
+        ><a href="#patmat"> <div>¿Qué es el pattern y match?🎯</div> </a
+        ><a href="#single"> <div>Single Characters🔡</div> </a
+        ><a href="#estrella"> <div>La estrella de Kleene🌟</div> </a
+        ><a href="#congrup"> <div>Contenido en el grupo🔣</div> </a
+        ><a href="#nocongrup"><div>No contenido en el grupo🚫</div></a>
+        <a href="#defrang"><div>Definiendo rangos🎲</div></a>
+        <a href="#joker"><div>Uso del joker 🃏</div></a>
         <a href="#inicio"> <div>Character Classes🔤</div> </a>
         <a href="#inicio"><div>Decimal digit💯</div></a>
         <a href="#inicio"><div>White-space characters〰️</div></a>
@@ -107,7 +107,9 @@
 
       <article class="content">
         <section>
-          <h2 id="introduccion">1. Introducción a las expresiones regulares 🔍</h2>
+          <h2 id="introduccion">
+            1. Introducción a las expresiones regulares 🔍
+          </h2>
           <h3 id="queson">1.1 - ¿Qué son las expresiones regulares? 🤔</h3>
           <p>
             El término de expresiones regulares nace a partir del término inglés
@@ -127,7 +129,9 @@
           </p>
         </section>
         <section>
-          <h3 id="historia">1.2 - Historia y origen de las expresiones regulares 🕰️</h3>
+          <h3 id="historia">
+            1.2 - Historia y origen de las expresiones regulares 🕰️
+          </h3>
           <h4>Avances hasta la década de los 40 📜</h4>
           <p>
             La historia de las expresiones regulares se remonta a la década de
@@ -297,7 +301,9 @@
           />
         </section>
         <section>
-          <h3 id="pqsirven">1.3 - ¿Para qué sirven las expresiones regulares? 🎯</h3>
+          <h3 id="pqsirven">
+            1.3 - ¿Para qué sirven las expresiones regulares? 🎯
+          </h3>
           <p>
             Las expresiones regulares son extremadamente útiles en determinadas
             situaciones donde necesitas realizar tareas de búsqueda y
@@ -393,6 +399,444 @@
             Una vez dentro, seleccionamos el sistema operativo con el que
             queremos trabajar en mi caso usaré la siguiente versión:
           </p>
+          <img
+            src="../images/regexp/terminal UNIX.png"
+            id="linuxandother"
+            alt="Linux or other operating systems"
+          />
+          <p>
+            Una vez dentro, como podréis observar, se nos abrirá una terminal de
+            Linux en el propio browser desde el que podremos ejecutar los
+            comandos pertinentes:
+          </p>
+          <img
+            src="../images/regexp/comandos UNIX.png"
+            id="comandosUnix"
+            alt="Comandos UNIX"
+          />
+          <h4>Creando el fichero a buscar 📂</h4>
+          <p>
+            Primeramente, vamos a hacer un ls (de list) para listar todos los
+            ficheros actuales:
+          </p>
+          <img src="../images/regexp/ls.png" id="ls" alt="" />
+          <p>
+            Posteriormente, creamos un fichero mediante el comando cat de la
+            siguiente manera:
+          </p>
+          <p>Escribimos 🡢 cat > (nombre del fichero)</p>
+          <p>
+            En su interior, vamos a escribir el contenido sobre el que
+            realizaremos la búsqueda con GREP.
+          </p>
+          <p>
+            Para salir del documento si queremos guardar los cambios utilizamos
+            Ctrl + D, o si quisiéramos salir sin guardar el documento Ctrl + C.
+          </p>
+          <p>
+            Finalmente, una vez guardado el fichero, vamos a hacer un ls para
+            mostrar si hemos creado el fichero correctamente.
+          </p>
+          <p>
+            Si ejecutamos el comando tail junto al nombre del fichero que
+            acabamos de crear, podemos mostrar el contenido del fichero que
+            acabamos de introducir en el paso anterior:
+          </p>
+          <img src="../images/regexp/ls tail.png" id="lstail" alt="" />
+          <img src="../images/regexp/tail.png" id="tail" alt="" />
+          <h4>Ejemplo de uso de GREP 📋</h4>
+          <p>
+            Primer Ejemplo, finalmente, vamos a realizar la primera búsqueda de
+            la expresión regexp más sencilla de todas, una palabra sin más. Para
+            ello, tenemos que utilizar el comando grep junto a la expresión
+            regular que vamos a buscar, en este caso la palabra David
+            entrecomillada. E inmediatamente después, la ruta sobre la que
+            queremos realizar la búsqueda.
+          </p>
+          <p class="recuadro">
+            📄 Para realizar una búsqueda global, es decir, sobre todos los
+            directorios utilizamos *
+          </p>
+          <p>
+            Si realizamos la búsqueda con todos los caracteres en minúsculas,
+            fijaros que la consola no imprimirá ningún resultado:
+          </p>
+          <img src="../images/regexp/grep1.png" id="grep1" alt="" />
+          <p>
+            En cambio, si repetimos la misma operación con el nombre con la D en
+            mayúscula, ahora si que podemos observar que nos devuelve el
+            resultado correctamente:
+          </p>
+          <img src="../images/regexp/grep2.png" id="grep2" alt="" />
+          <p>
+            Segundo Ejemplo, si queremos que la búsqueda no sea case-sensitive,
+            es decir, a mayúsculas y minúsculas podemos añadir el flag (la
+            bandera) -i. Vamos a verlo:
+          </p>
+          <img src="../images/regexp/grep3.png" id="grep3" alt="" />
+          <p>
+            Tercer Ejemplo, Si quisiéramos buscar los ficheros que empiecen por
+            Hola, haríamos lo siguiente:
+          </p>
+          <img src="../images/regexp/grep4.png" id="grep4" alt="" />
+          <p>
+            Cuarto Ejemplo, Si quisiéramos buscar los ficheros que acaben por D
+            haríamos lo siguiente:
+          </p>
+          <img src="../images/regexp/grep5.png" id="grep5" alt="" />
+        </section>
+        <section>
+          <h3 id="motores">
+            1.5 - ¿Qué son los motores de ejecución de regexp? Y tipos engines
+            de regexp 🚀
+          </h3>
+          <h4>¿Qué son los motores de expresiones regulares? 🧩</h4>
+          <p>
+            Los motores (engines) de expresiones regulares, son programas o
+            bibliotecas que implementan la capacidad de realizar procesamiento e
+            interpretación de patrones de expresiones regulares.
+          </p>
+          <p>
+            Estos modelos permiten buscar, comparar y manipular texto basándose
+            en patrones definidos por las expresiones regulares.
+          </p>
+          <h4>Distintos motores de expresiones regulares 🧰</h4>
+          <p>
+            Los motores de expresiones regulares se encuentran tanto en
+            lenguajes de programación (como Java, Python, JavaScript, Perl, PHP,
+            .NET, etc.) como herramientas de software (Eclipse, Visual Studio
+            Code, etc.) e incluso en sistemas operativos.
+          </p>
+          <p class="recuadro">
+            🔧 Cada motor puede tener su propia sintaxis y características
+            específicas para expresiones regulares, pero la idea general es la
+            misma: utilizar patrones para realizar operaciones complejas en
+            cadenas de texto.
+          </p>
+          <p>
+            Algunos de los principales motores para ejecutar expresiones
+            regulares son:
+          </p>
+          <ol>
+            <li>
+              Oniguruma 🡢 Es un motor de expresiones regulares ampliamente
+              utilizado que se encuentra en Visual Studio Code, TextMate, Ruby,
+              PHP y otros. <br />
+              Es conocido por su soporte completo de expresiones regulares con
+              muchas características y extensiones.
+            </li>
+            <li>
+              Java (java.util.regexp) 🡢 Proporciona java.util.regex, un
+              paquete/librería que contiene un conjunto de clases que nos va a
+              proporcionar un motor de expresiones regulares para trabajar con
+              expresiones regulares dentro de Java. Entre las clases más
+              utilizadas se encuentra Pattern y Matcher.
+              <br />
+              Estas clases permiten compilar expresiones regulares, buscar
+              coincidencias y realizar operaciones de reemplazo en cadenas.
+            </li>
+            <li>
+              JavaScript (Regexp) 🡢 Los navegadores y Node.js utilizan el motor
+              de expresiones regulares incorporado en JavaScript, que se accede
+              a través de la clase RegExp. Por lo que podemos utilizar
+              expresiones regulares de forma nativa en JavaScript para realizar
+              búsquedas y reemplazos en cadenas de texto.
+            </li>
+            <li>
+              GNU Grep (grep) 🡢 grep es una herramienta de línea de comandos
+              disponible en sistemas Unix como por ejemplo Linux, que nos
+              permite realizar búsquedas de patrones utilizando expresiones
+              regulares.
+            </li>
+            <li>
+              PCRE (Perl Compatible Regular Expressions) 🡢 PCRE es un motor de
+              expresiones regulares compatible con Perl, que además se utiliza
+              en lenguajes como PHP, Python (a través del módulo re), y otros.
+              Ofrece una amplia gama de funcionalidades, incluyendo expresiones
+              regulares recursivas.
+            </li>
+            <li>
+              PHP (PCRE) 🡢 PHP utiliza el motor PCRE para su soporte de
+              expresiones regulares. Puedes utilizar la función preg_match() y
+              otras funciones relacionadas para trabajar con expresiones
+              regulares.
+            </li>
+            <li>
+              Ruby (Regexp) 🡢 Ruby proporciona soporte nativo para expresiones
+              regulares a través de la clase Regexp.
+            </li>
+            <li>
+              C# (.NET Regex) 🡢 C# proporciona soporte para expresiones
+              regulares a través de la clase
+              System.Text.RegularExpressions.Regex.
+            </li>
+            <li>
+              Python (re) 🡢 Python incluye un módulo llamado re que ofrece
+              soporte para expresiones regulares. Este módulo proporciona
+              funciones para trabajar con expresiones regulares que nos
+              permitirán compilar expresiones regexp, buscar coincidencias y
+              realizar cambios de manera similar a Java.
+            </li>
+          </ol>
+          <p class="recuadro">
+            ℹ Estos son solo algunos ejemplos de los motores de expresiones
+            regulares disponibles en diferentes lenguajes y herramientas. Cada
+            uno de ellos puede tener diferencias en la sintaxis o en las
+            características admitidas, pero todos están diseñados para
+            proporcionar una forma poderosa de realizar operaciones avanzadas de
+            búsqueda y manipulación de texto basadas en patrones.
+          </p>
+          <h3 id="patmat">1.6 - ¿Qué es el patrón/pattern y el match? 🎯</h3>
+          <h4>¿Qué es el patrón, pattern? 🧩</h4>
+          <p>
+            Cuando hablamos de patrón o de pattern, dentro del contexto de las
+            expresiones regulares, es a la expresión, es decir, la secuencia de
+            caracteres mediante la cual intentaremos realizar un match dentro de
+            un fichero gracias a un motor de expresiones regulares.
+          </p>
+          <p class="recuadro">
+            🧐 Cada carácter definido dentro del patrón representa una
+            instrucción para buscar cierto tipo de contenido en el texto. Por
+            tanto, el patrón no es nada más que una combinación de caracteres
+            literales y caracteres especiales que tienen ciertos significados
+            específicos. Los cuales formarán la expresión regular a partir de la
+            cual buscaremos las coincidencias (matchings) dentro de un texto.
+            Dicho patrón que buscará si una determinada expresión regular existe
+            dentro de un determinado texto.
+          </p>
+          <h4>¿Qué es el match (coincidencia)? ✅</h4>
+          <p>
+            En el contexto de las expresiones regulares un match, se refiere a
+            cada una de las instancias/coincidencias encontradas dentro del
+            texto que cumple con lo definido dentro del patrón de la expresión
+            regular.
+          </p>
+          <p>
+            En otras palabras, cuando aplicas una expresión regular, es decir,
+            un patrón generando una cadena de texto, y esa cadena de texto
+            buscará en el interior de un texto de tal forma que, cada resultado
+            encontrado será una coincidencia o un "match".
+          </p>
+          <p class="recuadro">
+            📌^\d{3} 🡢 Este patrón significa que selecciona todas las líneas que
+            empiecen por 3 dígitos.
+          </p>
+          <p>
+            En resumen, el patrón en una expresión regular define cómo se busca
+            o manipula el texto. Contiene una serie de caracteres que
+            representan reglas específicas para encontrar patrones particulares
+            en las cadenas de texto.
+          </p>
+          <h4>Instalando plugins para VSC ⚙️</h4>
+          <p>
+            Existen determinadas expresiones regulares que pueden llegar a ser
+            muy complejas y cuya lectura puede ser todo un reto.
+          </p>
+          <p>
+            Un ejemplo de ello es General Email Regex (RFC 5322 Official
+            Standard) la cual nos permite realizar la validación de un email con
+            un 99,99% de eficiencia:
+          </p>
+          <p>
+            >(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"
+            (?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b
+            \x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:
+            [a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}
+            (?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\
+            x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])
+          </p>
+          <p>
+            Si tenemos que interpretar dicha expresión sin ayuda alguna, esto
+            sería una tarea muy muy muy compleja.
+          </p>
+          <p>
+            Por ello, tenemos determinadas web y plugins que nos permiten
+            simplificar en media de lo posible determinadas tareas con regexp.
+            Un ejemplo de ello es la siguiente web:
+            <a href="https://jex.im/regulex/" target="_blank">Enlace de web</a>
+          </p>
+          <p class="recuadro">
+            🏗 Si pegamos el código de la expresión regular podemos generar un
+            esquema que nos permitirá entender que hace la expresión.
+          </p>
+          <img src="../images/regexp/img jex.png" id="jex" alt="" />
+        </section>
+      </article>
+      <article class="content">
+        <section>
+          <h2 id="single">2. Single Characters 🔡</h2>
+          <h3 id="estrella">2.1 - La estrella de Kleene * 🌟</h3>
+          <h4>
+            ¿Qué es la estrella de Kleene dentro de las expresiones regulares?
+            🌟
+          </h4>
+          <p>
+            La estrella de Kleene (*) es el meta carácter más potente de todos
+            con el que la comunidad trata de homenajear de Kleene al que en
+            general consideran “el padre” de las expresiones regulares.
+          </p>
+          <p class="recuadro">
+            📌 Por el momento solamente vamos a ver solamente uno de sus usos.
+            Aunque me gustaría matizar que con la estrella de Kleene podemos
+            realizar también otras funcionalidades que ya veremos cuando
+            lleguemos a dicho apartado.
+          </p>
+          <p>
+            /* 🡢 Seleccionamos cualquier carácter (incluido el salto de línea
+            \n)
+          </p>
+          <h4>Saltos de línea en regexp ↵</h4>
+          <p>
+            Para poder visualizarlos, podemos ayudarnos de regexp. Para ello,
+            realizamos un \n podemos matchear todos los saltos de línea que hay
+            en nuestro documento.
+          </p>
+          <p class="recuadro">
+            📌 Los saltos de línea no se pueden visualizar a golpe de ojo dentro
+            de un documento.
+          </p>
+          <h4>Espacios en regexp 〰️</h4>
+          <p class="recuadro">
+            📌 Los saltos de línea los podemos visualizar/detectar/identificar
+            fácilmente dentro de un documento por la separación de los
+            caracteres.
+          </p>
+          <p>
+            Además de ello, si seleccionamos el texto al completo en el interior
+            del IDE (Visual Studio Code), podemos observar como aparece una
+            especie de puntito · el cual representa cada uno de los espacios.
+          </p>
+          <p>
+            Si utilizamos \s o en su defecto escribimos un espacio sin nada más,
+            podemos ver que hacemos un match de todos los espacios del
+            documento.
+          </p>
+          <h4>Ejemplo de un uso de la estrella de Kleene 🌠</h4>
+          <p>
+            En cambio, si utilizamos la estrella de Kleene, podemos ver que se
+            seleccionan todos los caracteres inclusive los saltos de línea y
+            espacios.
+          </p>
+          <p class="recuadro">
+            📌 Por ello, decimos que la estrella de Kleene es el meta carácter
+            más poderoso de todos, engloba todo incluso los saltos de línea o
+            espacios.
+          </p>
+        </section>
+        <section>
+          <h3 id="congrup">2.2 - [set] Contenido en el grupo 🔣</h3>
+          <p>
+            En esta sección vamos a empezar a aprender como trabajar con grupos
+            de caracteres además de explicar que diferencias hay entre patrón
+            este tipo de grupos y los caracteres literales. ¡Vamos a ello!
+          </p>
+          <p class="recuadro">
+            📌 [carácter/es] buscará cualquier carácter incluido entre los []. A
+            diferencia de los caracteres literales anteriores, con esta manera
+            matcheará todo lo contenido en el interior del paréntesis
+            independientemente de que estén definidos consecutivamente o no.
+          </p>
+        </section>
+        <section>
+          <h3 id="nocongrup">2.3 - [^set] No contenido en el grupo 🚫</h3>
+          <p>
+            [^carácter/es] realizará el match de cualquier carácter que NO esté
+            incluido dentro de los corchetes [] independiente de si es
+            consecutivo o si no.
+          </p>
+        </section>
+        <section>
+          <h3 id="defrang">2.4 - [set] [^set] Definiendo conjuntos/rangos 🎲</h3>
+          <h4>
+            Seleccionando un conjunto de letras (abecedario al completo) 🔤
+          </h4>
+          <p>
+            De la misma forma que podemos definir un rango mediante a una
+            secuencia de caracteres literales, podemos realizarlo mediante a un
+            rango/conjunto de la siguiente manera:
+          </p>
+          <p>
+            [a-z] Nos permite definir un rango específico dentro del patrón.
+          </p>
+          <p class="recuadro">
+            🚨 A excepción de la ñ tanto en mayúscula como minúscula ya que la
+            informática por decirlo así “está hecha en inglés” y la ñ no existe
+            en dicho lenguaje.
+          </p>
+          <h4>Añadiendo caracteres a un conjunto ➕</h4>
+          <p>
+            Si queremos que dicho rango añada la ñ también deberemos de añadirla
+            al conjunto de la siguiente manera [a-zñ].
+          </p>
+          <h4>Upper & Lower case range 🔠</h4>
+          <p>
+            Las expresiones regulares pueden ser "case sensitive" o "case
+            insensitive", lo que significa que pueden o no distinguir entre
+            letras mayúsculas y minúsculas en el texto que se está analizando.
+          </p>
+          <h4>Seleccionando un rango numérico 🔢</h4>
+          <p>[0-9] También podemos utilizar rangos de numéricos.</p>
+          <h4>Rango de caracteres “especiales” 🔣</h4>
+          <p>
+            [À-ÿ] Otro ejemplo de como seleccionar los caracteres especiales
+            (acentuados, dieresis, eñes…), es decir, que no son utilizados en el
+            lenguaje inglés.
+          </p>
+        </section>
+        <section>
+          <h3 id="joker">2.5 - Uso del meta carácter joker, .* & \char 🃏</h3>
+          <h4>Uso del meta carácter . “el famoso joker” 🃏</h4>
+          <p>
+            . meta carácter también conocido como el “joker”, selecciona
+            cualquier carácter, de una forma similar a “un comodín” ¡A excepción
+            de los saltos de línea! Por lo que poder decirlo así es casi igual
+            de poderoso que la estrella de Kleene. Decimos ¡Casi! ya que es un
+            poquitín menos potente.
+          </p>
+          <p>
+            El primer uso que podríamos con . sería el de seleccionar todos los
+            caracteres del documento.
+          </p>
+          <h4>Doble jocker 🃏🃏</h4>
+          <p>
+            ..carácter/es 🡢 Otro uso para el meta carácter . es el de añadir
+            varios puntos a la vez ..
+          </p>
+          <h4>Joker & Kleene 🃏⭐</h4>
+          <p>
+            .* 🡢 También es habitual utilizarlo para seleccionar varios
+            caracteres combinado con la famosa estrella de Kleene *.
+          </p>
+          <p>
+            Este patrón será muy útil para seleccionar una parte determinada en
+            un texto. Por ejemplo, hasta el final de la línea para
+            posteriormente reemplazar dicho contenido.
+          </p>
+          <h4>
+            Seleccionando meta caracteres utilizados en las expresiones
+            regulares 🔤
+          </h4>
+          <p>
+            \char Existen determinados caracteres como por ejemplo: *,.+ entre
+            otros que debido a que tienen algún significado dentro del lenguaje
+            de las expresiones regulares, pueden ser algo más difíciles de
+            seleccionar. En estos escenarios, utilizamos la contra barra.
+          </p>
+          <p>
+            Si intentamos seleccionar solamente los puntos sin utilizar la
+            contra barra, podemos ver que, en este caso, nos seleccionaría todo
+            el contenido.
+          </p>
+          <p>
+            En cambio, si añadimos una contra barra, podemos ver que ahora si
+            que nos selecciona concretamente el . sin ningún carácter adicional.
+          </p>
+        </section>
+      </article>
+      <article class="content">
+        <section>
+          <h2>3. Character Classes 🔤</h2>
+          <h3>3.1 - Decimal digit \d & not decimal digit \D 💯</h3>
         </section>
       </article>
     </main>

@@ -73,12 +73,12 @@ body {
 
 /* MAIN INTRODUCTION */
 
-.titleintro,
+.titleindex,
 .titlecontent {
   text-align: center;
 }
 
-.titleintro + *,
+.titleindex + *,
 .secciones {
   margin-left: 15em;
 }
@@ -94,7 +94,7 @@ body {
   border-bottom: solid 1px #0d0d0d;
 }
 
-.titleintro + *,
+.titleindex + *,
 .secciones section p,
 .titlecontent + *,
 .content section p {
@@ -108,8 +108,19 @@ body {
   background-color: #eeeeee;
 }
 
-#parentsregex {
-  width: 70em;
+#parentsregex,
+#linuxandother,
+#comandosUnix,
+#ls,
+#lstail,
+#tail,
+#grep1,
+#grep2,
+#grep3,
+#grep4,
+#grep5,
+#jex {
+  width: 50em;
   height: auto;
 }
 
