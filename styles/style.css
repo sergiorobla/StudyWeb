@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* GLOBALES */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9;
+  user-select: none;
+}
+
+/* HEADER */
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.menu a {
+  margin: 0 10px;
+  padding: 5px;
+  color: #0d0d0d;
+  text-decoration: none;
+}
+
+.menu a:not(.logo):hover {
+  background-color: #ececec;
+  padding-bottom: 5px;
+  border-bottom: solid 1px #0d0d0d;
+}
+
+/* MAIN INDEX */
+
+.index {
+  position: fixed;
+  top: 8em;
+  left: -1em;
+}
+
+.index li {
+  list-style: none;
+  margin: 10px 0 10px 0;
+  max-width: 300px;
+}
+
+.index span {
+  padding: 5px 50px 5px 20px;
+}
+
+.index span:hover {
+  background-color: #ececec;
+  border-bottom: solid 1px #0d0d0d;
+}
+
+.index a {
+  text-decoration: none;
+  color: #0d0d0d;
+}
+
+/* MAIN INTRODUCTION */
+
+.titleintro,
+.titleintro + *,
+.secciones {
+  margin-left: 20em;
+}
