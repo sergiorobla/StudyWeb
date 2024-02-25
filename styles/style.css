@@ -44,7 +44,7 @@ body {
 
 .index {
   position: fixed;
-  top: 10em;
+  top: 7em;
   left: 1em;
   background-color: #f9f9f9;
   border-radius: 10px;
@@ -108,36 +108,50 @@ body {
   background-color: #eeeeee;
 }
 
-#parentsregex,
-#linuxandother,
-#comandosUnix,
-#ls,
-#lstail,
-#tail,
-#grep1,
-#grep2,
-#grep3,
-#grep4,
-#grep5,
-#jex,
-#jsoutput,
-#t,
-#n,
-#q1,
-#q2,
-#q3,
-#q4,
-#q5,
-#q6,
-#q7,
-#q8,
-#q9,
-#a1,
-#a2,
-#a3,
-#a4,
-#alt1,
-#chuleta {
+#img-parentsregex,
+#img-linuxandother,
+#img-comandosUnix,
+#img-ls,
+#img-lstail,
+#img-tail,
+#img-grep1,
+#img-grep2,
+#img-grep3,
+#img-grep4,
+#img-grep5,
+#img-jex,
+#img-jsoutput,
+#img-t,
+#img-n,
+#img-q1,
+#img-q2,
+#img-q3,
+#img-q4,
+#img-q5,
+#img-q6,
+#img-q7,
+#img-q8,
+#img-q9,
+#img-a1,
+#img-a2,
+#img-a3,
+#img-a4,
+#img-alt1,
+#img-chuleta,
+#img-snap1,
+#img-snap2,
+#img-status,
+#img-giterror,
+#img-gitremoteorigin,
+#img-gitremotev,
+#img-gitremotevrep,
+#img-seturl,
+#img-gitlogadog,
+#img-gitcheckoutnum,
+#img-gitlogadogdesp,
+#img-gitlogadogreflog,
+#img-gitcheckgitlog,
+#img-gitmerges {
   width: 50em;
   height: auto;
 }
