@@ -10,19 +10,34 @@ body {
 
 /* HEADER */
 
-.globalmenu {
-  padding: 5px 0;
-  background-color: #f9f9f9;
+.logo img {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.logo img:hover {
+  transform: scale(1.2);
+}
+
+.enlaces {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.enlaces a {
+  color: #0d0d0d;
+  text-decoration: none;
+  margin-left: 20px;
 }
 
 .menu {
   display: flex;
   align-items: center;
-}
-
-.logo img {
-  width: 50px;
-  height: auto;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #efefef;
+  border-bottom: solid 1px #e3e3e3;
 }
 
 .menu a {
@@ -32,79 +47,70 @@ body {
   text-decoration: none;
 }
 
-.menu a:not(.logo):hover {
+.menu a:not(.logo a):hover {
   background-color: #ececec;
-  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
-  padding-bottom: 5px;
-  border-bottom: solid 1px #0d0d0d;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
-/* MAIN INDEX */
-
-.index {
+/* MENU INDEX */
+.menu-page {
   position: fixed;
-  top: 7em;
-  left: 1em;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-}
-
-.over {
-  height: 30em;
-  overflow: visible scroll;
-}
-
-.index div {
-  padding: 7px 15px;
-}
-
-.index div:hover {
-  background-color: #ececec;
-  border-top-left-radius: 10px;
+  width: 250px;
+  background-color: #efefef;
+  border: solid 1px #e3e3e3;
   border-top-right-radius: 10px;
-  border-bottom: solid 1px #0d0d0d;
+  border-bottom-right-radius: 10px;
 }
 
-.index a {
-  text-decoration: none;
+.over{
+  height: 700px;
+  overflow: visible scroll;
+  
+}
+
+.menu-page ul {
+  padding-inline-start: 20px;
+}
+
+.menu-page ul {
+  list-style: none;
+}
+.menu-page ul li {
+  margin: 10px;
+  padding: 5px;
+}
+
+.menu-page ul li a {
   color: #0d0d0d;
+  text-decoration: none;
+  transition: padding-left 0.2s;
+  padding: 10px;
+}
+
+.menu-page ul li a:hover {
+  background-color: #ececec;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  transition: padding-left 0.2s;
+  border-left: solid 1px #0d0d0d;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* CONTENT INDEX */
+.content {
+  margin: 0 10px 0 300px;
 }
 
 /* MAIN INTRODUCTION */
 
-.titleindex,
-.titlecontent {
-  text-align: center;
-}
-
-.titleindex + *,
-.secciones {
-  margin-left: 15em;
-}
-
-.titlecontent + *,
-.content {
-  margin-left: 20em;
-}
-
-.secciones h2,
-.content h2 {
-  padding-bottom: 5px;
-  border-bottom: solid 1px #0d0d0d;
-}
-
-.titleindex + *,
-.secciones section p,
-.titlecontent + *,
-.content section p {
-  text-align: justify;
-  margin-right: 15px;
-}
-
 .recuadro {
   border: 1px solid black;
-  padding: 1em;
+  padding: 15px;
   background-color: #eeeeee;
 }
 
@@ -152,7 +158,7 @@ body {
 #img-gitlogadogreflog,
 #img-gitcheckgitlog,
 #img-gitmerges {
-  width: 50em;
+  width: 90%;
   height: auto;
 }
 

@@ -12,27 +12,65 @@
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body id="inicio">
-    <header class="globalmenu">
+    <header>
       <nav class="menu">
-        <a href="../index.html" class="logo"
-          ><img src="../assets/icons/icon.png" alt="logo"
-        /></a>
-        <a href="../about/regexp.html">RegExp🧩</a>
-        <a href="../about/git.html">Git🐱</a>
-        <a href="../about/markdown.html">Markdown✍️</a>
-        <a href="../about/hyperText.html">Html🌐</a>
-        <a href="../about/cascadeStyle.html">Css🎨</a>
-        <a href="../about/bootstrap.html">Bootstrap🅱️</a>
-        <a href="../about/javaScript.html">JavaScript🧠</a>
-        <a href="../about/mySql.html">MySQL🗃️</a>
-        <a href="../about/studyJava.html">Java☕</a>
-        <a href="../about/springBoot.html">Spring Boot🚀</a>
-        <a href="../about/react.html">React⚛️</a>
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../assets/icons/icon.png" alt="logo"
+          /></a>
+        </div>
+        <div class="enlaces">
+          <a href="../about/regexp.html">RegExp🧩</a>
+          <a href="../about/git.html">Git🐱</a>
+          <a href="../about/markdown.html">Markdown✍️</a>
+          <a href="../about/hyperText.html">Html🌐</a>
+          <a href="../about/cascadeStyle.html">Css🎨</a>
+          <a href="../about/bootstrap.html">Bootstrap🅱️</a>
+          <a href="../about/javaScript.html">JavaScript🧠</a>
+          <a href="../about/mySql.html">MySQL🗃️</a>
+          <a href="../about/studyJava.html">Java☕</a>
+          <a href="../about/springBoot.html">Spring Boot🚀</a>
+          <a href="../about/react.html">React⚛️</a>
+        </div>
       </nav>
     </header>
     <main>
-      <h1 class="titlecontent">🔍 Regular Expression (RegExp) 🧩</h1>
-      <div>
+      <nav class="menu-page over">
+        <ul>
+          <li><a href="#inicio">🔝Menú🏠</a></li>
+          <li><a href="#introduccion">Introducción🔍</a></li>
+          <li><a href="#queson">¿Qué son?🤔</a></li>
+          <li><a href="#historia">Historia🕰️</a></li>
+          <li><a href="#pqsirven">¿Para qué?🎯</a></li>
+          <li><a href="#ejemplo">Búsqueda🔍</a></li>
+          <li><a href="#motores">Motores🚀</a></li>
+          <li><a href="#patmat">Pattern🎯</a></li>
+          <li><a href="#single">Single🕺</a></li>
+          <li><a href="#estrella">Estrella🌟</a></li>
+          <li><a href="#congrup">Contenido📦</a></li>
+          <li><a href="#nocongrup">No Contenido🚫</a></li>
+          <li><a href="#defrang">Rangos📊</a></li>
+          <li><a href="#joker">Joker🃏</a></li>
+          <li><a href="#chacla">Classes🔤</a></li>
+          <li><a href="#decdig">Decimal💹</a></li>
+          <li><a href="#whitespace">Espacio🌌</a></li>
+          <li><a href="#word">Word✨</a></li>
+          <li><a href="#carriage">Carriage🛒</a></li>
+          <li><a href="#quanti">Quantifiers🏁</a></li>
+          <li><a href="#short">Shorts Times⏳</a></li>
+          <li><a href="#exact">Exactly Times⏱️</a></li>
+          <li><a href="#grla">Greedy - Lazy🦥</a></li>
+          <li><a href="#anchors">Anchors⚓</a></li>
+          <li><a href="#stend">String🧵</a></li>
+          <li><a href="#wordbound">Buoundary🔍</a></li>
+          <li><a href="#alternation">Alternation⚡</a></li>
+          <li><a href="#gruprarus">Raros🐸</a></li>
+          <li><a href="#webrecom">Webs🤓</a></li>
+        </ul>
+      </nav>
+      <article class="content">
+        <h1 class="titlecontent">🔍 Regular Expression (RegExp) 🧩</h1>
+        <div>
         <p>
           Las Expresiones Regulares, comúnmente conocidas como Regex, son una
           herramienta poderosa para trabajar con texto. Son patrones que
@@ -72,39 +110,9 @@
           complejas en cadenas de caracteres.
         </p>
       </div>
-
-      <div class="index over">
-        <a href="#inicio"> <div>🔝Menú🏠</div> </a
-        ><a href="#introduccion"> <div>Introducción🔍</div> </a
-        ><a href="#queson"> <div>¿Qué son?🤔</div> </a
-        ><a href="#historia"> <div>Historia🕰️</div> </a
-        ><a href="#pqsirven"> <div>¿Para qué sirven?🎯</div> </a
-        ><a href="#ejemplo"> <div>Ejemplo de búsqueda🔍</div> </a
-        ><a href="#motores"> <div>¿Qué son los motores?🚀</div> </a
-        ><a href="#patmat"> <div>¿Qué es el pattern y match?🎯</div> </a
-        ><a href="#single"> <div>Single Characters🔡</div> </a
-        ><a href="#estrella"> <div>La estrella de Kleene🌟</div> </a
-        ><a href="#congrup"> <div>Contenido en el grupo🔣</div> </a
-        ><a href="#nocongrup"><div>No contenido en el grupo🚫</div></a>
-        <a href="#defrang"><div>Definiendo rangos🎲</div></a>
-        <a href="#joker"><div>Uso del joker 🃏</div></a>
-        <a href="#chacla"> <div>Character Classes🔤</div> </a>
-        <a href="#decdig"><div>Decimal digit💯</div></a>
-        <a href="#whitespace"><div>White-space characters〰️</div></a>
-        <a href="#word"> <div>Word🔠</div> </a>
-        <a href="#carriage"><div>Carriage returns🛒</div></a>
-        <a href="#quanti"> <div>Quantifiers🏁</div> </a>
-        <a href="#short"><div>Shorts Times☁</div></a>
-        <a href="#exact"><div>Exactly Times🕛</div></a>
-        <a href="#grla"><div>Greedy VS Lazy🦥</div></a>
-        <a href="#anchors"> <div>Anchors🔱</div> </a>
-        <a href="#stend"><div>Start and End String⚓</div></a>
-        <a href="#wordbound"><div>Word buoundary🚝</div></a>
-        <a href="#alternation"> <div>Alternation⚡</div> </a>
-        <a href="#gruprarus"> <div>Groups rarunos 🐸</div> </a>
-        <a href="#webrecom"> <div>🤓Webs recomendadas🤓</div> </a>
-      </div>
-
+      </article>
+      
+      
       <article class="content">
         <section>
           <h2 id="introduccion">
@@ -568,7 +576,7 @@
             <li>
               C# (.NET Regex) 🡢 C# proporciona soporte para expresiones
               regulares a través de la clase
-              System.Text.RegularExpressions.Regex.
+              System Text RegularExpressions Regex.
             </li>
             <li>
               Python (re) 🡢 Python incluye un módulo llamado re que ofrece
@@ -607,7 +615,7 @@
           <h4>¿Qué es el match (coincidencia)? ✅</h4>
           <p>
             En el contexto de las expresiones regulares un match, se refiere a
-            cada una de las instancias/coincidencias encontradas dentro del
+            cada una de las instancias o coincidencias encontradas dentro del
             texto que cumple con lo definido dentro del patrón de la expresión
             regular.
           </p>
@@ -697,7 +705,7 @@
           </p>
           <h4>Espacios en regexp 〰️</h4>
           <p class="recuadro">
-            📌 Los saltos de línea los podemos visualizar/detectar/identificar
+            📌 Los saltos de línea los podemos visualizar, detectar o identificar
             fácilmente dentro de un documento por la separación de los
             caracteres.
           </p>
