@@ -35,1244 +35,1264 @@
       </nav>
     </header>
     <main>
-      <nav class="menu-page over">
+      <nav class="menu-page">
         <ul>
           <li><a href="#inicio">Menú🏠</a></li>
-          <li><a href="#introduccion">Introducción🔍</a></li>
-          <li><a href="#queson">¿Qué son?🤔</a></li>
-          <li><a href="#historia">Historia🕰️</a></li>
-          <li><a href="#pqsirven">¿Para qué?🎯</a></li>
-          <li><a href="#ejemplo">Búsqueda🔍</a></li>
-          <li><a href="#motores">Motores🚀</a></li>
-          <li><a href="#patmat">Pattern🎯</a></li>
-          <li><a href="#single">Single🕺</a></li>
-          <li><a href="#estrella">Estrella🌟</a></li>
-          <li><a href="#congrup">Contenido📦</a></li>
-          <li><a href="#nocongrup">No Contenido🚫</a></li>
-          <li><a href="#defrang">Rangos📊</a></li>
-          <li><a href="#joker">Joker🃏</a></li>
-          <li><a href="#chacla">Classes🔤</a></li>
-          <li><a href="#decdig">Decimal💹</a></li>
-          <li><a href="#whitespace">Espacio🌌</a></li>
-          <li><a href="#word">Word✨</a></li>
-          <li><a href="#carriage">Carriage🛒</a></li>
-          <li><a href="#quanti">Quantifiers🏁</a></li>
-          <li><a href="#short">Shorts Times⏳</a></li>
-          <li><a href="#exact">Exactly Times⏱️</a></li>
-          <li><a href="#grla">Greedy - Lazy🦥</a></li>
-          <li><a href="#anchors">Anchors⚓</a></li>
-          <li><a href="#stend">String🧵</a></li>
-          <li><a href="#wordbound">Buoundary🔍</a></li>
-          <li><a href="#alternation">Alternation⚡</a></li>
-          <li><a href="#gruprarus">Raros🐸</a></li>
-          <li><a href="#webrecom">Webs🤓</a></li>
+          <li><a href="#reg-introduccion">Introducción🔍</a></li>
+          <li><a href="#reg-queson">¿Qué son?🤔</a></li>
+          <li><a href="#reg-historia">Historia🕰️</a></li>
+          <li><a href="#reg-pqsirven">¿Para qué?🎯</a></li>
+          <li><a href="#reg-ejemplo">Búsqueda🔍</a></li>
+          <li><a href="#reg-motores">Motores🚀</a></li>
+          <li><a href="#reg-patmat">Pattern🎯</a></li>
+          <li><a href="#reg-single">Single🕺</a></li>
+          <li><a href="#reg-estrella">Estrella🌟</a></li>
+          <li><a href="#reg-congrup">Contenido📦</a></li>
+          <li><a href="#reg-nocongrup">No Contenido🚫</a></li>
+          <li><a href="#reg-defrang">Rangos📊</a></li>
+          <li><a href="#reg-joker">Joker🃏</a></li>
+          <li><a href="#reg-chacla">Classes🔤</a></li>
+          <li><a href="#reg-decdig">Decimal💹</a></li>
+          <li><a href="#reg-whitespace">Espacio🌌</a></li>
+          <li><a href="#reg-word">Word✨</a></li>
+          <li><a href="#reg-carriage">Carriage🛒</a></li>
+          <li><a href="#reg-quanti">Quantifiers🏁</a></li>
+          <li><a href="#reg-short">Shorts Times⏳</a></li>
+          <li><a href="#reg-exact">Exactly Times⏱️</a></li>
+          <li><a href="#reg-grla">Greedy - Lazy🦥</a></li>
+          <li><a href="#reg-anchors">Anchors⚓</a></li>
+          <li><a href="#reg-stend">String🧵</a></li>
+          <li><a href="#reg-wordbound">Buoundary🔍</a></li>
+          <li><a href="#reg-alternation">Alternation⚡</a></li>
+          <li><a href="#reg-gruprarus">Raros🐸</a></li>
+          <li><a href="#reg-webrecom">Webs🤓</a></li>
         </ul>
       </nav>
       <article class="content">
-        <h1 class="main-title">🔍Regular Expression🧩</h1>
-        <div>
-          <p>
-            Las Expresiones Regulares, comúnmente conocidas como Regex, son una
-            herramienta poderosa para trabajar con texto. Son patrones que
-            permiten buscar, reemplazar, y manipular cadenas de caracteres con
-            gran precisión y flexibilidad. Las regex se utilizan en la
-            programación y en herramientas de procesamiento de texto para
-            realizar tareas complejas de búsqueda y edición de forma eficiente.
-          </p>
-          <p>
-            Por ejemplo, una expresión regular puede ser utilizada para validar
-            el formato de un correo electrónico, asegurándose de que cumpla con
-            un patrón estándar como usuario@dominio.com. La regex para esta
-            tarea podría ser algo así como
-            ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$, donde cada parte
-            del patrón define un aspecto específico de lo que se considera un
-            correo electrónico válido.
-          </p>
-          <p>
-            Otro uso común de las regex es la búsqueda de patrones dentro de un
-            texto, como identificar todas las fechas en un formato específico
-            dentro de un documento. Por ejemplo, para encontrar fechas en el
-            formato dd/mm/aaaa, podríamos usar la regex \b\d{2}/\d{2}/\d{4}\b,
-            que busca secuencias de dos dígitos, seguidas de una barra, otros
-            dos dígitos, otra barra, y finalmente cuatro dígitos.
-          </p>
-          <p>
-            Las regex también son útiles para dividir texto en tokens o
-            segmentos, como separar palabras o frases en un párrafo. Por
-            ejemplo, para dividir un texto por espacios y puntuación podríamos
-            usar una regex como [\s,.]+, que identifica espacios, comas y puntos
-            como delimitadores.
-          </p>
-          <p>
-            En resumen, las Expresiones Regulares son una herramienta esencial
-            para cualquier persona que trabaje con texto, ya que proporcionan un
-            método poderoso y versátil para realizar búsquedas y ediciones
-            complejas en cadenas de caracteres.
-          </p>
-        </div>
-      </article>
-      <article class="content">
-        <section>
-          <h2 id="introduccion">
-            1. Introducción a las expresiones regulares 🔍
-          </h2>
-          <h3 id="queson">1.1 - ¿Qué son las expresiones regulares? 🤔</h3>
-          <p>
-            El término de expresiones regulares nace a partir del término inglés
-            Regular Expressions, del que también surgen varias abreviaturas como
-            RegEx (de REGular EXpressions) o RegExp (de REGular EXPressions).
-          </p>
-          <p class="recuadro">
-            🧠 Las expresiones regulares (RegEx), no son un lenguaje de
-            programación, sino una serie de símbolos (expresiones o patrones)
-            que nos permitirán definir patrones de búsqueda en cadenas de texto.
-          </p>
-          <p>
-            Por tanto, no son nada más y nada menos que una "especie de
-            lenguaje" para manipular/realizar búsquedas sobre los archivos de
-            texto o simplemente sobre textos sin la necesidad de que estos estén
-            contenidos en el interior de un fichero.
-          </p>
+        <section id="reg-intro">
+          <h1 class="main-title">🔍Regular Expression🧩</h1>
+          <div>
+            <p>
+              Las Expresiones Regulares, comúnmente conocidas como Regex, son
+              una herramienta poderosa para trabajar con texto. Son patrones que
+              permiten buscar, reemplazar, y manipular cadenas de caracteres con
+              gran precisión y flexibilidad. Las regex se utilizan en la
+              programación y en herramientas de procesamiento de texto para
+              realizar tareas complejas de búsqueda y edición de forma
+              eficiente.
+            </p>
+            <p>
+              Por ejemplo, una expresión regular puede ser utilizada para
+              validar el formato de un correo electrónico, asegurándose de que
+              cumpla con un patrón estándar como usuario@dominio.com. La regex
+              para esta tarea podría ser algo así como
+              ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$, donde cada parte
+              del patrón define un aspecto específico de lo que se considera un
+              correo electrónico válido.
+            </p>
+            <p>
+              Otro uso común de las regex es la búsqueda de patrones dentro de
+              un texto, como identificar todas las fechas en un formato
+              específico dentro de un documento. Por ejemplo, para encontrar
+              fechas en el formato dd/mm/aaaa, podríamos usar la regex
+              \b\d{2}/\d{2}/\d{4}\b, que busca secuencias de dos dígitos,
+              seguidas de una barra, otros dos dígitos, otra barra, y finalmente
+              cuatro dígitos.
+            </p>
+            <p>
+              Las regex también son útiles para dividir texto en tokens o
+              segmentos, como separar palabras o frases en un párrafo. Por
+              ejemplo, para dividir un texto por espacios y puntuación podríamos
+              usar una regex como [\s,.]+, que identifica espacios, comas y
+              puntos como delimitadores.
+            </p>
+            <p>
+              En resumen, las Expresiones Regulares son una herramienta esencial
+              para cualquier persona que trabaje con texto, ya que proporcionan
+              un método poderoso y versátil para realizar búsquedas y ediciones
+              complejas en cadenas de caracteres.
+            </p>
+          </div>
         </section>
-        <section>
-          <h3 id="historia">
-            1.2 - Historia y origen de las expresiones regulares 🕰️
-          </h3>
-          <h4>Avances hasta la década de los 40 📜</h4>
-          <p>
-            La historia de las expresiones regulares se remonta a la década de
-            1940 y está estrechamente relacionada con los avances en la lógica
-            matemática y la teoría de la computación.
-          </p>
-          <p class="recuadro">
-            🤖 El desarrollo de las expresiones regulares se basó en
-            investigaciones previas sobre autómatas finitos y la formulación de
-            lenguajes formales. Durante la década de 1930 y 1940, varios
-            matemáticos y lógicos, incluyendo a Alonzo Church, Alan Turing, Emil
-            Post y otros, estaban explorando los conceptos fundamentales de la
-            teoría de la computación y la lógica matemática.
-          </p>
-          <h4>Pitts & McCulloch: creando la neurona de McCulloch - Pitts 🧠</h4>
-          <p>
-            El origen o los inicios de la creación de las expresiones regulres,
-            tiene su origen en la neurociencia y no en la ciencia de la
-            informática. Concretamente en 1943, en el estudio realizado por los
-            padres de la neurona de Pitts & McCulloch.
-          </p>
-          <p>
-            Esta investigación fue plasmada en el documento "<a
-              href="../docs/mccolloch.logical.calculus.ideas.1943.pdf"
-              target="_blank"
-              >A Logical calculus of the ideas immanent in nervous activity</a
-            >" .
-          </p>
-          <p>
-            Los avances realizados en este estudio fueron utilizados a
-            posteriori dentro del campo de la informática para en la
-            idealización de las expresiones regulares.
-          </p>
-          <h4>Kleene la "estrella" del regex 🌟</h4>
-          <p>
-            En la década de 1950, el matemático y lógico estadounidense Stephen
-            Cole Kleene introdujo el término "expresión regular" por primera vez
-            dentro de su trabajo de investigación llamado "<a
-              href="../docs/RM704.pdf"
-              target="_blank"
-              >Representation of events in nerve nets and finite automata</a
-            >" en la que refleja sus investigaciones en teoría de autómatas y
-            lenguajes formales.
-          </p>
-          <p class="recuadro">
-            🤖 Cuando hablamos de teoeía de autómatas, nos referimos a la rama
-            de la informática teórica y las matemáticas que se centran en el
-            estudio de modelos abstractos de máquinas o dispositivos que pueden
-            realizar ciertas operaciones sobre cadenas de símbolos. La teoría de
-            lenguajes formales estudia patrones de cadenas de símbolos y sus
-            propiedades mediante gramáticas y autómatas, siendo fundamental en
-            la comprensión y análisis de lenguajes de programación,
-            procesamiento de texto y verificación de software.
-          </p>
-          <p>
-            Si nos fijamos, en la primera línea podemos ver que el proyecto se
-            llama RAND y fue encargado por la U.S. AIR FORCE.
-          </p>
-          <p>
-            Las expresiones regulares son patrones textuales que describen
-            conjuntos de cadenas de caracteres. Permiten la descripción y
-            manipulación de lenguajes regulares, que son un tipo de lenguaje
-            formal en la teoría de lenguajes formales.
-          </p>
-          <p>
-            Estas expresiones se utilizan en muchos contextos, incluyendo la
-            búsqueda y manipulación de texto en editores de texto, procesamiento
-            de cadenas en programación, y en el diseño de motores de búsqueda y
-            sistemas de filtrado de información.
-          </p>
-          <p>
-            Kleene formalizó las expresiones regulares utilizando notación
-            matemática y desarrolló métodos para analizar y generar patrones de
-            texto utilizando estas expresiones.
-          </p>
-          <p>
-            Para ello, utilizó símbolos como "*" para denotar repetición y "+"
-            para denotar al menos una repetición de un símbolo o grupo de
-            símbolos en una expresión.
-          </p>
-          <p>
-            Estos símbolos y la notación matemática que desarrolló permitieron
-            describir patrones de manera más concisa y precisa.
-          </p>
-          <p class="recuadro">
-            🤖 Con el tiempo, las expresiones regulares se convirtieron en un
-            componente esencial en la programación y la manipulación de texto en
-            sistemas informáticos. Se incorporaron en varios lenguajes de
-            programación y herramientas, lo que permitió a los desarrolladores
-            realizar tareas de búsqueda, extracción y manipulación de patrones
-            de manera más eficiente. Desde entonces, las expresiones regulares
-            han evolucionado y se han vuelto ubicuas en la informática y el
-            procesamiento de datos.
-          </p>
-          <h4>Ken Thompson, finalmente implementa 💻</h4>
-          <p>
-            Durante los años 60, Ken Thompson, un científico de la computación
-            que destaca por ser uno de los creadores del sistema operativo Unix,
-            tuvo un papel muy significativo en la evolución y popularización de
-            las expresiones regulares en el ámbito de la informática.
-          </p>
-          <p>
-            Aunque Stephen Cole Kleene introdujo el concepto de expresiones
-            regulares en la teoría matemática, Ken Thompson fue quien llevó
-            estas ideas a la práctica y las integró en el mundo de la
-            programación y la informática práctica.
-          </p>
-          <p>
-            Thompson implementó las expresiones regulares dentro de un editor de
-            texto llamado “ED” lo que permitía a los usuarios realizar
-            operaciones con la finalidad de que los usuarios pudieran realizar
-            ciertas operaciones de edición de texto utilizando expresiones
-            regulares.
-          </p>
-          <p>
-            Aquí podemos ver el artículo "<a
-              href="../docs/Thompson-1968.pdf"
-              target="_blank"
-              >Regular Expression Search</a
-            >" escrito por el mismo Thompson para Bell Telephone Laboratories,
-            en el que detalla aspectos sobre el algoritmo que utilizó para
-            implementar las expresiones regulares dentro del editor de texto EQ.
-          </p>
-          <p class="recuadro">
-            🤖 Thompson realiza el hito que representa el punto de entrada de
-            las expresiones regulares RegEx dentro de la informática.
-          </p>
-          <p class="recuadro">
-            🎓 Posteriormente, Thompson trabajando junto con Dennis Ritchie,
-            desarrollaron el lenguaje de programación "grep" (que significa
-            "global regular expression print"), que permitía buscar patrones en
-            archivos y mostrar las líneas que coincidían con esas expresiones
-            regulares. La utilidad "grep" se convirtió en una herramienta
-            esencial en Unix y otros sistemas operativos basados en Unix.
-          </p>
-          <p>
-            Aunque las expresiones regulares han evolucionado a lo largo del
-            tiempo, y en algunos aspectos nada tiene que ver con las de aquel
-            entonces, tal y como podéis observar en el siguiente
-            <a href="../docs/qedman.pdf" target="_blank"
-              >memorando escrito para Bells Labs en 1970</a
-            >
-            , algunas de las características de expresiones regulares de QED se
-            siguen manteniendo a día de hoy después de tantos años.
-          </p>
-          <h4>
-            Larry Wall implementa las expresiones por primera vez dentro de Perl
-            💡
-          </h4>
-          <p>
-            Larry Wall, el creador del lenguaje Perl, introdujo expresiones
-            regulares dentro del lenguaje.
-          </p>
-          <p>
-            Consiguiendo que las expresiones regulares fueran fáciles de usar y
-            agregando características avanzadas como remplazos y capturas.
-            También popularizó conceptos como "greediness" en las coincidencias.
-          </p>
-          <p class="recuadro">
-            📌 Sus contribuciones influyeron en cómo se usan las expresiones
-            regulares en la programación.
-          </p>
-          <img
-            src="../images/regexp/padres de regex.png"
-            id="img-parentsregex"
-            alt="Padres de regex"
-          />
-        </section>
-        <section>
-          <h3 id="pqsirven">
-            1.3 - ¿Para qué sirven las expresiones regulares? 🎯
-          </h3>
-          <p>
-            Las expresiones regulares son extremadamente útiles en determinadas
-            situaciones donde necesitas realizar tareas de búsqueda y
-            manipulación de texto de manera avanzada.
-          </p>
-          <p>
-            Algunos casos típicos en los que se utilizan expresiones regulares
-            son:
-          </p>
-          <ol>
-            <li>
-              Búsqueda de patrones: Puedes buscar palabras específicas, números,
-              fechas o cualquier patrón de caracteres en un texto de manera más
-              flexible y eficiente que con una simple búsqueda de texto.
-            </li>
-            <li>
-              Validación de datos: Puedes validar si una cadena cumple con un
-              formato específico, como un número de teléfono, dirección de
-              correo electrónico, código postal, etc.
-            </li>
-            <li>
-              Extracción de información: Puedes extraer partes específicas de
-              una cadena que cumplan con un patrón determinado, como obtener
-              todos los enlaces de una página web o extraer datos estructurados
-              de un texto.
-            </li>
-            <li>
-              Reemplazo y manipulación de texto: Puedes realizar operaciones de
-              reemplazo, eliminación o modificación de texto basado en patrones
-              específicos.
-            </li>
-          </ol>
-          <p>Algunos ejemplos de todo esto podrían ser:</p>
-          <ul>
-            <li>
-              El proceso de validar si un email tiene un formato correcto o no.
-            </li>
-            <li>
-              Substituir cierta información dentro de un documento/archivo.
-            </li>
-            <li>
-              Realizar una modificación masiva sobre múltiples INSERTs de SQL.
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h3 id="ejemplo">
-            1.4 - Ejemplo de búsqueda de patrones con el comando grep y regexp
-            🔍
-          </h3>
-          <p>
-            Una vez aterrizados en la historia y en las expresiones regulares,
-            vamos a ver un pequeño ejemplo de cómo trabajar con ellas mediante
-            al comando grep solamente disponible dentro de los sistemas
-            operativos que están basados en UNIX.
-          </p>
-          <h4>¿Qué es GREP? ¿Para qué se utiliza? 💻</h4>
-          <p>
-            GREP es un comando de terminal que nos permite realizar búsquedas
-            globales.
-          </p>
-          <p>
-            GREP es el acrónimo de Global Regular Expression Print el
-            significado de estas siglas es el siguiente:
-          </p>
-          <ul>
-            <li>G 🡢 Global</li>
-            <li>RE 🡢 Regular Expressions</li>
-            <li>P 🡢 Print</li>
-          </ul>
-          <p>
-            Con GREP, por tanto, vamos a realizar una búsqueda Global, es decir,
-            sobre una serie de documentos situados en un directorio y finalmente
-            vamos a hacer un Print (impresión) de todas las líneas coincidentes
-            mediante a una Regular Expresion.
-          </p>
-          <p class="recuadro">
-            🔎 GREP destaca por ser un marcar un antes y un después, un gran
-            paso en cómo realizar búsquedas en Unix.
-          </p>
-          <h4>Trabajando desde la web una terminal UNIX 🌐</h4>
-          <p>
-            Para realizar dicha prueba, vamos a trabajar desde una emulación web
-            de un sistema UNIX.
-          </p>
-          <p>
-            Para ello, entramos en la siguiente web:
-            <a href="https://bellard.org/jslinux/" target="_blank"
-              >Entra en la web.</a
-            >
-          </p>
-          <p>
-            Una vez dentro, seleccionamos el sistema operativo con el que
-            queremos trabajar en mi caso usaré la siguiente versión:
-          </p>
-          <img
-            src="../images/regexp/terminal UNIX.png"
-            id="img-linuxandother"
-            alt="Linux or other operating systems"
-          />
-          <p>
-            Una vez dentro, como podréis observar, se nos abrirá una terminal de
-            Linux en el propio browser desde el que podremos ejecutar los
-            comandos pertinentes:
-          </p>
-          <img
-            src="../images/regexp/comandos UNIX.png"
-            id="img-comandosUnix"
-            alt="Comandos UNIX"
-          />
-          <h4>Creando el fichero a buscar 📂</h4>
-          <p>
-            Primeramente, vamos a hacer un ls (de list) para listar todos los
-            ficheros actuales:
-          </p>
-          <img src="../images/regexp/ls.png" id="img-ls" alt="" />
-          <p>
-            Posteriormente, creamos un fichero mediante el comando cat de la
-            siguiente manera:
-          </p>
-          <p>Escribimos 🡢 cat > (nombre del fichero)</p>
-          <p>
-            En su interior, vamos a escribir el contenido sobre el que
-            realizaremos la búsqueda con GREP.
-          </p>
-          <p>
-            Para salir del documento si queremos guardar los cambios utilizamos
-            Ctrl + D, o si quisiéramos salir sin guardar el documento Ctrl + C.
-          </p>
-          <p>
-            Finalmente, una vez guardado el fichero, vamos a hacer un ls para
-            mostrar si hemos creado el fichero correctamente.
-          </p>
-          <p>
-            Si ejecutamos el comando tail junto al nombre del fichero que
-            acabamos de crear, podemos mostrar el contenido del fichero que
-            acabamos de introducir en el paso anterior:
-          </p>
-          <img src="../images/regexp/ls tail.png" id="img-lstail" alt="" />
-          <img src="../images/regexp/tail.png" id="img-tail" alt="" />
-          <h4>Ejemplo de uso de GREP 📋</h4>
-          <p>
-            Primer Ejemplo, finalmente, vamos a realizar la primera búsqueda de
-            la expresión regexp más sencilla de todas, una palabra sin más. Para
-            ello, tenemos que utilizar el comando grep junto a la expresión
-            regular que vamos a buscar, en este caso la palabra David
-            entrecomillada. E inmediatamente después, la ruta sobre la que
-            queremos realizar la búsqueda.
-          </p>
-          <p class="recuadro">
-            📄 Para realizar una búsqueda global, es decir, sobre todos los
-            directorios utilizamos *
-          </p>
-          <p>
-            Si realizamos la búsqueda con todos los caracteres en minúsculas,
-            fijaros que la consola no imprimirá ningún resultado:
-          </p>
-          <img src="../images/regexp/grep1.png" id="img-grep1" alt="" />
-          <p>
-            En cambio, si repetimos la misma operación con el nombre con la D en
-            mayúscula, ahora si que podemos observar que nos devuelve el
-            resultado correctamente:
-          </p>
-          <img src="../images/regexp/grep2.png" id="img-grep2" alt="" />
-          <p>
-            Segundo Ejemplo, si queremos que la búsqueda no sea case-sensitive,
-            es decir, a mayúsculas y minúsculas podemos añadir el flag (la
-            bandera) -i. Vamos a verlo:
-          </p>
-          <img src="../images/regexp/grep3.png" id="img-grep3" alt="" />
-          <p>
-            Tercer Ejemplo, Si quisiéramos buscar los ficheros que empiecen por
-            Hola, haríamos lo siguiente:
-          </p>
-          <img src="../images/regexp/grep4.png" id="img-grep4" alt="" />
-          <p>
-            Cuarto Ejemplo, Si quisiéramos buscar los ficheros que acaben por D
-            haríamos lo siguiente:
-          </p>
-          <img src="../images/regexp/grep5.png" id="img-grep5" alt="" />
-        </section>
-        <section>
-          <h3 id="motores">
-            1.5 - ¿Qué son los motores de ejecución de regexp? Y tipos engines
-            de regexp 🚀
-          </h3>
-          <h4>¿Qué son los motores de expresiones regulares? 🧩</h4>
-          <p>
-            Los motores (engines) de expresiones regulares, son programas o
-            bibliotecas que implementan la capacidad de realizar procesamiento e
-            interpretación de patrones de expresiones regulares.
-          </p>
-          <p>
-            Estos modelos permiten buscar, comparar y manipular texto basándose
-            en patrones definidos por las expresiones regulares.
-          </p>
-          <h4>Distintos motores de expresiones regulares 🧰</h4>
-          <p>
-            Los motores de expresiones regulares se encuentran tanto en
-            lenguajes de programación (como Java, Python, JavaScript, Perl, PHP,
-            .NET, etc.) como herramientas de software (Eclipse, Visual Studio
-            Code, etc.) e incluso en sistemas operativos.
-          </p>
-          <p class="recuadro">
-            🔧 Cada motor puede tener su propia sintaxis y características
-            específicas para expresiones regulares, pero la idea general es la
-            misma: utilizar patrones para realizar operaciones complejas en
-            cadenas de texto.
-          </p>
-          <p>
-            Algunos de los principales motores para ejecutar expresiones
-            regulares son:
-          </p>
-          <ol>
-            <li>
-              Oniguruma 🡢 Es un motor de expresiones regulares ampliamente
-              utilizado que se encuentra en Visual Studio Code, TextMate, Ruby,
-              PHP y otros. <br />
-              Es conocido por su soporte completo de expresiones regulares con
-              muchas características y extensiones.
-            </li>
-            <li>
-              Java (java.util.regexp) 🡢 Proporciona java.util.regex, un
-              paquete/librería que contiene un conjunto de clases que nos va a
-              proporcionar un motor de expresiones regulares para trabajar con
-              expresiones regulares dentro de Java. Entre las clases más
-              utilizadas se encuentra Pattern y Matcher.
-              <br />
-              Estas clases permiten compilar expresiones regulares, buscar
-              coincidencias y realizar operaciones de reemplazo en cadenas.
-            </li>
-            <li>
-              JavaScript (Regexp) 🡢 Los navegadores y Node.js utilizan el motor
-              de expresiones regulares incorporado en JavaScript, que se accede
-              a través de la clase RegExp. Por lo que podemos utilizar
-              expresiones regulares de forma nativa en JavaScript para realizar
-              búsquedas y reemplazos en cadenas de texto.
-            </li>
-            <li>
-              GNU Grep (grep) 🡢 grep es una herramienta de línea de comandos
-              disponible en sistemas Unix como por ejemplo Linux, que nos
-              permite realizar búsquedas de patrones utilizando expresiones
+        <section id="reg-introduccion">
+          <h2>1. Introducción a las expresiones regulares 🔍</h2>
+          <div id="reg-queson">
+            <h3>1.1 - ¿Qué son las expresiones regulares? 🤔</h3>
+            <p>
+              El término de expresiones regulares nace a partir del término
+              inglés Regular Expressions, del que también surgen varias
+              abreviaturas como RegEx (de REGular EXpressions) o RegExp (de
+              REGular EXPressions).
+            </p>
+            <p class="recuadro">
+              🧠 Las expresiones regulares (RegEx), no son un lenguaje de
+              programación, sino una serie de símbolos (expresiones o patrones)
+              que nos permitirán definir patrones de búsqueda en cadenas de
+              texto.
+            </p>
+            <p>
+              Por tanto, no son nada más y nada menos que una "especie de
+              lenguaje" para manipular/realizar búsquedas sobre los archivos de
+              texto o simplemente sobre textos sin la necesidad de que estos
+              estén contenidos en el interior de un fichero.
+            </p>
+          </div>
+          <div id="reg-historia">
+            <h3>1.2 - Historia y origen de las expresiones regulares 🕰️</h3>
+            <h4>Avances hasta la década de los 40 📜</h4>
+            <p>
+              La historia de las expresiones regulares se remonta a la década de
+              1940 y está estrechamente relacionada con los avances en la lógica
+              matemática y la teoría de la computación.
+            </p>
+            <p class="recuadro">
+              🤖 El desarrollo de las expresiones regulares se basó en
+              investigaciones previas sobre autómatas finitos y la formulación
+              de lenguajes formales. Durante la década de 1930 y 1940, varios
+              matemáticos y lógicos, incluyendo a Alonzo Church, Alan Turing,
+              Emil Post y otros, estaban explorando los conceptos fundamentales
+              de la teoría de la computación y la lógica matemática.
+            </p>
+            <h4>
+              Pitts & McCulloch: creando la neurona de McCulloch - Pitts 🧠
+            </h4>
+            <p>
+              El origen o los inicios de la creación de las expresiones
+              regulres, tiene su origen en la neurociencia y no en la ciencia de
+              la informática. Concretamente en 1943, en el estudio realizado por
+              los padres de la neurona de Pitts & McCulloch.
+            </p>
+            <p>
+              Esta investigación fue plasmada en el documento "<a
+                href="../docs/mccolloch.logical.calculus.ideas.1943.pdf"
+                target="_blank"
+                >A Logical calculus of the ideas immanent in nervous activity</a
+              >" .
+            </p>
+            <p>
+              Los avances realizados en este estudio fueron utilizados a
+              posteriori dentro del campo de la informática para en la
+              idealización de las expresiones regulares.
+            </p>
+            <h4>Kleene la "estrella" del regex 🌟</h4>
+            <p>
+              En la década de 1950, el matemático y lógico estadounidense
+              Stephen Cole Kleene introdujo el término "expresión regular" por
+              primera vez dentro de su trabajo de investigación llamado "<a
+                href="../docs/RM704.pdf"
+                target="_blank"
+                >Representation of events in nerve nets and finite automata</a
+              >" en la que refleja sus investigaciones en teoría de autómatas y
+              lenguajes formales.
+            </p>
+            <p class="recuadro">
+              🤖 Cuando hablamos de teoeía de autómatas, nos referimos a la rama
+              de la informática teórica y las matemáticas que se centran en el
+              estudio de modelos abstractos de máquinas o dispositivos que
+              pueden realizar ciertas operaciones sobre cadenas de símbolos. La
+              teoría de lenguajes formales estudia patrones de cadenas de
+              símbolos y sus propiedades mediante gramáticas y autómatas, siendo
+              fundamental en la comprensión y análisis de lenguajes de
+              programación, procesamiento de texto y verificación de software.
+            </p>
+            <p>
+              Si nos fijamos, en la primera línea podemos ver que el proyecto se
+              llama RAND y fue encargado por la U.S. AIR FORCE.
+            </p>
+            <p>
+              Las expresiones regulares son patrones textuales que describen
+              conjuntos de cadenas de caracteres. Permiten la descripción y
+              manipulación de lenguajes regulares, que son un tipo de lenguaje
+              formal en la teoría de lenguajes formales.
+            </p>
+            <p>
+              Estas expresiones se utilizan en muchos contextos, incluyendo la
+              búsqueda y manipulación de texto en editores de texto,
+              procesamiento de cadenas en programación, y en el diseño de
+              motores de búsqueda y sistemas de filtrado de información.
+            </p>
+            <p>
+              Kleene formalizó las expresiones regulares utilizando notación
+              matemática y desarrolló métodos para analizar y generar patrones
+              de texto utilizando estas expresiones.
+            </p>
+            <p>
+              Para ello, utilizó símbolos como "*" para denotar repetición y "+"
+              para denotar al menos una repetición de un símbolo o grupo de
+              símbolos en una expresión.
+            </p>
+            <p>
+              Estos símbolos y la notación matemática que desarrolló permitieron
+              describir patrones de manera más concisa y precisa.
+            </p>
+            <p class="recuadro">
+              🤖 Con el tiempo, las expresiones regulares se convirtieron en un
+              componente esencial en la programación y la manipulación de texto
+              en sistemas informáticos. Se incorporaron en varios lenguajes de
+              programación y herramientas, lo que permitió a los desarrolladores
+              realizar tareas de búsqueda, extracción y manipulación de patrones
+              de manera más eficiente. Desde entonces, las expresiones regulares
+              han evolucionado y se han vuelto ubicuas en la informática y el
+              procesamiento de datos.
+            </p>
+            <h4>Ken Thompson, finalmente implementa 💻</h4>
+            <p>
+              Durante los años 60, Ken Thompson, un científico de la computación
+              que destaca por ser uno de los creadores del sistema operativo
+              Unix, tuvo un papel muy significativo en la evolución y
+              popularización de las expresiones regulares en el ámbito de la
+              informática.
+            </p>
+            <p>
+              Aunque Stephen Cole Kleene introdujo el concepto de expresiones
+              regulares en la teoría matemática, Ken Thompson fue quien llevó
+              estas ideas a la práctica y las integró en el mundo de la
+              programación y la informática práctica.
+            </p>
+            <p>
+              Thompson implementó las expresiones regulares dentro de un editor
+              de texto llamado “ED” lo que permitía a los usuarios realizar
+              operaciones con la finalidad de que los usuarios pudieran realizar
+              ciertas operaciones de edición de texto utilizando expresiones
               regulares.
-            </li>
-            <li>
-              PCRE (Perl Compatible Regular Expressions) 🡢 PCRE es un motor de
-              expresiones regulares compatible con Perl, que además se utiliza
-              en lenguajes como PHP, Python (a través del módulo re), y otros.
-              Ofrece una amplia gama de funcionalidades, incluyendo expresiones
-              regulares recursivas.
-            </li>
-            <li>
-              PHP (PCRE) 🡢 PHP utiliza el motor PCRE para su soporte de
-              expresiones regulares. Puedes utilizar la función preg_match() y
-              otras funciones relacionadas para trabajar con expresiones
-              regulares.
-            </li>
-            <li>
-              Ruby (Regexp) 🡢 Ruby proporciona soporte nativo para expresiones
-              regulares a través de la clase Regexp.
-            </li>
-            <li>
-              C# (.NET Regex) 🡢 C# proporciona soporte para expresiones
-              regulares a través de la clase System Text RegularExpressions
-              Regex.
-            </li>
-            <li>
-              Python (re) 🡢 Python incluye un módulo llamado re que ofrece
-              soporte para expresiones regulares. Este módulo proporciona
-              funciones para trabajar con expresiones regulares que nos
-              permitirán compilar expresiones regexp, buscar coincidencias y
-              realizar cambios de manera similar a Java.
-            </li>
-          </ol>
-          <p class="recuadro">
-            ℹ Estos son solo algunos ejemplos de los motores de expresiones
-            regulares disponibles en diferentes lenguajes y herramientas. Cada
-            uno de ellos puede tener diferencias en la sintaxis o en las
-            características admitidas, pero todos están diseñados para
-            proporcionar una forma poderosa de realizar operaciones avanzadas de
-            búsqueda y manipulación de texto basadas en patrones.
-          </p>
-          <h3 id="patmat">1.6 - ¿Qué es el patrón/pattern y el match? 🎯</h3>
-          <h4>¿Qué es el patrón, pattern? 🧩</h4>
-          <p>
-            Cuando hablamos de patrón o de pattern, dentro del contexto de las
-            expresiones regulares, es a la expresión, es decir, la secuencia de
-            caracteres mediante la cual intentaremos realizar un match dentro de
-            un fichero gracias a un motor de expresiones regulares.
-          </p>
-          <p class="recuadro">
-            🧐 Cada carácter definido dentro del patrón representa una
-            instrucción para buscar cierto tipo de contenido en el texto. Por
-            tanto, el patrón no es nada más que una combinación de caracteres
-            literales y caracteres especiales que tienen ciertos significados
-            específicos. Los cuales formarán la expresión regular a partir de la
-            cual buscaremos las coincidencias (matchings) dentro de un texto.
-            Dicho patrón que buscará si una determinada expresión regular existe
-            dentro de un determinado texto.
-          </p>
-          <h4>¿Qué es el match (coincidencia)? ✅</h4>
-          <p>
-            En el contexto de las expresiones regulares un match, se refiere a
-            cada una de las instancias o coincidencias encontradas dentro del
-            texto que cumple con lo definido dentro del patrón de la expresión
-            regular.
-          </p>
-          <p>
-            En otras palabras, cuando aplicas una expresión regular, es decir,
-            un patrón generando una cadena de texto, y esa cadena de texto
-            buscará en el interior de un texto de tal forma que, cada resultado
-            encontrado será una coincidencia o un "match".
-          </p>
-          <p class="recuadro">
-            📌^\d{3} 🡢 Este patrón significa que selecciona todas las líneas que
-            empiecen por 3 dígitos.
-          </p>
-          <p>
-            En resumen, el patrón en una expresión regular define cómo se busca
-            o manipula el texto. Contiene una serie de caracteres que
-            representan reglas específicas para encontrar patrones particulares
-            en las cadenas de texto.
-          </p>
-          <h4>Instalando plugins para VSC ⚙️</h4>
-          <p>
-            Existen determinadas expresiones regulares que pueden llegar a ser
-            muy complejas y cuya lectura puede ser todo un reto.
-          </p>
-          <p>
-            Un ejemplo de ello es General Email Regex (RFC 5322 Official
-            Standard) la cual nos permite realizar la validación de un email con
-            un 99,99% de eficiencia:
-          </p>
-          <p>
-            >(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"
-            (?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b
-            \x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:
-            [a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}
-            (?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\
-            x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])
-          </p>
-          <p>
-            Si tenemos que interpretar dicha expresión sin ayuda alguna, esto
-            sería una tarea muy muy muy compleja.
-          </p>
-          <p>
-            Por ello, tenemos determinadas web y plugins que nos permiten
-            simplificar en media de lo posible determinadas tareas con regexp.
-            Un ejemplo de ello es la siguiente web:
-            <a href="https://jex.im/regulex/" target="_blank">Enlace de web</a>
-          </p>
-          <p class="recuadro">
-            🏗 Si pegamos el código de la expresión regular podemos generar un
-            esquema que nos permitirá entender que hace la expresión.
-          </p>
-          <img src="../images/regexp/img jex.png" id="img-jex" alt="" />
+            </p>
+            <p>
+              Aquí podemos ver el artículo "<a
+                href="../docs/Thompson-1968.pdf"
+                target="_blank"
+                >Regular Expression Search</a
+              >" escrito por el mismo Thompson para Bell Telephone Laboratories,
+              en el que detalla aspectos sobre el algoritmo que utilizó para
+              implementar las expresiones regulares dentro del editor de texto
+              EQ.
+            </p>
+            <p class="recuadro">
+              🤖 Thompson realiza el hito que representa el punto de entrada de
+              las expresiones regulares RegEx dentro de la informática.
+            </p>
+            <p class="recuadro">
+              🎓 Posteriormente, Thompson trabajando junto con Dennis Ritchie,
+              desarrollaron el lenguaje de programación "grep" (que significa
+              "global regular expression print"), que permitía buscar patrones
+              en archivos y mostrar las líneas que coincidían con esas
+              expresiones regulares. La utilidad "grep" se convirtió en una
+              herramienta esencial en Unix y otros sistemas operativos basados
+              en Unix.
+            </p>
+            <p>
+              Aunque las expresiones regulares han evolucionado a lo largo del
+              tiempo, y en algunos aspectos nada tiene que ver con las de aquel
+              entonces, tal y como podéis observar en el siguiente
+              <a href="../docs/qedman.pdf" target="_blank"
+                >memorando escrito para Bells Labs en 1970</a
+              >
+              , algunas de las características de expresiones regulares de QED
+              se siguen manteniendo a día de hoy después de tantos años.
+            </p>
+            <h4>
+              Larry Wall implementa las expresiones por primera vez dentro de
+              Perl 💡
+            </h4>
+            <p>
+              Larry Wall, el creador del lenguaje Perl, introdujo expresiones
+              regulares dentro del lenguaje.
+            </p>
+            <p>
+              Consiguiendo que las expresiones regulares fueran fáciles de usar
+              y agregando características avanzadas como remplazos y capturas.
+              También popularizó conceptos como "greediness" en las
+              coincidencias.
+            </p>
+            <p class="recuadro">
+              📌 Sus contribuciones influyeron en cómo se usan las expresiones
+              regulares en la programación.
+            </p>
+            <img
+              src="../images/regexp/padres de regex.png"
+              id="img-parentsregex"
+              alt="Padres de regex"
+            />
+          </div>
+          <div id="reg-pqsirven">
+            <h3>1.3 - ¿Para qué sirven las expresiones regulares? 🎯</h3>
+            <p>
+              Las expresiones regulares son extremadamente útiles en
+              determinadas situaciones donde necesitas realizar tareas de
+              búsqueda y manipulación de texto de manera avanzada.
+            </p>
+            <p>
+              Algunos casos típicos en los que se utilizan expresiones regulares
+              son:
+            </p>
+            <ol>
+              <li>
+                Búsqueda de patrones: Puedes buscar palabras específicas,
+                números, fechas o cualquier patrón de caracteres en un texto de
+                manera más flexible y eficiente que con una simple búsqueda de
+                texto.
+              </li>
+              <li>
+                Validación de datos: Puedes validar si una cadena cumple con un
+                formato específico, como un número de teléfono, dirección de
+                correo electrónico, código postal, etc.
+              </li>
+              <li>
+                Extracción de información: Puedes extraer partes específicas de
+                una cadena que cumplan con un patrón determinado, como obtener
+                todos los enlaces de una página web o extraer datos
+                estructurados de un texto.
+              </li>
+              <li>
+                Reemplazo y manipulación de texto: Puedes realizar operaciones
+                de reemplazo, eliminación o modificación de texto basado en
+                patrones específicos.
+              </li>
+            </ol>
+            <p>Algunos ejemplos de todo esto podrían ser:</p>
+            <ul>
+              <li>
+                El proceso de validar si un email tiene un formato correcto o
+                no.
+              </li>
+              <li>
+                Substituir cierta información dentro de un documento/archivo.
+              </li>
+              <li>
+                Realizar una modificación masiva sobre múltiples INSERTs de SQL.
+              </li>
+            </ul>
+          </div>
+          <div id="reg-ejemplo">
+            <h3>
+              1.4 - Ejemplo de búsqueda de patrones con el comando grep y regexp
+              🔍
+            </h3>
+            <p>
+              Una vez aterrizados en la historia y en las expresiones regulares,
+              vamos a ver un pequeño ejemplo de cómo trabajar con ellas mediante
+              al comando grep solamente disponible dentro de los sistemas
+              operativos que están basados en UNIX.
+            </p>
+            <h4>¿Qué es GREP? ¿Para qué se utiliza? 💻</h4>
+            <p>
+              GREP es un comando de terminal que nos permite realizar búsquedas
+              globales.
+            </p>
+            <p>
+              GREP es el acrónimo de Global Regular Expression Print el
+              significado de estas siglas es el siguiente:
+            </p>
+            <ul>
+              <li>G 🡢 Global</li>
+              <li>RE 🡢 Regular Expressions</li>
+              <li>P 🡢 Print</li>
+            </ul>
+            <p>
+              Con GREP, por tanto, vamos a realizar una búsqueda Global, es
+              decir, sobre una serie de documentos situados en un directorio y
+              finalmente vamos a hacer un Print (impresión) de todas las líneas
+              coincidentes mediante a una Regular Expresion.
+            </p>
+            <p class="recuadro">
+              🔎 GREP destaca por ser un marcar un antes y un después, un gran
+              paso en cómo realizar búsquedas en Unix.
+            </p>
+            <h4>Trabajando desde la web una terminal UNIX 🌐</h4>
+            <p>
+              Para realizar dicha prueba, vamos a trabajar desde una emulación
+              web de un sistema UNIX.
+            </p>
+            <p>
+              Para ello, entramos en la siguiente web:
+              <a href="https://bellard.org/jslinux/" target="_blank"
+                >Entra en la web.</a
+              >
+            </p>
+            <p>
+              Una vez dentro, seleccionamos el sistema operativo con el que
+              queremos trabajar en mi caso usaré la siguiente versión:
+            </p>
+            <img
+              src="../images/regexp/terminal UNIX.png"
+              id="img-linuxandother"
+              alt="Linux or other operating systems"
+            />
+            <p>
+              Una vez dentro, como podréis observar, se nos abrirá una terminal
+              de Linux en el propio browser desde el que podremos ejecutar los
+              comandos pertinentes:
+            </p>
+            <img
+              src="../images/regexp/comandos UNIX.png"
+              id="img-comandosUnix"
+              alt="Comandos UNIX"
+            />
+            <h4>Creando el fichero a buscar 📂</h4>
+            <p>
+              Primeramente, vamos a hacer un ls (de list) para listar todos los
+              ficheros actuales:
+            </p>
+            <img src="../images/regexp/ls.png" id="img-ls" alt="" />
+            <p>
+              Posteriormente, creamos un fichero mediante el comando cat de la
+              siguiente manera:
+            </p>
+            <p>Escribimos 🡢 cat > (nombre del fichero)</p>
+            <p>
+              En su interior, vamos a escribir el contenido sobre el que
+              realizaremos la búsqueda con GREP.
+            </p>
+            <p>
+              Para salir del documento si queremos guardar los cambios
+              utilizamos Ctrl + D, o si quisiéramos salir sin guardar el
+              documento Ctrl + C.
+            </p>
+            <p>
+              Finalmente, una vez guardado el fichero, vamos a hacer un ls para
+              mostrar si hemos creado el fichero correctamente.
+            </p>
+            <p>
+              Si ejecutamos el comando tail junto al nombre del fichero que
+              acabamos de crear, podemos mostrar el contenido del fichero que
+              acabamos de introducir en el paso anterior:
+            </p>
+            <img src="../images/regexp/ls tail.png" id="img-lstail" alt="" />
+            <img src="../images/regexp/tail.png" id="img-tail" alt="" />
+            <h4>Ejemplo de uso de GREP 📋</h4>
+            <p>
+              Primer Ejemplo, finalmente, vamos a realizar la primera búsqueda
+              de la expresión regexp más sencilla de todas, una palabra sin más.
+              Para ello, tenemos que utilizar el comando grep junto a la
+              expresión regular que vamos a buscar, en este caso la palabra
+              David entrecomillada. E inmediatamente después, la ruta sobre la
+              que queremos realizar la búsqueda.
+            </p>
+            <p class="recuadro">
+              📄 Para realizar una búsqueda global, es decir, sobre todos los
+              directorios utilizamos *
+            </p>
+            <p>
+              Si realizamos la búsqueda con todos los caracteres en minúsculas,
+              fijaros que la consola no imprimirá ningún resultado:
+            </p>
+            <img src="../images/regexp/grep1.png" id="img-grep1" alt="" />
+            <p>
+              En cambio, si repetimos la misma operación con el nombre con la D
+              en mayúscula, ahora si que podemos observar que nos devuelve el
+              resultado correctamente:
+            </p>
+            <img src="../images/regexp/grep2.png" id="img-grep2" alt="" />
+            <p>
+              Segundo Ejemplo, si queremos que la búsqueda no sea
+              case-sensitive, es decir, a mayúsculas y minúsculas podemos añadir
+              el flag (la bandera) -i. Vamos a verlo:
+            </p>
+            <img src="../images/regexp/grep3.png" id="img-grep3" alt="" />
+            <p>
+              Tercer Ejemplo, Si quisiéramos buscar los ficheros que empiecen
+              por Hola, haríamos lo siguiente:
+            </p>
+            <img src="../images/regexp/grep4.png" id="img-grep4" alt="" />
+            <p>
+              Cuarto Ejemplo, Si quisiéramos buscar los ficheros que acaben por
+              D haríamos lo siguiente:
+            </p>
+            <img src="../images/regexp/grep5.png" id="img-grep5" alt="" />
+          </div>
+          <div id="reg-motores">
+            <h3>
+              1.5 - ¿Qué son los motores de ejecución de regexp? Y tipos engines
+              de regexp 🚀
+            </h3>
+            <h4>¿Qué son los motores de expresiones regulares? 🧩</h4>
+            <p>
+              Los motores (engines) de expresiones regulares, son programas o
+              bibliotecas que implementan la capacidad de realizar procesamiento
+              e interpretación de patrones de expresiones regulares.
+            </p>
+            <p>
+              Estos modelos permiten buscar, comparar y manipular texto
+              basándose en patrones definidos por las expresiones regulares.
+            </p>
+            <h4>Distintos motores de expresiones regulares 🧰</h4>
+            <p>
+              Los motores de expresiones regulares se encuentran tanto en
+              lenguajes de programación (como Java, Python, JavaScript, Perl,
+              PHP, .NET, etc.) como herramientas de software (Eclipse, Visual
+              Studio Code, etc.) e incluso en sistemas operativos.
+            </p>
+            <p class="recuadro">
+              🔧 Cada motor puede tener su propia sintaxis y características
+              específicas para expresiones regulares, pero la idea general es la
+              misma: utilizar patrones para realizar operaciones complejas en
+              cadenas de texto.
+            </p>
+            <p>
+              Algunos de los principales motores para ejecutar expresiones
+              regulares son:
+            </p>
+            <ol>
+              <li>
+                Oniguruma 🡢 Es un motor de expresiones regulares ampliamente
+                utilizado que se encuentra en Visual Studio Code, TextMate,
+                Ruby, PHP y otros. <br />
+                Es conocido por su soporte completo de expresiones regulares con
+                muchas características y extensiones.
+              </li>
+              <li>
+                Java (java.util.regexp) 🡢 Proporciona java.util.regex, un
+                paquete/librería que contiene un conjunto de clases que nos va a
+                proporcionar un motor de expresiones regulares para trabajar con
+                expresiones regulares dentro de Java. Entre las clases más
+                utilizadas se encuentra Pattern y Matcher.
+                <br />
+                Estas clases permiten compilar expresiones regulares, buscar
+                coincidencias y realizar operaciones de reemplazo en cadenas.
+              </li>
+              <li>
+                JavaScript (Regexp) 🡢 Los navegadores y Node.js utilizan el
+                motor de expresiones regulares incorporado en JavaScript, que se
+                accede a través de la clase RegExp. Por lo que podemos utilizar
+                expresiones regulares de forma nativa en JavaScript para
+                realizar búsquedas y reemplazos en cadenas de texto.
+              </li>
+              <li>
+                GNU Grep (grep) 🡢 grep es una herramienta de línea de comandos
+                disponible en sistemas Unix como por ejemplo Linux, que nos
+                permite realizar búsquedas de patrones utilizando expresiones
+                regulares.
+              </li>
+              <li>
+                PCRE (Perl Compatible Regular Expressions) 🡢 PCRE es un motor de
+                expresiones regulares compatible con Perl, que además se utiliza
+                en lenguajes como PHP, Python (a través del módulo re), y otros.
+                Ofrece una amplia gama de funcionalidades, incluyendo
+                expresiones regulares recursivas.
+              </li>
+              <li>
+                PHP (PCRE) 🡢 PHP utiliza el motor PCRE para su soporte de
+                expresiones regulares. Puedes utilizar la función preg_match() y
+                otras funciones relacionadas para trabajar con expresiones
+                regulares.
+              </li>
+              <li>
+                Ruby (Regexp) 🡢 Ruby proporciona soporte nativo para expresiones
+                regulares a través de la clase Regexp.
+              </li>
+              <li>
+                C# (.NET Regex) 🡢 C# proporciona soporte para expresiones
+                regulares a través de la clase System Text RegularExpressions
+                Regex.
+              </li>
+              <li>
+                Python (re) 🡢 Python incluye un módulo llamado re que ofrece
+                soporte para expresiones regulares. Este módulo proporciona
+                funciones para trabajar con expresiones regulares que nos
+                permitirán compilar expresiones regexp, buscar coincidencias y
+                realizar cambios de manera similar a Java.
+              </li>
+            </ol>
+            <p class="recuadro">
+              ℹ Estos son solo algunos ejemplos de los motores de expresiones
+              regulares disponibles en diferentes lenguajes y herramientas. Cada
+              uno de ellos puede tener diferencias en la sintaxis o en las
+              características admitidas, pero todos están diseñados para
+              proporcionar una forma poderosa de realizar operaciones avanzadas
+              de búsqueda y manipulación de texto basadas en patrones.
+            </p>
+          </div>
+          <div id="reg-patmat">
+            <h3>1.6 - ¿Qué es el patrón/pattern y el match? 🎯</h3>
+            <h4>¿Qué es el patrón, pattern? 🧩</h4>
+            <p>
+              Cuando hablamos de patrón o de pattern, dentro del contexto de las
+              expresiones regulares, es a la expresión, es decir, la secuencia
+              de caracteres mediante la cual intentaremos realizar un match
+              dentro de un fichero gracias a un motor de expresiones regulares.
+            </p>
+            <p class="recuadro">
+              🧐 Cada carácter definido dentro del patrón representa una
+              instrucción para buscar cierto tipo de contenido en el texto. Por
+              tanto, el patrón no es nada más que una combinación de caracteres
+              literales y caracteres especiales que tienen ciertos significados
+              específicos. Los cuales formarán la expresión regular a partir de
+              la cual buscaremos las coincidencias (matchings) dentro de un
+              texto. Dicho patrón que buscará si una determinada expresión
+              regular existe dentro de un determinado texto.
+            </p>
+            <h4>¿Qué es el match (coincidencia)? ✅</h4>
+            <p>
+              En el contexto de las expresiones regulares un match, se refiere a
+              cada una de las instancias o coincidencias encontradas dentro del
+              texto que cumple con lo definido dentro del patrón de la expresión
+              regular.
+            </p>
+            <p>
+              En otras palabras, cuando aplicas una expresión regular, es decir,
+              un patrón generando una cadena de texto, y esa cadena de texto
+              buscará en el interior de un texto de tal forma que, cada
+              resultado encontrado será una coincidencia o un "match".
+            </p>
+            <p class="recuadro">
+              📌^\d{3} 🡢 Este patrón significa que selecciona todas las líneas
+              que empiecen por 3 dígitos.
+            </p>
+            <p>
+              En resumen, el patrón en una expresión regular define cómo se
+              busca o manipula el texto. Contiene una serie de caracteres que
+              representan reglas específicas para encontrar patrones
+              particulares en las cadenas de texto.
+            </p>
+            <h4>Instalando plugins para VSC ⚙️</h4>
+            <p>
+              Existen determinadas expresiones regulares que pueden llegar a ser
+              muy complejas y cuya lectura puede ser todo un reto.
+            </p>
+            <p>
+              Un ejemplo de ello es General Email Regex (RFC 5322 Official
+              Standard) la cual nos permite realizar la validación de un email
+              con un 99,99% de eficiencia:
+            </p>
+            <p>
+              >(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"
+              (?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b
+              \x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:
+              [a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}
+              (?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\
+              x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])
+            </p>
+            <p>
+              Si tenemos que interpretar dicha expresión sin ayuda alguna, esto
+              sería una tarea muy muy muy compleja.
+            </p>
+            <p>
+              Por ello, tenemos determinadas web y plugins que nos permiten
+              simplificar en media de lo posible determinadas tareas con regexp.
+              Un ejemplo de ello es la siguiente web:
+              <a href="https://jex.im/regulex/" target="_blank"
+                >Enlace de web</a
+              >
+            </p>
+            <p class="recuadro">
+              🏗 Si pegamos el código de la expresión regular podemos generar un
+              esquema que nos permitirá entender que hace la expresión.
+            </p>
+            <img src="../images/regexp/img jex.png" id="img-jex" alt="" />
+          </div>
         </section>
-      </article>
-      <article class="content">
-        <section>
-          <h2 id="single">2. Single Characters 🔡</h2>
-          <h3 id="estrella">2.1 - La estrella de Kleene * 🌟</h3>
-          <h4>
-            ¿Qué es la estrella de Kleene dentro de las expresiones regulares?
-            🌟
-          </h4>
-          <p>
-            La estrella de Kleene (*) es el meta carácter más potente de todos
-            con el que la comunidad trata de homenajear de Kleene al que en
-            general consideran “el padre” de las expresiones regulares.
-          </p>
-          <p class="recuadro">
-            📌 Por el momento solamente vamos a ver solamente uno de sus usos.
-            Aunque me gustaría matizar que con la estrella de Kleene podemos
-            realizar también otras funcionalidades que ya veremos cuando
-            lleguemos a dicho apartado.
-          </p>
-          <p>
-            /* 🡢 Seleccionamos cualquier carácter (incluido el salto de línea
-            \n)
-          </p>
-          <h4>Saltos de línea en regexp ↵</h4>
-          <p>
-            Para poder visualizarlos, podemos ayudarnos de regexp. Para ello,
-            realizamos un \n podemos matchear todos los saltos de línea que hay
-            en nuestro documento.
-          </p>
-          <p class="recuadro">
-            📌 Los saltos de línea no se pueden visualizar a golpe de ojo dentro
-            de un documento.
-          </p>
-          <h4>Espacios en regexp 〰️</h4>
-          <p class="recuadro">
-            📌 Los saltos de línea los podemos visualizar, detectar o
-            identificar fácilmente dentro de un documento por la separación de
-            los caracteres.
-          </p>
-          <p>
-            Además de ello, si seleccionamos el texto al completo en el interior
-            del IDE (Visual Studio Code), podemos observar como aparece una
-            especie de puntito · el cual representa cada uno de los espacios.
-          </p>
-          <p>
-            Si utilizamos \s o en su defecto escribimos un espacio sin nada más,
-            podemos ver que hacemos un match de todos los espacios del
-            documento.
-          </p>
-          <h4>Ejemplo de un uso de la estrella de Kleene 🌠</h4>
-          <p>
-            En cambio, si utilizamos la estrella de Kleene, podemos ver que se
-            seleccionan todos los caracteres inclusive los saltos de línea y
-            espacios.
-          </p>
-          <p class="recuadro">
-            📌 Por ello, decimos que la estrella de Kleene es el meta carácter
-            más poderoso de todos, engloba todo incluso los saltos de línea o
-            espacios.
-          </p>
+        <section id="reg-single">
+          <h2>2. Single Characters 🔡</h2>
+          <div id="reg-estrella">
+            <h3>2.1 - La estrella de Kleene * 🌟</h3>
+            <h4>
+              ¿Qué es la estrella de Kleene dentro de las expresiones regulares?
+              🌟
+            </h4>
+            <p>
+              La estrella de Kleene (*) es el meta carácter más potente de todos
+              con el que la comunidad trata de homenajear de Kleene al que en
+              general consideran “el padre” de las expresiones regulares.
+            </p>
+            <p class="recuadro">
+              📌 Por el momento solamente vamos a ver solamente uno de sus usos.
+              Aunque me gustaría matizar que con la estrella de Kleene podemos
+              realizar también otras funcionalidades que ya veremos cuando
+              lleguemos a dicho apartado.
+            </p>
+            <p>
+              /* 🡢 Seleccionamos cualquier carácter (incluido el salto de línea
+              \n)
+            </p>
+            <h4>Saltos de línea en regexp ↵</h4>
+            <p>
+              Para poder visualizarlos, podemos ayudarnos de regexp. Para ello,
+              realizamos un \n podemos matchear todos los saltos de línea que
+              hay en nuestro documento.
+            </p>
+            <p class="recuadro">
+              📌 Los saltos de línea no se pueden visualizar a golpe de ojo
+              dentro de un documento.
+            </p>
+            <h4>Espacios en regexp 〰️</h4>
+            <p class="recuadro">
+              📌 Los saltos de línea los podemos visualizar, detectar o
+              identificar fácilmente dentro de un documento por la separación de
+              los caracteres.
+            </p>
+            <p>
+              Además de ello, si seleccionamos el texto al completo en el
+              interior del IDE (Visual Studio Code), podemos observar como
+              aparece una especie de puntito · el cual representa cada uno de
+              los espacios.
+            </p>
+            <p>
+              Si utilizamos \s o en su defecto escribimos un espacio sin nada
+              más, podemos ver que hacemos un match de todos los espacios del
+              documento.
+            </p>
+            <h4>Ejemplo de un uso de la estrella de Kleene 🌠</h4>
+            <p>
+              En cambio, si utilizamos la estrella de Kleene, podemos ver que se
+              seleccionan todos los caracteres inclusive los saltos de línea y
+              espacios.
+            </p>
+            <p class="recuadro">
+              📌 Por ello, decimos que la estrella de Kleene es el meta carácter
+              más poderoso de todos, engloba todo incluso los saltos de línea o
+              espacios.
+            </p>
+          </div>
+          <div id="reg-congrup">
+            <h3>2.2 - [set] Contenido en el grupo 🔣</h3>
+            <p>
+              En esta sección vamos a empezar a aprender como trabajar con
+              grupos de caracteres además de explicar que diferencias hay entre
+              patrón este tipo de grupos y los caracteres literales. ¡Vamos a
+              ello!
+            </p>
+            <p class="recuadro">
+              📌 [carácter/es] buscará cualquier carácter incluido entre los [].
+              A diferencia de los caracteres literales anteriores, con esta
+              manera matcheará todo lo contenido en el interior del paréntesis
+              independientemente de que estén definidos consecutivamente o no.
+            </p>
+          </div>
+          <div id="reg-nocongrup">
+            <h3>2.3 - [^set] No contenido en el grupo 🚫</h3>
+            <p>
+              [^carácter/es] realizará el match de cualquier carácter que NO
+              esté incluido dentro de los corchetes [] independiente de si es
+              consecutivo o si no.
+            </p>
+          </div>
+          <div id="reg-defrang">
+            <h3>2.4 - [set] [^set] Definiendo conjuntos/rangos 🎲</h3>
+            <h4>
+              Seleccionando un conjunto de letras (abecedario al completo) 🔤
+            </h4>
+            <p>
+              De la misma forma que podemos definir un rango mediante a una
+              secuencia de caracteres literales, podemos realizarlo mediante a
+              un rango/conjunto de la siguiente manera:
+            </p>
+            <p>
+              [a-z] Nos permite definir un rango específico dentro del patrón.
+            </p>
+            <p class="recuadro">
+              🚨 A excepción de la ñ tanto en mayúscula como minúscula ya que la
+              informática por decirlo así “está hecha en inglés” y la ñ no
+              existe en dicho lenguaje.
+            </p>
+            <h4>Añadiendo caracteres a un conjunto ➕</h4>
+            <p>
+              Si queremos que dicho rango añada la ñ también deberemos de
+              añadirla al conjunto de la siguiente manera [a-zñ].
+            </p>
+            <h4>Upper & Lower case range 🔠</h4>
+            <p>
+              Las expresiones regulares pueden ser "case sensitive" o "case
+              insensitive", lo que significa que pueden o no distinguir entre
+              letras mayúsculas y minúsculas en el texto que se está analizando.
+            </p>
+            <h4>Seleccionando un rango numérico 🔢</h4>
+            <p>[0-9] También podemos utilizar rangos de numéricos.</p>
+            <h4>Rango de caracteres “especiales” 🔣</h4>
+            <p>
+              [À-ÿ] Otro ejemplo de como seleccionar los caracteres especiales
+              (acentuados, dieresis, eñes…), es decir, que no son utilizados en
+              el lenguaje inglés.
+            </p>
+          </div>
+          <div id="reg-joker">
+            <h3>2.5 - Uso del meta carácter joker, .* & \char 🃏</h3>
+            <h4>Uso del meta carácter . “el famoso joker” 🃏</h4>
+            <p>
+              . meta carácter también conocido como el “joker”, selecciona
+              cualquier carácter, de una forma similar a “un comodín” ¡A
+              excepción de los saltos de línea! Por lo que poder decirlo así es
+              casi igual de poderoso que la estrella de Kleene. Decimos ¡Casi!
+              ya que es un poquitín menos potente.
+            </p>
+            <p>
+              El primer uso que podríamos con . sería el de seleccionar todos
+              los caracteres del documento.
+            </p>
+            <h4>Doble jocker 🃏🃏</h4>
+            <p>
+              ..carácter/es 🡢 Otro uso para el meta carácter . es el de añadir
+              varios puntos a la vez ..
+            </p>
+            <h4>Joker & Kleene 🃏⭐</h4>
+            <p>
+              .* 🡢 También es habitual utilizarlo para seleccionar varios
+              caracteres combinado con la famosa estrella de Kleene *.
+            </p>
+            <p>
+              Este patrón será muy útil para seleccionar una parte determinada
+              en un texto. Por ejemplo, hasta el final de la línea para
+              posteriormente reemplazar dicho contenido.
+            </p>
+            <h4>
+              Seleccionando meta caracteres utilizados en las expresiones
+              regulares 🔤
+            </h4>
+            <p>
+              \char Existen determinados caracteres como por ejemplo: *,.+ entre
+              otros que debido a que tienen algún significado dentro del
+              lenguaje de las expresiones regulares, pueden ser algo más
+              difíciles de seleccionar. En estos escenarios, utilizamos la
+              contra barra.
+            </p>
+            <p>
+              Si intentamos seleccionar solamente los puntos sin utilizar la
+              contra barra, podemos ver que, en este caso, nos seleccionaría
+              todo el contenido.
+            </p>
+            <p>
+              En cambio, si añadimos una contra barra, podemos ver que ahora si
+              que nos selecciona concretamente el . sin ningún carácter
+              adicional.
+            </p>
+          </div>
         </section>
-        <section>
-          <h3 id="congrup">2.2 - [set] Contenido en el grupo 🔣</h3>
-          <p>
-            En esta sección vamos a empezar a aprender como trabajar con grupos
-            de caracteres además de explicar que diferencias hay entre patrón
-            este tipo de grupos y los caracteres literales. ¡Vamos a ello!
-          </p>
-          <p class="recuadro">
-            📌 [carácter/es] buscará cualquier carácter incluido entre los []. A
-            diferencia de los caracteres literales anteriores, con esta manera
-            matcheará todo lo contenido en el interior del paréntesis
-            independientemente de que estén definidos consecutivamente o no.
-          </p>
+        <section id="reg-chacla">
+          <h2>3. Character Classes 🔤</h2>
+          <div id="reg-decdig">
+            <h3>3.1 - Decimal digit \d & not decimal digit \D 💯</h3>
+            <h4>Decimal digit 🔢</h4>
+            <p>
+              \d con la d en minúsculas, selecciona cualquier carácter numérico.
+            </p>
+            <p>El patrón \d sería equivalente a utilizar [0-9].</p>
+            <h4>Not a decimal digit 🙅‍♂️</h4>
+            <p>
+              \D con la D en mayúsculas, selecciona cualquier carácter que NO
+              sea un número.
+            </p>
+            <p>El patrón \D sería equivalente a utilizar [^0-9].</p>
+          </div>
+          <div id="reg-whitespace">
+            <h3>
+              3.2 - White-space characters \s & Not-white-space chars \S 〰️
+            </h3>
+            <h4>White space characters \s 〰️</h4>
+            <p>
+              \s con la d en minúsculas, selecciona cualquier carácter que sea
+              un espacio.
+            </p>
+            <h4>Not white space characters \S 🚫〰️</h4>
+            <p>
+              \S con la d en mayúsculas, selecciona cualquier carácter que NO
+              sea un espacio.
+            </p>
+          </div>
+          <div id="reg-word">
+            <h3>3.3 - Word \w & non-word \W 🔠</h3>
+            <h4>Rango por defecto de Word \w 🔡</h4>
+            <p>
+              \w Con la \w en minúsculas se selecciona cualquier carácter de una
+              palabra independientemente de que este sea un número o una letra
+              (a excepción de la ñ)
+            </p>
+            <p>
+              Fijaros que solamente se seleccionan los caracteres de texto (a
+              excepción de la ñ) y/o numéricos. El resto de caracteres, por
+              ejemplo: símbolos de exclamación, @, *… no se seleccionarán.
+            </p>
+            <p class="recuadro">
+              💡 \w es una abreviatura de Word que es equivalente al siguiente
+              patrón de grupo: [a-zA-Z0-9]
+            </p>
+            <h4>Ampliando el rango por defecto de Word \w 🌅</h4>
+            <p>
+              [\wñÑ] es equivalente al siguiente patrón de grupo [a-zñA-ZÑ0-9] .
+              Como necesitamos añadir la ñ, para ello, hemos creado un grupo de
+              tal forma que en ambos patrones estamos haciendo lo mismo de
+              maneras totalmente distintas. Aunque con la primera forma estamos
+              simplificando esto mismo a una forma más reducida.
+            </p>
+            <h4>Rango por defecto de non-word \W 🚫🔠</h4>
+            <p>
+              \W Con la \W en mayúsculas, selecciona cualquier carácter que no
+              sea de una palabra.
+            </p>
+            <p class="recuadro">
+              💡 \W es una abreviatura de Non-word que es equivalente al
+              siguiente patrón de grupo: [^a-zA-Z0-9_]
+            </p>
+            <h4>Ampliando el rango por defecto de non-word \W 🌄</h4>
+            <p>
+              De la misma manera que en el ejemplo anterior con word, podemos
+              ampliar el rango de non-word sin problema.
+            </p>
+            <h4>Alternation 〽</h4>
+            <p>
+              Aunque la manera anterior considero que es mucho más óptima, vamos
+              a ver otra manera de seleccionar un grupo mediante a alternation.
+              En el funcionamiento y el uso de alternaciones nos detendremos un
+              poquito más adelante en su debida sección.
+            </p>
+            <p>
+              \W|a|A|e|E 🡢 Seleccionamos todos los carácteres que no son letras
+              o números a excepción de a, A, e, E.
+            </p>
+          </div>
+          <div id="reg-carriage">
+            <h3>3.4 - Carriage returns y line feeds 🛒</h3>
+            <h4>¿Qué son los retornos de carro? ◀🛒</h4>
+            <p>
+              Los retornos de carro (carriage returns) y saltos de línea (line
+              feeds) son caracteres especiales que se utilizan para controlar el
+              formato del texto en los archivos.
+            </p>
+            <p>
+              En las expresiones regulares, estos caracteres pueden tener
+              significados específicos según la implementación y el contexto en
+              el que se utilicen.
+            </p>
+            <p>
+              Sin embargo, en la mayoría de las implementaciones de expresiones
+              regulares, estos caracteres no pueden ser utilizados directamente
+              en un patrón.
+            </p>
+            <p>
+              La razón principal por la que los retornos de carro y saltos de
+              línea no se pueden usar en un patrón de expresiones regulares es
+              que estos caracteres son considerados parte del propio patrón y no
+              pueden usarse para representar líneas nuevas en el patrón mismo.
+            </p>
+            <p>
+              Esto podría generar ambigüedad y dificultades en la interpretación
+              del patrón.
+            </p>
+            <p class="recuadro">
+              💡 Generalmente usamos las secuencias de escape para representar
+              estos caracteres de manera explícita en el patrón.
+            </p>
+            <h4>
+              ¿Cómo podemos usar estos retornos de carro y saltos de línea? 🆙
+            </h4>
+            <p>
+              Para usar este tipo de expresiones vamos a utilizar el lenguaje de
+              programación JavaScript junto a una herramienta en línea llamada
+              JSBIN, la cual proporciona un entorno de desarrollo y prueba para
+              HTML, CSS y JavaScript.
+            </p>
+            <p>
+              Aquí tenéis el enlace para acceder a dicha plataforma:
+              <a
+                href="https://jsbin.com/hijipuruzu/edit?js,console"
+                target="_blank"
+                >Enlace a la pagina</a
+              >.
+            </p>
+            <p>
+              Vamos a configurarla de tal manera que vamos a tener las pestañas
+              de JavaScript y la de la consola de output.
+            </p>
+            <img src="../images/regexp/jsoutput.png" id="img-jsoutput" alt="" />
+            <h4>Horizontal tab \t 🔭</h4>
+            <p>
+              \t en minúscula se utiliza para añadir tabulaciones dentro de un
+              texto.
+            </p>
+            <p>
+              Si añadimos una tabulación \t entre el Hola, y el ¿Qué tal? el
+              resultado será el siguiente:
+            </p>
+            <img src="../images/regexp/t.png" id="img-t" alt="" />
+            <h4>New line \n 🆕</h4>
+            <p>
+              \n en minúscula se utiliza para añadir una new line (salto de
+              línea) dentro de un texto.
+            </p>
+            <p>El resultado será el siguiente:</p>
+            <img src="../images/regexp/n.png" id="img-n" alt="" />
+          </div>
         </section>
-        <section>
-          <h3 id="nocongrup">2.3 - [^set] No contenido en el grupo 🚫</h3>
-          <p>
-            [^carácter/es] realizará el match de cualquier carácter que NO esté
-            incluido dentro de los corchetes [] independiente de si es
-            consecutivo o si no.
-          </p>
-        </section>
-        <section>
-          <h3 id="defrang">
-            2.4 - [set] [^set] Definiendo conjuntos/rangos 🎲
-          </h3>
-          <h4>
-            Seleccionando un conjunto de letras (abecedario al completo) 🔤
-          </h4>
-          <p>
-            De la misma forma que podemos definir un rango mediante a una
-            secuencia de caracteres literales, podemos realizarlo mediante a un
-            rango/conjunto de la siguiente manera:
-          </p>
-          <p>
-            [a-z] Nos permite definir un rango específico dentro del patrón.
-          </p>
-          <p class="recuadro">
-            🚨 A excepción de la ñ tanto en mayúscula como minúscula ya que la
-            informática por decirlo así “está hecha en inglés” y la ñ no existe
-            en dicho lenguaje.
-          </p>
-          <h4>Añadiendo caracteres a un conjunto ➕</h4>
-          <p>
-            Si queremos que dicho rango añada la ñ también deberemos de añadirla
-            al conjunto de la siguiente manera [a-zñ].
-          </p>
-          <h4>Upper & Lower case range 🔠</h4>
-          <p>
-            Las expresiones regulares pueden ser "case sensitive" o "case
-            insensitive", lo que significa que pueden o no distinguir entre
-            letras mayúsculas y minúsculas en el texto que se está analizando.
-          </p>
-          <h4>Seleccionando un rango numérico 🔢</h4>
-          <p>[0-9] También podemos utilizar rangos de numéricos.</p>
-          <h4>Rango de caracteres “especiales” 🔣</h4>
-          <p>
-            [À-ÿ] Otro ejemplo de como seleccionar los caracteres especiales
-            (acentuados, dieresis, eñes…), es decir, que no son utilizados en el
-            lenguaje inglés.
-          </p>
-        </section>
-        <section>
-          <h3 id="joker">2.5 - Uso del meta carácter joker, .* & \char 🃏</h3>
-          <h4>Uso del meta carácter . “el famoso joker” 🃏</h4>
-          <p>
-            . meta carácter también conocido como el “joker”, selecciona
-            cualquier carácter, de una forma similar a “un comodín” ¡A excepción
-            de los saltos de línea! Por lo que poder decirlo así es casi igual
-            de poderoso que la estrella de Kleene. Decimos ¡Casi! ya que es un
-            poquitín menos potente.
-          </p>
-          <p>
-            El primer uso que podríamos con . sería el de seleccionar todos los
-            caracteres del documento.
-          </p>
-          <h4>Doble jocker 🃏🃏</h4>
-          <p>
-            ..carácter/es 🡢 Otro uso para el meta carácter . es el de añadir
-            varios puntos a la vez ..
-          </p>
-          <h4>Joker & Kleene 🃏⭐</h4>
-          <p>
-            .* 🡢 También es habitual utilizarlo para seleccionar varios
-            caracteres combinado con la famosa estrella de Kleene *.
-          </p>
-          <p>
-            Este patrón será muy útil para seleccionar una parte determinada en
-            un texto. Por ejemplo, hasta el final de la línea para
-            posteriormente reemplazar dicho contenido.
-          </p>
-          <h4>
-            Seleccionando meta caracteres utilizados en las expresiones
-            regulares 🔤
-          </h4>
-          <p>
-            \char Existen determinados caracteres como por ejemplo: *,.+ entre
-            otros que debido a que tienen algún significado dentro del lenguaje
-            de las expresiones regulares, pueden ser algo más difíciles de
-            seleccionar. En estos escenarios, utilizamos la contra barra.
-          </p>
-          <p>
-            Si intentamos seleccionar solamente los puntos sin utilizar la
-            contra barra, podemos ver que, en este caso, nos seleccionaría todo
-            el contenido.
-          </p>
-          <p>
-            En cambio, si añadimos una contra barra, podemos ver que ahora si
-            que nos selecciona concretamente el . sin ningún carácter adicional.
-          </p>
-        </section>
-      </article>
-      <article class="content">
-        <section>
-          <h2 id="chacla">3. Character Classes 🔤</h2>
-          <h3 id="decdig">3.1 - Decimal digit \d & not decimal digit \D 💯</h3>
-          <h4>Decimal digit 🔢</h4>
-          <p>
-            \d con la d en minúsculas, selecciona cualquier carácter numérico.
-          </p>
-          <p>El patrón \d sería equivalente a utilizar [0-9].</p>
-          <h4>Not a decimal digit 🙅‍♂️</h4>
-          <p>
-            \D con la D en mayúsculas, selecciona cualquier carácter que NO sea
-            un número.
-          </p>
-          <p>El patrón \D sería equivalente a utilizar [^0-9].</p>
-        </section>
-        <section>
-          <h3 id="whitespace">
-            3.2 - White-space characters \s & Not-white-space chars \S 〰️
-          </h3>
-          <h4>White space characters \s 〰️</h4>
-          <p>
-            \s con la d en minúsculas, selecciona cualquier carácter que sea un
-            espacio.
-          </p>
-          <h4>Not white space characters \S 🚫〰️</h4>
-          <p>
-            \S con la d en mayúsculas, selecciona cualquier carácter que NO sea
-            un espacio.
-          </p>
-        </section>
-        <section id="word">
-          <h3>3.3 - Word \w & non-word \W 🔠</h3>
-          <h4>Rango por defecto de Word \w 🔡</h4>
-          <p>
-            \w Con la \w en minúsculas se selecciona cualquier carácter de una
-            palabra independientemente de que este sea un número o una letra (a
-            excepción de la ñ)
-          </p>
-          <p>
-            Fijaros que solamente se seleccionan los caracteres de texto (a
-            excepción de la ñ) y/o numéricos. El resto de caracteres, por
-            ejemplo: símbolos de exclamación, @, *… no se seleccionarán.
-          </p>
-          <p class="recuadro">
-            💡 \w es una abreviatura de Word que es equivalente al siguiente
-            patrón de grupo: [a-zA-Z0-9]
-          </p>
-          <h4>Ampliando el rango por defecto de Word \w 🌅</h4>
-          <p>
-            [\wñÑ] es equivalente al siguiente patrón de grupo [a-zñA-ZÑ0-9] .
-            Como necesitamos añadir la ñ, para ello, hemos creado un grupo de
-            tal forma que en ambos patrones estamos haciendo lo mismo de maneras
-            totalmente distintas. Aunque con la primera forma estamos
-            simplificando esto mismo a una forma más reducida.
-          </p>
-          <h4>Rango por defecto de non-word \W 🚫🔠</h4>
-          <p>
-            \W Con la \W en mayúsculas, selecciona cualquier carácter que no sea
-            de una palabra.
-          </p>
-          <p class="recuadro">
-            💡 \W es una abreviatura de Non-word que es equivalente al siguiente
-            patrón de grupo: [^a-zA-Z0-9_]
-          </p>
-          <h4>Ampliando el rango por defecto de non-word \W 🌄</h4>
-          <p>
-            De la misma manera que en el ejemplo anterior con word, podemos
-            ampliar el rango de non-word sin problema.
-          </p>
-          <h4>Alternation 〽</h4>
-          <p>
-            Aunque la manera anterior considero que es mucho más óptima, vamos a
-            ver otra manera de seleccionar un grupo mediante a alternation. En
-            el funcionamiento y el uso de alternaciones nos detendremos un
-            poquito más adelante en su debida sección.
-          </p>
-          <p>
-            \W|a|A|e|E 🡢 Seleccionamos todos los carácteres que no son letras o
-            números a excepción de a, A, e, E.
-          </p>
-        </section>
-        <section id="carriage">
-          <h3>3.4 - Carriage returns y line feeds 🛒</h3>
-          <h4>¿Qué son los retornos de carro? ◀🛒</h4>
-          <p>
-            Los retornos de carro (carriage returns) y saltos de línea (line
-            feeds) son caracteres especiales que se utilizan para controlar el
-            formato del texto en los archivos.
-          </p>
-          <p>
-            En las expresiones regulares, estos caracteres pueden tener
-            significados específicos según la implementación y el contexto en el
-            que se utilicen.
-          </p>
-          <p>
-            Sin embargo, en la mayoría de las implementaciones de expresiones
-            regulares, estos caracteres no pueden ser utilizados directamente en
-            un patrón.
-          </p>
-          <p>
-            La razón principal por la que los retornos de carro y saltos de
-            línea no se pueden usar en un patrón de expresiones regulares es que
-            estos caracteres son considerados parte del propio patrón y no
-            pueden usarse para representar líneas nuevas en el patrón mismo.
-          </p>
-          <p>
-            Esto podría generar ambigüedad y dificultades en la interpretación
-            del patrón.
-          </p>
-          <p class="recuadro">
-            💡 Generalmente usamos las secuencias de escape para representar
-            estos caracteres de manera explícita en el patrón.
-          </p>
-          <h4>
-            ¿Cómo podemos usar estos retornos de carro y saltos de línea? 🆙
-          </h4>
-          <p>
-            Para usar este tipo de expresiones vamos a utilizar el lenguaje de
-            programación JavaScript junto a una herramienta en línea llamada
-            JSBIN, la cual proporciona un entorno de desarrollo y prueba para
-            HTML, CSS y JavaScript.
-          </p>
-          <p>
-            Aquí tenéis el enlace para acceder a dicha plataforma:
-            <a
-              href="https://jsbin.com/hijipuruzu/edit?js,console"
-              target="_blank"
-              >Enlace a la pagina</a
-            >.
-          </p>
-          <p>
-            Vamos a configurarla de tal manera que vamos a tener las pestañas de
-            JavaScript y la de la consola de output.
-          </p>
-          <img src="../images/regexp/jsoutput.png" id="img-jsoutput" alt="" />
-          <h4>Horizontal tab \t 🔭</h4>
-          <p>
-            \t en minúscula se utiliza para añadir tabulaciones dentro de un
-            texto.
-          </p>
-          <p>
-            Si añadimos una tabulación \t entre el Hola, y el ¿Qué tal? el
-            resultado será el siguiente:
-          </p>
-          <img src="../images/regexp/t.png" id="img-t" alt="" />
-          <h4>New line \n 🆕</h4>
-          <p>
-            \n en minúscula se utiliza para añadir una new line (salto de línea)
-            dentro de un texto.
-          </p>
-          <p>El resultado será el siguiente:</p>
-          <img src="../images/regexp/n.png" id="img-n" alt="" />
-        </section>
-      </article>
-      <article class="content">
-        <section id="quanti">
+        <section id="reg-quanti">
           <h2>4. Quantifiers 🏁</h2>
-          <h3 id="short">
-            4.1 - 0 or more times (*), 1 or more times (+), 0 or 1 time (?) ☁
-          </h3>
-          <h4>¿Qué son los quantifiers/cuantificadores? ⌛</h4>
-          <p>
-            Los cuantificadores dentro de las expresiones regulares (regex) son
-            caracteres especiales que se utilizan para especificar la cantidad
-            de veces que un elemento debe coincidir en una cadena de texto.
-          </p>
-          <p class="recuadro">
-            💡 Los cuantificadores permiten hacer que su patrón regex sea más
-            flexible y conciso. Además, especifican con qué frecuencia debe
-            coincidir una expresión regular o parte de ella.
-          </p>
-          <p>Basándonos sobre el siguiente texto:</p>
-          <p>
-            AB <br />
-            A_B <br />
-            A__B <br />
-            A___B <br />
-            A____B
-          </p>
-          <p>
-            Con este patrón, estamos buscando los que literalmente tengan A_B:
-          </p>
-          <img src="../images/regexp/q1.png" id="img-q1" alt="" />
-          <p>
-            Pero ¿Cómo haríamos si quisiéramos seleccionar todos los elementos
-            que tengan AB los que tengan barras bajas de por medio y los que no?
-          </p>
-          <h4>0 or more times * 🕗</h4>
-          <p>
-            * define que el patrón o la parte del patrón definida debe coincidir
-            cero o más veces. Vamos a ver un ejemplo:
-          </p>
-          <p>
-            Por ejemplo, A_*B buscará coincidencias con AB sin ninguna _ o con
-            múltiples _ en una fila.
-          </p>
-          <img src="../images/regexp/q2.png" id="img-q2" alt="" />
-          <p class="recuadro">
-            💡 Si nos fijamos, estamos seleccionado todos los AB, ya que con el
-            _* le estamos especificando que nos seleccioné todos los elementos
-            ya tenga 0, 1 o múltiples coincidencias.
-          </p>
-          <img src="../images/regexp/q3.png" id="img-q3" alt="" />
-          <h4>0 or 1 time ? 🕕</h4>
-          <p>
-            ? define que el patrón o la parte del patrón definida debe estar
-            presente 1 vez o ninguna. Vamos a ver un ejemplo:
-          </p>
-          <img src="../images/regexp/q4.png" id="img-q4" alt="" />
+          <div id="reg-short">
+            <h3>
+              4.1 - 0 or more times (*), 1 or more times (+), 0 or 1 time (?) ☁
+            </h3>
+            <h4>¿Qué son los quantifiers/cuantificadores? ⌛</h4>
+            <p>
+              Los cuantificadores dentro de las expresiones regulares (regex)
+              son caracteres especiales que se utilizan para especificar la
+              cantidad de veces que un elemento debe coincidir en una cadena de
+              texto.
+            </p>
+            <p class="recuadro">
+              💡 Los cuantificadores permiten hacer que su patrón regex sea más
+              flexible y conciso. Además, especifican con qué frecuencia debe
+              coincidir una expresión regular o parte de ella.
+            </p>
+            <p>Basándonos sobre el siguiente texto:</p>
+            <p>
+              AB <br />
+              A_B <br />
+              A__B <br />
+              A___B <br />
+              A____B
+            </p>
+            <p>
+              Con este patrón, estamos buscando los que literalmente tengan A_B:
+            </p>
+            <img src="../images/regexp/q1.png" id="img-q1" alt="" />
+            <p>
+              Pero ¿Cómo haríamos si quisiéramos seleccionar todos los elementos
+              que tengan AB los que tengan barras bajas de por medio y los que
+              no?
+            </p>
+            <h4>0 or more times * 🕗</h4>
+            <p>
+              * define que el patrón o la parte del patrón definida debe
+              coincidir cero o más veces. Vamos a ver un ejemplo:
+            </p>
+            <p>
+              Por ejemplo, A_*B buscará coincidencias con AB sin ninguna _ o con
+              múltiples _ en una fila.
+            </p>
+            <img src="../images/regexp/q2.png" id="img-q2" alt="" />
+            <p class="recuadro">
+              💡 Si nos fijamos, estamos seleccionado todos los AB, ya que con
+              el _* le estamos especificando que nos seleccioné todos los
+              elementos ya tenga 0, 1 o múltiples coincidencias.
+            </p>
+            <img src="../images/regexp/q3.png" id="img-q3" alt="" />
+            <h4>0 or 1 time ? 🕕</h4>
+            <p>
+              ? define que el patrón o la parte del patrón definida debe estar
+              presente 1 vez o ninguna. Vamos a ver un ejemplo:
+            </p>
+            <img src="../images/regexp/q4.png" id="img-q4" alt="" />
+          </div>
+          <div id="reg-exact">
+            <h3>
+              4.2 - Exactly n times {n}, at least n times {n,} and from n to m
+              times {n,m} 🕛
+            </h3>
+            <h4>Exactly n times {n} 🕛</h4>
+            <p>
+              {n} define que el patrón o la parte del patrón definida debe
+              coincidir n veces. Vamos a ver un ejemplo:
+            </p>
+            <p>
+              Con este patrón A_{2}B, estamos buscando los casos que
+              literalmente tengan literalmente dos __ entre AB:
+            </p>
+            <img src="../images/regexp/q5.png" id="img-q5" alt="" />
+            <h4>At least n times {n,} 🕕</h4>
+            <p>
+              {n,} define que el patrón o la parte del patrón definida debe
+              coincidir n o más veces. Vamos a ver un ejemplo:
+            </p>
+            <p>
+              Con este patrón A_{2,}B, estamos buscando los casos que
+              literalmente tengan literalmente dos __ o más _ entre AB:
+            </p>
+            <img src="../images/regexp/q6.png" id="img-q6" alt="" />
+            <h4>From n to m times {n,m} 🕖</h4>
+            <p>
+              {n,m} define que el patrón o la parte del patrón definida debe
+              coincidir dentro del rango de n veces a m veces. Vamos a ver un
+              ejemplo:
+            </p>
+            <img src="../images/regexp/q7.png" id="img-q7" alt="" />
+          </div>
+          <div id="reg-grla">
+            <h3>4.3 - Greedy/codicioso VS Lazy/Perezoso 🦥</h3>
+            <p>
+              La principal diferencia entre "greedy" (codicioso) y "lazy"
+              (perezoso) en el contexto de expresiones regulares es cómo manejan
+              las repeticiones. Estos términos se aplican a los cuantificadores,
+              como *, +, ?, {n,m}, etc., y afectan la forma en que se realiza la
+              coincidencia en el texto.
+            </p>
+            <h4>Greedy/Codicioso 💰</h4>
+            <p>
+              Greedy = ‘Codicioso’ intentará matchear la cadena más larga
+              posible. Es decir, si tiene varias opciones donde parar irá hasta
+              la más lejana ya que es codicioso y tiene muchas ganas de
+              trabajar.
+            </p>
+            <p>Basándonos sobre el siguiente texto:</p>
+            <p>stackoverflow</p>
+            <p>
+              Con greedy (el codicioso) llegaremos a la o más lejana de las dos
+              que tenemos:
+            </p>
+            <img src="../images/regexp/q8.png" id="img-q8" alt="" />
+            <h4>Lazy/Perezoso 🦥</h4>
+            <p>
+              Lazy = ‘Perezoso’ intentará coger la cadena más cercana posible.
+              Es decir, si tiene varias opciones donde parar irá hasta la más
+              cercana ya que es perezoso y no tiene muchas ganas de trabajar.
+            </p>
+            <p>
+              Con el lazy (el perezoso), en cambio, queremos acabar cuanto
+              antes. Por lo que cogemos la cadena más corta posible. Vamos a ver
+              un ejemplo:
+            </p>
+            <img src="../images/regexp/q9.png" id="img-q9" alt="" />
+          </div>
         </section>
-        <section id="exact">
-          <h3>
-            4.2 - Exactly n times {n}, at least n times {n,} and from n to m
-            times {n,m} 🕛
-          </h3>
-          <h4>Exactly n times {n} 🕛</h4>
-          <p>
-            {n} define que el patrón o la parte del patrón definida debe
-            coincidir n veces. Vamos a ver un ejemplo:
-          </p>
-          <p>
-            Con este patrón A_{2}B, estamos buscando los casos que literalmente
-            tengan literalmente dos __ entre AB:
-          </p>
-          <img src="../images/regexp/q5.png" id="img-q5" alt="" />
-          <h4>At least n times {n,} 🕕</h4>
-          <p>
-            {n,} define que el patrón o la parte del patrón definida debe
-            coincidir n o más veces. Vamos a ver un ejemplo:
-          </p>
-          <p>
-            Con este patrón A_{2,}B, estamos buscando los casos que literalmente
-            tengan literalmente dos __ o más _ entre AB:
-          </p>
-          <img src="../images/regexp/q6.png" id="img-q6" alt="" />
-          <h4>From n to m times {n,m} 🕖</h4>
-          <p>
-            {n,m} define que el patrón o la parte del patrón definida debe
-            coincidir dentro del rango de n veces a m veces. Vamos a ver un
-            ejemplo:
-          </p>
-          <img src="../images/regexp/q7.png" id="img-q7" alt="" />
+        <section id="reg-anchors">
+          <h2>5. Anchors 🔱</h2>
+          <div id="reg-stend">
+            <h3>
+              5.1 - Start at beginning of String (^) & end of String ($) ⚓
+            </h3>
+            <p>
+              Existen mecanismos, es decir ciertos caracteres ($ y ^) mediante a
+              los cuales podemos comprobar/”anclar” si una cadena empieza o
+              acaba por un patrón. Os explicamos como funcionan.
+            </p>
+            <h4>Start at beginning of String ^ ⚓</h4>
+            <p>^ el patrón empieza por…</p>
+            <p>Basándonos sobre el siguiente texto:</p>
+            <p>
+              abc <br />
+              babc <br />
+              cabcde <br />
+              ddeabc
+            </p>
+            <p>
+              Si escribimos el patrón abc, vemos que se matchearán todos los
+              casos en los que abc esté presente. Independientemente de si está
+              al inicio, al final o en el centro de la cadena.
+            </p>
+            <img src="../images/regexp/a1.png" id="img-a1" alt="" />
+            <p>
+              En cambio, si queremos matchear solamente los casos que empiecen
+              por abc , debemos de añadir el ^ antes del texto. Vamos a ver un
+              ejemplo:
+            </p>
+            <img src="../images/regexp/a2.png" id="img-a2" alt="" />
+            <h4>End of String $ 🚢</h4>
+            <p>$ El patrón acaba con…</p>
+            <p>
+              Si queremos seleccionar las cadenas de texto que acaban pro bc, el
+              regex para hacer el match sería el siguiente:
+            </p>
+            <img src="../images/regexp/a3.png" id="img-a3" alt="" />
+            <h4>Combinando ^ con $ 🚢⚓</h4>
+            <p>
+              Existe también la posibilidad de que $ y ^ convivan dentro de un
+              mismo patrón.
+            </p>
+            <p>
+              Por ejemplo, el siguiente ejemplo solo matcheará los casos en los
+              que la línea empiece y acabe por abc:
+            </p>
+            <img src="../images/regexp/a4.png" id="img-a4" alt="" />
+          </div>
+          <div id="reg-wordbound">
+            <h3>5.2 - Word buoundary \b & not word boundary \B 🚝</h3>
+            <h4>Word buoundary \b sin texto ⚓</h4>
+            <p>
+              \b en minúscula y sin ir englobada sobre un texto (\bTEXT\b)
+              representa un límite de palabra (word boundary). Es decir, actúa
+              como un ancla que marca la posición entre caracteres de palabra
+              (alfanuméricos) y caracteres que no son de palabra (como espacios,
+              signos de puntuación, etc.).
+            </p>
+            <p>
+              Inicialmente, si utilizamos \b sin nada más en el siguiente texto
+              podemos observar que se selecciona el inicio y fin de cada una de
+              las palabras.
+            </p>
+            <h4>Word buoundary \b con texto ⚓📋</h4>
+            <p>
+              \b en minúscula, representa un límite de palabra (word boundary)
+              actúa como delimitador de palabras lo que nos permite delimitar
+              una palabra de inicio a fin, evitando que se cuelen subcadenas de
+              dentro de otras palabras más largas. De tal forma que nos
+              garantiza que estamos buscando palabras exactas en lugar de partes
+              de palabras. Esto es especialmente útil en escenarios como la
+              búsqueda y reemplazo de palabras en un texto.
+            </p>
+            <p class="recuadro">
+              💡 Englobando una palabra con \b nos aseguramos que
+              seleccionaremos única y exclusivamente las palabras contenidas
+              entre las dos \bWORD\b de tal manera que solamente seleccionaremos
+              las que empiecen y acaben de tal forma. Y no las que contengan
+              dicha palabra.
+            </p>
+            <h4>Not word boundary \B caracteres de entre palabras 📖</h4>
+            <p>
+              La secuencia de escape \B matcheará a cualquier carácter siempre
+              que no este no se encuentre en el límite de palabra. En otras
+              palabras, coincide con posiciones dentro de palabras o entre
+              caracteres que son todos alfanuméricos.
+            </p>
+          </div>
         </section>
-        <section id="grla">
-          <h3>4.3 - Greedy/codicioso VS Lazy/Perezoso 🦥</h3>
-          <p>
-            La principal diferencia entre "greedy" (codicioso) y "lazy"
-            (perezoso) en el contexto de expresiones regulares es cómo manejan
-            las repeticiones. Estos términos se aplican a los cuantificadores,
-            como *, +, ?, {n,m}, etc., y afectan la forma en que se realiza la
-            coincidencia en el texto.
-          </p>
-          <h4>Greedy/Codicioso 💰</h4>
-          <p>
-            Greedy = ‘Codicioso’ intentará matchear la cadena más larga posible.
-            Es decir, si tiene varias opciones donde parar irá hasta la más
-            lejana ya que es codicioso y tiene muchas ganas de trabajar.
-          </p>
-          <p>Basándonos sobre el siguiente texto:</p>
-          <p>stackoverflow</p>
-          <p>
-            Con greedy (el codicioso) llegaremos a la o más lejana de las dos
-            que tenemos:
-          </p>
-          <img src="../images/regexp/q8.png" id="img-q8" alt="" />
-          <h4>Lazy/Perezoso 🦥</h4>
-          <p>
-            Lazy = ‘Perezoso’ intentará coger la cadena más cercana posible. Es
-            decir, si tiene varias opciones donde parar irá hasta la más cercana
-            ya que es perezoso y no tiene muchas ganas de trabajar.
-          </p>
-          <p>
-            Con el lazy (el perezoso), en cambio, queremos acabar cuanto antes.
-            Por lo que cogemos la cadena más corta posible. Vamos a ver un
-            ejemplo:
-          </p>
-          <img src="../images/regexp/q9.png" id="img-q9" alt="" />
+        <section id="reg-alternation">
+          <h2>6. Alternation ⚡</h2>
+          <div>
+            <h3>6.1 - Alternation |</h3>
+            <p>
+              | la alternación dentro de las expresiones regulares se refiere a
+              la capacidad de especificar múltiples alternativas sobre el patrón
+              que busca en una cadena de texto. Para ello, se utiliza el
+              operador de barra vertical | separando cada una de las
+              alternativas.
+            </p>
+            <h3>
+              6.2 - Match y match matchea la expresión completa o sino no se
+              matchea 🎯
+            </h3>
+            <p>
+              La construcción (?(exp)yes|no) es parte de las expresiones
+              regulares condicionales y permite definir un patrón que coincide
+              con "yes" si la expresión condicional exp es verdadera y con "no"
+              si es falsa. Aquí tienes un ejemplo de cómo usar esta construcción
+              en una expresión regular:
+            </p>
+            <img src="../images/regexp/alt1.png" id="img-alt1" alt="" />
+          </div>
         </section>
-      </article>
-      <article class="content">
+        <section id="reg-gruprarus">
+          <h2>7. Groups rarunos 🐸</h2>
+          <div>
+            <ol>
+              <li>
+                \L$1: Todas las palabras en el grupo coincidente se cambiarán a
+                minúsculas.
+              </li>
+              <li>
+                \l$1: La primera letra en el grupo coincidente estará en
+                minúscula, el resto permanecerá sin cambios.
+              </li>
+              <li>
+                \U$1: Todas las palabras en el grupo coincidente se cambiarán a
+                mayúsculas.
+              </li>
+              <li>
+                \u$1: La primera letra en el grupo coincidente estará en
+                mayúscula, el resto permanecerá sin cambios.
+              </li>
+            </ol>
+          </div>
+        </section>
         <section>
-          <h2 id="anchors">5. Anchors 🔱</h2>
-          <h3 id="stend">
-            5.1 - Start at beginning of String (^) & end of String ($) ⚓
-          </h3>
-          <p>
-            Existen mecanismos, es decir ciertos caracteres ($ y ^) mediante a
-            los cuales podemos comprobar/”anclar” si una cadena empieza o acaba
-            por un patrón. Os explicamos como funcionan.
-          </p>
-          <h4>Start at beginning of String ^ ⚓</h4>
-          <p>^ el patrón empieza por…</p>
-          <p>Basándonos sobre el siguiente texto:</p>
-          <p>
-            abc <br />
-            babc <br />
-            cabcde <br />
-            ddeabc
-          </p>
-          <p>
-            Si escribimos el patrón abc, vemos que se matchearán todos los casos
-            en los que abc esté presente. Independientemente de si está al
-            inicio, al final o en el centro de la cadena.
-          </p>
-          <img src="../images/regexp/a1.png" id="img-a1" alt="" />
-          <p>
-            En cambio, si queremos matchear solamente los casos que empiecen por
-            abc , debemos de añadir el ^ antes del texto. Vamos a ver un
-            ejemplo:
-          </p>
-          <img src="../images/regexp/a2.png" id="img-a2" alt="" />
-          <h4>End of String $ 🚢</h4>
-          <p>$ El patrón acaba con…</p>
-          <p>
-            Si queremos seleccionar las cadenas de texto que acaban pro bc, el
-            regex para hacer el match sería el siguiente:
-          </p>
-          <img src="../images/regexp/a3.png" id="img-a3" alt="" />
-          <h4>Combinando ^ con $ 🚢⚓</h4>
-          <p>
-            Existe también la posibilidad de que $ y ^ convivan dentro de un
-            mismo patrón.
-          </p>
-          <p>
-            Por ejemplo, el siguiente ejemplo solo matcheará los casos en los
-            que la línea empiece y acabe por abc:
-          </p>
-          <img src="../images/regexp/a4.png" id="img-a4" alt="" />
+          <h3>🥩Chuletita Cheat sheet🥩</h3>
+          <div>
+            <img src="../images/regexp/chuleta.png" id="img-chuleta" alt="" />
+          </div>
+          <h2 id="reg-webrecom">🤓Webs recomendadas🤓</h2>
+          <div></div>
         </section>
-        <section>
-          <h3 id="wordbound">
-            5.2 - Word buoundary \b & not word boundary \B 🚝
-          </h3>
-          <h4>Word buoundary \b sin texto ⚓</h4>
-          <p>
-            \b en minúscula y sin ir englobada sobre un texto (\bTEXT\b)
-            representa un límite de palabra (word boundary). Es decir, actúa
-            como un ancla que marca la posición entre caracteres de palabra
-            (alfanuméricos) y caracteres que no son de palabra (como espacios,
-            signos de puntuación, etc.).
-          </p>
-          <p>
-            Inicialmente, si utilizamos \b sin nada más en el siguiente texto
-            podemos observar que se selecciona el inicio y fin de cada una de
-            las palabras.
-          </p>
-          <h4>Word buoundary \b con texto ⚓📋</h4>
-          <p>
-            \b en minúscula, representa un límite de palabra (word boundary)
-            actúa como delimitador de palabras lo que nos permite delimitar una
-            palabra de inicio a fin, evitando que se cuelen subcadenas de dentro
-            de otras palabras más largas. De tal forma que nos garantiza que
-            estamos buscando palabras exactas en lugar de partes de palabras.
-            Esto es especialmente útil en escenarios como la búsqueda y
-            reemplazo de palabras en un texto.
-          </p>
-          <p class="recuadro">
-            💡 Englobando una palabra con \b nos aseguramos que seleccionaremos
-            única y exclusivamente las palabras contenidas entre las dos
-            \bWORD\b de tal manera que solamente seleccionaremos las que
-            empiecen y acaben de tal forma. Y no las que contengan dicha
-            palabra.
-          </p>
-          <h4>Not word boundary \B caracteres de entre palabras 📖</h4>
-          <p>
-            La secuencia de escape \B matcheará a cualquier carácter siempre que
-            no este no se encuentre en el límite de palabra. En otras palabras,
-            coincide con posiciones dentro de palabras o entre caracteres que
-            son todos alfanuméricos.
-          </p>
-        </section>
-      </article>
-      <article class="content">
-        <section>
-          <h2 id="alternation">6. Alternation ⚡</h2>
-          <h3>6.1 - Alternation |</h3>
-          <p>
-            | la alternación dentro de las expresiones regulares se refiere a la
-            capacidad de especificar múltiples alternativas sobre el patrón que
-            busca en una cadena de texto. Para ello, se utiliza el operador de
-            barra vertical | separando cada una de las alternativas.
-          </p>
-          <h3>
-            6.2 - Match y match matchea la expresión completa o sino no se
-            matchea 🎯
-          </h3>
-          <p>
-            La construcción (?(exp)yes|no) es parte de las expresiones regulares
-            condicionales y permite definir un patrón que coincide con "yes" si
-            la expresión condicional exp es verdadera y con "no" si es falsa.
-            Aquí tienes un ejemplo de cómo usar esta construcción en una
-            expresión regular:
-          </p>
-          <img src="../images/regexp/alt1.png" id="img-alt1" alt="" />
-        </section>
-      </article>
-      <article class="content">
-        <section>
-          <h2 id="gruprarus">7. Groups rarunos 🐸</h2>
-          <ol>
-            <li>
-              \L$1: Todas las palabras en el grupo coincidente se cambiarán a
-              minúsculas.
-            </li>
-            <li>
-              \l$1: La primera letra en el grupo coincidente estará en
-              minúscula, el resto permanecerá sin cambios.
-            </li>
-            <li>
-              \U$1: Todas las palabras en el grupo coincidente se cambiarán a
-              mayúsculas.
-            </li>
-            <li>
-              \u$1: La primera letra en el grupo coincidente estará en
-              mayúscula, el resto permanecerá sin cambios.
-            </li>
-          </ol>
-        </section>
-      </article>
-      <article class="content">
-        <h3>🥩Chuletita Cheat sheet🥩</h3>
-        <img src="../images/regexp/chuleta.png" id="img-chuleta" alt="" />
-      </article>
-      <article class="content">
-        <h2 id="webrecom">🤓Webs recomendadas🤓</h2>
       </article>
     </main>
     <footer>
       StudyWeb © 2024 Todos los derechos reservados. |
-      <a href="../assets/other/politicaprivacidad.html">Política de privacidad</a> |
-      <a href="#">Términos y condiciones</a> | <a href="#">Contacto</a>
+      <a href="../assets/other/politicaprivacidad.html"
+        >Política de privacidad</a
+      >
+      | <a href="#">Términos y condiciones</a> | <a href="#">Contacto</a>
     </footer>
   </body>
 </html>

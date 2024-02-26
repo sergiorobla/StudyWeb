@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
-  <body id="inicio">
+  <body id="git-inicio">
     <header>
       <nav class="menu">
         <div class="logo">
@@ -37,641 +37,666 @@
     <main>
       <nav class="menu-page">
         <ul>
-          <li><a href="#inicio">Menú🏠</a></li>
-          <li><a href="#quees">¿Qué es GIT?💻</a></li>
-          <li><a href="#desplazanos">Desplazarnos🚶‍♂️</a></li>
-          <li><a href="#configurando">Configurando⚙️</a></li>
-          <li><a href="#status">Git status🔍</a></li>
-          <li><a href="#assremloc">Asociando🔗</a></li>
-          <li><a href="#despcommtemp">Moviendonos⏪</a></li>
-          <li><a href="#branch">Git branch🌿</a></li>
+          <li><a href="#git-inicio">Menú🏠</a></li>
+          <li><a href="#git-quees">¿Qué es GIT?💻</a></li>
+          <li><a href="#git-beneficios">Beneficios✨</a></li>
+          <li><a href="#git-desplazanos">Desplazarnos🚶‍♂️</a></li>
+          <li><a href="#git-repo">Repositorios📂</a></li>
+          <li><a href="#git-configurando">Configurando⚙️</a></li>
+          <li><a href="#git-snap">Snapshot📸</a></li>
+          <li><a href="#git-status">Git status🔍</a></li>
+          <li><a href="#git-add">Git add➕</a></li>
+          <li><a href="#git-commit">Git commit📝</a></li>
+          <li><a href="#git-push">Git push🚀</a></li>
+          <li><a href="#git-assremloc">Asociando🔗</a></li>
+          <li><a href="#git-pull">Git pull🔽</a></li>
+          <li><a href="#git-despcommtemp">Moviendonos⏪</a></li>
+          <li><a href="#git-branch">Git branch🌿</a></li>
         </ul>
       </nav>
       <article class="content">
-        <h1 class="main-title">🛠️Bloque de Git🐱</h1>
-        <div>
-          <p>
-            Git es un sistema de control de versiones distribuido que juega un
-            papel fundamental en el desarrollo de software moderno. Diseñado por
-            Linus Torvalds en 2005, Git permite a los desarrolladores colaborar
-            en proyectos de cualquier escala manteniendo un historial completo y
-            detallado de todas las modificaciones realizadas en el código
-            fuente.
-          </p>
-          <p>Características clave de Git:</p>
-          <ul>
-            <li>
-              Control de versiones distribuido: A diferencia de los sistemas de
-              control de versiones centralizados, Git proporciona a cada
-              desarrollador una copia local completa del repositorio, incluyendo
-              el historial de cambios. Esto facilita el trabajo en paralelo,
-              mejora la velocidad y permite trabajar sin conexión.
-            </li>
-            <li>
-              Integridad de datos: Git utiliza un modelo de datos que asegura la
-              integridad criptográfica de cada parte del proyecto. Cada archivo
-              y cambio está referenciado por un hash SHA-1, lo que garantiza que
-              el contenido del repositorio no pueda ser alterado sin que Git lo
-              detecte.
-            </li>
-            <li>
-              Ramas y fusiones: Git facilita la gestión de ramas, permitiendo a
-              los desarrolladores trabajar en características o correcciones de
-              forma aislada. Las ramas pueden ser fusionadas de nuevo al
-              proyecto principal o entre ellas de manera eficiente, facilitando
-              la integración de cambios.
-            </li>
-            <li>
-              Desempeño: Git está diseñado para ofrecer un rendimiento
-              excepcional en operaciones como la confirmación de cambios
-              (commit), la fusión de ramas (merge) y la comparación de versiones
-              (diff).
-            </li>
-            <li>
-              Flexibilidad: Git es adecuado para proyectos de cualquier tamaño,
-              desde pequeños proyectos personales hasta sistemas de software de
-              gran escala. Su flexibilidad también se extiende a los flujos de
-              trabajo, adaptándose a las necesidades específicas de cada equipo
-              o proyecto.
-            </li>
-          </ul>
-          <p>Usos comunes de Git:</p>
-          <ul>
-            <li>
-              Desarrollo colaborativo de software: Git es la herramienta
-              estándar en la industria para equipos que trabajan en el mismo
-              código fuente, permitiendo una colaboración eficiente y el
-              seguimiento de cambios.
-            </li>
-            <li>
-              Gestión de código fuente: Permite a los desarrolladores mantener
-              un registro detallado de las modificaciones, quién las realizó y
-              cuándo, facilitando la identificación y corrección de errores.
-            </li>
-            <li>
-              Despliegue y entrega continua: Git se integra con sistemas de
-              integración continua/entrega continua (CI/CD), automatizando el
-              proceso de prueba y despliegue de software.
-            </li>
-          </ul>
-          <p>
-            En resumen, Git es una herramienta esencial en el arsenal de
-            cualquier desarrollador, ofreciendo un sistema robusto para el
-            control de versiones que mejora la colaboración, asegura la
-            integridad del código y optimiza el flujo de trabajo en proyectos de
-            desarrollo de software.
-          </p>
-        </div>
-      </article>
-      <article class="content">
-        <section>
-          <h2 id="quees">1. ¿Qué es GIT? 💻</h2>
-          <p>
-            GIT es un Sistema de control de versiones, es un software que se
-            encarga de controlar/administrar las distintas versiones de un
-            programa.
-          </p>
-          <p>
-            Es OpenSource (código abierto) y fue creado por Linus Tolward (el
-            padre del kernel de Linux).
-          </p>
-          <h3>1.1 - Beneficios de GIT ✨</h3>
-          <p>
-            Nos facilita que varias personas puedan trabajar con un mismo
-            proyecto.
-          </p>
-          <p>
-            Revertir los cambios realizados es un "snapshot" (captura del estado
-            del proyecto actual). Ya que GIT es una especie de máquina del
-            tiempo.
-          </p>
-          <p>
-            Nos proporciona un registro mediante al que podemos ver quién y
-            cuando ha realizado un cierto cambio.
-          </p>
-          <p class="recuadro">
-            📌 GIT nos permite realizar "snapshots" del estado de nuestro
-            proyecto para posteriormente poder desplazarnos entre ellas como si
-            de una máquina del tiempo se tratase.
-          </p>
-          <h4>Instalando GIT ⚙️</h4>
-          <p>
-            Para instalar GIT vamos a su
-            <a href="https://git-scm.com/downloads" target="_blank"
-              >web oficial</a
-            >, en el cual también tenemos acceso al libro
-            <a href="https://git-scm.com/book/en/v2" target="_blank">Pro Git</a>
-            de forma totalmente gratuita.
-          </p>
-          <h4>GIT Bash 🐚</h4>
-          <p>
-            Cuando instalamos GIT (en Windows), se nos instalará una especie de
-            terminal Git Bash.
-          </p>
-          <p>
-            Git Bash, es la forma más completa que tener para trabajar con GIT.
-            Pese a ello, existen otras formas de trabajar con GIT mediante a una
-            interfaz gráfica.
-          </p>
-          <p>
-            Git Bash, al ser una emulación de la terminal Linux/UNIX, utiliza
-            los comandos de Linux.
-          </p>
+        <section id="git-intro">
+          <h1 class="main-title">🛠️Bloque de Git🐱</h1>
+          <div>
+            <p>
+              Git es un sistema de control de versiones distribuido que juega un
+              papel fundamental en el desarrollo de software moderno. Diseñado
+              por Linus Torvalds en 2005, Git permite a los desarrolladores
+              colaborar en proyectos de cualquier escala manteniendo un
+              historial completo y detallado de todas las modificaciones
+              realizadas en el código fuente.
+            </p>
+            <p>Características clave de Git:</p>
+            <ul>
+              <li>
+                Control de versiones distribuido: A diferencia de los sistemas
+                de control de versiones centralizados, Git proporciona a cada
+                desarrollador una copia local completa del repositorio,
+                incluyendo el historial de cambios. Esto facilita el trabajo en
+                paralelo, mejora la velocidad y permite trabajar sin conexión.
+              </li>
+              <li>
+                Integridad de datos: Git utiliza un modelo de datos que asegura
+                la integridad criptográfica de cada parte del proyecto. Cada
+                archivo y cambio está referenciado por un hash SHA-1, lo que
+                garantiza que el contenido del repositorio no pueda ser alterado
+                sin que Git lo detecte.
+              </li>
+              <li>
+                Ramas y fusiones: Git facilita la gestión de ramas, permitiendo
+                a los desarrolladores trabajar en características o correcciones
+                de forma aislada. Las ramas pueden ser fusionadas de nuevo al
+                proyecto principal o entre ellas de manera eficiente,
+                facilitando la integración de cambios.
+              </li>
+              <li>
+                Desempeño: Git está diseñado para ofrecer un rendimiento
+                excepcional en operaciones como la confirmación de cambios
+                (commit), la fusión de ramas (merge) y la comparación de
+                versiones (diff).
+              </li>
+              <li>
+                Flexibilidad: Git es adecuado para proyectos de cualquier
+                tamaño, desde pequeños proyectos personales hasta sistemas de
+                software de gran escala. Su flexibilidad también se extiende a
+                los flujos de trabajo, adaptándose a las necesidades específicas
+                de cada equipo o proyecto.
+              </li>
+            </ul>
+            <p>Usos comunes de Git:</p>
+            <ul>
+              <li>
+                Desarrollo colaborativo de software: Git es la herramienta
+                estándar en la industria para equipos que trabajan en el mismo
+                código fuente, permitiendo una colaboración eficiente y el
+                seguimiento de cambios.
+              </li>
+              <li>
+                Gestión de código fuente: Permite a los desarrolladores mantener
+                un registro detallado de las modificaciones, quién las realizó y
+                cuándo, facilitando la identificación y corrección de errores.
+              </li>
+              <li>
+                Despliegue y entrega continua: Git se integra con sistemas de
+                integración continua/entrega continua (CI/CD), automatizando el
+                proceso de prueba y despliegue de software.
+              </li>
+            </ul>
+            <p>
+              En resumen, Git es una herramienta esencial en el arsenal de
+              cualquier desarrollador, ofreciendo un sistema robusto para el
+              control de versiones que mejora la colaboración, asegura la
+              integridad del código y optimiza el flujo de trabajo en proyectos
+              de desarrollo de software.
+            </p>
+          </div>
         </section>
-        <section>
-          <h2 id="desplazanos">2. Como desplazarnos por GIT 🚶‍♂️</h2>
-          <h3>2.1 - Comandos para desplazarnos con GitBash 🔍</h3>
-          <ul>
-            <li>
-              pwd 🡢 Imprime la ruta del directorio actual. (La ruta por defecto
-              raíz, es el directorio del usuario.)
-            </li>
-            <li>ls 🡢 Lista el contenido del directorio actual.</li>
-            <li>cd 🡢 Para cambiar de directorio.</li>
-            <li>cd .. 🡢 Para retroceder de directorio.</li>
-            <li>mkdir 🡢 Para crear un directorio.</li>
-            <li>touch 🡢 Para crear un archivo dentro de un directorio</li>
-          </ul>
-          <h4>¿Qué es un repositorio? 📁</h4>
-          <p>
-            Un repositorio es la manera que tenemos de indicarle al sistema
-            operativo y a GIT que un directorio trabajará con el sistema de
-            control de versiones GIT.
-          </p>
-          <h4>Tipos de repositorio 🏢</h4>
-          <p>
-            Local Repositori 🡢 Es el repositorio que tenemos descargado
-            físicamente en nuestro equipo (en local). Y sobre el, trabajamos
-            solamente nosotros. <br />
-            Una vez realizados los cambios, finalmente podemos (o no) subirlos
-            al repositorio remoto.
-          </p>
-          <p>
-            Remote repository 🡢 Es el repositorio que tenemos en la nube, es
-            decir, alojado sobre una de las plataformas de código como, por
-            ejemplo: GitHub, BitBucker o GitLab. Y en el que se trabaja de forma
-            colaborativa con el resto del equipo.
-          </p>
-          <h4>¿Porqué tener dos tipos de repositorios? 🤔</h4>
-          <p>
-            Ante el caso de perdida del repositorio local tenemos un Backup
-            externo fuera de nuestro dispositivo (repository remote).
-          </p>
-          <p>
-            Nos permite colaborar con otros usuarios de forma sencilla
-            (repository remote).
-          </p>
-          <p>
-            Nos ofrece la posibilidad de realizar desarrollos en local y decidir
-            cuando estos serán compartidos con el resto del equipo (repository
-            local).
-          </p>
+        <section id="git-quees">
+          <h2>1. ¿Qué es GIT? 💻</h2>
+          <div>
+            <p>
+              GIT es un Sistema de control de versiones, es un software que se
+              encarga de controlar/administrar las distintas versiones de un
+              programa.
+            </p>
+            <p>
+              Es OpenSource (código abierto) y fue creado por Linus Tolward (el
+              padre del kernel de Linux).
+            </p>
+            <h3 id="git-beneficios">1.1 - Beneficios de GIT ✨</h3>
+            <p>
+              Nos facilita que varias personas puedan trabajar con un mismo
+              proyecto.
+            </p>
+            <p>
+              Revertir los cambios realizados es un "snapshot" (captura del
+              estado del proyecto actual). Ya que GIT es una especie de máquina
+              del tiempo.
+            </p>
+            <p>
+              Nos proporciona un registro mediante al que podemos ver quién y
+              cuando ha realizado un cierto cambio.
+            </p>
+            <p class="recuadro">
+              📌 GIT nos permite realizar "snapshots" del estado de nuestro
+              proyecto para posteriormente poder desplazarnos entre ellas como
+              si de una máquina del tiempo se tratase.
+            </p>
+            <h4>Instalando GIT ⚙️</h4>
+            <p>
+              Para instalar GIT vamos a su
+              <a href="https://git-scm.com/downloads" target="_blank"
+                >web oficial</a
+              >, en el cual también tenemos acceso al libro
+              <a href="https://git-scm.com/book/en/v2" target="_blank"
+                >Pro Git</a
+              >
+              de forma totalmente gratuita.
+            </p>
+            <h4>GIT Bash 🐚</h4>
+            <p>
+              Cuando instalamos GIT (en Windows), se nos instalará una especie
+              de terminal Git Bash.
+            </p>
+            <p>
+              Git Bash, es la forma más completa que tener para trabajar con
+              GIT. Pese a ello, existen otras formas de trabajar con GIT
+              mediante a una interfaz gráfica.
+            </p>
+            <p>
+              Git Bash, al ser una emulación de la terminal Linux/UNIX, utiliza
+              los comandos de Linux.
+            </p>
+          </div>
         </section>
-      </article>
-      <article class="content">
-        <section>
-          <h2 id="configurando">3. Configurando Git ⚙️</h2>
-          <p>
-            Para poder trabajar con los repositorios remotos, es necesario
-            configurar el user.name y el user.mail de la siguiente manera:
-          </p>
-          <code>
-            git config --global user.name "nombre de usuario" <br />
-            git config --global user.mail "mail de usuario"
-          </code>
-          <p>
-            Entonces ya una vez creados, para poder ver el user.name y user.mail
-            haremos esto:
-          </p>
-          <code>
-            git config user.name <br />
-            git config user.mail
-          </code>
-          <h3>Creando un repositorio local 🏠</h3>
-          <p>Un directorio sin más no es considerado un repositorio en GIT.</p>
-          <p>
-            Para que un directorio sea considerado un repositorio hay que
-            indicárselo al sistema operativo y a GIT mediante el comando git
-            init.
-          </p>
-          <p>Para ello haremos el siguiente comando:</p>
-          <code>git init (nombre del repositorio)</code>
-          <p>
-            Si no utilizamos git init, la carpeta sera un directorio sin más.
-          </p>
-          <p>
-            Pero cuando utilizamos este comando, le estamos indicando al sistema
-            operativo y al software de GIT que vamos a crear un repositorio lo
-            que nos creará un directorio en el interior del repositorio .git que
-            estará oculto en el interior del repositorio.
-          </p>
+        <section id="git-desplazanos">
+          <h2>2. Como desplazarnos por GIT 🚶‍♂️</h2>
+          <div>
+            <h3>2.1 - Comandos para desplazarnos con GitBash 🔍</h3>
+            <ul>
+              <li>
+                pwd 🡢 Imprime la ruta del directorio actual. (La ruta por
+                defecto raíz, es el directorio del usuario.)
+              </li>
+              <li>ls 🡢 Lista el contenido del directorio actual.</li>
+              <li>cd 🡢 Para cambiar de directorio.</li>
+              <li>cd .. 🡢 Para retroceder de directorio.</li>
+              <li>mkdir 🡢 Para crear un directorio.</li>
+              <li>touch 🡢 Para crear un archivo dentro de un directorio</li>
+            </ul>
+            <h3 id="git-repo">2.2 - ¿Qué es un repositorio? 📁</h3>
+            <p>
+              Un repositorio es la manera que tenemos de indicarle al sistema
+              operativo y a GIT que un directorio trabajará con el sistema de
+              control de versiones GIT.
+            </p>
+            <h4>Tipos de repositorio 🏢</h4>
+            <p>
+              Local Repositori 🡢 Es el repositorio que tenemos descargado
+              físicamente en nuestro equipo (en local). Y sobre el, trabajamos
+              solamente nosotros. <br />
+              Una vez realizados los cambios, finalmente podemos (o no) subirlos
+              al repositorio remoto.
+            </p>
+            <p>
+              Remote repository 🡢 Es el repositorio que tenemos en la nube, es
+              decir, alojado sobre una de las plataformas de código como, por
+              ejemplo: GitHub, BitBucker o GitLab. Y en el que se trabaja de
+              forma colaborativa con el resto del equipo.
+            </p>
+            <h4>¿Porqué tener dos tipos de repositorios? 🤔</h4>
+            <p>
+              Ante el caso de perdida del repositorio local tenemos un Backup
+              externo fuera de nuestro dispositivo (repository remote).
+            </p>
+            <p>
+              Nos permite colaborar con otros usuarios de forma sencilla
+              (repository remote).
+            </p>
+            <p>
+              Nos ofrece la posibilidad de realizar desarrollos en local y
+              decidir cuando estos serán compartidos con el resto del equipo
+              (repository local).
+            </p>
+          </div>
         </section>
-        <section>
-          <h3>3.1 - ¿Qué es un snapshot? 📸</h3>
-          <p>
-            Un Snapshot nos permite capturar el estado actual de los ficheros
-            que se han añadido o modificado del proyecto.
-          </p>
-          <p>
-            En GIT somos nosotros los encargados de decidir en que momento
-            queremos realizar un Snapshot de los cambios.
-          </p>
-          <p>
-            Git se basa en un sistema incremental en el que se realizan
-            distintas Snapshots.
-          </p>
-          <p>Veamos un ejemplo:</p>
-          <img
-            src="../images/git/ejemplo snapshot1.png"
-            id="img-snap1"
-            alt=""
-          />
-          <img
-            src="../images/git/ejemplo snapshot2.png"
-            id="img-snap2"
-            alt=""
-          />
-          <h4>Estados de GIT 🔄</h4>
-          <ul>
-            <li>Working directory 🡢 Donde trabajamos con nuestros ficheros.</li>
-            <li>
-              Staging area 🡢 donde vas preparando los archivos que vas a subir
-              al repositorio local.
-            </li>
-            <li>
-              Local repository 🡢 Contiene los archivos que han sido guardados en
-              nuestra máquina.
-            </li>
-            <li>
-              Remote repository 🡢 Contiene los ficheros que son accesibles por
-              el equipo al completo.
-            </li>
-          </ul>
-          <h4>Moviendo ficheros 📂</h4>
-          <p>Imaginaos que nuestro repositorio local es un avión.</p>
-          <ul>
-            <li>
-              Inicialmente los pasajeros (ficheros) están en el working
-              directory sin billetes.
-            </li>
-            <li>
-              Git add permite decidir los pasajeros (ficheros) que pueden volar
-              y por tanto hacer el embarque, para ello, son pasados al staging
-              area.
-            </li>
-            <li>
-              Git commit introduce los ficheros "en el avión", es decir, los
-              pasa al repositorio local.
-            </li>
-            <li>
-              Git push envía "el avión", es decir, permite que los cambios de
-              los ficheros vayan hacía el repositorio remoto.
-            </li>
-          </ul>
+        <section id="git-configurando">
+          <h2>3. Configurando Git ⚙️</h2>
+          <div>
+            <p>
+              Para poder trabajar con los repositorios remotos, es necesario
+              configurar el user.name y el user.mail de la siguiente manera:
+            </p>
+            <code>
+              git config --global user.name "nombre de usuario" <br />
+              git config --global user.mail "mail de usuario"
+            </code>
+            <p>
+              Entonces ya una vez creados, para poder ver el user.name y
+              user.mail haremos esto:
+            </p>
+            <code>
+              git config user.name <br />
+              git config user.mail
+            </code>
+            <h3>Creando un repositorio local 🏠</h3>
+            <p>
+              Un directorio sin más no es considerado un repositorio en GIT.
+            </p>
+            <p>
+              Para que un directorio sea considerado un repositorio hay que
+              indicárselo al sistema operativo y a GIT mediante el comando git
+              init.
+            </p>
+            <p>Para ello haremos el siguiente comando:</p>
+            <code>git init (nombre del repositorio)</code>
+            <p>
+              Si no utilizamos git init, la carpeta sera un directorio sin más.
+            </p>
+            <p>
+              Pero cuando utilizamos este comando, le estamos indicando al
+              sistema operativo y al software de GIT que vamos a crear un
+              repositorio lo que nos creará un directorio en el interior del
+              repositorio .git que estará oculto en el interior del repositorio.
+            </p>
+            <h3 id="git-snap">3.1 - ¿Qué es un snapshot? 📸</h3>
+            <p>
+              Un Snapshot nos permite capturar el estado actual de los ficheros
+              que se han añadido o modificado del proyecto.
+            </p>
+            <p>
+              En GIT somos nosotros los encargados de decidir en que momento
+              queremos realizar un Snapshot de los cambios.
+            </p>
+            <p>
+              Git se basa en un sistema incremental en el que se realizan
+              distintas Snapshots.
+            </p>
+            <p>Veamos un ejemplo:</p>
+            <img
+              src="../images/git/ejemplo snapshot1.png"
+              id="img-snap1"
+              alt=""
+            />
+            <img
+              src="../images/git/ejemplo snapshot2.png"
+              id="img-snap2"
+              alt=""
+            />
+            <h4>Estados de GIT 🔄</h4>
+            <ul>
+              <li>
+                Working directory 🡢 Donde trabajamos con nuestros ficheros.
+              </li>
+              <li>
+                Staging area 🡢 donde vas preparando los archivos que vas a subir
+                al repositorio local.
+              </li>
+              <li>
+                Local repository 🡢 Contiene los archivos que han sido guardados
+                en nuestra máquina.
+              </li>
+              <li>
+                Remote repository 🡢 Contiene los ficheros que son accesibles por
+                el equipo al completo.
+              </li>
+            </ul>
+            <h4>Moviendo ficheros 📂</h4>
+            <p>Imaginaos que nuestro repositorio local es un avión.</p>
+            <ul>
+              <li>
+                Inicialmente los pasajeros (ficheros) están en el working
+                directory sin billetes.
+              </li>
+              <li>
+                Git add permite decidir los pasajeros (ficheros) que pueden
+                volar y por tanto hacer el embarque, para ello, son pasados al
+                staging area.
+              </li>
+              <li>
+                Git commit introduce los ficheros "en el avión", es decir, los
+                pasa al repositorio local.
+              </li>
+              <li>
+                Git push envía "el avión", es decir, permite que los cambios de
+                los ficheros vayan hacía el repositorio remoto.
+              </li>
+            </ul>
+          </div>
         </section>
-      </article>
-      <article class="content">
-        <section>
-          <h2 id="status">4. Git status 🔍</h2>
-          <p>
-            Nos permite ver en que situación área de trabajo se encuentran
-            nuestros ficheros:
-          </p>
-          <img src="../images/git/git status.png" id="img-status" alt="" />
-          <h3>Añadiendo los ficheros al staging area ➕</h3>
-          <p>
-            Ahora que ya tenemos cambios en el working directory, vamos a
-            añadirlos en nuestro staging area mediante el comando git add.
-          </p>
-          <p>Podemos añadir un solo fichero:</p>
-          <code>git add index.html</code>
-          <p>Podemos añadir todos los ficheros nuevos:</p>
-          <code>git add .</code>
-          <h3>Retornando un fichero al working directory ↩️</h3>
-          <p>
-            Si finalmente no queremos subir un fichero y ya lo tenemos en el
-            staging area, podemos echarlo hacía atrás de la siguiente manera:
-          </p>
-          <code>git rm --cached index.html</code>
-          <h3>Git commit 📝</h3>
-          <p>
-            Una vez tenemos los ficheros preparados en el staging area. Ya
-            podemos realizar el envío a repositorio local:
-          </p>
-          <code>git commit -m "Creo el fichero index.html"</code>
-          <p>
-            Se utiliza para pasar los ficheros del staging area al repositorio
-            local.
-          </p>
-          <h3>Git log 📜</h3>
-          <p>
-            Nos permite visualizar un historial con los distintos commits que
-            hemos realizado.
-          </p>
-          <p>En cada commit, podemos ver:</p>
-          <ul>
-            <li>El identificador del commit</li>
-            <li>El autor del commit</li>
-            <li>La fecha del commit</li>
-            <li>El mensaje del commit</li>
-          </ul>
-          <h3>Git push 🚀</h3>
-          <p>Nos permite subir los cambios a un repositorio remoto.</p>
-          <p>
-            Antes de intentar realizar el push, debemos asociar un repositorio
-            con el proyecto.
-          </p>
-          <p>
-            Ya que sino... Vemos que nos dice que no está configurado a donde
-            debe subirlos:
-          </p>
-          <img
-            src="../images/git/git push con error.png"
-            id="img-giterror"
-            alt=""
-          />
+        <section id="git-status">
+          <h2>4. Git status 🔍</h2>
+          <div>
+            <p>
+              Nos permite ver en que situación área de trabajo se encuentran
+              nuestros ficheros:
+            </p>
+            <img src="../images/git/git status.png" id="img-status" alt="" />
+            <h3 id="git-add">4.1 - Añadiendo los ficheros al staging area ➕</h3>
+            <p>
+              Ahora que ya tenemos cambios en el working directory, vamos a
+              añadirlos en nuestro staging area mediante el comando git add.
+            </p>
+            <p>Podemos añadir un solo fichero:</p>
+            <code>git add index.html</code>
+            <p>Podemos añadir todos los ficheros nuevos:</p>
+            <code>git add .</code>
+            <h3>Retornando un fichero al working directory ↩️</h3>
+            <p>
+              Si finalmente no queremos subir un fichero y ya lo tenemos en el
+              staging area, podemos echarlo hacía atrás de la siguiente manera:
+            </p>
+            <code>git rm --cached index.html</code>
+            <h3 id="git-commit">4.2 - Git commit 📝</h3>
+            <p>
+              Una vez tenemos los ficheros preparados en el staging area. Ya
+              podemos realizar el envío a repositorio local:
+            </p>
+            <code>git commit -m "Creo el fichero index.html"</code>
+            <p>
+              Se utiliza para pasar los ficheros del staging area al repositorio
+              local.
+            </p>
+            <h3>Git log 📜</h3>
+            <p>
+              Nos permite visualizar un historial con los distintos commits que
+              hemos realizado.
+            </p>
+            <p>En cada commit, podemos ver:</p>
+            <ul>
+              <li>El identificador del commit</li>
+              <li>El autor del commit</li>
+              <li>La fecha del commit</li>
+              <li>El mensaje del commit</li>
+            </ul>
+            <h3 id="git-push">4.3 - Git push 🚀</h3>
+            <p>Nos permite subir los cambios a un repositorio remoto.</p>
+            <p>
+              Antes de intentar realizar el push, debemos asociar un repositorio
+              con el proyecto.
+            </p>
+            <p>
+              Ya que sino... Vemos que nos dice que no está configurado a donde
+              debe subirlos:
+            </p>
+            <img
+              src="../images/git/git push con error.png"
+              id="img-giterror"
+              alt=""
+            />
+          </div>
         </section>
-      </article>
-      <article class="content">
-        <h2 id="assremloc">
-          5. Asociando el repositorio remoto con el repositorio local 🔗
-        </h2>
-        <p>
-          Si nos fijamos en el repositorio que se acaba de crear tenemos los
-          pasos para asociar un repositorio ya existente.
-        </p>
-        <img
-          src="../images/git/git remote add origin.png"
-          id="img-gitremoteorigin"
-          alt=""
-        />
-        <p>
-          Si hacemos un remote para ver los repositorios remotos asociados,
-          podemos ver que no tenemos nada asociado. Por ello, no podemos
-          realizar el envío de información a nuestro repositorio remoto.
-        </p>
-        <img src="../images/git/git remote -v.png" id="img-gitremotev" alt="" />
-        <p>
-          Si pegamos el código que nos proporciona GitHub, vamos a asociar el
-          repositorio remoto con nuestro repositorio local, crear una rama main
-          y finalmente subir los cambios a dicha rama.
-        </p>
-        <p>Una vez nos autentificamos en GitHub, podremos ver que:</p>
-        <ul>
-          <li>
-            Tenemos el push realizado, por lo que los cambios ya deben aparecer
-            en el repositorio remoto.
-          </li>
-          <li>Y además tenemos el repositorio remoto configurado.</li>
-        </ul>
-        <p>
-          Si vamos a GitHub podemos ver que tenemos un commit realizado en el
-          repositorio remoto, concretamente en la rama Main (a no ser que hayas
-          creado una rama nueva para crear alli los cambios).
-        </p>
-        <h3>Cambiando de repositorios remotos 🔄</h3>
-        <p>
-          Cuando estamos en un repositorio y queremos asociar nuestro
-          repositorio local a otro repositorio remoto primeramente tendremos que
-          hacer:
-        </p>
-        <img
-          src="../images/git/git remote -v con repositorio.png"
-          id="img-gitremotevrep"
-          alt=""
-        />
-        <p>
-          Viendo que tenemos este repositorio remoto asociado, tendriamos que
-          cambiar la url del repositorio a la que queremos poner con el
-          siguiente comando:
-        </p>
-        <p>git remote set-url origin (url del repositorio remoto)</p>
-        <img
-          src="../images/git/git remote set-url origin.png"
-          id="img-seturl"
-          alt=""
-        />
-        <p>
-          Así cambiariamos la url del repositorio remoto, para volver a
-          cambiarlo hariamos los mismos pasos.
-        </p>
-        <h3>Git pull 🔄🔽</h3>
-        <p>
-          Ahora que el repositorio está en la nube, es posible que algún
-          compañero que tenga permisos realicé una modificación en el código del
-          proyecto y realicé una subida.
-        </p>
-        <p>Lo que puede suponer que nuestro repositorio no este actualizado.</p>
-        <p>
-          Nosotros lo vamos a hacer de una forma poco elegante directamente
-          desde Git para ver lo que hace git pull.
-        </p>
-        <p>
-          Si esto nos pasa, nos fijaremos que, actualmente tenemos mas commits
-          en el repositorio remoto y nosotros tendremos menos en nuestro
-          repositorio local, por lo que tenemos que actualizar el repositorio
-          utilizando git pull, con el siguiente comando:
-        </p>
-        <code>
-          git pull origin main <br />
-          git log
-        </code>
-        <p>
-          Luego hariamos el git log para poder ver que tengamos el commit nuevo
-          y que el branch main y origin/main estan a la par.
-        </p>
-        <h3>Git clone 📥</h3>
-        <p>
-          Otra manera de trabajar con un proyecto, es directamente clonando el
-          repositorio.
-        </p>
-        <p>
-          Inclusive muchos desarrolladores cuando empiezan un proyecto desde 0
-          suelen crear el repositorio en GitHub y posteriormente clonarlo ya que
-          estará listo para trabajar con él.
-        </p>
-        <code> git clone https://github.com/sergiroblanson/repo.git </code>
-        <p>
-          Si luego hacemos un git remote -v veremos que tenemos los repositorios
-          remotos a nuestra disposición.
-        </p>
-      </article>
-      <article class="content">
-        <section>
-          <h2 id="despcommtemp">
-            6. Desplazandonos entre commits temporalmente ⏪🔄
+        <section id="git-assremloc">
+          <h2>
+            5. Asociando el repositorio remoto con el repositorio local 🔗
           </h2>
-          <p>
-            Si hacemos un git log --graph --oneline --decorate vemos los commits
-            y, mediante con HEAD, podemos saber sobre que commit estamos
-            trabajando.
-          </p>
-          <img
-            src="../images/git/git log --graph --oneline --decorate.png"
-            id="img-gitlogadog"
-            alt=""
-          />
-          <p>
-            El HEAD, por tanto, es el puntero mediante al cual le indicamos a
-            GIT sobre que commit estamos situados actualmente.
-          </p>
-          <p>
-            Para situarnos en el commit 1, se haria con: git checkout hash (hash
-            es el numero del commit "el amarillo")
-          </p>
-          <img
-            src="../images/git/git checkout numero.png"
-            id="img-gitcheckoutnum"
-            alt=""
-          />
-          <p>
-            Si ahora miramos nuestro repositorio o ficheros, podemos ver que
-            esta tal y como estaba en el primer commit, ya que los cambios que
-            has realizado estaban en los commits posteriores.
-          </p>
-          <p>
-            Si hacemos otro git log --graph --oneline --decorate vemos que
-            solamente nos muestra el commit en el que estamos situados.
-          </p>
-          <img
-            src="../images/git/git log --graph --oneline --decorate despues.png"
-            id="img-gitlogadogdesp"
-            alt=""
-          />
-          <p>Esto es porque tenemos que utilizar el comando:</p>
-          <code> git log --graph --oneline --decorate --reflog </code>
-          <p>
-            Con este comando podremos ver que estamos situados en el primer
-            commit y todos los commits que hemos echo despues:
-          </p>
-          <img
-            src="../images/git/git log --graph --oneline --decorate --reflog.png"
-            id="img-gitlogadogreflog"
-            alt=""
-          />
-          <p>
-            Para volver al commit donde estabamos situados, para ello hariamos
-            el mismo proceso pero con el número del ultimo commit (en el caso
-            que hayas guardado todos los cambios con un commit).
-          </p>
-          <p>git checkout hash (hash es el numero del ultimo commit)</p>
-          <img
-            src="../images/git/git checkout y git log.png"
-            id="img-gitcheckgitlog"
-            alt=""
-          />
-          <p>
-            En el caso que queramos volver al branch principal escribiriamos git
-            checkout main.
-          </p>
-          <p>
-            Para visualizar los cambios realizados en un commit podemos utilizar
-            git show.
-          </p>
+          <div>
+            <p>
+              Si nos fijamos en el repositorio que se acaba de crear tenemos los
+              pasos para asociar un repositorio ya existente.
+            </p>
+            <img
+              src="../images/git/git remote add origin.png"
+              id="img-gitremoteorigin"
+              alt=""
+            />
+            <p>
+              Si hacemos un remote para ver los repositorios remotos asociados,
+              podemos ver que no tenemos nada asociado. Por ello, no podemos
+              realizar el envío de información a nuestro repositorio remoto.
+            </p>
+            <img
+              src="../images/git/git remote -v.png"
+              id="img-gitremotev"
+              alt=""
+            />
+            <p>
+              Si pegamos el código que nos proporciona GitHub, vamos a asociar
+              el repositorio remoto con nuestro repositorio local, crear una
+              rama main y finalmente subir los cambios a dicha rama.
+            </p>
+            <p>Una vez nos autentificamos en GitHub, podremos ver que:</p>
+            <ul>
+              <li>
+                Tenemos el push realizado, por lo que los cambios ya deben
+                aparecer en el repositorio remoto.
+              </li>
+              <li>Y además tenemos el repositorio remoto configurado.</li>
+            </ul>
+            <p>
+              Si vamos a GitHub podemos ver que tenemos un commit realizado en
+              el repositorio remoto, concretamente en la rama Main (a no ser que
+              hayas creado una rama nueva para crear alli los cambios).
+            </p>
+            <h3>Cambiando de repositorios remotos 🔄</h3>
+            <p>
+              Cuando estamos en un repositorio y queremos asociar nuestro
+              repositorio local a otro repositorio remoto primeramente tendremos
+              que hacer:
+            </p>
+            <img
+              src="../images/git/git remote -v con repositorio.png"
+              id="img-gitremotevrep"
+              alt=""
+            />
+            <p>
+              Viendo que tenemos este repositorio remoto asociado, tendriamos
+              que cambiar la url del repositorio a la que queremos poner con el
+              siguiente comando:
+            </p>
+            <p>git remote set-url origin (url del repositorio remoto)</p>
+            <img
+              src="../images/git/git remote set-url origin.png"
+              id="img-seturl"
+              alt=""
+            />
+            <p>
+              Así cambiariamos la url del repositorio remoto, para volver a
+              cambiarlo hariamos los mismos pasos.
+            </p>
+            <h3 id="git-pull">Git pull 🔄🔽</h3>
+            <p>
+              Ahora que el repositorio está en la nube, es posible que algún
+              compañero que tenga permisos realicé una modificación en el código
+              del proyecto y realicé una subida.
+            </p>
+            <p>
+              Lo que puede suponer que nuestro repositorio no este actualizado.
+            </p>
+            <p>
+              Nosotros lo vamos a hacer de una forma poco elegante directamente
+              desde Git para ver lo que hace git pull.
+            </p>
+            <p>
+              Si esto nos pasa, nos fijaremos que, actualmente tenemos mas
+              commits en el repositorio remoto y nosotros tendremos menos en
+              nuestro repositorio local, por lo que tenemos que actualizar el
+              repositorio utilizando git pull, con el siguiente comando:
+            </p>
+            <code>
+              git pull origin main <br />
+              git log
+            </code>
+            <p>
+              Luego hariamos el git log para poder ver que tengamos el commit
+              nuevo y que el branch main y origin/main estan a la par.
+            </p>
+            <h3>Git clone 📥</h3>
+            <p>
+              Otra manera de trabajar con un proyecto, es directamente clonando
+              el repositorio.
+            </p>
+            <p>
+              Inclusive muchos desarrolladores cuando empiezan un proyecto desde
+              0 suelen crear el repositorio en GitHub y posteriormente clonarlo
+              ya que estará listo para trabajar con él.
+            </p>
+            <code> git clone https://github.com/sergiroblanson/repo.git </code>
+            <p>
+              Si luego hacemos un git remote -v veremos que tenemos los
+              repositorios remotos a nuestra disposición.
+            </p>
+          </div>
         </section>
-      </article>
-      <article class="content">
-        <section>
-          <h2 id="branch">7. Git branch - creando una rama 🌿</h2>
-          <p>
-            Hasta ahora todo nuestro trabajo se ha realizado en la rama master o
-            main, pero esto nos puede suponer que si no tenemos la rama
-            actualizada y otro compañero sube los cambios podamos tener
-            conflictos que son difíciles de resolver.
-          </p>
-          <p>
-            Por ello, se aconseja trabajar en nuestro código desde una rama
-            independiente.
-          </p>
-          <p>
-            Para visualizar las ramas actuales hacemos el comando git branch,
-            veremos que solamente tenemos main.
-          </p>
-          <p>
-            Para trabajar con ramas lo primero que tenemos que hacer es crear
-            una rama, utiizamos git branch nombreRama.
-          </p>
-          <p>
-            Ahora si volvemos a visualizar las ramas, veremos que tenemos una
-            rama nueva llamada nombreRama (o el nombre que le hayas dado).
-          </p>
-          <p>
-            Con esto creamos la rama pero no nos situamos en ella, para
-            situarnos en la rama hacemos el comando git checkout nombreRama.
-          </p>
-          <p>
-            Una vez echo esto, si hacemos un git log --all --decorate --oneline
-            --graph , podemos ver que el HEAD apunta a la rama que hemos creado.
-          </p>
-          <p>
-            A partir de ahora, todos los archivos nuevos que pongamos, solo
-            estaran existiendo dentro de esta rama nueva.
-          </p>
-          <p>
-            Para subir la rama al repositorio remoto haremos este comando: $ git
-            push -u origin nombreRama, asi subiriamos la rama y todo lo creado
-            dentro de esta rama despues de hacer el commit.
-          </p>
-          <h3>Juntando la rama con main 🔀</h3>
-          <p>
-            Para juntar una rama con main, primero nos situamos en la rama main
-            y hacemos un git merge nombreRama (de la rama que queremos
-            mergear/fusionar).
-          </p>
-          <ul>
-            <li>
-              Cuando hacemos solo git merge nombreRama, estamos utilizando el
-              tipo de merge fast-forward(ff), significa avance rápido y nos
-              permite fusionar la rama que acabamos de crear con la rama main
-              sin realizar un commit de confirmación.
-            </li>
-            <li>
-              Cuando hacemos git merge --no-ff nombreRama -m "comentarioRama",
-              estamos haciendo el No fast-forward(nff), que crea una nueva
-              confirmación con varios padres, lo que proporciona un mejor
-              seguimiento del historial.
-            </li>
-          </ul>
-          <img src="../images/git/git merges.png" id="img-gitmerges" alt="" />
-          <p>
-            Una vez echo el merge, podemos visualizar que los cambios han salido
-            correctamente con git log --all --decorate --oneline --graph.
-          </p>
-          <h3>Eliminando las ramas 🗑️</h3>
-          <p>
-            Para eliminar una rama en local realizamos el siguiente comando:
-          </p>
-          <code> git branch -d nombreRama </code>
-          <p>
-            Para eliminar una rama en remoto utilizamos el siguiente comando:
-          </p>
-          <code> git push origin --delete nombreRama </code>
-          <h3>Enlaces de interés 🔗</h3>
-          <p>
-            <a
-              href="https://learngitbranching.js.org/?locale=es_ES"
-              target="_blank"
-              >Learn Git Branching</a
-            >: Nos permite aprender sobre varios aspectos de Git de forma muy
-            visual.
-          </p>
-          <p>Un truco para filtrar fechas en un repo es:</p>
-          <code> git log --since='Feb 1 2022' --until='Feb 28 2022' </code>
-          <p>
-            La siguiente web:
-            <a href="https://skyline.github.com/" target="_blank"
-              >Skyline Github</a
-            >
-            nos permite realizar un skyline en función de los commits que hemos
-            realizado.
-          </p>
+        <section id="git-despcommtemp">
+          <h2>6. Desplazandonos entre commits temporalmente ⏪🔄</h2>
+          <div>
+            <p>
+              Si hacemos un git log --graph --oneline --decorate vemos los
+              commits y, mediante con HEAD, podemos saber sobre que commit
+              estamos trabajando.
+            </p>
+            <img
+              src="../images/git/git log --graph --oneline --decorate.png"
+              id="img-gitlogadog"
+              alt=""
+            />
+            <p>
+              El HEAD, por tanto, es el puntero mediante al cual le indicamos a
+              GIT sobre que commit estamos situados actualmente.
+            </p>
+            <p>
+              Para situarnos en el commit 1, se haria con: git checkout hash
+              (hash es el numero del commit "el amarillo")
+            </p>
+            <img
+              src="../images/git/git checkout numero.png"
+              id="img-gitcheckoutnum"
+              alt=""
+            />
+            <p>
+              Si ahora miramos nuestro repositorio o ficheros, podemos ver que
+              esta tal y como estaba en el primer commit, ya que los cambios que
+              has realizado estaban en los commits posteriores.
+            </p>
+            <p>
+              Si hacemos otro git log --graph --oneline --decorate vemos que
+              solamente nos muestra el commit en el que estamos situados.
+            </p>
+            <img
+              src="../images/git/git log --graph --oneline --decorate despues.png"
+              id="img-gitlogadogdesp"
+              alt=""
+            />
+            <p>Esto es porque tenemos que utilizar el comando:</p>
+            <code> git log --graph --oneline --decorate --reflog </code>
+            <p>
+              Con este comando podremos ver que estamos situados en el primer
+              commit y todos los commits que hemos echo despues:
+            </p>
+            <img
+              src="../images/git/git log --graph --oneline --decorate --reflog.png"
+              id="img-gitlogadogreflog"
+              alt=""
+            />
+            <p>
+              Para volver al commit donde estabamos situados, para ello hariamos
+              el mismo proceso pero con el número del ultimo commit (en el caso
+              que hayas guardado todos los cambios con un commit).
+            </p>
+            <p>git checkout hash (hash es el numero del ultimo commit)</p>
+            <img
+              src="../images/git/git checkout y git log.png"
+              id="img-gitcheckgitlog"
+              alt=""
+            />
+            <p>
+              En el caso que queramos volver al branch principal escribiriamos
+              git checkout main.
+            </p>
+            <p>
+              Para visualizar los cambios realizados en un commit podemos
+              utilizar git show.
+            </p>
+          </div>
+        </section>
+        <section id="git-branch">
+          <h2>7. Git branch - creando una rama 🌿</h2>
+          <div>
+            <p>
+              Hasta ahora todo nuestro trabajo se ha realizado en la rama master
+              o main, pero esto nos puede suponer que si no tenemos la rama
+              actualizada y otro compañero sube los cambios podamos tener
+              conflictos que son difíciles de resolver.
+            </p>
+            <p>
+              Por ello, se aconseja trabajar en nuestro código desde una rama
+              independiente.
+            </p>
+            <p>
+              Para visualizar las ramas actuales hacemos el comando git branch,
+              veremos que solamente tenemos main.
+            </p>
+            <p>
+              Para trabajar con ramas lo primero que tenemos que hacer es crear
+              una rama, utiizamos git branch nombreRama.
+            </p>
+            <p>
+              Ahora si volvemos a visualizar las ramas, veremos que tenemos una
+              rama nueva llamada nombreRama (o el nombre que le hayas dado).
+            </p>
+            <p>
+              Con esto creamos la rama pero no nos situamos en ella, para
+              situarnos en la rama hacemos el comando git checkout nombreRama.
+            </p>
+            <p>
+              Una vez echo esto, si hacemos un git log --all --decorate
+              --oneline --graph , podemos ver que el HEAD apunta a la rama que
+              hemos creado.
+            </p>
+            <p>
+              A partir de ahora, todos los archivos nuevos que pongamos, solo
+              estaran existiendo dentro de esta rama nueva.
+            </p>
+            <p>
+              Para subir la rama al repositorio remoto haremos este comando: $
+              git push -u origin nombreRama, asi subiriamos la rama y todo lo
+              creado dentro de esta rama despues de hacer el commit.
+            </p>
+            <h3>Juntando la rama con main 🔀</h3>
+            <p>
+              Para juntar una rama con main, primero nos situamos en la rama
+              main y hacemos un git merge nombreRama (de la rama que queremos
+              mergear/fusionar).
+            </p>
+            <ul>
+              <li>
+                Cuando hacemos solo git merge nombreRama, estamos utilizando el
+                tipo de merge fast-forward(ff), significa avance rápido y nos
+                permite fusionar la rama que acabamos de crear con la rama main
+                sin realizar un commit de confirmación.
+              </li>
+              <li>
+                Cuando hacemos git merge --no-ff nombreRama -m "comentarioRama",
+                estamos haciendo el No fast-forward(nff), que crea una nueva
+                confirmación con varios padres, lo que proporciona un mejor
+                seguimiento del historial.
+              </li>
+            </ul>
+            <img src="../images/git/git merges.png" id="img-gitmerges" alt="" />
+            <p>
+              Una vez echo el merge, podemos visualizar que los cambios han
+              salido correctamente con git log --all --decorate --oneline
+              --graph.
+            </p>
+            <h3>Eliminando las ramas 🗑️</h3>
+            <p>
+              Para eliminar una rama en local realizamos el siguiente comando:
+            </p>
+            <code> git branch -d nombreRama </code>
+            <p>
+              Para eliminar una rama en remoto utilizamos el siguiente comando:
+            </p>
+            <code> git push origin --delete nombreRama </code>
+            <h3>Enlaces de interés 🔗</h3>
+            <p>
+              <a
+                href="https://learngitbranching.js.org/?locale=es_ES"
+                target="_blank"
+                >Learn Git Branching</a
+              >: Nos permite aprender sobre varios aspectos de Git de forma muy
+              visual.
+            </p>
+            <p>Un truco para filtrar fechas en un repo es:</p>
+            <code> git log --since='Feb 1 2022' --until='Feb 28 2022' </code>
+            <p>
+              La siguiente web:
+              <a href="https://skyline.github.com/" target="_blank"
+                >Skyline Github</a
+              >
+              nos permite realizar un skyline en función de los commits que
+              hemos realizado.
+            </p>
+          </div>
         </section>
       </article>
     </main>
     <footer>
       StudyWeb © 2024 Todos los derechos reservados. |
-      <a href="../assets/other/politicaprivacidad.html">Política de privacidad</a> |
-      <a href="#">Términos y condiciones</a> | <a href="#">Contacto</a>
+      <a href="../assets/other/politicaprivacidad.html"
+        >Política de privacidad</a
+      >
+      | <a href="#">Términos y condiciones</a> | <a href="#">Contacto</a>
     </footer>
   </body>
 </html>
