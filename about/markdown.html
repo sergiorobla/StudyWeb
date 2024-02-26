@@ -35,41 +35,406 @@
       </nav>
     </header>
     <main>
-      <nav class="menu-page">
+      <nav class="menu-page over">
         <ul>
           <li><a href="#inicio">Menú🏠</a></li>
-          <li><a href="#quees">¿Qué es GIT?💻</a></li>
-          <li><a href="#desplazanos">Desplazarnos🚶‍♂️</a></li>
-          <li><a href="#configurando">Configurando⚙️</a></li>
-          <li><a href="#status">Git status🔍</a></li>
-          <li><a href="#assremloc">Asociando🔗</a></li>
-          <li><a href="#despcommtemp">Moviendonos⏪</a></li>
-          <li><a href="#branch">Git branch🌿</a></li>
+          <li><a href="#mark-tit">Títulos📝</a></li>
+          <li><a href="#mark-parr">Párrafos📄</a></li>
+          <li><a href="#mark-com">Comentarios💬</a></li>
+          <li><a href="#mark-negr">Negrita🅰</a></li>
+          <li><a href="#mark-cur">Cursiva🅱</a></li>
+          <li><a href="#mark-curneg">Las dos🆎</a></li>
+          <li><a href="#mark-cit">Citas🗣️</a></li>
+          <li><a href="#mark-li">Listas📋</a></li>
+          <li><a href="#mark-enl">Enlaces🔗</a></li>
+          <li><a href="#mark-sub">Subrayado🚫</a></li>
+          <li><a href="#mark-tach">Tachado⛔</a></li>
+          <li><a href="#mark-sep">Separadoras➖</a></li>
+          <li><a href="#mark-img">Imágenes🖼️</a></li>
+          <li><a href="#mark-cod">Código💻</a></li>
+          <li><a href="#mark-esp">Especiales🔣</a></li>
+          <li><a href="#mark-task">Task list📝</a></li>
+          <li><a href="#mark-toc">TOC📚</a></li>
+          <li><a href="#mark-tabl">Tablas📊</a></li>
+          <li><a href="#mark-adv">Mensajes⚠️</a></li>
         </ul>
       </nav>
       <article class="content">
-        <h1 class="main-title">📝Sintaxis de Markdown✍️</h1>
-        <p>
-          En este apartado, exploraremos la sintaxis completa de Markdown y
-          todas las opciones que tenemos disponibles. Markdown es un lenguaje de
-          marcado ligero que se ha vuelto ampliamente popular debido a su
-          simplicidad y versatilidad en la creación de contenido formateado. Con
-          Markdown, podemos aplicar formato al texto de manera sencilla
-          utilizando caracteres especiales como asteriscos, guiones y otros
-          elementos para resaltar, enfatizar y estructurar nuestro contenido de
-          forma clara y concisa. Este lenguaje nos permite crear desde
-          documentos simples hasta presentaciones interactivas, tablas, enlaces
-          y mucho más, sin la necesidad de conocimientos avanzados de HTML u
-          otros lenguajes de marcado. Markdown es compatible con la mayoría de
-          las plataformas y editores de texto, lo que lo convierte en una
-          herramienta versátil y accesible para la creación de contenido en
-          diversos entornos.
-        </p>
+        <section id="mark-intro">
+          <h1 class="main-title">📝Sintaxis de Markdown✍️</h1>
+          <p>
+            En este apartado, exploraremos la sintaxis completa de Markdown y
+            todas las opciones que tenemos disponibles. Markdown es un lenguaje
+            de marcado ligero que se ha vuelto ampliamente popular debido a su
+            simplicidad y versatilidad en la creación de contenido formateado.
+            Con Markdown, podemos aplicar formato al texto de manera sencilla
+            utilizando caracteres especiales como asteriscos, guiones y otros
+            elementos para resaltar, enfatizar y estructurar nuestro contenido
+            de forma clara y concisa. Este lenguaje nos permite crear desde
+            documentos simples hasta presentaciones interactivas, tablas,
+            enlaces y mucho más, sin la necesidad de conocimientos avanzados de
+            HTML u otros lenguajes de marcado. Markdown es compatible con la
+            mayoría de las plataformas y editores de texto, lo que lo convierte
+            en una herramienta versátil y accesible para la creación de
+            contenido en diversos entornos.
+          </p>
+        </section>
+        <section id="mark-tit">
+          <h2>Títulos o Encabezados🏷️</h2>
+          <p>Nos permiten definir títulos o secciones de un contenido.</p>
+          <code>
+            # Encabezado h1 <br />
+            ## Encabezado h2 <br />
+            ### Encabezado h3 <br />
+            #### Encabezado h4 <br />
+            ##### Encabezado h5 <br />
+            ###### Encabezado h6
+          </code>
+        </section>
+        <section id="mark-parr">
+          <h2>Párrafos, saltos de línea y líneas sin contenido📄</h2>
+          <ul>
+            <li>Para escribir un párrafo escribimos el texto sin nada mas.</li>
+            <li>
+              Si queremos añadir un salto de línea, debemos escribir dos
+              espacios y darle ENTER.
+            </li>
+            <li>
+              Para dejar una línea vacía pulsar ENTER y dejar una línea vacía.
+            </li>
+          </ul>
+        </section>
+        <section id="mark-com">
+          <h2>Comentarios💬</h2>
+          <p>
+            Los comentarios sirven para comentar el código que tenemos para que
+            sea mas entendible.
+          </p>
+          <p>Hay dos tipos de comentarios:</p>
+          <p>
+            Comentarios que pueden estar en la misma línea con otro elemento.
+          </p>
+          <code><!-- Comentario --></code>
+          <p>
+            Comentarios que no pueden estar en la misma línea con otro elemento:
+          </p>
+          <code>
+            [comment]: &lt;&gt; (Comentario que debe ir solo) <br />
+            [//]: &lt;&gt; (Comentario que debe ir solo) <br />
+            [//]: # (Comentario que debe ir solo)
+          </code>
+        </section>
+        <section id="mark-negr">
+          <h2>Negrita🅰</h2>
+          <p>
+            Se escribe el texto rodeado con dos asteriscos a cada lado **texto**
+            .
+          </p>
+          <p>
+            O sino, también es posible rodearlo de dos barra bajas como
+            alternativa __texto__
+          </p>
+        </section>
+        <section id="mark-cur">
+          <h2>Cursiva🅱</h2>
+          <p>
+            Se escribe el texto rodeado de un asterisco a cada lado *texto*.
+          </p>
+          <p>
+            O sino, también es posible rodearlo de dos barra bajas como
+            alternativa _texto_
+          </p>
+        </section>
+        <section id="mark-curneg">
+          <h2>Cursiva + negrita🆎</h2>
+          <p>
+            Existe la posibilidad de combinar negritas y cursivas en ambas de la
+            siguientes maneras.
+          </p>
+          <code>
+            ***Texto en negrita y cursiva con asteriscos*** <br />
+            ___Textos en negrita y cursiva con barra bajas___
+          </code>
+        </section>
+        <section id="mark-cit">
+          <h2>Citas🗣️</h2>
+          <p>
+            Se generan utilizando el símbolo de mayor que > antes de la frase.
+          </p>
+          <code>>“¡A mi señal, ira y fuego!🔥” – Máximo Décimo Meridio.</code>
+          <p>
+            También se pueden escribir en varios párrafos de la siguiente
+            manera:
+          </p>
+          <code>
+            >"¡A mi señal, ira y fuego!🔥" <br />
+            > Máximo Décimo Meridio.
+          </code>
+          <p>
+            Además, también se pueden utilizar varios niveles de la siguiente
+            manera:
+          </p>
+          <code>
+            >"¡A mi señal, ira y fuego!🔥" – Máximo Décimo Meridio. <br />
+            >>Frase de la película <br />
+            >>> "Gladiator"
+          </code>
+        </section>
+        <section id="mark-li">
+          <h2>Listas📋</h2>
+          <p>También podemos escribir listas. Dentro de las listas tenemos:</p>
+          <p>
+            Listas desordenadas: para escribir listas ordenadas utilizamos los
+            caracteres * , - o + . Si importar hasta el alternarlos, ya que el
+            resultado es el mismo.
+          </p>
+          <code>
+            - Item 1 <br />
+            - Item 2 <br />
+            * Item 3 <br />
+            * Item 4 <br />
+            + Item 5 <br />
+            + Item 6
+          </code>
+          <p>
+            Listas ordenadas: se utiliza el número seguido de un punto. Por
+            ejemplo, para escribir el primer elemento escribiríamos: 1.
+          </p>
+          <code>
+            1. Item 1 <br />
+            2. Item 2 <br />
+            3. Item 3
+          </code>
+          <p>
+            Listas anidadas: existe la posibilidad de anidar listas de la
+            siguiente manera:
+          </p>
+          <code>
+            1. Item 1 <br />
+            [tab]1.1. Subitem 1.1 <br />
+            [tab]1.2. Subitem 1.2 <br />
+            2. Item 2 <br />
+            [tab]* Subitem ded item2 <br />
+            3. Item 3 <br />
+            [tab]* Subitem ded item3 <br />
+            [tab]* Subitem del subitem3
+          </code>
+        </section>
+        <section id="mark-enl">
+          <h2>Enlaces o links 🔗</h2>
+          <p>
+            Nos permiten enlazar nuestro documento con otras webs o recursos.
+          </p>
+          <p>
+            El ejemplo más sencillo sería realizado mediante al link automático:
+          </p>
+          <p>&lt;http://google.com/&gt;</p>
+          <p>Otra alternativa al link automático sería la siguiente:</p>
+          <p>[Ir a Google](http://www.google.es)</p>
+          <p>
+            Aunque también podemos añadir un texto descriptivo cuando nos
+            situamos encima de la siguiente manera:
+          </p>
+          <p>
+            [Visitar Google](https://www.google.es "Texto (cuando ponemos el
+            cursor encima)")
+          </p>
+        </section>
+        <section id="mark-sub">
+          <h2>Subrayado🚫</h2>
+          <p>No existe el subrayado.</p>
+          <p>
+            El motivo es que en Markdown no tiene una sintaxis definida para
+            subrayar texto.
+          </p>
+          <p>
+            Supongo que esto se debe a que el texto subrayado es difícil de leer
+            y que solamente se utiliza para realizar hipervínculos.
+          </p>
+        </section>
+        <section id="mark-tach">
+          <h2>Tachado⛔</h2>
+          <p>
+            Si queremos tachar un texto, debemos englobarlo entre ~~ . ~~Texto
+            tachado~~
+          </p>
+        </section>
+        <section id="mark-sep">
+          <h2>Líneas separadoras o regla horizontales➖</h2>
+          <p>Nos permiten separar un contenido de otro.</p>
+          <code>
+            ## Líneas separadoras escrita sin espacios (se verá igual que la
+            otra) <br />
+            Contenido 1 <br />
+            *** <br />
+            Contenido 2 <br />
+            --- <br />
+            Contenido 3 <br />
+            ___ <br />
+            ## Líneas separadoras escrita con espacios (se verá igual que la
+            otra) <br />
+            Contenido 1 <br />
+            * * * <br />
+            Contenido 2 <br />
+            - - - <br />
+            Contenido 3 <br />
+            _ _ _
+          </code>
+          <p>
+            Es importante tener cuidado ya que si los guiones --- están juntos
+            es necesario dejar un espacio entre el texto y el contenido para
+            evitar que lo interprete como un encabezado.
+          </p>
+        </section>
+        <section id="mark-img">
+          <h2>Imágenes🖼️</h2>
+          <p>
+            Nos permiten mostrar imágenes dentro de nuestro documento de
+            Markdown.
+          </p>
+          <code>
+            ![Este contenido se mostrará cuando la imagen no se pueda cargar,
+            como texto alternativo](https://6.png "Texto a mostrar cuando nos
+            situamos sobre la imagen. En este caso sería Baile de la película
+            Pulp Fiction")
+          </code>
+          <h3>Imágenes con enlace 🖼️🔗</h3>
+          <p>
+            Existe la posibilidad de combinar imágenes y enlaces de la siguiente
+            manera:
+          </p>
+          <code>[![a](https://92.png)](www.google.es)</code>
+          <p>
+            Aunque también es posible separar los enlaces para que sea un poco
+            más claro de la siguiente manera:
+          </p>
+          <code>
+            &lt;!-- Ruta URL de la IMG + Descripción--&gt;
+            <br />
+            [1]:https://8.png "Pulp Fiction" <br />
+            &lt;!-- Enlace --&gt;
+            <br />
+            [2]: https://Fiction.com <br />
+            &lt;!-- Juntando la descrición con el resto de partes partes --&gt;
+            <br />
+            [![ALT text][1]][2]
+          </code>
+        </section>
+        <section id="mark-cod">
+          <h2>Código en línea💻</h2>
+          <p>
+            si queremos escribir solamente un pedazo de código en una línea
+            utilizamos `code`
+          </p>
+          <code>Etiqueta HTML5: `&lt;!DOCTYPE html&gt;`</code>
+          <h3>Códigos de bloque 🔠💻🔠</h3>
+          <p>
+            Si queremos escribir un bloque de código hacemos englobando nuestro
+            código entre ```.
+          </p>
+          <p>También se puede utilizar ~~~ como alternativa.</p>
+          <p>
+            En ambos casos, podemos especificar el lenguaje que estamos
+            utilizando.
+          </p>
+          <p>Se pondria detras de ~~~ html.</p>
+        </section>
+        <section id="mark-esp">
+          <h2>Caracteres especiales🔣</h2>
+          <p>
+            Si queremos escribir los conocidos como caracteres especiales como
+            son:
+          </p>
+          <p>
+            \ barra invertida <br />
+            ` acento invertido <br />
+            * asterisco <br />
+            _ guión bajo <br />
+            {} llaves <br />
+            [] corchetes <br />
+            () paréntesis <br />
+            # almohadilla <br />
+            + símbolo de suma <br />
+            - guión <br />
+            . punto <br />
+            ! exclamación
+          </p>
+          <p>
+            Conseguiriamos omitir el formato de Markdown. Debemos escribir una \
+            barra invertida junto al correspondiente carácter. Vamos a ver
+            algunos ejemplos:
+          </p>
+          <p>
+            \* <br />
+            \. <br />
+            \` <br />
+            \_ <br />
+          </p>
+        </section>
+        <section id="mark-task">
+          <h2>Task list📝</h2>
+          <p>Nos permite realizar listados con una serie de tareas.</p>
+          <p>Vamos a ver un ejemplo:</p>
+          <code>
+            # Task List <br />
+            - [ ] Elemento no finalizado <br />
+            - [x] Elemento finalizado <br />
+            # Task List + iconos <br />
+            :white_check_mark: Elemento finalizado <br />
+            :x: Elemento finalizado
+          </code>
+        </section>
+        <section id="mark-toc">
+          <h2>Tablas de contenido (TOC)📚</h2>
+          <p>Existe la posibilidad de crear una tabla de contenido.</p>
+          <p>
+            Vamos a utilizar un plugin Markdown All in One para automatizar la
+            creación de la tabla de contenidos.
+          </p>
+          <p>
+            Hacemos Ctrl + Shift + P, entonces buscamos Markdown All in One:
+            Create Table of Contents.
+          </p>
+        </section>
+        <section id="mark-tabl">
+          <h2>Tablas📊</h2>
+          <p>
+            A parte de las tabla de contenido que acabamos de ver también
+            podemos realizar tablas sin que estás seas de contenido. Vamos a ver
+            un ejemplo:
+          </p>
+          <code>
+            |Header |Column 1 | Column 2 | Column 3 | <br />
+            |:--- |:---- |:----:| ----:| <br />
+            |1. Row| is | is | is | <br />
+            |2. Row| left | nicely | right | <br />
+            |3. Row| aligned | centered | aligned |
+          </code>
+        </section>
+        <section id="mark-adv">
+          <h2>Mensajes de advertencia⚠️</h2>
+          <p>
+            Existe además la posibilidad de realizar unos “mensajes de
+            advertencia” mediante a las tablas. Vamos a ver un ejemplo:
+          </p>
+          <code>
+            | :exclamation: This is very important | <br />
+            |-----------------------------------------| <br />
+            | :zap: Ignore at your own risk! | <br />
+            |-----------------------------------------| <br />
+            | :warning: WARNING | <br />
+            |:---------------------------| <br />
+            | I should warn you ... | <br />
+            | :boom: DANGER | <br />
+            |:---------------------------| <br />
+            | Will explode when clicked! |
+          </code>
+        </section>
       </article>
     </main>
     <footer>
       StudyWeb © 2024 Todos los derechos reservados. |
-      <a href="#">Política de privacidad</a> |
+      <a href="../assets/other/politicaprivacidad.html">Política de privacidad</a> |
       <a href="#">Términos y condiciones</a> | <a href="#">Contacto</a>
     </footer>
   </body>
