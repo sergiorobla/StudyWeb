@@ -61,17 +61,93 @@ body {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
+/* BOTON RESPONSIVE */
+.bars_menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  cursor: pointer;
+  z-index: 20;
+}
+.bars_menu span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #213f8f;
+  margin-top: 10px;
+  transform-origin: 0px 100%;
+  transition: all 400ms;
+}
+
+.activeline1_bars-menu {
+  transform: rotate(45deg) translate(3.5px, 1px);
+}
+.activeline2_bars-menu {
+  opacity: 0;
+  margin-left: -30px;
+}
+.activeline3_bars-menu {
+  transform: rotate(-45deg) translate(2px, 2px);
+}
+
+.options.active {
+  animation: fadeIn 0.3s forwards;
+  opacity: 1;
+  visibility: visible;
+}
+
+.options.out {
+  animation: fadeOut 0.3s forwards;
+}
+@keyframes fadeIn {
+  from {
+    transform: translateY(-200px) scale(0.5);
+  }
+  to {
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes fadeOut {
+  from {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-20px) scale(0.8);
+    opacity: 0;
+  }
+}
+
+.menu-resp {
+  display: none;
+  background-color: #efefef;
+}
+
+.activemenu {
+  display: block;
+  background-color: #f4f4f7;
+  z-index: 200;
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
 /* MENU INDEX */
 .menu-page {
   position: fixed;
   top: 74px;
   width: 250px;
-  height: 50%;
+  height: 400px;
   background-color: #efefef;
   border: solid 1px #c4c4c4;
   border-bottom-right-radius: 10px;
   user-select: none;
-  overflow: visible scroll;
+  overflow: hidden scroll;
 }
 .menu-page ul {
   padding-inline-start: 20px;
@@ -139,50 +215,7 @@ h2 {
 
 /* IMAGES */
 
-#img-parentsregex,
-#img-linuxandother,
-#img-comandosUnix,
-#img-ls,
-#img-lstail,
-#img-tail,
-#img-grep1,
-#img-grep2,
-#img-grep3,
-#img-grep4,
-#img-grep5,
-#img-jex,
-#img-jsoutput,
-#img-t,
-#img-n,
-#img-q1,
-#img-q2,
-#img-q3,
-#img-q4,
-#img-q5,
-#img-q6,
-#img-q7,
-#img-q8,
-#img-q9,
-#img-a1,
-#img-a2,
-#img-a3,
-#img-a4,
-#img-alt1,
-#img-chuleta,
-#img-snap1,
-#img-snap2,
-#img-status,
-#img-giterror,
-#img-gitremoteorigin,
-#img-gitremotev,
-#img-gitremotevrep,
-#img-seturl,
-#img-gitlogadog,
-#img-gitcheckoutnum,
-#img-gitlogadogdesp,
-#img-gitlogadogreflog,
-#img-gitcheckgitlog,
-#img-gitmerges {
+#img-sw {
   display: block;
   margin: auto;
   width: 70%;
@@ -200,10 +233,57 @@ footer {
   .menu-page {
     top: 82px;
   }
+  #img-sw {
+    width: 90%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 710px) {
+  .menu .enlaces {
+    display: none;
+  }
+
   .menu-page {
-    top: 113px;
+    display: none;
+  }
+
+  .bars_menu {
+    display: block;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+  }
+
+  .menu {
+    box-shadow: 0 0 10px #0d0d0d;
+  }
+  .menu-resp {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    z-index: 30;
+    border-bottom: solid 1px #c4c4c4;
+  }
+  .menu-resp a {
+    display: block;
+    width: 85%;
+  }
+
+  .main-title {
+    font-size: 40px;
+  }
+
+  #img-sw {
+    width: 90%;
+    height: auto;
+  }
+
+  .content {
+    margin: 25px;
   }
 }
