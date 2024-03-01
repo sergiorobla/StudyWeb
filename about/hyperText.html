@@ -58,12 +58,12 @@
           <li><a href="#inicio">Menú🏠</a></li>
           <li><a href="#html-presentando">Presentación🖥️</a></li>
           <li><a href="#html-capas">Capas🧱</a></li>
-          <li><a href="#git-desplazanos">Desplazarnos🚶‍♂️</a></li>
-          <li><a href="#git-repo">Repositorios📂</a></li>
-          <li><a href="#git-configurando">Configurando⚙️</a></li>
-          <li><a href="#git-snap">Snapshot📸</a></li>
-          <li><a href="#git-status">Git status🔍</a></li>
-          <li><a href="#git-add">Git add➕</a></li>
+          <li><a href="#html-historia">Historia🕰️</a></li>
+          <li><a href="#html-quees">¿Qué es?🤔</a></li>
+          <li><a href="#html-estructura">Estructura💀</a></li>
+          <li><a href="#html-encabezados">Encabezados🏷️</a></li>
+          <li><a href="#html-etiqpers">Inventadas🔍</a></li>
+          <li><a href="#html-coment">Comentarios💬</a></li>
           <li><a href="#git-commit">Git commit📝</a></li>
           <li><a href="#git-push">Git push🚀</a></li>
           <li><a href="#git-assremloc">Asociando🔗</a></li>
@@ -151,12 +151,17 @@
               Desde entonces, HTML ha pasado por distintas versiones hasta
               llegar a la actualmente sigue vigente HTML 5
             </p>
-            <img
-              src="../images/html/fechas.png"
-              id="img-sw"
-              style="width: 250px"
-              alt=""
-            />
+            <ul class="sep-lista">
+              <li>1991 🡢 HTML</li>
+              <li>1994 🡢 HTML 2</li>
+              <li>1996 🡢 CSS 1 + JavaScript</li>
+              <li>1997 🡢 HTML 4</li>
+              <li>1998 🡢 CSS 2</li>
+              <li>2000 🡢 XHTML 1</li>
+              <li>2002 🡢 Tableless Web Design</li>
+              <li>2005 🡢 AJAX</li>
+              <li>2009 🡢 HTML 5</li>
+            </ul>
             <p>
               HTML posee una gran documentación y una sintaxis muy extensa, pero
               que es tan simple que se puede aprender en una tarde, pero a su
@@ -238,7 +243,7 @@
             un bote para identificar qué hacemos con su contenido).
           </p>
         </section>
-        <section>
+        <section id="html-estructura">
           <h2>Estructura básica de un documento HTML</h2>
           <div>
             <p>
@@ -328,7 +333,97 @@
           </div>
         </section>
         <section id="html-etiqpers">
-          <h2>Etiquetas inventadas/personalizadas</h2>
+          <h2>Etiquetas inventadas o personalizadas</h2>
+          <div>
+            <p>
+              Hasta ahora hemos visto etiquetas que han sido aprobadas por la
+              W3, es decir, que forman parte del estándar.
+            </p>
+            <p>
+              <b
+                >Pero ¿Qué pasaría si escribo un encabezado H7? ¿O una etiqueta
+                con mi nombre?</b
+              >
+            </p>
+            <p>
+              En el caso del encabezado <h7></h7>, tal y como hemos dicho el
+              navegador interpreta semánticamente hablando del H1 al H6. Por lo
+              que, si escribimos un H7 nos estaríamos saltando el estándar del
+              W3 Consorcium.
+            </p>
+            <p>
+              En el caos de la etiqueta con mi nombre
+              &lt;sergio&gt;&lt;/sergio&gt;, ocurriría lo mismo que en el caso
+              anterior. Y nos estaríamos saltando de nuevo el estándar de la
+              W3C.
+            </p>
+          </div>
+          <h3>Validación de un documento HTML</h3>
+          <div>
+            <p>
+              ¿Qué consecuencias puede suponer eso sobre mi documento el añadir
+              etiquetas personalizadas?
+            </p>
+            <ul class="sep-lista">
+              <li>
+                La página no validará correctamente en caso de que la pasemos
+                por un validador.
+              </li>
+              <li>
+                Podemos tener problemas con futuras actualizaciones de
+                navegadores y/o HTML.
+              </li>
+              <li>
+                En versiones anteriores a Internet Explorer 8 generaría
+                problemas.
+              </li>
+            </ul>
+            <p>
+              Si nos fijamos, no tenemos un formato predefinido para ellas, ya
+              que al no estar definidas en el estándar, el navegador no sabe que
+              hacer con ellas. Por ello, les aplica un estilo nativo a estos
+              elementos y las interpreta “escupiéndolas como sea” (sin saber muy
+              bien que hacer con ellas) dentro del documento.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Las etiquetas personalizadas no son compatibles con ninguna
+              versión de HTML. Pese a ello, no dará ningún error si usa dicho
+              marcado en su HTML.
+            </p>
+            <p>
+              Aunque para detectar los fallos dentro de nuestros documentos HTML
+              podemos utilizar la validación que nos ofrece la W3, el validator
+              <a href="https://validator.w3.org/" target="_blank">w3 org</a>.
+              <br />
+              Dentro de este validador, en el que podemos ver si nuestra web
+              cumple con el estándar definido por la W3.
+            </p>
+            <p>Para ello, tenemos 3 opciones:</p>
+            <ul class="sep-lista">
+              <li>
+                Utilizar una dirección URL desde la pestaña Validate by URI
+              </li>
+              <li>
+                Utilizar la validación vía fichero desde la pestaña Validate by
+                File Upload
+              </li>
+              <li>
+                Utilizar la validación del código pegandolo directamente en el
+                validador desde la pestaña de Validate by Direct Input
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="html-coment">
+          <h2>Comentarios en HTML</h2>
+          <div>
+            <p>
+              Los comentarios en HTML nos permiten realizar anotaciones dentro
+              del código o incluso ofrecen la posibilidad de comentar una parte
+              para que no se ejecute. En HTML, solamente disponemos de un solo
+              tipo de comentarios.
+            </p>
+          </div>
         </section>
       </article>
     </main>

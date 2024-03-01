@@ -1,47 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
 
-/* GLOBALES */
+/* ESTILOS GLOBALES */
 body {
   font-family: "Roboto", sans-serif;
   background-color: white;
   margin: 0;
 }
-
 ::selection {
   background-color: black;
   color: rgb(0, 197, 0);
 }
 
-/* HEADER */
-
-.logo img {
-  width: 50px;
-  height: auto;
-  transition: transform 0.3s;
-  user-select: none;
-}
-
-.logo img:hover {
-  transform: scale(1.2);
-}
-
-.enlaces {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.enlaces a {
-  color: #0d0d0d;
-  text-decoration: none;
-  margin-left: 20px;
-}
-
+/* ESTILOS HEADER */
 header {
   position: sticky;
   top: 0;
 }
-
 .menu {
   display: flex;
   align-items: center;
@@ -51,14 +26,12 @@ header {
   border-bottom: solid 1px #c4c4c4;
   user-select: none;
 }
-
 .menu a {
   margin: 0 10px;
   padding: 5px;
   color: #0d0d0d;
   text-decoration: none;
 }
-
 .menu a:not(.logo a):hover {
   background-color: #e0e0e0;
   border-bottom-left-radius: 10px;
@@ -66,7 +39,29 @@ header {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
-/* BOTON RESPONSIVE */
+/* ESTILOS DEL LOGO */
+.logo img {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s;
+  user-select: none;
+}
+.logo img:hover {
+  transform: scale(1.2);
+}
+
+/* ESTILOS DE LOS ENLACES */
+.enlaces {
+  display: flex;
+  flex-wrap: wrap;
+}
+.enlaces a {
+  color: #0d0d0d;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* ESTILOS DEL BOTON RESPONSIVE */
 .bars_menu {
   display: none;
   width: 30px;
@@ -86,7 +81,6 @@ header {
   transform-origin: 0px 100%;
   transition: all 400ms;
 }
-
 .activeline1_bars-menu {
   transform: rotate(45deg) translate(3.5px, 1px);
 }
@@ -97,13 +91,11 @@ header {
 .activeline3_bars-menu {
   transform: rotate(-45deg) translate(2px, 2px);
 }
-
 .options.active {
   animation: fadeIn 0.3s forwards;
   opacity: 1;
   visibility: visible;
 }
-
 .options.out {
   animation: fadeOut 0.3s forwards;
 }
@@ -125,12 +117,10 @@ header {
     opacity: 0;
   }
 }
-
 .menu-resp {
   display: none;
   background-color: #efefef;
 }
-
 .activemenu {
   display: block;
   background-color: #f4f4f7;
@@ -142,38 +132,33 @@ header {
   padding: 20px;
 }
 
-/* MENU INDEX */
+/* ESTILOS DEL MENU LATERAL */
 .menu-page {
   position: sticky;
   top: 74px;
   width: 250px;
   height: 400px;
   background-color: #efefef;
-  border: solid 1px #c4c4c4;
-  border-top-right-radius: 10px;
+  border-right: solid 1px #c4c4c4;
+  border-bottom: solid 1px #c4c4c4;
   border-bottom-right-radius: 10px;
   user-select: none;
   overflow: auto;
 }
 .menu-page ul {
   padding-inline-start: 20px;
-}
-
-.menu-page ul {
   list-style: none;
 }
 .menu-page ul li {
   margin: 10px;
   padding: 5px;
 }
-
 .menu-page ul li a {
   color: #0d0d0d;
   text-decoration: none;
   transition: padding-left 0.2s;
   padding: 10px;
 }
-
 .menu-page ul li a:hover {
   background-color: #e0e0e0;
   border-top-right-radius: 10px;
@@ -184,92 +169,20 @@ header {
   border-left: solid 1px #0d0d0d;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
-
 /* ENLACES DEL MENU LATERAL */
-#regexp-index,
-#git-index,
-#markdown-index,
-#html-index,
-#css-index,
-#bootstrap-index,
-#javascript-index,
-#mysql-index,
-#java-index,
-#springboot-index,
-#react-index,
-#reg-introduccion,
-#reg-queson,
-#reg-historia,
-#reg-pqsirven,
-#reg-ejemplo,
-#reg-motores,
-#reg-patmat,
-#reg-single,
-#reg-estrella,
-#reg-congrup,
-#reg-nocongrup,
-#reg-defrang,
-#reg-joker,
-#reg-chacla,
-#reg-decdig,
-#reg-whitespace,
-#reg-word,
-#reg-carriage,
-#reg-quanti,
-#reg-short,
-#reg-exact,
-#reg-grla,
-#reg-anchors,
-#reg-stend,
-#reg-wordbound,
-#reg-alternation,
-#reg-gruprarus,
-#reg-webrecom,
-#git-quees,
-#git-beneficios,
-#git-desplazanos,
-#git-repo,
-#git-configurando,
-#git-snap,
-#git-status,
-#git-add,
-#git-commit,
-#git-push,
-#git-assremloc,
-#git-pull,
-#git-despcommtemp,
-#git-branch,
-#mark-tit,
-#mark-parr,
-#mark-com,
-#mark-negr,
-#mark-cur,
-#mark-curneg,
-#mark-cit,
-#mark-li,
-#mark-enl,
-#mark-sub,
-#mark-tach,
-#mark-sep,
-#mark-img,
-#mark-cod,
-#mark-esp,
-#mark-task,
-#mark-toc,
-#mark-tabl,
-#mark-adv,
-#html-presentando,
-#html-capas,
-#html-historia {
+[id$="-index"],
+[id^="reg-"],
+[id^="git-"],
+[id^="mark-"],
+[id^="html-"] {
   scroll-margin-top: 90px;
 }
 
-/* CONTENT INDEX */
+/* ESTILOS DEL CONTENIDO DE LAS PAGINAS */
 .content {
-  margin: -400px 25px 0 300px;
+  margin: -450px 25px 0 300px;
   text-align: justify;
 }
-
 .recuadro-prin {
   border: solid 1px #999999;
   background-color: #f6f6f6;
@@ -279,41 +192,33 @@ header {
   border-radius: 10px;
   box-shadow: 0 0 5px #0d0d0d;
 }
-
 .main-title {
   text-align: center;
   font-family: "Honk", system-ui;
   font-size: 50px;
   user-select: none;
 }
-
 h2 {
   border-bottom: 1px solid #c4c4c4;
   padding-bottom: 10px;
   user-select: none;
 }
-
-/* MAIN INTRODUCTION */
-
 .recuadro {
   border: 1px solid #999999;
   padding: 15px;
   background-color: #eeeeee;
   margin: 10px 30px;
 }
-
 .negrita {
   margin-top: 10px;
   font-weight: 800;
   text-transform: uppercase;
 }
-
 .sep-lista li {
   margin-bottom: 10px;
 }
 
-/* IMAGES */
-
+/* ESTILO DE LAS IMAGENES DEL CONTENIDO */
 #img-sw {
   display: block;
   margin: auto;
@@ -321,14 +226,14 @@ h2 {
   height: auto;
 }
 
-/* FOOTER */
-
+/* ESTILOS DEL FOOTER */
 footer {
   margin: 0 0 10px 10px;
   user-select: none;
 }
 
-@media screen and (max-width: 1254px) {
+/* ESTILOS PARA TABLET */
+@media screen and (max-width: 1363px) {
   .menu-page {
     top: 82px;
   }
@@ -336,40 +241,35 @@ footer {
     width: 90%;
     height: auto;
   }
-
   #img-sw {
     width: 60%;
   }
 }
 
-@media screen and (max-width: 710px) {
+/* ESTILOS PARA MOVILES */
+@media screen and (max-width: 771px) {
   .menu .enlaces {
     display: none;
   }
-
   .menu-page {
     display: none;
   }
-
   .bars_menu {
     display: block;
   }
-
   header {
     position: sticky;
     top: 0;
   }
-
   .menu {
     box-shadow: 0 0 10px #0d0d0d;
   }
-
   .menu-resp {
     position: fixed;
     top: 75px;
     left: 0px;
     width: 100%;
-    height: 50%;
+    height: 50vh;
     overflow: auto;
     z-index: 30;
     border-bottom: solid 1px #c4c4c4;
@@ -386,20 +286,16 @@ footer {
     border-top-right-radius: 10px;
     background-color: #ebebeb;
   }
-
   .main-title {
     font-size: 40px;
   }
-
   #img-sw {
     width: 90%;
     height: auto;
   }
-
   .content {
     margin: 25px;
   }
-
   #img-sw {
     width: 70%;
   }
