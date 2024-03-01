@@ -55,9 +55,9 @@
     <main>
       <nav class="menu-page">
         <ul>
-          <li><a href="#git-inicio">Menú🏠</a></li>
-          <li><a href="#git-quees">¿Qué es GIT?💻</a></li>
-          <li><a href="#git-beneficios">Beneficios✨</a></li>
+          <li><a href="#inicio">Menú🏠</a></li>
+          <li><a href="#html-presentando">Presentación🖥️</a></li>
+          <li><a href="#html-capas">Capas🧱</a></li>
           <li><a href="#git-desplazanos">Desplazarnos🚶‍♂️</a></li>
           <li><a href="#git-repo">Repositorios📂</a></li>
           <li><a href="#git-configurando">Configurando⚙️</a></li>
@@ -73,7 +73,7 @@
         </ul>
       </nav>
       <article class="content">
-        <section id="mark-intro">
+        <section id="html-intro">
           <h1 class="main-title">👷‍♂️Temario de Html🌐</h1>
           <p class="recuadro-prin">
             HTML, que significa Lenguaje de Marcado de Hipertexto, es el
@@ -91,18 +91,244 @@
             dispositivos móviles.
           </p>
         </section>
-        <section>
+        <section id="html-presentando">
           <h2>1. Presentando a HTML</h2>
-          <p>
-            🚨MUY IMPORANTE🚨, HTML es solamente un lenguaje de marcado (NO ES
-            CONSIDERADO COMO UN LENGUAJE DE PROGRAMACIÓN ya que no nos permite
-            realizar la declaración de variables, no tienes estructuras de
-            control, etc.)
-          </p>
+          <div>
+            <p>
+              🚨MUY IMPORANTE🚨, HTML es solamente un lenguaje de marcado (NO ES
+              CONSIDERADO COMO UN LENGUAJE DE PROGRAMACIÓN ya que no nos permite
+              realizar la declaración de variables, no tienes estructuras de
+              control, etc.)
+            </p>
+            <p class="recuadro">
+              📌 ️ — HTML (o Hyper Text Markup Languaje) es el Lenguaje de
+              Marcado de Hipertexto encargado de definir la estructura de las
+              páginas web
+            </p>
+            <p>
+              Pero hay que destacar que HTML no se encarga del aspecto visual de
+              la página. Si queremos que nuestras webs sean bonitas lo
+              realizaremos por medio otros lenguajes como CSS (Cascading Style
+              Sheets). <br />
+              Por tanto, si comparamos una página que tenga solamente HTML con
+              un cuerpo de un humano tanto la web como la persona no lucirán ya
+              que el resultado tanto en una web como en una persona solamente
+              tendrá el esqueleto💀.
+            </p>
+            <h3 id="html-capas">
+              Las capas de “core” del Front (HTML, CSS y JS)🧱🎨💻
+            </h3>
+            <p>
+              En la actualidad HTML se utiliza principalmente para otorgar una
+              estructura básica y contenido a nuestra web.
+            </p>
+            <img src="../images/html/capas.png" id="img-sw" alt="" />
+            <p>
+              Posteriormente, lo combinaremos con otras capas como CSS (mediante
+              a hojas de estilo) que nos proporcionarán la parte estética y
+              JavaScript (JS) que otorgará la inteligencia, el dinamismo, la
+              acción, es decir, la funcionalidad.
+            </p>
+            <p>
+              Es decir, separamos cada una de las capas en función de la
+              funcionalidad que estás tienen sobre el documento. El propósito de
+              esto, es el de ante un error (que no sea de HTML) tratar de
+              asegurar que la estructura de nuestro HTML pueda ser al menos
+              visualizada por el navegador. Además de ello, nos proporciona un
+              desacoplamiento que le da un orden a nuestros archivos con la
+              finalidad de reducir sus dimensiones.
+            </p>
+          </div>
+        </section>
+        <section id="html-historia">
+          <h2>2. Historia de HTML</h2>
+          <div>
+            <p>
+              Como ya dijimos HTML, se puso en funcionamiento el 6 de agosto de
+              1991.
+            </p>
+            <p>
+              Desde entonces, HTML ha pasado por distintas versiones hasta
+              llegar a la actualmente sigue vigente HTML 5
+            </p>
+            <img
+              src="../images/html/fechas.png"
+              id="img-sw"
+              style="width: 250px"
+              alt=""
+            />
+            <p>
+              HTML posee una gran documentación y una sintaxis muy extensa, pero
+              que es tan simple que se puede aprender en una tarde, pero a su
+              vez, tan completo que puede llevar años dominarlo.
+            </p>
+          </div>
+          <h3>HTML la columna vertebral de la web</h3>
+          <div>
+            <p class="recuadro">
+              📌 ️ — Aunque no sea un lenguaje de programación, lo que realmente
+              importa es que siempre tenemos HTML en primer lugar, ya que es el
+              lenguaje universal con el que están creadas todas las webs del
+              mundo. O en caso de no estar creadas en HTML; finamente están
+              serán renderizadas a HTML por el propio navegador
+            </p>
+            <p>
+              Por ejemplo, si trabajamos sobre framework populares como React,
+              Angular, Vue.js, o lenguajes como PHP o .NET (junto a Blazor),
+              etc. Podremos ver que finalmente de una manera u otra:
+            </p>
+            <img src="../images/html/ejemplo-webphp.png" id="img-sw" alt="" />
+            <p>
+              Blazor (es un framework que nos permite crear webs con C# en vez
+              de con JavaScript) pero como .NET no puede ejecutarse por si solo
+              en internet ya que no puede interactuar con el DOM del navegador
+              directamente utiliza como pegamento Javascript con la finalidad de
+              representar a dicho HTML.
+            </p>
+            <img src="../images/html/blazor.png" id="img-sw" alt="" />
+            <p class="recuadro">
+              📌 ️ — Toda web independientemente del lenguaje en el que esté
+              desarrollada finalmente es interpretada a HTML. HTML sería como la
+              base de una pizza en la que encima añadimos el resto de capas (o
+              ingredientes en caso de ser una pizza).
+            </p>
+          </div>
+          <h3>¿Cuál es el objetivo del lenguaje?</h3>
+          <div>
+            <p>
+              Indicar tanto al navegador como a los motores de búsqueda cuál es
+              la estructura de los documentos, elementos, organización, etc.
+            </p>
+          </div>
+        </section>
+        <section id="html-quees">
+          <h2>¿Qué es un elemento HTML?</h2>
           <p class="recuadro">
-            📌 ️ — HTML (o Hyper Text Markup Languaje) es el Lenguaje de Marcado
-            de Hipertexto encargado de definir la estructura de las páginas web
+            📌 ️ — Un elemento, etiqueta (o TAG en inglés) es cada una de las
+            🧩“piezas”🧩 que nos permiten construir a nuestro documento HTML.
+            Imaginaros a un documento HTML como una especie de “construcción de
+            lego” sobre la que vamos añadiendo cada uno de estos elementos para
+            ir dando forma a la estructura de nuestro documento HTML.
           </p>
+          <p>
+            Un ejemplo de un elemento de encabezado principal (H1), podría ser
+            el siguiente:
+          </p>
+          <img src="../images/html/estructuraetiqueta.png" id="img-sw" alt="" />
+          <p class="recuadro">
+            📌 ️ — Los elementos deben de ser escritos en minúsculas.
+          </p>
+          <p>
+            Cuando visitamos una web y corremos la cortina, es decir, abrimos
+            las Dev Tools y vamos a la pestaña de Elements (elementos), podemos
+            ver los distintos elementos que forman parte de dicho documento
+            HTML:
+          </p>
+          <img src="../images/html/inspeccionar.png" id="img-sw" alt="" />
+          <p>
+            Los TAGs HTML son algo similar a 🧱“ladrillos o bloques”🧱 que nos
+            permitirán 👷🏽‍♂️construir la estructura de nuestro documento HTML👷🏽‍♂️
+          </p>
+          <p>
+            Podríamos definir las etiquetas como botecitos que contienen lo
+            necesario para que cuando el intérprete del navegador los “lea”,
+            sepa que tiene que hacer con cada una de las etiquetas. Las
+            etiquetas de inicio y de cierre nos permitirá delimitar/almacenar lo
+            que hay en su interior (y sería algo similar a ponerle un nombre a
+            un bote para identificar qué hacemos con su contenido).
+          </p>
+        </section>
+        <section>
+          <h2>Estructura básica de un documento HTML</h2>
+          <div>
+            <p>
+              La estructura básica de documento de HTML 5, está estructurado de
+              la siguiente manera:
+            </p>
+            <img src="../images/html/estructura.png" id="img-sw" alt="" />
+            <ul class="sep-lista">
+              <li>
+                DOCTYPE: la etiqueta permite indicar que el documento es de tipo
+                HTML 5.
+              </li>
+              <li>
+                HTML: esta etiqueta nos permite indicarle al navegador que vamos
+                a abrir el documento HTML
+              </li>
+              <li>Head: contiene información técnica para el navegador</li>
+              <li>
+                Body: contiene el contenido que aparecerá en la página web
+              </li>
+            </ul>
+          </div>
+          <h3>¿Qué es Emmet?</h3>
+          <div>
+            <p>
+              Emmet es un código de snippets (fragmentos) que nos ayuda a
+              escribir HTML más fácilmente que nos facilitan la edición de
+              páginas web. Emmet está incluido en Visual Studio Code por lo que
+              no se necesita instalar ninguna extensión para poder utilizarlo.
+            </p>
+            <p>
+              Por ejemplo, si escribimos H1 dentro del body del HTML y pulsamos
+              ENTER o TABULADOR, podemos ver que Emmet nos crea la etiqueta:
+            </p>
+            <p>
+              El Lorem Ipsum es el texto que se usa habitualmente como texto de
+              relleno cuando aún no tenemos el contenido principal creado antes
+              de insertar el texto final. Es muy habitual en diseño gráfico,
+              fuentes, webs, etc.
+            </p>
+            <p>
+              Más adelante durante el curso, explicaremos más “tips” para
+              trabajar con él.
+            </p>
+          </div>
+        </section>
+        <section id="html-encabezados">
+          <h2>
+            Encabezados (o HTML Headings) y párrafos (o paragraphs) en HTML
+          </h2>
+          <div>
+            <p>Los encabezados en HTML van del H1 al H6.</p>
+            <p>
+              Si nos fijamos cada uno de ellos se ve con un tamaño distinto, el
+              encabezado H1 es el más grande; y, por tanto, será el que tenga
+              mayor importancia tiene en el documento. <br />
+              Posteriormente, el segundo más relevante es el encabezado H2, y
+              así sucesivamente hasta llegar al encabezado H6 (el cual es el
+              encabezado con menos relevancia que podemos tener en una web).
+            </p>
+            <p>
+              Cada uno de los encabezados del H1 alH6 tiene una representación
+              semántica distinta. Por ello, no deben utilizarse en función de su
+              tamaño de fuente para representar algo con mayor o menor tamaño de
+              fuente.
+            </p>
+            <p>
+              Y recordad que un H2 debe de pertenece a un H1; que un H3, debe de
+              pertenecer a un H2, etc.
+            </p>
+          </div>
+          <h3>Ejemplo de encabezados en una web real</h3>
+          <div>
+            <p>
+              Para encontrar elementos como por ejemplo lo son los encabezados
+              (H1,H2, H3…) en un documento HTML ya existente tenemos varias
+              opciones.
+            </p>
+            <p>
+              La primera y la que para mí es más rápida sería la siguiente:
+              Abrimos el inspector (Dev Tools) y vamos a la pestaña de Elements.
+            </p>
+            <p>
+              Una vez dentro pulsamos control + F y realizamos la búsqueda de
+              los tags.
+            </p>
+          </div>
+        </section>
+        <section id="html-etiqpers">
+          <h2>Etiquetas inventadas/personalizadas</h2>
         </section>
       </article>
     </main>
