@@ -64,12 +64,15 @@
           <li><a href="#html-encabezados">Encabezados🏷️</a></li>
           <li><a href="#html-etiqpers">Inventadas🔍</a></li>
           <li><a href="#html-coment">Comentarios💬</a></li>
-          <li><a href="#git-commit">Git commit📝</a></li>
-          <li><a href="#git-push">Git push🚀</a></li>
-          <li><a href="#git-assremloc">Asociando🔗</a></li>
-          <li><a href="#git-pull">Git pull🔽</a></li>
-          <li><a href="#git-despcommtemp">Moviendonos⏪</a></li>
-          <li><a href="#git-branch">Git branch🌿</a></li>
+          <li><a href="#html-especiales">Especiales🔤</a></li>
+          <li><a href="#html-mini">Minificación📉</a></li>
+          <li><a href="#html-closing">Closing🔚</a></li>
+          <li><a href="#html-estructuraHtml">Semánticos📰</a></li>
+          <li><a href="#html-bloqueLinea">Block y Inline📏</a></li>
+          <li><a href="#html-jerarquiaTexto">Jerarquía🔆</a></li>
+          <li><a href="#html-formateo">Formateo🔨</a></li>
+          <li><a href="#html-atrib">Atributos🔖</a></li>
+          <li><a href="#html-enlaces">Enlaces🔗</a></li>
         </ul>
       </nav>
       <article class="content">
@@ -523,6 +526,542 @@
           <p class="recuadro">
             📌 ️ — La minificación es el proceso de hacer pequeño un fichero, de
             ahí que dicho proceso reciba el nombre de MINIficar.
+          </p>
+        </section>
+        <section id="html-closing">
+          <h2>
+            Tipos de elementos en HTML (Selft-closing TAGs VS Not Selft-closing
+            TAGs)
+          </h2>
+          <div>
+            <p>
+              Dentro de las etiquetas o tags tenemos diferentes tipos de
+              etiquetas. Si las clasificamos según su estructura de etiqueta
+              tenemos dos grandes bloques:
+            </p>
+            <ul>
+              <li>
+                Not selft-closing TAGs (TAGs sin autocierre): un elemento que
+                tiene las etiquetas de apertura y cierre. Este tipo de elemento
+                está formado por 3 partes. Vamos a ver un ejemplo:
+              </li>
+            </ul>
+            <p>
+              Si queremos crear el encabezado principal en una página web
+              utilizamos la etiqueta H1:
+            </p>
+            <img src="../images/html/etiquetaSinAuto.png" id="img-sw" alt="" />
+            <ul>
+              <li>
+                Selft-closing TAGs (TAGs con auto cierre): son elementos que no
+                requieren una etiqueta de apertura y cierre, sino únicamente una
+                etiqueta de apertura. El Self-closing tags es válido en HTML5.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="html-estructuraHtml">
+          <h2>Estructuras de sección de contenido: header, main y footer</h2>
+          <div>
+            <p>
+              Anteriormente ya hemos visto como construir párrafos (etiqueta P)
+              y títulos (etiqueta H1…H6). Pero en una página web Pero en una
+              página web real no basta con utilizar párrafos y títulos sino que
+              necesitamos estructurar el contenido de una forma que los
+              navegadores sean capaces de interpretar el contenido.
+            </p>
+            <p>
+              Antes de que se crearan estas etiquetas, en la versión HTML 4 se
+              trabajaba con DIVs el principal problema de esto era que no había
+              un estándar de como se tenían que llamar a los elementos. Por
+              ello, se crearon las estructuras de sección de contenido.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Que también son conocidas como elementos semánticos (o
+              semantic Tags).
+            </p>
+            <img src="../images/html/semanticos.png" id="img-sw" alt="" />
+            <p>
+              Aunque existen más estructuras, en este caso, vamos a hablar de 3
+              etiquetas básicas de estructuras de sección de contenido como son:
+            </p>
+            <ul class="sep-lista">
+              <li>
+                Header 🡢 este elemento se utiliza para identificar al contenido
+                la cabecera de la página. Suele contener elementos como menús,
+                redes sociales (Facebook, Twitter, Instagram…), el logotipo de
+                la página…
+              </li>
+              <li>
+                Main 🡢 este elemento englobará el contenido principal de la
+                página. Solamente puede ser usado una vez por página.
+              </li>
+              <li>
+                Footer 🡢 este elemento se utiliza para identificar al contenido
+                que forma parte del pie de la página. Suele contener
+              </li>
+            </ul>
+            <p class="recuadro">
+              📌 ️ — Existen alternativas para construir esto con un mejor
+              significado semántico pero para ello tendremos que ver más
+              etiquetas de estructuración de contenido. Aunque esto será un poco
+              más adelante en el curso.
+            </p>
+          </div>
+          <h3>Estructura de contenido nav</h3>
+          <div>
+            <p>
+              Dentro del header es donde situamos el menú de navegación. Este
+              menú, debe ir englobado entre la etiqueta nav.
+            </p>
+          </div>
+          <h3>Estructuras de sección de contenido: Section y Article</h3>
+          <div>
+            <p>
+              Section y article son dos estructuras de sección bastantes
+              complejas de entender. Por ello, vamos a comenzar con unas
+              descripciones aunque posteriormente veremos varios ejemplos:
+            </p>
+            <p>
+              Section: nos permite separar/agrupar, es decir, formar un grupo
+              con la intención de separar una información que tenga relación
+              entre si. Una sección no es un grupo de contenido que pueda
+              valerse por sí mismo, sino que suele ser una parte de algo más
+              grande.
+            </p>
+            <p>
+              Article: nos permite contener piezas de contenido independientes,
+              es decir que no tienen relevancia entre si.
+            </p>
+            <p class="recuadro">
+              ¿Section contiene a Article? o ¿Article contiene a Section? Ambas
+              son correctas. Existente multitud de formas válidas de realizar
+              esto.
+            </p>
+          </div>
+          <h3>Estructura de sección Aside</h3>
+          <div>
+            <p>
+              Se utiliza para almacenar contenido que está relacionado
+              directamente con el contenido del main. Por ello, está
+              indirectamente relacionado.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Aside puede estar fuera o dentro del main ambas son
+              aceptadas por la W3C
+            </p>
+          </div>
+        </section>
+        <section id="html-bloqueLinea">
+          <h2>Elementos de bloque VS Elementos de línea</h2>
+          <div>
+            <p>
+              Las especificaciones HTML de W3 nunca especifican valores de
+              propiedad CSS predeterminados para ningún elemento. Sino que,
+              proporcionan una “<a
+                href="https://www.w3.org/TR/CSS2/sample.html"
+                target="_blank"
+                >hoja de estilo predeterminada</a
+              >” para HTML 4, y solamente recomienda a los desarrolladores que
+              la usen; no es un requisito ni ningún tipo de mandato. Las
+              especificaciones de HTML 5 indican “propiedades de visualización
+              predeterminadas típicas” pero, de nuevo, no son necesarias
+              (también tenga en cuenta que HTML 5 sigue siendo un borrador de
+              trabajo de todos modos).
+            </p>
+            <p>
+              Eso deja todos los valores predeterminados al navegador y cómo los
+              desarrolladores realmente sienten que los elementos deben
+              mostrarse a un usuario. Nadie puede garantizar que un elemento
+              específico se mostrará como inline o blocko de otra manera en el
+              navegador de alguien. Por lo que siempre debemos configurarlo
+              explícitamente si desea que suceda. Y no confiar en los valores
+              "predeterminados".
+            </p>
+            <p>
+              Por tanto, la manera en la que se posicionan/distribuyen estos
+              elementos HTML dentro de un documento HTML, depende del navegador
+              y no del consorcio de la W3. Pese a ello, la gran mayoría de
+              navegadores suelen seguir las recomendaciones de la W3 para ese
+              elemento en concreto.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Pese a ello, más adelante, durante el bloque de CSS veremos
+              que podemos modificar estos valores predefinidos por la W3.
+            </p>
+            <p>Pero por defecto los elementos son:</p>
+            <p>
+              Elemento en bloque: cuando un elemento empieza al principio de la
+              línea y ocupa “toda la línea”, es decir, el ancho del documento
+              incluso en situaciones en las que su contenido no lo requiera.
+              Algunos ejemplos son algunos elementos que ya hemos vistos durante
+              el curso: encabezados H1–H6 o los párrafos P.
+            </p>
+            <img src="../images/html/bloque.png" id="img-sw" alt="" />
+            <p>
+              Elemento en línea: cuando un elemento no empieza al principio de
+              la línea y ocupa solamente lo necesario de dicha línea. Algunos
+              ejemplos de algunos elementos (que de momento no han sido vistos
+              durante el curso) son los enlaces A y las imágenes IMG.
+            </p>
+            <img src="../images/html/inline.png" id="img-sw" alt="" />
+          </div>
+          <h3>Ejemplos de elementos en bloque y elementos en línea</h3>
+          <div>
+            <p>
+              Algunos ejemplos de los atributos que tiene un elemento en línea o
+              en bloque son:
+            </p>
+            <img
+              src="../images/html/ejemplosBlockInline.png"
+              id="img-sw"
+              alt=""
+            />
+            <p class="recuadro">
+              📌 ️ — Aunque aún ni siquiera hemos trabajado con hojas de estilo
+              CSS. Es importante asegurarse de que no hemos tocado propiedades
+              de los elementos mediante a una hojas de estilos CSS. Ya que si
+              cambiamos propiedades iniciales de los elementos, es posible que
+              modifiquemos alguna propiedad del display y que esto nos afecta
+              para saber si el elemento es en bloque o en línea. Ya que, no
+              sabremos si las propiedades son las originales de dicho elemento o
+              las que hemos modificado con CSS. Por lo que nosotros vamos a
+              partir de que no hemos tocado ninguna propiedad.
+            </p>
+          </div>
+        </section>
+        <section id="html-jerarquiaTexto">
+          <h2>
+            Niveles de jerarquía dentro de un texto: small, normal, em y bold🔆
+          </h2>
+          <div>
+            <p>
+              Dentro del contenido de un texto, existe un mecanismo para
+              indicarle al navegador que tiene de relevancia tiene el texto
+              respecto al resto del texto.
+            </p>
+            <p>
+              &lt;em>&lt;/em> nos permite subir un nivel en la importancia del
+              texto englobado entre estás etiquetas, es decir, le otorgamos más
+              énfasis al texto respecto al texto normal.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Pese a que <em></em> modifica el texto a cursiva, no
+              debemos utilizarlo para ello. Ya que, para cambiar propiedad de un
+              elemento, como veremos más adelante, utilizaremos CSS. Lo que
+              hacemos con <em></em> es indicar al navegador que el nivel de
+              importancia del texto es un nivel superior respecto al texto
+              normal.
+            </p>
+            <p>
+              &lt;strong>&lt;/strong> nos permite subir aún más el énfasis. Es
+              decir, subir otro nivel en la importancia de la jerarquía respecto
+              a &lt;em>&lt;/em> y dos respecto al texto normal.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Pese a que &lt;strong>&lt;/strong> modifica el texto a
+              negrita no debemos utilizarlo para ello. Ya que, para cambiar
+              propiedad de un elemento, como veremos más adelante, utilizaremos
+              CSS. Lo que hacemos con &lt;strong>&lt;/strong> es indicar al
+              navegador que el nivel de importancia del texto es un nivel
+              superior respecto al texto con énfasis y dos niveles respecto al
+              texto normal.
+            </p>
+            <p>
+              &lt;small>&lt;/small> nos permite disminuir en un nivel el énfasis
+              respecto al texto normal. Es decir, si un texto normal vale 1 para
+              el navegador, un texto englobado entre las etiquetas de
+              &lt;small>&lt;/small> vale 0.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Pese a que &lt;small>&lt;/small> modifica el tamaño del
+              texto no debemos utilizarlo para ello. Ya que, para cambiar
+              propiedad de un elemento, como veremos más adelante, utilizaremos
+              CSS. Lo que hacemos con &lt;small>&lt;/small> es indicar al
+              navegador que el nivel de importancia del texto es un nivel
+              inferior respecto al texto con normal, por lo que con
+              &lt;small>&lt;/small> tendremos una diferencia de dos niveles
+              respecto al texto &lt;em>&lt;/em> y de tres niveles respecto
+              &lt;strong>&lt;/strong>.
+            </p>
+          </div>
+          <h3>Resumen de SMALL, EM y STRONG</h3>
+          <div>
+            <p>
+              En 𝑯𝑻𝑴𝑳, las etiquetas 𝑺𝑴𝑨𝑳𝑳, 𝑬𝑴 y 𝑺𝑻𝑹𝑶𝑵𝑮, nos permiten indicarle
+              al navegador cual es el nivel de relevancia que tendrá un texto
+              para el navegador.
+            </p>
+            <p>
+              ❌Un error bastante habitual es utilizarlas para formatear el
+              texto. Ya que, al utilizar dichas etiquetas el navegador modifica
+              algunas propiedades del texto❌:
+            </p>
+            <ul class="sep-lista">
+              <li>𝑺𝑴𝑨𝑳𝑳: reduce el tamaño del texto</li>
+              <li>𝑬𝑴: pone el texto en cursiva</li>
+              <li>𝑺𝑻𝑹𝑶𝑵𝑮: pone el texto en negrita</li>
+            </ul>
+            <p>
+              ✅Lo correcto para formatear nuestros textos es utilizar CSS ✅
+            </p>
+            <ul class="sep-lista">
+              <li>Un texto normal tiene una relevancia 1</li>
+              <li>Un texto en 𝑺𝑴𝑨𝑳𝑳 tiene una relevancia -1</li>
+              <li>Un texto en 𝑬𝑴 tiene una relevancia 2</li>
+              <li>Un texto en 𝑺𝑻𝑹𝑶𝑵𝑮 tiene una relevancia 3</li>
+            </ul>
+          </div>
+        </section>
+        <section id="html-formateo">
+          <h2>Texto formateado y Estructurado</h2>
+          <h3>Saltos de línea &lt;br> y &lt;wbr></h3>
+          <div>
+            <p>
+              Los &lt;br/> son saltos de línea (o retornos de carro) que nos
+              permiten separar contenidos. Algunos ejemplo podrían ser poemas o
+              una dirección postal.
+            </p>
+            <p>
+              No es correcto el utilizar para incrementar el espacio entre dos
+              líneas de texto, para ello utilizaremos CSS o en determinadas
+              situamos tambié podemos crear varios párrafos.
+            </p>
+            <p>
+              Cuando escribimos un texto con la etiqueta párrafo. El contenido
+              de este, se va a adaptar al tamaño que tenga el navegador.
+            </p>
+            <p>
+              En algunas ocasiones como al del poema necesitamos romper el texto
+              en un punto concreto. Para eso utilizamos la etiqueta &lt;br/> que
+              hará que el navegador fuerte un salto de línea.
+            </p>
+            <p>
+              El elemento &lt;wbr/> (Word Break Opportunity) nos permite romper
+              una palabra o un enlace (es decir, un texto que este todo seguido)
+              en una posición determinada ante el caso que nuestra palabra o
+              enlace sea superior a la dimensiones del navegador evitando así
+              que la cadena de texto supere el ancho de la pantalla.
+            </p>
+            <p>
+              Si abrimos el navegador, vemos que mediante a &lt;wbr/> rompe
+              nuestra cadena de texto sin espacios en trozos cuando no cabe en
+              la pantalla.
+            </p>
+            <p>
+              También se comporta como un Word Break Opportunity &lt;wbr/>el
+              guión — cuando tenemos una cadena de texto sin espacios que supera
+              el espacio de la pantalla.
+            </p>
+          </div>
+          <h3>Horizontal Rule (HR)</h3>
+          <div>
+            <p>
+              HR proviene de Horizontal Rule y nos permite indicarle al
+              navegador que cambiamos de tema. Es decir, que tenemos dos
+              contenidos que no tienen relación alguna.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Si nos fijamos, podemos ver que HR se representa como una
+              _____ Aunque no sería correcto utilizarla para crear líneas. Sino
+              más bien para indicar que cambamos, es decir que “rompemos” con el
+              tema anterior, hacía otro nuevo.
+            </p>
+          </div>
+          <h3>Etiqueta &lt;time>&lt;/time></h3>
+          <div>
+            <p>
+              Se utiliza para representar un periodo una fecha, una hora o una
+              fecha y hora. Algunos de sus usos pueden ser cuando publicamos una
+              publicación en un blog o cuando escribimos un comentario en un
+              blog.
+            </p>
+            <p>
+              Si nos fijamos aparece con un formato de texto normal no se
+              modifican propiedades. Pero esto sirve para indicarle al navegador
+              que el texto introducido entre los elementos representa una fecha.
+            </p>
+          </div>
+          <h3>Italic, Bold, Underline</h3>
+          <div>
+            <p>
+              Aunque hemos hecho bastante hincapié en que no debemos utilizar
+              las etiquetas HTML para dar estilos a nuestro documento. Ya que
+              dicha función recae sobre las hojas de estilos CSS.
+            </p>
+            <p>
+              Existen unas etiquetas con las que si que sería correcto otorgar
+              estilos desde HTML. Por lo que sería válido utilizarlas para dar
+              estilos según el estándar de la W3.
+            </p>
+            <p>Las etiquetas son:</p>
+            <ul class="sep-lista">
+              <li>
+                &lt;i>&lt;/i>: pone el texto contenido entre los tags en cursiva
+              </li>
+              <li>
+                &lt;b>&lt;/b>: pone el texto contenido entre los tags en negrita
+              </li>
+              <li>&lt;u>&lt;/u>: subraya el texto contenido entre los tags</li>
+            </ul>
+            <p class="recuadro">
+              📌 ️ — Estás etiquetas surgen en las primeras versiones de HTML.
+              En algunas ocasiones se utiliza la etiqueta &lt;i> para añadir
+              iconos a las webs. Un ejemplo de ello es
+              <a href="https://fontawesome.com/" target="_blank"
+                >font awesome</a
+              >
+              (aunque lo veremos más adelante más adelante durante el curso).
+            </p>
+          </div>
+          <h3>Superindice y subindice</h3>
+          <div>
+            <p>
+              Nos permite escribir formulas químicas, elevar un número, etc.
+            </p>
+          </div>
+        </section>
+        <section id="html-atrib">
+          <h2>Atributos de un elemento HTML</h2>
+          <div>
+            <p>
+              Los atributos son una parte de un elemento de HTML que nos permite
+              añadir valores adicionales mediante a los cuales podemos o bien
+              configurar los elementos o en caso contrario ajustar su
+              comportamiento.
+            </p>
+            <p>Dentro de los atributos tenemos dos tipos:</p>
+            <ul>
+              <li>
+                Atributos comunes (commons): su sintaxis es atributo="valor"
+              </li>
+            </ul>
+            <p>Un atributo está formado por dos partes:</p>
+            <ul>
+              <li>La para en la que se define el tipo de atributo</li>
+              <li>La parte en la que se asigna un valor al atributo</li>
+            </ul>
+            <p>
+              Atributos booleanos (booleans): La presencia de un atributo
+              booleano en un elemento representa el valor verdadero y la
+              ausencia representa el valor falso
+            </p>
+            <img src="../images/html/atributostipos.png" id="img-sw" alt="" />
+          </div>
+          <h3>Atributos globales principales de un elemento</h3>
+          <div>
+            <p>
+              Existen muchos atributos, algunos son específicos para cada uno de
+              los elementos y otros, en cambio, son utilizados por la gran
+              mayoría de elementos y por tanto, los conocemos como “atributos
+              globales”.
+            </p>
+            <p>
+              Para saber los atributos que tiene un elemento basta con situarnos
+              sobre dicho elemento e ir al enlace de la MDN.
+            </p>
+            <p>
+              Aunque aquí tenemos
+              <a
+                href="https://developer.mozilla.org/es/docs/Web/HTML/Global_attributes"
+                target="_blank"
+                >una enlace a todos los atributos globales de la MDN</a
+              >, los principales atributos globales son:
+            </p>
+            <h4>Class</h4>
+            <p>
+              Nos permite trabajar con JS, otorgar estilos a través de CSS, etc.
+              Aunque la idea es no explicar CSS hasta llegar al correspondiente
+              bloque, aquí no nos queda más remedio que hacerlo.
+            </p>
+            <h4>Id</h4>
+            <p>
+              Nos permite identificar un elemento de nuestro documento HTML como
+              único. Con la finalidad de otorgar estilos a través de CSS,
+              trabajar con JavaScript, etc. Además de todo ello, también nos
+              permite realizar lo que se conoce como navegación a través de
+              anclas (lo veremos más detenidamente en el apartado de enlaces).
+            </p>
+            <p>
+              Un enlace ancla es un tipo de enlace html que, al pinchar sobre
+              el, te lleva a una parte concreta de la página web ya sea propia o
+              externa.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Un ID es un identificador que tiene que ser único en un
+              documento
+            </p>
+            <h4>Title</h4>
+            <p>
+              Los tooltips son unas pequeñas etiquetas emergentes que se
+              muestran cuando el cursor del ratón queda parado durante unos
+              instantes encima de un componente visual de una ventana. Son muy
+              prácticos para suministrar una información adicional relacionada a
+              este componente.
+            </p>
+            <p>
+              En HTML es fácil crear un tooltip con el atributo title. El
+              atributo title es válido para todos los elementos de HTML, por lo
+              cual se puede poner un tooltip a absolutamente todo. Con el
+              elemento SPAN es incluso posible añadir un tooltip a un texto sin
+              más.
+            </p>
+            <code>
+              &lt;h1 title="Estás encima de un encabezado"> Encabezado
+              &lt;/h1></code
+            >
+            <h4>Data-*</h4>
+            <p>Nos permite guardar un valor dentro de la etiqueta HTML.</p>
+            <code>
+              &lt;h1 id="tituloH1" data-autor="Federico García Lorca">&lt;/h1>
+              <br />
+              &lt;script> <br />
+              let title = document.getElementById ("tituloH1"); <br />
+              alert (title.dataset.autor); <br />
+              &lt;/script>
+            </code>
+          </div>
+        </section>
+        <section id="html-enlaces">
+          <h2>Enlaces</h2>
+          <p>
+            Los enlaces son una parte fundamental dentro de la WWW (World Wide
+            Web). Muestra de ello, es que si buscamos en Google MDN podemos ver
+            que tenemos un montón de enlaces.
+          </p>
+          <p>
+            Cada uno de estos enlaces nos llevará a un sitio distinto. Si no
+            fuera por este sistema basado en hipertextos que nos permite
+            comunicar de manera tan sencilla de comunicar las webs sería difícil
+            concebir las webs tal y como son actualmente.
+          </p>
+          <p class="recuadro">
+            📌 ️ — Los enlaces son también conocidos como anchor (ancla) o link
+            (debido al sistema de hiperlink/hipertexto que utilizan para poder
+            comunicarse en la web).
+          </p>
+          <p>
+            Un enlace de forma predefinida tiene un formato especifico que
+            aunque se puede cambiar desde CSS.
+          </p>
+          <p class="recuadro">
+            📌 ️ — El objetivo de los enlaces es conectar una página web con
+            distintos puntos de dicha web, con otra página web o incluso con un
+            recurso (tanto interno como externo).
+          </p>
+          <p>La estructura de un enlace es la siguiente:</p>
+          <img src="../images/html/estructuraEnlace.png" id="img-sw" alt="" />
+          <p class="recuadro">
+            📌 ️ — El atributo HREF, es un atributo obligatorio, ya que es el
+            atributo mediante al cual le indicamos a donde (fichero o web) debe
+            ir nuestro enlace.
+          </p>
+          <p>
+            El # sin nada más, nos permite realizar dead links o enlaces muertos
+            que, aunque no nos lleva a ninguna parte, si que nos ofrece la
+            posibilidad de definir un enlace “provisional” durante la fase de
+            desarrollo con la finalidad de que dicho enlace se muestre con su
+            correspondiente formato.
           </p>
         </section>
       </article>
