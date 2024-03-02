@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Honk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* ESTILOS GLOBALES */
 body {
@@ -27,16 +28,18 @@ header {
   user-select: none;
 }
 .menu a {
-  margin: 0 10px;
-  padding: 5px;
+  padding: 10px;
   color: #0d0d0d;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
 }
 .menu a:not(.logo a):hover {
   background-color: #e0e0e0;
   border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
 }
 
 /* ESTILOS DEL LOGO */
@@ -57,8 +60,8 @@ header {
 }
 .enlaces a {
   color: #0d0d0d;
+  margin-right: 30px;
   text-decoration: none;
-  margin-left: 20px;
 }
 
 /* ESTILOS DEL BOTON RESPONSIVE */
@@ -134,8 +137,8 @@ header {
 
 /* ESTILOS DEL MENU LATERAL */
 .menu-page {
-  position: sticky;
-  top: 74px;
+  position: fixed;
+  top: 73px;
   width: 250px;
   height: 400px;
   background-color: #efefef;
@@ -144,13 +147,15 @@ header {
   border-bottom-right-radius: 10px;
   user-select: none;
   overflow: auto;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
 }
 .menu-page ul {
-  padding-inline-start: 20px;
+  padding-inline-start: 10px;
   list-style: none;
 }
 .menu-page ul li {
-  margin: 10px;
+  margin: 10px 0;
   padding: 5px;
 }
 .menu-page ul li a {
@@ -158,6 +163,7 @@ header {
   text-decoration: none;
   transition: padding-left 0.2s;
   padding: 10px;
+  letter-spacing: 1px;
 }
 .menu-page ul li a:hover {
   background-color: #e0e0e0;
@@ -168,6 +174,7 @@ header {
   transition: padding-left 0.2s;
   border-left: solid 1px #0d0d0d;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
 }
 /* ENLACES DEL MENU LATERAL */
 [id$="-index"],
@@ -180,7 +187,7 @@ header {
 
 /* ESTILOS DEL CONTENIDO DE LAS PAGINAS */
 .content {
-  margin: -450px 25px 0 300px;
+  margin: 0 25px 0 300px;
   text-align: justify;
 }
 .recuadro-prin {
@@ -218,6 +225,19 @@ h2 {
   margin-bottom: 10px;
 }
 
+.tablas {
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+}
+
+.tablas td,
+.tablas th {
+  text-align: center;
+  padding: 5px;
+  border: solid 1px black;
+}
+
 /* ESTILO DE LAS IMAGENES DEL CONTENIDO */
 #img-sw {
   display: block;
@@ -233,9 +253,9 @@ footer {
 }
 
 /* ESTILOS PARA TABLET */
-@media screen and (max-width: 1363px) {
+@media screen and (max-width: 1612px) {
   .menu-page {
-    top: 82px;
+    top: 101px;
   }
   #img-sw {
     width: 90%;
@@ -243,6 +263,12 @@ footer {
   }
   #img-sw {
     width: 60%;
+  }
+}
+
+@media screen and (max-width: 897px) {
+  .menu-page {
+    top: 142px;
   }
 }
 
@@ -309,6 +335,6 @@ footer {
 
 @media screen and (max-width: 320px) {
   .menu-resp {
-    left: -16px;
+    left: -12px;
   }
 }
