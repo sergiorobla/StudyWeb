@@ -80,6 +80,12 @@
           <li><a href="#html-tablas">Tablas📊</a></li>
           <li><a href="#html-maselementos">Elementos🔧</a></li>
           <li><a href="#html-formularios">Formularios📝</a></li>
+          <li><a href="#html-accederDispositivoMovil">IP Móvil📱</a></li>
+          <li><a href="#html-inputMovil">Input Móvil📶</a></li>
+          <li><a href="#html-organizarFormulario">Organizar🗂️</a></li>
+          <li><a href="#html-porqueUtilizarInputs">Utilidad💡</a></li>
+          <li><a href="#html-PopurriInputs">Inputs📝</a></li>
+          <li><a href="#html-masElementos">Elementos🔧</a></li>
         </ul>
       </nav>
       <article class="content">
@@ -202,10 +208,10 @@
             </p>
             <img src="../images/html/blazor.png" id="img-sw" alt="" />
             <p class="recuadro">
-              📌 ️ — Toda web independientemente del lenguaje en el que esté
-              desarrollada finalmente es interpretada a HTML. HTML sería como la
-              base de una pizza en la que encima añadimos el resto de capas (o
-              ingredientes en caso de ser una pizza).
+              📌 ️ — Toda web indepen<wbr />dientemente del lenguaje en el que
+              esté desarrollada finalmente es interpretada a HTML. HTML sería
+              como la base de una pizza en la que encima añadimos el resto de
+              capas (o ingredientes en caso de ser una pizza).
             </p>
           </div>
           <h3>¿Cuál es el objetivo del lenguaje?</h3>
@@ -1871,6 +1877,928 @@
               El realizar esta modificación (es opcional) ya que si dejamos el
               email también funcionará el envío del email.
             </p>
+          </div>
+          <h3>Tipos de inputs</h3>
+          <div>
+            <p>
+              Dentro de los inputs, existen distintos tipos y aunque existen
+              muchos más, en esta sección vamos a ver los principales.
+              <a
+                href="https://developer.mozilla.org/es/docs/Web/HTML/Element/input"
+                target="_blank"
+                >Aquí os adjunto un listado con todos los inputs al completo.</a
+              >
+              Vamos a ver los más importantes:
+            </p>
+            <img src="/images/html/tiposInput.png" id="img-sw" alt="" />
+            <h4>&lt;input type="text" /></h4>
+            <p>
+              Hasta ahora hemos visto el input más utilizado de todos, el
+              &lt;input type="”text”" /> que, es el valor predeterminado cuando
+              no especificamos nada dentro de un input.
+            </p>
+            <form action="#">
+              <input type="text" id="PruebaDetexto" />
+            </form>
+            <h4>&lt;input type=”button” /></h4>
+            <p>
+              Visualmente hace lo mismo que &lt;button> pero cuando pulsamos
+              sobre dicho botón no se envía el fomulario.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Por tanto, existe una diferencia que hace que en
+              determinados casos sea más recomendable utilizar uno u otro. Si
+              escribimos un &lt;input type=”button”> y hacemos clic en dicho
+              botón, no se enviará el formulario. En cambio, si hacemos clic en
+              &lt;button> si. Por lo que, en determinados casos será más
+              recomendable utilizar button (cuando queramos envíar el formulario
+              directamente) y en determinados caso será mejor utilizar &lt;input
+              type=”button”> (cuando querramos trabajar con el formulario desde
+              JS y posteriormente enviarlo).
+            </p>
+            <form action="#">
+              <input type="button" value="Enviar" />
+            </form>
+            <h3>Inputs de fechas</h3>
+            <p>Dentro de los inputs de fechas tenemos distintos tipos:</p>
+            <h4>&lt;input type="”date”" /></h4>
+            <p>
+              Nos mostrará un input en el que podremos asignar una fecha. Vamos
+              a ver un ejemplo:
+            </p>
+            <form action="#">
+              <input type="date" />
+            </form>
+            <h4>&lt;input type="time" /></h4>
+            <p>
+              Nos mostrará un input en el que podremos asignar una fecha y una
+              hora. Vamos a ver un ejemplo:
+            </p>
+            <form action="#">
+              <input type="time" />
+            </form>
+            <h4>&lt;input type="”datetime”" /></h4>
+            <p>
+              Nos mostrará un input en el que podremos asignar una fecha y una
+              hora. Vamos a ver un ejemplo:
+            </p>
+            <form action="#">
+              <input type="datetime" id="PruebaDeDatetime" />
+            </form>
+            <h4>&lt;input type=”datetime-local”></h4>
+            <p>
+              Está obsoleto por lo que nos mostrará simplemente el típico campo
+              de input tradicional de texto. Vamos a ver un ejemplo:
+            </p>
+            <form action="#">
+              <input type="datetime-local" />
+            </form>
+            <p>
+              El problema de este tipo de input es que no es compatible con
+              algunas versiones de firefox. Vamos a verlo en
+              <a href="https://caniuse.com/" target="_blank">canIUse</a>:
+            </p>
+            <img
+              src="/images/html/canIUseDatetimeLocal.png"
+              id="img-sw"
+              alt=""
+            />
+            <p>
+              Por lo que en determinadas circunstancias, si la compatibilidad es
+              muy importante con versiones anteriores de dicho browser, sería
+              recomendable realizar un campo &lt;input type=”date”> y otro campo
+              &lt;input type=”time”> separados:
+            </p>
+            <h4>&lt;input type="”month”" /></h4>
+            <p>
+              Nos mostrará un input en el que podremos añadir un mes y un año.
+              Vamos a ver un ejemplo:
+            </p>
+            <form action="#">
+              <input type="month" id="PruebaMonth" />
+            </form>
+            <h4>&lt;input type="”week”" /></h4>
+            <p>
+              Nos mostrará un input en el que podremos añadir una semana y un
+              año. Vamos a ver un ejemplo:
+            </p>
+            <form action="#">
+              <input type="week" />
+            </form>
+          </div>
+        </section>
+        <section id="html-accederDispositivoMovil">
+          <h2>Cómo acceder a nuestra web desde otro dispositivo de la red</h2>
+          <div>
+            <p>
+              No todos los inputs se ven igual en todos los dispositivos, en
+              algunas ocasiones esto se produce debido al navegador (Chrome,
+              Firefox, Mozilla…) que estamos utilizado, en otras por el tipo de
+              dispositivo (desktop, mobile, tablet…).
+            </p>
+            <p>
+              De hecho, si tenemos el servidor local (Live Server) activado,
+              siempre y que estemos conectados a la misma red tanto desde el
+              móvil que estemos trabajando como en la computadora, podemos
+              acceder al servidor local que tenemos levantado en la IP
+              correspondiente. Para ello, primeramente abrimos el CMD y
+              realizamos un ip config.
+            </p>
+            <p>
+              Finalmente, aseguramos que tenemos una web corriendo vamos a
+              cargarla. <br />
+              Por lo que si nos metemos en el Visual Studio Code podemos ver que
+              tenemos el servidor corriendo y para confirmarlo, finalmente,
+              aseguramos que tenemos una web corriendo vamos a cargarla.
+            </p>
+            <p>
+              Realmente lo que estamos haciendo con la IP de loopback
+              127.1.0.1:5500 es llamar “a si mismo”, es decir, llamar a la IP
+              correspondiente a dicho equipo. Por tanto, llamar a
+              127.1.0.1:5500/ index.html es equivalente a llamar a
+              192.168.1.43:5500/ index.html siempre y que la llamada se haga
+              desde dicho equipo.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Por lo que si estamos conectados a una red con ambos
+              dispositivos, el ordenador y el dispositivo móvil, realmente
+              podremos acceder a la web desde el móvil apuntando a
+              192.168.1.43:5500/ index.html.
+            </p>
+            <p>
+              Cuando levantamos un 𝐬𝐞𝐫𝐯𝐢𝐝𝐨𝐫 𝐰𝐞𝐛 𝐞𝐧 𝐥𝐨𝐜𝐚𝐥 𝐜𝐨𝐧 𝐋𝐢𝐯𝐞 𝐒𝐞𝐫𝐯𝐞𝐫,
+              𝐩𝐨𝐝𝐞𝐦𝐨𝐬 𝐯𝐞𝐫 𝐜𝐨𝐦𝐨 𝐬𝐞 𝐯𝐢𝐬𝐮𝐚𝐥𝐢𝐳𝐚 𝐥𝐚 𝐰𝐞𝐛 𝐝𝐞𝐬𝐝𝐞 𝐮𝐧 𝐝𝐢𝐬𝐩𝐨𝐬𝐢𝐭𝐢𝐯𝐨 𝐪𝐮𝐞
+              𝐩𝐞𝐫𝐭𝐞𝐧𝐞𝐳𝐜𝐚 𝐚 𝐥𝐚 𝐦𝐢𝐬𝐦𝐚 𝐫𝐞𝐝 que dicha computadora. 𝐏𝐨𝐫 𝐞𝐣𝐞𝐦𝐩𝐥𝐨,
+              podemos visualizar nuestra web desde 𝐮𝐧 📱𝐝𝐢𝐬𝐩𝐨𝐬𝐢𝐭𝐢𝐯𝐨 𝐦ó𝐯𝐢𝐥📱con
+              la finalidad de ver como se adapta a dicho dispositivo.
+            </p>
+            <p>Los pasos a realizar son:</p>
+            <ol>
+              <li>𝐀𝐜𝐭𝐢𝐯𝐚𝐫 𝐞𝐥 𝐋𝐢𝐯𝐞 𝐒𝐞𝐫𝐯𝐞𝐫 𝐝𝐞𝐬𝐝𝐞 𝐕𝐒𝐂</li>
+              <li>Testeamos que la web funcioné desde el computador</li>
+              <li>Abrimos un 𝐂𝐌𝐃 y 𝐞𝐣𝐞𝐜𝐮𝐭𝐚𝐦𝐨𝐬 𝐞𝐥 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 𝐈𝐏 𝐂𝐎𝐍𝐅𝐈𝐆</li>
+              <li>Verificamos que el móvil esté conectado a la misma red</li>
+              <li>
+                Vamos al dispositivo móvil y escribimos la IP acompañada del
+                número de puerto y del archivo a acceder
+              </li>
+            </ol>
+            <p class="recuadro">
+              📌 ️ — Ante el caso que intentemos entrar a la IP 127.1.0.1 desde
+              el dispositivo móvil, dicha IP ya no apuntaría a la IP del PC,
+              sino que apuntaría a al IpP del móvil, es decir, así mismo por lo
+              que no podríamos acceder desde allí. Ya que, dicha ip de loopback
+              nos permite acceder solamente al dispositivo propio. Y en el
+              dispositivo móvil no hemos levantado un servidor.
+            </p>
+          </div>
+        </section>
+        <section id="html-inputMovil">
+          <h2>Inputs adaptados a móviles</h2>
+          <div>
+            <p>
+              Bueno, ahora, que ya hemos visto como acceder desde un móvil a un
+              dispositivo. Vamos a ver los distintos inputs que se visualizar de
+              una forma distinta a la web que a los dispositivos móviles. Ya es
+              estos inputs, se “adaptaran” en cierta medida a la vista móvil.
+            </p>
+            <p>Vamos a verlos:</p>
+          </div>
+          <h3>Input de tipo search</h3>
+          <div>
+            <p>
+              Nos permite introducir un buscador, aunque no son campos de texto
+              tradicionales, ya que mediante al search, le indicamos al
+              navegador que nos encontramos ante un campo de búsqueda. Y aunque
+              son funcionalmente hablando idénticos a los inputs de texto, el
+              browser en determinadas situaciones, como por ejemplo cuando se
+              visualizan desde un móvil, puede realizar modificaciones
+              adaptándose a dicho dispositivo.
+            </p>
+            <form action="#">
+              <input id="buscador" type="search" />
+            </form>
+            <p>
+              Si lo abrimos desde un dispositivo móvil, podemos ver que el
+              teclado se adapta a dicho input y que nos muestra una lupa🔍
+              dentro del teclado.
+            </p>
+            <p>
+              En cambio, si visualizamos el input desde el navegador, podemos
+              ver cuando nos situamos sobre el input, tiene un funcionamiento
+              prácticamente idéntico a un input de texto tradicional. A
+              excepción de que cuando ponemos un contenido aparece una X para
+              eliminarlo. <br />
+              Esta X también aparece en la vista mobile cuando escribimos.
+            </p>
+            <p>
+              Por lo que aunque tiene un comportamiento similar a input de tipo
+              text, semánticamente hablando como ya hemos visto, no serán lo
+              mismo. Y, por tanto, en determinadas situaciones el navegador lo
+              adaptará en función del dispositivo en el que abramos dicha web.
+            </p>
+          </div>
+          <h3>Input de tipo teléfono</h3>
+          <div>
+            <p>
+              Representa un campo de un número telefónico. Este campo,
+              simplemente aceptará una sola línea de texto. El valor introducido
+              puede ser tanto texto como números y no se validará
+              automáticamente. Ya que debido a la gran varidad de números
+              telefónicos que hay a nivel mundial la W3, ha decidido que las
+              restricciones son inapropiedas. Y que es mejor que este campo de
+              input acepte el texto sin requerimientos particulares.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Existe una forma de realizar validaciones mediante al
+              atributo pattern mediante a las expresiones regulares (Regex)
+              aunque esto lo veremos más adelante en el apartado de atributos.
+            </p>
+            <form action="#">
+              <input id="telefono" type="tel" />
+            </form>
+            <p>
+              Estamos algo más limitados desde el móvil que desde el ordenador,
+              ya que no nos deja introducir letras (aunque si pegarlas).
+            </p>
+          </div>
+          <h3>Input de tipo email</h3>
+          <div>
+            <p>
+              Se utilizan para que el usuario ingrese una dirección de correo, o
+              si se especifica el atributo múltiple una lista de direcciones.
+            </p>
+            <form action="#">
+              <input id="email" type="email" autocomplete="on" />
+            </form>
+            <p>
+              Desde un dispositivo mobile, podemos ver que en sugerencias al
+              identificar el browser que es un email nos aparecen sugerencias de
+              correos además de una @ en el teclado.
+            </p>
+          </div>
+          <h3>Input de tipo URL</h3>
+          <div>
+            <p>Nos permite escribir una URL.</p>
+            <form action="#">
+              <input id="enlace" type="url" />
+            </form>
+            <p>
+              El resultado desde escritorio si no escribimos correctamente la
+              URL y pulsamos ENTER (lo que hará que enviemos el formulario)
+              podremos ver que nos aparece un witget con un mensaje.
+            </p>
+            <p>
+              En cambio, desde un dispositivo mobile, podemos ver que nos
+              aparece la / con la que acaban las URLs y un botón de envío de la
+              petición.
+            </p>
+          </div>
+          <h3>Input tipo password</h3>
+          <div>
+            <p>
+              Nos permite introducir una contraseña de forma de forma que el
+              texto introducido no puede ser leído se substituye por asteriscos
+              (*) o un puntos (•) en función del navegador en el que se ejecute.
+            </p>
+            <form action="#">
+              <input
+                id="password"
+                type="password"
+                name="password"
+                autocomplete="on"
+              />
+            </form>
+            <p>
+              Y desde la vista mobile, también podemos ver que nos aparece una
+              especie de llave 🗝️.
+            </p>
+            <p>
+              Pese a que este tipo de input es evidentemente más seguro que un
+              input de tipo texto, ya que al menos no vemos la información
+              directamente en la pantalla. Podría ser modificado desde el editor
+              de HTML para convertirse en un input de tipo texto lo que
+              provocaría que la tenemos una contraseña introducida en el input
+              pudiera ser visualizada.
+            </p>
+          </div>
+        </section>
+        <section id="html-organizarFormulario">
+          <h2>Tips para organizar un formulario</h2>
+          <div>
+            <p>Cuando realizamos un formulario.</p>
+            <p>
+              Es bastante habitual que en según que resoluciones (móvil o una
+              pantalla reducida) el contenido de nuestra ventana no se adapte
+              como a nosotros nos gustaría en nuestra web.
+            </p>
+            <p>
+              Para ello, aunque podríamos usar CSS, también podríamos utilizar
+              &lt;br /> o bien, englobar el input y la label dentro de un div.
+            </p>
+            <p>Y si lo hiciéramos con DIVs se veria igual.</p>
+          </div>
+        </section>
+        <section id="html-porqueUtilizarInputs">
+          <h2>¿Por qué utilizar tantos tipos de inputs?</h2>
+          <div>
+            <p>
+              La finalidad/objetivo de utilizar tantos inputs distintos es la de
+              indicarle al navegador que tipo de dato se va de introducir en
+              cada una de los campos. Una vez hacemos esto, el navegador se
+              adaptará en función del tipo de input en función del dispositivo.
+              Por ejemplo, en el caso de la vista mobile, si el input es de tipo
+              email nos pondrá la @ para que no la tengamos que buscar.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Por tanto, para mejorar la accesibilidad de nuestra web, es
+              muy importante definir el tipo de input correctamente para que
+              nuestro navegador sea capaz de adaptarse correctamente al tipo de
+              dato que queremos recibir en dicho input.
+            </p>
+          </div>
+        </section>
+        <section id="html-PopurriInputs">
+          <h2>Popurrí de Inputs</h2>
+          <div>
+            <p>
+              Seguimos viendo más inputs, en este caso en concreto algunos que
+              no sabemos bien donde categorizarlos:
+            </p>
+          </div>
+          <h3>Input de tipo numérico</h3>
+          <div>
+            <p>
+              Nos permite nos permiten introducir números. Si nos fijamos este
+              tipo de input, no acepta textos y además tiene dos witgets (las
+              flechitas) que nos permiten incrementar o reducir el número
+              actual. Aunque también podemos escribirlo mediante a los valores
+              numéricos. Vamos a ver un ejemplo:
+            </p>
+            <form action="#">
+              <input id="numero" type="number" name="numero" />
+            </form>
+          </div>
+          <h3>Input de tipo color</h3>
+          <div>
+            <p>
+              Nos permite realizar lo que se conoce como un color picker
+              (selector de color). Es muy útil cuando por ejemplo cuando el
+              usuario quiere configurar el color de fondo de la web. Vamos a ver
+              un ejemplo:
+            </p>
+            <form action="#">
+              <input id="colorPicker" type="color" name="colorPicker" />
+            </form>
+          </div>
+          <h3>Input de tipo rango</h3>
+          <div>
+            <p>
+              Nos permite trabajar con rangos, es decir, con números. Vamos a
+              ver un ejemplo:
+            </p>
+            <form action="#">
+              <input id="rango" type="range" min="0" max="100" name="rango" />
+            </form>
+            <p>
+              Por defecto, los valores se incrementan de uno en uno, aunque
+              nosotros podemos modificarlos mediante el atributo step para que,
+              por ejemplo, se realicen saltos de 20 en 20. Vamos a ver un
+              ejemplo:
+            </p>
+            <form action="">
+              <input
+                id="Segundorango"
+                type="range"
+                min="0"
+                max="100"
+                step="20"
+                name="rango"
+              />
+            </form>
+          </div>
+          <h3>Input de tipo reset</h3>
+          <div>
+            <p>
+              Nos permite borrar los datos introducidos dentro de nuestro
+              formulario, tal y como se realiza cuando recargamos una página con
+              actualizar (F5), pero sin la necesidad de tener que recargar el
+              formulario. Habitualmente, este botón, se pone a la derecha del
+              botón de envía (submit). Vamos a ver un ejemplo:
+            </p>
+            <form action="#">
+              <input
+                type="text"
+                name="nombre"
+                id="nombre20"
+                name="nombre"
+              /><br />
+              <input type="reset" value="Limpiar" />
+            </form>
+          </div>
+          <h3>Input de tipo hidden</h3>
+          <div>
+            <p>
+              Permite ocultar un campo para que cuando los usuarios carguen la
+              página no puedan verlo. Habitualmente, se utiliza por ejemplo en
+              encuestas y en función de una determinada respuesta se substituye
+              el tipo valor de input de hidden a text para que aparezca en el
+              formulario. Vamos a ver un ejemplo:
+            </p>
+            <form action="#">
+              <input type="hidden" name="elementoOculto" /><br />
+            </form>
+            <p>
+              Si cargamos el formulario podemos ver que no aparece nada, aunque
+              nosotros podemos hacer lo que en un futuro haremos desde JS e ir
+              al código del HTML desde el inspector y modificar el valor del
+              input de hidden a text para que se muestre.
+            </p>
+          </div>
+          <h3>Input de tipo radio</h3>
+          <div>
+            <p>
+              Los inputs de tipo radio, generalmente se utilizan para realizar
+              grupos de radios buttons en los que introduciremos múltiples
+              opciones, es decir varios elementos con la finalidad que el
+              usuario coja una o varias (en función de la configuración). Vamos
+              a ver un ejemplo:
+            </p>
+            <form action="#">
+              <p>¿Qué marca de móvil tienes?</p>
+              <label for="iphone">Iphone</label>
+              <input type="radio" name="iphone" id="iphone1" value="1" />
+              <label for="android">Android</label>
+              <input type="radio" name="android" id="android1" value="2" />
+            </form>
+            <p>
+              Aunque si os fijáis ¡Podemos marcar ambos radio options! Por lo
+              que, para que seleccionar solamente uno de los dos, ambos radio
+              optitons tendrán que tener el mismo valor en name y de esta forma
+              será como el navegador interprete que forman parte del mismo
+              grupo. Vamos a ver un ejemplo:
+            </p>
+            <form action="#">
+              <p>¿Qué marca de móvil tienes?</p>
+              <label for="iphone">Iphone</label>
+              <input type="radio" name="mobile" id="iphone" value="1" />
+              <label for="android">Android</label>
+              <input type="radio" name="mobile" id="android" value="2" />
+            </form>
+            <p class="recuadro">
+              📌 ️ — El atributo value, nos permite indicar el valor que
+              recibirá el servidor cuando se marque dicho radio option. No es
+              necesario que coincida con el valor que hemos definido en name ni
+              en el id. <br />
+              📌 ️ — Los botones de opción (radio options) generalmente se
+              representan como pequeños círculos, que se rellenan o resaltan
+              cuando se seleccionan.
+            </p>
+            <p>
+              Si por ejemplo analizamos los datos de un “hipotetico estudio”
+              (nos lo acabamos de inventar) que el total de usuarios que usan
+              Android es un 70 % frene a un 30 % que usan Iphone. Quizás tendría
+              sentido marcar un elemento por defecto. Cuando queremos marcar un
+              radio option por defecto cuando se cargue el formulario
+              utilizaremos el atributo booleano checked.
+            </p>
+            <form action="#">
+              <p>¿Qué marca de móvil tienes?</p>
+              <label for="iphone">Iphone</label>
+              <input type="radio" name="mobile" id="iphone3" value="1" />
+              <label for="android">Android</label>
+              <input
+                type="radio"
+                name="mobile"
+                id="android3"
+                value="2"
+                checked
+              />
+            </form>
+            <p>Si nos fijamos ya tenemos una opción predefinida por defecto.</p>
+          </div>
+          <h3>Input de tipo checkbox</h3>
+          <div>
+            <p>
+              Nos permite insertar varias opciones de una forma similar a los
+              radio button pero con la diferencia que este tipo de input nos va
+              a permitir seleccionar varias opciones. Vamos a ver un ejemplo:
+            </p>
+            <form action="#">
+              <p>¿Cuál de estos colores te gusta?</p>
+              <label for="rojo">Rojo</label>
+              <input type="checkbox" name="color" id="rojo" value="red" />
+              <label for="azul">Azul</label>
+              <input type="checkbox" name="color" id="azul" value="blue" />
+              <label for="amarillo">Amarillo</label>
+              <input
+                type="checkbox"
+                name="color"
+                id="amarillo"
+                value="yellow"
+              />
+              <label for="verde">Verde</label>
+              <input type="checkbox" name="color" id="verde" value="green" />
+            </form>
+            <p class="recuadro">
+              📌 ️ — El funcionamiento es similar la radio button, por lo que
+              tendremos que definir un name en especifico para el conjunto de
+              opciones para que el navegador interprete que son de la misma
+              categoría y un valor para cuando envíenos el formulario al
+              servidor.
+            </p>
+            <p>
+              También podemos utilizar el atributo checked de la misma forma que
+              lo hacíamos anteriormente para marcar algunos valores por defecto.
+              Pero en este caso, como podemos hacer una selección multiple,
+              podremos aplicar varios checked. Vamos a ver un ejemplo:
+            </p>
+            <form action="#">
+              <p>¿Cuál de estos colores te gusta?</p>
+              <label for="rojo1">Rojo</label>
+              <input
+                type="checkbox"
+                name="color"
+                id="rojo1"
+                value="red"
+                checked
+              />
+              <label for="azul1">Azul</label>
+              <input type="checkbox" name="color" id="azul1" value="blue" />
+              <label for="amarillo1">Amarillo</label>
+              <input
+                type="checkbox"
+                name="color"
+                id="amarillo1"
+                value="yellow"
+                checked
+              />
+              <label for="verde1">Verde</label>
+              <input type="checkbox" name="color" id="verde1" value="green" />
+            </form>
+          </div>
+          <h3>Select</h3>
+          <div>
+            <p>
+              Aunque no es un input, actúa de una forma muy similar a un input
+              nos permite representa un menú de opciones. Dentro de este menú
+              las opciones deben ir representadas mediante a elementos option. Y
+              en función de la configuración del select, podremos seleccionar 1
+              sola opción o varias opciones. Vamos a ver un ejemplo:
+            </p>
+            <form action="#">
+              <label for="colores">Selecciona una opción:</label>
+              <select name="color" id="colores">
+                <option value="Rojo">Rojo</option>
+                <option value="Verde">Verde</option>
+                <option value="Azul">Azul</option>
+                <option value="Amarillo">Amarillo</option>
+              </select>
+            </form>
+            <p>
+              Si nos fijamos no está desplegado automáticamente, por lo que
+              tenemos que hacer clic en el select, para poder ver el conjunto de
+              opciones.
+            </p>
+            <p>
+              Si quisiéramos poder marcar varias opciones en vez de solamente 1,
+              podemos utilizar el atributo múltiple. Vamos a ver un ejemplo:
+            </p>
+            <form action="#">
+              <label for="colores1">Selecciona una opción:</label>
+              <select name="color" id="colores1" multiple>
+                <option value="Rojo">Rojo</option>
+                <option value="Verde">Verde</option>
+                <option value="Azul">Azul</option>
+                <option value="Amarillo">Amarillo</option>
+              </select>
+            </form>
+            <p>
+              El resultado será el mismo, aunque directamente lo tendremos
+              desplegado y no aparecerá la flechita. Además, si pulsamos la
+              tecla CONTROL mientras hacemos la selección, o SHIFT para
+              seleccionar varios elementos consecutivos, podremos marcar varios
+              elementos.
+            </p>
+            <p>
+              Existe otra opción algo más avanzada de trabajar con el elemento
+              select que mediante al elemento optgroup, que nos permite crear
+              distintos grupos/categorías dentro de las opciones mediante al
+              atributo label. Vamos a ver un ejemplo:
+            </p>
+            <form action="#">
+              <label for="colores3">Selecciona una opción:</label>
+              <select name="color" id="colores3">
+                <optgroup label="Colores parchis">
+                  <option value="Rojo">Rojo</option>
+                  <option value="Verde">Verde</option>
+                  <option value="Azul">Azul</option>
+                  <option value="Amarillo">Amarillo</option>
+                </optgroup>
+                <optgroup label="Colores ajedrez">
+                  <option value="Blanco">Blanco</option>
+                  <option value="Negro">Negro</option>
+                </optgroup>
+                <optgroup label="Colores tres en raya">
+                  <option value="Amarillo">Amarillo</option>
+                  <option value="Rojo">Rojo</option>
+                </optgroup>
+              </select>
+            </form>
+            <p class="recuadro">
+              📌 ️ — Utilizar el elemento &lt;optgroup> dentro de un
+              &lt;select>, es ideal para los casos en los que tenemos muchas
+              opciones y queremos agrupar en distintas categorías.
+            </p>
+          </div>
+          <h3>Input de tipo list</h3>
+          <div>
+            <p>
+              Funciona de forma muy similar al select anterior, pero con la
+              peculiaridad de que solamente nos deja seleccionar un elemento. El
+              principal beneficio de este input frente al select anterior, es
+              que, nos permite realizar búsquedas desde el propio campo. Vamos a
+              ver un ejemplo:
+            </p>
+            <form action="#">
+              <label for="browserSelected"
+                >¿Qué navegador estás utilizando?
+                <input
+                  list="browsersOpt"
+                  name="myBrowser"
+                  id="browserSelected"
+                />
+              </label>
+              <datalist id="browsersOpt">
+                <option value="Brave"></option>
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Internet Explorer"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+                <option value="Microsoft Edge"></option>
+              </datalist>
+            </form>
+            <p class="recuadro">
+              📌 ️ — Aunque también podemos seleccionar los elementos de forma
+              tradicional. El buscador, además nos permite realizar búsquedas de
+              un carácter o conjunto de caracteres, nos muestra todas las
+              opciones que contengan dicho o dichos caracteres.
+              Independientemente de la posición en la que este situado el texto
+              que estamos buscado. Si alguna opción la contenido lo muestra sin
+              importar en que posición. Un posible ejemplo de uso que se me
+              ocurre, es cuando cuando por ejemplo, realizamos una web de
+              alimentación y queremos que el usuario pueda realizar búsquedas
+              dentro de las opciones. Filtrando así su contenido y facilitando
+              por tanto, la elección del producto.
+            </p>
+            <p>
+              Además, en los inputs de tipo list, también podemos utilizar otro
+              formato conocido como “value & description”. Vamos a ver un
+              ejemplo:
+            </p>
+            <form action="">
+              <label for="browserSelected1"
+                >¿Qué navegador estás utilizando?
+                <input
+                  list="browsersOpt1"
+                  name="myBrowser"
+                  id="browserSelected1"
+              /></label>
+              <datalist id="browsersOpt1">
+                <option value="Brave">Brave Browser</option>
+                <option value="Chrome">Chrome Browser</option>
+                <option value="Firefox">Firefox Browser</option>
+                <option value="Internet Explorer">Explorer Browser</option>
+                <option value="Opera">Opera Browser</option>
+                <option value="Safari">Safari Browser</option>
+                <option value="Microsoft Edge">Edge Browser</option>
+              </datalist>
+            </form>
+          </div>
+          <h3>Input de tipo file</h3>
+          <div>
+            <p>
+              Nos permite cargar archivos desde un formulario con la finalidad
+              de poder posteriormente enviarlos al servidor. Vamos a ver un
+              ejemplo:
+            </p>
+            <form action="#" class="SeleccionarArchivo">
+              <input type="file" name="fileInput" id="fileInput" />
+            </form>
+            <p>
+              Existe la posibilidad de utilizar el atributo de aceptación de
+              validaciones desde HTML con definir el tipo de fichero se espera
+              que introduzca el usuario. El atributo de aceptación no debe
+              usarse como una herramienta de validación. Las cargas de archivos
+              deben validarse en el servidor o desde cliente con JS. Podemos
+              definir como valor del atributo una o varias extensiones. Vamos a
+              ver un ejemplo:
+            </p>
+            <form action="#" class="SeleccionarArchivo">
+              <input
+                type="file"
+                name="fileInput"
+                id="fileInput1"
+                accept="image/*"
+              />
+            </form>
+            <p>
+              El resultado será que cuando pulsamos en seleccionar un fichero,
+              por defecto, nos mostrará solamente los tipos de fichero que le
+              hemos indicado. En este caso, por defecto el selector de fichero
+              nos muestra solamente los ficheros que son imágenes.
+            </p>
+            <p>
+              Aunque eso no significa que no se puede cambiar, y seleccionar
+              otro archivo de otro tipo.
+            </p>
+            <p>
+              Vemos que es aceptado otro tipo de fichero, ya que el atributo
+              accept es utilizado principalmente para que cuando el usuario
+              pulse sobre el botón le aparezcan directamente los ficheros que
+              son aceptados.
+            </p>
+          </div>
+        </section>
+        <section id="html-masElementos">
+          <h2>Más elementos de formularios</h2>
+          <h3>Text area</h3>
+          <div>
+            <p>
+              Nos permite introducir un texto multilínea sin formato. Vamos a
+              ver un ejemplo:
+            </p>
+            <form action="#">
+              <label for="jobTxt">Explica el porque te interesa el puesto</label
+              ><br />
+              <textarea name="jobTxt" id="jobTxt" cols="13" rows="1">
+                Escribe aquí</textarea
+              >
+            </form>
+            <p class="recuadro">
+              📌 ️ — El atributo col nos permite definir las columnas que
+              ocupará el text area y el atributo row las filas. Aunque, el ancho
+              del text area también podría ser modificado desde CSS.
+            </p>
+          </div>
+          <h3>Progress</h3>
+          <div>
+            <p>
+              Se utiliza para representar una barra de progreso, que por
+              ejemplo, nos puede servir para visualizar el progreso de una
+              tarea. Si no tocamos la barra desde CSS, los detalles del diseño
+              de dicha barra, es decir como se visualiza depende directamente
+              del navegador que utiliza el cliente. Vamos a ver un ejemplo:
+            </p>
+            <form action="#">
+              <progress max="10" min="0"></progress>
+            </form>
+            <p class="recuadro">
+              📌 ️ — Esta barra, con este comportamiento (desplazándose hacía
+              los lados) nos puede ir muy bien para realizar efectos de carga
+              más adelante.
+            </p>
+            <p>
+              Para evitar que esto pase, es necesario utilizar un value. Vamos a
+              verlo:
+            </p>
+            <form action="">
+              <progress max="10" min="0" value="5"></progress>
+            </form>
+            <p>
+              Aunque lo más recomendable es realizar una doble validación (JS y
+              HTML), y combinarlo con CSS ya que como hemos visto con el input
+              de password anteriormente, las validaciones desde HTML pueden ser
+              eliminadas por el usuario desde el inspector.
+            </p>
+          </div>
+          <h3>Meter</h3>
+          <div>
+            <p>
+              nos sirve para representar una medida dentro de un rango conocido.
+              Tiene un comportamiento muy similar a progress, pero mucho más
+              avanzando ya que nos permite llegar a realizar barras de tareas
+              mucho más complejas. Vamos a ver un ejemplo:
+            </p>
+            <form action="">
+              <label for="bateria">Bateria del dispositivo:</label>
+              <meter id="bateria" value="50" min="0" max="100"></meter>
+            </form>
+            <p>
+              La barra en todo los casos se ve del mismo color. Pero existe la
+              posibilidad de añadir los atributos low (bajo), high (alto) y
+              optimim (recomendado) con la finalidad de poder hacer que esta
+              barra cambie de colores en función del valor que le asingamos.
+              Vamos a ver un ejemplo:
+            </p>
+            <form action="#">
+              <label for="bateria">Bateria del dispositivo:</label>
+              <meter
+                id="bateria"
+                value="24"
+                min="0"
+                max="100"
+                low="25"
+                high="75"
+                optimum="50"
+              ></meter>
+            </form>
+            <p>
+              Cuando el meter tenga un valor entre el low (25 en este caso) y
+              hasta una vez superado el valor high (75 en este caso), la parte
+              que indica el total se pondrá en verde. Si superamos el valor high
+              (75) el color volverá a ser amarillo. Por ejemplo si ponemos 76
+              con las condiciones de este meter, podemos ver que el color vuelve
+              a cambiar a amarillo
+            </p>
+            <p>Por tanto, y en resumen:</p>
+            <ul class="sep-lista">
+              <li>
+                Si el valor se encuentra entre low y high se verá en verde
+              </li>
+              <li>
+                Si el valor es inferior a low o superior a high se verá amarillo
+              </li>
+            </ul>
+            <p class="recuadro">
+              📌 ️ — Vamos a explicar porque cambia de color el meter en
+              determinadas circunstancias. Aunque aún no hemos hablado de ello,
+              el culpable de que la barra realmente cambie de color es el valor
+              optimum. Mediante a optimum definimos que valor numérico que para
+              nosotros será el óptimo. Este valor, en función de si lo definimos
+              entre LOW & HIGH, por encima de LOW & HIGH o por debajo de LOW &
+              HIGH, tendrá consecuencias estéticas sobre nuestro meter.
+            </p>
+            <p>
+              Se pueden llegar a crear 3 rangos a partir de optimum que tendrán
+              3 colores distintos: AMARILLO, VERDE y ROJO. Vamos a ver un
+              ejemplo para acabar de entender porque cambia en ocasiones el
+              color y su funcionamiento al 100%.
+            </p>
+            <p>Valor óptimo por encima de bajo y alto</p>
+            <meter
+              value="0.6"
+              max="0.9"
+              min="0.1"
+              optimum="0.1"
+              high="0.5"
+              low="0.2"
+            ></meter
+            ><br />
+            <p>Valor óptimo entre bajo y alto</p>
+            <meter
+              value="0.6"
+              max="0.9"
+              min="0.1"
+              optimum="0.4"
+              high="0.5"
+              low="0.2"
+            ></meter
+            ><br />
+            <p>Valor óptimo por encima de bajo y alto</p>
+            <meter
+              value="0.6"
+              max="0.9"
+              min="0.1"
+              optimum="0.6"
+              high="0.5"
+              low="0.2"
+            ></meter
+            ><br />
+          </div>
+          <h3>Fieldset</h3>
+          <div>
+            <p>
+              Si lo traducimos del inglés sería conjunto/grupo de campos. Este
+              elemento, nos permite agrupar campos de un formulario. Vamos a ver
+              un ejemplo:
+            </p>
+            <form action="#">
+              <fieldset>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" /><br />
+                <button>Enviar</button>
+              </fieldset>
+            </form>
+            <p class="recuadro">
+              📌 ️ — La estructura que por defecto nos ofrece fieldset, puede
+              ser modificada posteriormente desde CSS.
+            </p>
+            <p>
+              Mediante el elemento legend, podemos ponerle una etiqueta que nos
+              permite definir un nombre a dicha agrupación. La finalidad de
+              utilizar legend, es hacer el fieldset más entendible, tanto el
+              usuario como para el browser. Vamos a ver un ejemplo:
+            </p>
+            <form action="">
+              <fieldset>
+                <legend>Datos personales:</legend>
+                <label for="nombre10">Nombre:</label>
+                <input type="text" id="nombre10" /><br />
+                <button>Enviar</button>
+              </fieldset>
+            </form>
           </div>
         </section>
       </article>

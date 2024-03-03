@@ -353,10 +353,16 @@ footer {
   .menu-resp {
     left: -5px;
   }
+  .SeleccionarArchivo {
+    transform: scale(0.5);
+  }
 }
 
 @media screen and (max-width: 320px) {
   .menu-resp {
     left: -12px;
+  }
+  .tablas {
+    font-size: 10px;
   }
 }
