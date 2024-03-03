@@ -73,6 +73,13 @@
           <li><a href="#html-formateo">Formateo🔨</a></li>
           <li><a href="#html-atrib">Atributos🔖</a></li>
           <li><a href="#html-enlaces">Enlaces🔗</a></li>
+          <li><a href="#html-rutas">Rutas🛣️</a></li>
+          <li><a href="#html-atributoenlace">Atributos a🔖</a></li>
+          <li><a href="#html-anclas">Anclas⚓</a></li>
+          <li><a href="#html-listas">Listas📋</a></li>
+          <li><a href="#html-tablas">Tablas📊</a></li>
+          <li><a href="#html-maselementos">Elementos🔧</a></li>
+          <li><a href="#html-formularios">Formularios📝</a></li>
         </ul>
       </nav>
       <article class="content">
@@ -1024,45 +1031,847 @@
         </section>
         <section id="html-enlaces">
           <h2>Enlaces</h2>
-          <p>
-            Los enlaces son una parte fundamental dentro de la WWW (World Wide
-            Web). Muestra de ello, es que si buscamos en Google MDN podemos ver
-            que tenemos un montón de enlaces.
-          </p>
-          <p>
-            Cada uno de estos enlaces nos llevará a un sitio distinto. Si no
-            fuera por este sistema basado en hipertextos que nos permite
-            comunicar de manera tan sencilla de comunicar las webs sería difícil
-            concebir las webs tal y como son actualmente.
-          </p>
-          <p class="recuadro">
-            📌 ️ — Los enlaces son también conocidos como anchor (ancla) o link
-            (debido al sistema de hiperlink/hipertexto que utilizan para poder
-            comunicarse en la web).
-          </p>
-          <p>
-            Un enlace de forma predefinida tiene un formato especifico que
-            aunque se puede cambiar desde CSS.
-          </p>
-          <p class="recuadro">
-            📌 ️ — El objetivo de los enlaces es conectar una página web con
-            distintos puntos de dicha web, con otra página web o incluso con un
-            recurso (tanto interno como externo).
-          </p>
-          <p>La estructura de un enlace es la siguiente:</p>
-          <img src="../images/html/estructuraEnlace.png" id="img-sw" alt="" />
-          <p class="recuadro">
-            📌 ️ — El atributo HREF, es un atributo obligatorio, ya que es el
-            atributo mediante al cual le indicamos a donde (fichero o web) debe
-            ir nuestro enlace.
-          </p>
-          <p>
-            El # sin nada más, nos permite realizar dead links o enlaces muertos
-            que, aunque no nos lleva a ninguna parte, si que nos ofrece la
-            posibilidad de definir un enlace “provisional” durante la fase de
-            desarrollo con la finalidad de que dicho enlace se muestre con su
-            correspondiente formato.
-          </p>
+          <div>
+            <p>
+              Los enlaces son una parte fundamental dentro de la WWW (World Wide
+              Web). Muestra de ello, es que si buscamos en Google MDN podemos
+              ver que tenemos un montón de enlaces.
+            </p>
+            <p>
+              Cada uno de estos enlaces nos llevará a un sitio distinto. Si no
+              fuera por este sistema basado en hipertextos que nos permite
+              comunicar de manera tan sencilla de comunicar las webs sería
+              difícil concebir las webs tal y como son actualmente.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Los enlaces son también conocidos como anchor (ancla) o
+              link (debido al sistema de hiperlink o hipertexto que utilizan
+              para poder comunicarse en la web).
+            </p>
+            <p>
+              Un enlace de forma predefinida tiene un formato especifico que
+              aunque se puede cambiar desde CSS.
+            </p>
+            <p class="recuadro">
+              📌 ️ — El objetivo de los enlaces es conectar una página web con
+              distintos puntos de dicha web, con otra página web o incluso con
+              un recurso (tanto interno como externo).
+            </p>
+            <p>La estructura de un enlace es la siguiente:</p>
+            <img src="../images/html/estructuraEnlace.png" id="img-sw" alt="" />
+            <p class="recuadro">
+              📌 ️ — El atributo HREF, es un atributo obligatorio, ya que es el
+              atributo mediante al cual le indicamos a donde (fichero o web)
+              debe ir nuestro enlace.
+            </p>
+            <p>
+              El # sin nada más, nos permite realizar dead links o enlaces
+              muertos que, aunque no nos lleva a ninguna parte, si que nos
+              ofrece la posibilidad de definir un enlace “provisional” durante
+              la fase de desarrollo con la finalidad de que dicho enlace se
+              muestre con su correspondiente formato.
+            </p>
+            <p>
+              Enlaces que no apuntan a una URL: existen un tipo de enlaces que
+              no apuntan a una URL sino a un email, a un teléfono, etc.
+            </p>
+            <p>Vamos a ver algunos ejemplos:</p>
+            <ul>
+              <li>
+                Mailto: nos permite asociado un enlace a un email. <br />
+                <code
+                  >&lt;a href="mailto: email@example.com"> Send
+                  Email&lt;/a></code
+                >
+              </li>
+              <li>
+                Teléfono: es muy útil en dispositivos móviles. <br />
+                <code
+                  >&lt;a href="tel: +34678567876"> Reserva
+                  teléfonica&lt;/a></code
+                >
+              </li>
+              <li>
+                Enviar un SMS: también podemos enviar un mensaje de texto.
+                <br />
+                <code
+                  >&lt;a href="sms: +34123456789;?&body= Me gustaría que os
+                  pusierais en contacto conmigo"> Enviar SMS para que me
+                  contacten&lt;/a></code
+                >
+              </li>
+              <li>
+                Enviar un WhatsApp: También podemos. <br />
+                <code
+                  >&lt;a href="whatsapp:// send?text= Hola me gustaría recibir
+                  más información&phone= +34123456789" > Contactar vía
+                  WhatsApp&lt;/a ></code
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="html-rutas">
+          <h2>Rutas relativas VS rutas absolutas</h2>
+          <div>
+            <p>
+              Para pasamos un valor al atributo HREF de una ruta, es muy
+              importante entender bien las diferencias entre rutas relativas y
+              rutas absolutas.
+            </p>
+            <p>
+              Rutas absolutas: son URL que utilizan el protocolo HTTP o HTTP/s.
+              Y, que, por tanto, son únicas. Se utilizan principalmente cuando
+              queremos “salir al exterior”, es decir, acceder a rutas externas
+              como por ejemplo ir otra dirección web o a un recurso que no es
+              nuestro.
+            </p>
+            <p>
+              Y es bastante extraño y poco común utilizarlas para ir desde
+              nuestra web a otra página de nuestra web. Para ello, habitualmente
+              se suelen utilizan las rutas relativas.
+            </p>
+            <p>La anatomía completa de una ruta absoluta es la siguiente:</p>
+            <img
+              src="../images/html/AnatomiaRutaAbsoluta.png"
+              id="img-sw"
+              alt=""
+            />
+            <p>Un ejemplo de uso de una ruta absoluta es el siguiente:</p>
+            <code
+              >&lt;a href="https://www. google.es" title="Visitar a Google">Ir a
+              google&lt;/a></code
+            >
+            <p>
+              Si nos fijamos, le estamos indicando el protocolo que utiliza al
+              navegador. Para que este pueda identificar que tiene que
+              viajar/salir del proyecto actual hacía el exterior a un recurso o
+              una web.
+            </p>
+            <p>
+              Rutas relativas: Las rutas relativas nos permiten no utilizan el
+              protocolo HTTP o HTTPS.
+            </p>
+            <p>
+              Por lo que, por ejemplo, si intentamos acceder a www.google.es sin
+              definir el protocolo:
+            </p>
+            <code
+              >&lt;a href="www.google.es" title="Visitar a Goole">Ir a
+              google&lt;/a></code
+            >
+            <p>Podemos ver que nos aparece lo siguiente:</p>
+            <img
+              src="../images/html/errorRutaRelativa.png"
+              id="img-sw"
+              alt=""
+            />
+            <p>
+              Ya que, el navegador al no tener un protocolo definido, está
+              intentando buscar un fichero dentro de nuestro proyecto en local.
+            </p>
+            <p>
+              Podemos hacer la prueba creando un fichero vacío con el nombre
+              www.google.es.
+            </p>
+            <p>
+              Si nuevamente volvemos a realizar una petición, podemos ver que en
+              este caso, el navegador entiende que el contenido es un recurso y
+              nos pregunta donde queremos guardar dicho recurso.
+            </p>
+            <p>Existen dos tipos de rutas relativas:</p>
+            <h3>
+              Relativas al directorio en el que nos encontramos: cuando no
+              utilizan la /
+            </h3>
+            <h4>
+              Relativas a la misma altura en el directorio en el que nos
+              encontramos
+            </h4>
+            <p>
+              Es cuando en un enlace queremos poner la url de un fichero que se
+              situa al mismo nivel que el mismo html del cual enlazamos, por
+              ejemplo cuando queremos enlazar al index.html otro fichero que
+              esta en el mismo lugar.
+            </p>
+            <h4>
+              Rutas en diferentes alturas en el directorio en el que nos
+              encontramos
+            </h4>
+            <p>
+              Es cuando en un enlace queremos poner la url de un fichero que se
+              situa en otra carpeta del repositorio el cual enlazaremos. Por
+              ejemplo cuando en el index.html ponemos en el enlace
+              carpeta/archivo.html o cualquier otro que no sea .html.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Con los ../ podemos ir un directorio hacía arriba (subir).
+            </p>
+            <p>
+              El principal problema de este tipo de rutas es que cuanto tenemos
+              muchos subdirectorios las rutas se vuelven muy largas
+              ../../../../index.html por lo que se aconseja siempre el trabajar
+              con rutas relativas a la raíz con la finalidad de evitar esto.
+            </p>
+            <h3>Relativas al directorio raíz: cuando utilizan la /</h3>
+            <p>
+              Para el navegador y el IDE, nuestra ruta relativa es en la que se
+              encuentra el fichero index.html. En este caso:
+            </p>
+            <img src="/images/html/rutaRelativa.png" id="img-sw" alt="" />
+            <p>
+              En este caso, si quisiéramos trabajar con rutas raíz en el
+              index.html, solamente tendriamos que realizar lo siguiente:
+            </p>
+            <img src="/images/html/rutaRelativaCode.png" id="img-sw" alt="" />
+            <p>
+              En el fichero noticias.html que está al mismo nivel, podríamos
+              realizar lo siguiente:
+            </p>
+            <code
+              >&lt;a href="/index.html" title="Index">Ir a Index&lt;/a> <br />
+              &lt;a href="/" title="Index">Ir a Index&lt;/a></code
+            >
+            <p>Ambas maneras nos llevarán al directorio raíz.</p>
+            <p>
+              Y finalmente, en el fichero noticias.html que está en el
+              directorio noticias. También realizaríamos lo mismo.
+            </p>
+            <p>
+              Por lo que vemos que trabajando de esta manera, el trabajo con
+              rutas es mucho más sencillo.
+            </p>
+          </div>
+        </section>
+        <section id="html-atributoenlace">
+          <h2>Atributo target de un enlace</h2>
+          <div>
+            <p>
+              Nos permite configurar la forma en la que queremos abrir el
+              recurso solicitado (web, fichero…). Aunque existen varios
+              atributos para target. Los dos más utilizados con diferencia son:
+            </p>
+            <h3>_self</h3>
+            <p>
+              Carga la URL en la misma pestaña/ventana donde estamos situados
+              ahora mismo. Es el comportamiento predeterminado por lo que no
+              haría falta especificarlo para utilizarlo:
+            </p>
+            <code
+              >&lt;a href="http://www. google.es" title=" Visitar a Google"
+              target=" _self"> Ir a google&lt;/a></code
+            >
+            <p class="recuadro">
+              📌 ️ — Si queremos utilizar este tipo de ventana usualmente no
+              haría falta especificar dicho atributo, ya que es el por defecto.
+              Además es el que utilizamos habitualmente para desplazarnos entre
+              las distintas páginas de nuestra web.
+            </p>
+            <h3>_blank</h3>
+            <p>
+              Carga la URL en otra pestaña o en otra ventana del navegador.
+              Dependiendo de la configuración del usuario.
+            </p>
+            <code
+              >&lt;a href="http://www. google.es" title=" Visitar a Google"
+              target=" _blank"> Ir a google&lt;/a></code
+            >
+            <p class="recuadro">
+              📌 ️ — Es el que utilizamos habitualmente para desplazarnos entre
+              hacía webs externas. Ya que, en principio, no queremos perder la
+              visita, es decir, que se vaya el usuario en la pestaña en la que
+              tiene nuestra web actualmente abierta.
+            </p>
+            <h3>_download</h3>
+            <p>
+              Existe otro atributo de tipo booleano que nos permite descargar un
+              recurso solicitado siempre y que este esté dentro de nuestro
+              servidor.
+            </p>
+            <code
+              >&lt;a href="/ pagina.html" download> Descargar pagina.html&lt;/a>
+              <br />
+              &lt;a href="/ HTML5.png" download=" ImagenHTML5.png"> Descargar
+              imagen de HTML 5&lt;/a>
+            </code>
+            <p>
+              Si nos fijamos, tenemos dos descargas. El primer enlace es el que
+              descargará el fichero con el nombre que tiene actualmente
+            </p>
+            <p>
+              Y el segundo enlace es el que descargará el fichero con el nombre
+              que hemos definido inmediatamente después del download.
+            </p>
+            <p>
+              Aunque es más correcto crear un directorio llamado assets en el
+              que guardar todos nuestros recursos externos, imágenes, videos,
+              iconos, etc.
+            </p>
+            <p>
+              En algunas ocasiones, el si el fichero se guardará automáticamente
+              o no, dependerá de la configuración que tengamos actualmente en
+              nuestro navegador. En la gran mayoría de ocasiones, actualmente
+              tendremos que confirmar que queremos guardar dicho fichero ya que
+              nuestro navegador así lo tendrá configurado por temas de seguridad
+              ya que se producían ataques habitualmente desde webs que
+              descargaban ficheros automáticamente desde el navegador con el
+              peligro que esto supone.
+            </p>
+            <p>
+              En cambio, si modificamos las rutas hacía un servidor externo:
+            </p>
+            <code>
+              &lt;a href=" https://www.google.es" download target="_blank" >
+              Descargar Google.es&lt;/a >
+              <br />
+              &lt;a href="https:// www.google.es/ images.png" download="
+              ImagenHTML5.png" target="_blank" > Descargar imagen de
+              Google&lt;/a >
+            </code>
+            <p>
+              Independientemente de si tenemos la descarga automática activada o
+              no, el navegador detectará que es un recurso que se encuentra en
+              otro servidor, ya que estamos trabajando con una ruta absoluta y
+              al no ser rutas relativas no no nos cargará el fichero en una
+              nueva pestaña ya que no puede descargarlo. Por ello, como no
+              queremos que el usuario salga de nuestra web, ponemos el atributo
+              target=”_blank”.
+            </p>
+          </div>
+        </section>
+        <section id="html-anclas">
+          <h2>Navegación con anclas</h2>
+          <div>
+            <p>
+              Anteriormente, cuando hablábamos de atributos globales principales
+              de un elemento hemos hablado que mediante el atributo id podemos
+              realizar lo que se conoce como navegación pro anclas.
+            </p>
+            <p>
+              Este tipo de navegación nos permite desplazarnos a un punto
+              especifico de una web tanto de la misma página como de otra
+              página.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Si quisiéramos ir a un punto especifico de una pagina web
+              desde otra, tendríamos que añadir a la ruta HREF del enlace la URL
+              junto al #id correspondiente.
+            </p>
+          </div>
+        </section>
+        <section id="html-listas">
+          <h2>Listas</h2>
+          <div>
+            <p>
+              Las listas nos permiten crear conjunto de elementos en forma de
+              lista dentro de una página.
+            </p>
+            <p class="recuadro">
+              📌 ️ — En función del tipo de lista sobre le que trabajemos irán
+              precedidos de un bullet (•), número (1,2,3), etc.
+            </p>
+            <p>Dentro de las listas HTML tenemos los siguientes tipos:</p>
+            <ul class="sep-lista">
+              <li>
+                Unordened List (UL o Listas desordenadas): utilizan el tag
+                &lt;ul>&lt;/ul> . Y, se utiliza para situaciones en la que el
+                orden de los elementos de nuestro listado no es importante.
+              </li>
+              <li>
+                Ordened List (OL o Listas ordenadas): utilizan el tag
+                &lt;ol>&lt;/ol> . Y se utiliza para situaciones en las que el
+                orden de los elementos del listado si es importante.
+              </li>
+              <li>
+                Definition List (DL o Listas de definiciones): utilizan el tag
+                &lt;dl>&lt;/dl> . Se utiliza para realizar listas de
+                “diccionario”, es decir listas que contienen definiciones.
+              </li>
+            </ul>
+            <p class="recuadro">
+              📌 ️ — Dentro de listas UL u OL, cada elemento de la lista va
+              englobado sobre un elemento LI (List Item). Los items, se
+              definirán de la siguiente manera: &lt;li>Item&lt;/li> anidados
+              dentro de la lista UL u OL. <br />
+              📌 ️ — Es muy importante poder analizar cuando es necesario
+              utilizar un tipo de lista u otro para poder trabajar con el máximo
+              valor semántico.
+            </p>
+          </div>
+          <h3>Listas desordenadas (Unordened List) UL</h3>
+          <div>
+            <p>
+              Las listas UL, nos permiten listar elementos cuyo orden no tiene
+              importancia. Por ejemplo, si realizamos un listado de la
+              documentación que una persona debe entregar a una compañía:
+            </p>
+            <p>
+              Si nos fijamos, podemos ver que el navegador utiliza el bullet (•)
+              por defecto. Ya que, interpreta que al ser una lista UL
+              (desordenada), no importa el orden de nuestro listado.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Aunque el tipo de carácter que utilizar el navegador para
+              la lista se puede cambiar posteriormente desde HTML/CSS, es muy
+              importante que utilicemos este tipo de listas para realizar
+              listado en los que el orden no sea importante, ya que será así
+              como lo interpretará el browser.
+            </p>
+            <p>
+              Estás listas, son además las que se utilizan habitualmente para
+              realizar menús de navegación.
+            </p>
+            <h4>Atributos de una lista UL</h4>
+            <p>
+              En las listas UL (desordenadas) no podemos definir un orden. Por
+              lo que, desde HTML (desde CSS se pueden realizar más cosas)
+              solamente podemos utilizar el atributo type para cambiar la
+              apariencia con la que se visualizará el listado.
+            </p>
+            <p>
+              El atributo type lo podemos utilizar de forma genérica aplicándolo
+              sobre el UL, o de forma individual sobre cada item.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Tal y como decíamos si quisiéramos podríamos hacerlo desde
+              CSS lo que nos ofrece muchas más opciones. Tales como: poner otro
+              carácter, poner una imagen, modificar el formato, etc.
+            </p>
+          </div>
+          <h3>Listas ordenadas (Ordened List) OL</h3>
+          <div>
+            <p>
+              Las listas OL, nos permiten listar elementos cuyo orden sí que
+              tiene importancia. Por ejemplo, si necesitamos sacarnos el carnet
+              de conducir, necesitamos realizar una serie de pasos en un cierto
+              orden.
+            </p>
+            <h4>Atributos de una lista OL</h4>
+            <p>
+              En las listas OL (ordenadas) podemos varios parametros desde HTML
+              (desde CSS se pueden realizar más cosas).
+            </p>
+            <p>
+              Atributo type: para cambiar la apariencia con la que se
+              visualizará el listado. En este caso no ofrece más opciones.
+            </p>
+            <p>
+              El valor por defecto de type es 1, por lo que es lo mismo que no
+              poner nada.
+            </p>
+            <p>Si ponemos A nos devolverá A,B,C…</p>
+            <p>Si ponemos a nos devolverá a,b,c…</p>
+            <p>
+              Si ponemos I nos devolverá los items en números romanos I, II,
+              III…
+            </p>
+            <p>
+              Si ponemos i nos devolverá los items en números romanos en
+              minúsculas i, ii, iii…
+            </p>
+          </div>
+          <h3>Atributo start</h3>
+          <div>
+            <p>
+              El atributo start nos permite indicar cual será el número
+              correspondiente al primer elemento (item) de nuestra lista. Por
+              tanto, nos permite indicar cuál será el número pro el que empezará
+              nuestra lista.
+            </p>
+          </div>
+          <h3>Listas de definición (Definition List) DL</h3>
+          <div>
+            <p>
+              Las DL, también conocidas popularmente como “listas de
+              diccionario” nos permiten definir elementos con la siguiente
+              estructura.
+            </p>
+            <ul>
+              <li>
+                DT = Definition Term: contiene el termino que vamos a definir.
+              </li>
+              <li>
+                DD = Definition Description: contiene la descripción
+                correspondiente al termino definido.
+              </li>
+            </ul>
+          </div>
+          <h3>Listas anidadas</h3>
+          <div>
+            <p>
+              Existe la posibilidad de anidar listas, las posibilidades de
+              combinaciones son mutiples (OL, con UL, LU con OL con UL…).
+            </p>
+          </div>
+        </section>
+        <section id="html-tablas">
+          <h2>Tablas</h2>
+          <div>
+            <p>
+              Las tablas es una estructura basada en filas y columnas que nos
+              permite organizar nuestros datos.
+            </p>
+            <p class="recuadro">
+              📌 ️ — En sus orígenes, las tablas se utilizaban para colocar todo
+              posicionar los elementos dentro de una web. Más tarde, con la
+              evolución del tiempo, esto fue evolucionando y se empezó a
+              posicionar los elementos de HTML mediante al elemento DIV, para
+              finalmente dar paso a los elementos de posicionamiento que ya
+              hemos explicado (header, main, footer…) acompañados de CSS.
+            </p>
+            <p>La estructura más básica de una tabla está formada por:</p>
+            <ul class="sep-lista">
+              <li>
+                <b>&lt;table></b> nos permite indicarle al navegador que
+                queremos crear una tabla
+              </li>
+              <li>
+                <b>&lt;tr></b> TR proviene de Table Row y nos permite indicarle
+                al navegador que queremos crear una fila dentro de una tabla.
+              </li>
+              <li>
+                <b>&lt;td></b> TD proviene de Table Data y nos permite indicarle
+                al navegador que queremos crear una celda dentro de una tabla.
+              </li>
+            </ul>
+            <p class="recuadro">
+              📌 ️ — Por tanto, con table construimos la estructura en sí, pero
+              está no tendrá formato alguno por lo que no tendrá bordes, ni
+              colores, etc. Todo ello, lo deberíamos de definir a posteriori
+              desde CSS.
+            </p>
+          </div>
+          <h3>Anatomía completa de una tabla</h3>
+          <div>
+            <p>
+              Hasta ahora hemos visto la estructura más básica de una tabla pero
+              podemos trabajar con más elementos. Vamos a verlos:
+            </p>
+            <ul class="sep-lista">
+              <li>
+                <b>&lt;caption></b> se utiliza para definir el título en una
+                tabla. Debe colocarse inmediatamente después del inicio de la
+                tabla y es una etiqueta opcional. Ya que, no siempre
+                necesitaremos añadir un título a nuestra tabla.
+              </li>
+              <li>
+                <b>&lt;thead></b> se utiliza para agrupar el encabezado (la
+                primera fila) de una tabla. Dentro de &lt;thead> seguimos
+                trabajando con filas &lt;tr> a las que deberemos de añadir las
+                columnas con &lt;th>(de Table Head) en vez de con &lt;td> que
+                sería las que utilizamos para el resto de las columnas de las
+                tabla.
+              </li>
+              <li>
+                <b>&lt;tbody></b> etiqueta se utiliza para agrupar el contenido
+                de una tabla.
+              </li>
+              <li>
+                <b>&lt;tfoot></b> etiqueta se utiliza para definir el footer
+                (pie de tabla) de una tabla. Debe colocarse inmediatamente
+                después del inicio de la tabla y es una etiqueta opcional. Ya
+                que, no siempre necesitaremos añadir un título a nuestra tabla.
+              </li>
+            </ul>
+            <p>
+              Los elementos &lt;thead>, &lt;tbody>y &lt;tfoot> no afectarán el
+              diseño de la tabla de manera predeterminada. Sino que solamente
+              son un mecanismo mediante el cuál separar en distintos grupos las
+              distintas partes de una tabla.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Cuando en nuestra tabla trabajamos con el elemento
+              &lt;thead> , es obligatorio también definir un &lt;tbody>
+            </p>
+          </div>
+          <h3>Agrupando celdas con Colspan, Rowspan</h3>
+          <div>
+            <p>
+              En algunas ocasiones es común que queramos agrupar celdas. Para
+              ello, disponemos de:
+            </p>
+            <p>
+              Rowspan: indica el número de filas que ocupará la celda. Por
+              defecto, cualquier celda ocupa solamente una fila, por lo es como
+              si pusiéramos un rowspan con 1 como valor.
+            </p>
+            <p>
+              Colspan: indica el número de columnas que ocupará la celda. Por
+              defecto, cualquier celda ocupa solamente una columna, por lo es
+              como si pusiéramos un colspan con 1 como valor.
+            </p>
+            <p>
+              En algunas ocasiones si no construimos bien la tabla, y por
+              ejemplo le decimos a alguna celda de nuestra tabla que ocupe dos
+              columnas y no eliminamos la columna de abajo, podemos ver que la
+              tabla no pueda encajar su contenido y lo rompa como pueda.
+            </p>
+            <p>
+              Para solucionar esto, tenemos varias soluciones eliminar la
+              columna adicional para que todas las filas tengan la misma
+              cantidad de columnas, hacer que determinadas columnas ocupen
+              varias celdas, etc.
+            </p>
+          </div>
+          <h3>Colgroup</h3>
+          <div>
+            <p>
+              Colgroup, nos permite agrupar una o más columnas de una tabla.
+            </p>
+            <p>
+              Si queremos realizar un grupo de columnas debemos realizar un
+              colgroup, por defecto, cada col que añadamos equivaldrá a una
+              columna.
+            </p>
+            <p>
+              Si la tabla tiene 4 columnas, vamos a empezar a entender el
+              concepto más básico realizando 4 columnas, Cada una de las
+              columnas se representa mediante a col.
+            </p>
+            <p>
+              Actualmente, cada una de estas col que tenemos dentro del colgroup
+              representa una columna.
+            </p>
+            <p>
+              Hasta ahora, en nuestro colgroup, hemos trabajado con un col por
+              cada una de las columnas de una tabla. Pero existe la posibilidad
+              de realizar agrupaciones de columnas mediante a span.
+            </p>
+          </div>
+        </section>
+        <section id="html-maselementos">
+          <h2>
+            Más elementos HTML: Address, blockquote, q, pre, code div, span
+          </h2>
+          <div>
+            <p>
+              <b>Address</b>: nos permite aportar información respecto a un
+              contacto. Esta información estará asociada a un articule o en caso
+              contrario al body.
+            </p>
+            <p>
+              <b>Blockquote</b>: nos permite crear citas en bloque, para
+              referenciar a otros autores o documentos.
+            </p>
+            <p>
+              La manera más sencilla de hacer una cita es utilizar solamente el
+              elemento blockquote sin atributos.
+            </p>
+            <p>
+              Aunque además de ello, podemos utilizar de forma opcional el
+              atributo cite para referenciar a la URL de la que proviene dicha
+              cita. Y además, en este caso, también podemos indicarle que el
+              lenguaje es español con el atributo ya conocido como lang.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Una cosa a matizar, es que con blockquote no se realiza un
+              enlace a dicho documento, por lo que si hacemos click en él no nos
+              va a llevar a ninguna parte. Sino que solamente se le indica al
+              navegador que es una cita, y si además, definimos el atributo cite
+              le indicamos que está asociada a dicha URL.
+            </p>
+            <p><b>Q</b>: nos permite crear citas corta en línea.</p>
+            <p class="recuadro">
+              📌 ️ — Q es la alternativa a blockquote utilizada para cuando
+              queremos trabajar con elementos en línea y no en bloque. <br />
+              📌 ️ — Este tipo de citas además, nos englobará la cita entre “”.
+            </p>
+            <p>
+              <b>Abbr</b>: nos permite definir una abreviatura, es decir, la
+              forma abreviada de una palabra o grupo de palabras.
+            </p>
+            <p>
+              Y si nos situamos encima de la abreviatura vemos que nos aparece
+              un witget de placeholder con el significado al completo de la
+              abreviatura
+            </p>
+            <p>
+              <b>Pre</b>: se utiliza para trabajar con representar texto
+              preformateado. Por lo que, la forma en la que está escrito el
+              texto, es decir, los espacios, tabulaciones que contiene afectaran
+              a como se visualizará dicho texto en nuestro documento HTML. Ya
+              que se representará tal cuál lo hemos escrito.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Cuando trabajamos con PRE, por t, no necesitamos utilizar a
+              BR para realizar saltos de línea. <br />
+              📌 ️ — Es muy común utilizar pre (texto preformateado) combinado
+              junto a la etiqueta code que vamos a ver a continuación.
+            </p>
+            <p>
+              <b>Code</b>: nos sirve para insertar texto que representa código
+              de computadora (HTML, CSS, JS…). Se utiliza con la finalidad de
+              indicarle al navegador que queremos representar el código de una
+              forma visual.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Si además de trabajar con code, añadimos un pre,
+              representamos con su formato actual (espacios, saltos de línea,
+              etc.).
+            </p>
+            <p>
+              Aunque es muy habitual, tal y como decíamos, que la etiqueta code
+              vaya anidada dentro de un pre.
+            </p>
+            <p>
+              <b>Details</b>: nos permite definir un encabezado mediante el cual
+              ver u ocultar los detalles.
+            </p>
+            <p>
+              <b>Mark</b>: representa un texto marcado o resaltado como
+              referencia o anotación, debido a su relevancia o importancia en un
+              contexto particular.
+            </p>
+            <p>
+              <b>Div</b>: la palabra div proviene de División, ya que nos
+              permite separar contenido. El elemento DIV semánticamente hablando
+              no significa nada. Y no es nada más y nada menos que un
+              contenedor, es decir, una especie de “caja” en el que contendremos
+              el resto de elementos y habitualmente se usa para anidar el
+              elementos, por tanto, agrupa varios elementos (párrafos,
+              encabezados, listas, tablas, divisiones, etc.) con la intención de
+              posteriormente trabajar con ellos mediante a JavaScript o CSS.
+            </p>
+            <p>
+              Hubo un tiempo, (en HTML 4 y antes de que se crearan los elementos
+              semánticos que ya vimos) en los que los DIVs se utilizan para
+              realizar esa función.
+            </p>
+            <p>
+              <b>Span</b>: de la misma forma que un DIV es un contenedor en
+              bloque, tenemos span como un contenedor en línea. Se utiliza
+              principalmente para englobar una serie de palabras/textos con la
+              finalidad de darles estilos posteriormente desde CSS.
+            </p>
+            <p class="recuadro">
+              📌 ️ — De la mismo forma que un DIV no tenía significado
+              semántico, SPAN, tampoco significa nada semánticamente hablando.
+            </p>
+            <p>
+              Y de la misma forma que en caso anterior, podríamos dar formato,
+              etc.
+            </p>
+          </div>
+        </section>
+        <section id="html-formularios">
+          <h2>Formularios en HTML</h2>
+          <div>
+            <p>
+              Hasta ahora, por decirlo así, solamente hemos “añadido/pintado”
+              información en el interior de la estructura de nuestro HTML. Pero
+              hemos llegado al punto en el que vamos a ver los formularios, lo
+              que nos permitirá ver como interactúa una página con el usuario
+              que la visita. Realizando por ejemplo: recolección de datos,
+              registro e inicio de sesiones, etc.
+            </p>
+            <p>
+              Todas las webs a excepción de las webs que solo muestran contenido
+              (webs informativas) tienen formularios. Ya sea el típico
+              formulario de contacto, el de inicio de sesión, un formulario de
+              conversión de divisas, etc.
+            </p>
+          </div>
+          <h3>La estructura básica de un formulario</h3>
+          <div>
+            <p>La estructura básica de un formulario está compuesta por:</p>
+            <p>
+              <b>Form</b>: nos permite indicarle al navegador que vamos a crear
+              un formulario.
+            </p>
+            <p>
+              Si miramos la web, podemos ver que aún no aparece nada. Esto se
+              produce ya que el formulario está vacío y por tanto sus
+              dimensiones actualmente en la resolución en la que se ve son width
+              (ancho) de 232.571px y 0 px de height (altura). Por tanto, al no
+              tener nada en su interior, el ancho es igual a 0 lo que supone que
+              no ocupe nada y por ello no lo podemos ver.
+            </p>
+            <p>
+              Si nos fijamos, podemos ver que tenemos un atributo action en el
+              formulario, esto nos permite indicar la URL hacía donde queremos
+              enviar el formulario. Por el momento, como no lo vamos a enviar a
+              ninguna parte utilizaremos un dead link (#) como valor para el
+              atributo action.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Un Píxel (de Picture Element) o px, es la unidad más
+              pequeña de una pantalla de un dispositivo.
+            </p>
+            <p>
+              Una vez empecemos a añadir contenido, veremos que si que podremos
+              visualizarlo correctamente.
+            </p>
+            <p>
+              <b>Label</b>: nos permite indicar el nombre que tendrá un campo de
+              un formulario. Veremos el ejemplo en el siguiente punto junto al
+              input ya que al trabajar juntos están estrechamente relacionados.
+            </p>
+            <p>
+              <b>Input</b>: nos permite crear un campo que permitirá al usuario
+              interactuar con el formulario.
+            </p>
+            <p>
+              Existe una alternativa que también es correcta que consiste en
+              meter el input anidado en el interior del label. Que aunque es
+              menos convencional de ver, en algunas ocasiones puede que sea
+              necesario es completamente valido según la especificación de la
+              W3.
+            </p>
+            <p>
+              Cuando definimos un input, es recomendable definir el atributo id
+              con un valor, en este caso nombre. Ya que el definir un ID nos
+              permitirá poder asociado dicho input con la label mediante al
+              atributo For en el que definiremos el valor del ID que queremos
+              asociar. De hecho, si hacemos click sobre el label correspondiente
+              al input, podemos ver que no sitúa en el interior de dicho input.
+            </p>
+            <p>
+              <b>Button</b>: nos permite crear un botón mediante el cual poder
+              enviar el formulario.
+            </p>
+            <p>
+              Pese a que no tenemos una ruta definida en el atributo action=”#”
+              ya que hemos definido definido un dead link, podemos ver que el si
+              hacemos click sobre el botón de enviar, la página se recarga.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Esto es debido a que el comportamiento por defecto de un
+              formulario es recargar al página. Si no queremos que esto pase, lo
+              podemos controlar desde JavaScript.
+            </p>
+          </div>
+          <h3>Ejemplo de formulario</h3>
+          <div>
+            <p>
+              Normalmente, la ruta que definimos como valor en el atributo form
+              debe de apuntar hacía una aplicación de servidor, es decir, hacía
+              un Back End (como por ejemplo Java, PHP, Node.JS, etc.). O bien,
+              otra alternativa es capturar el formulario desde JavaScript y
+              realizas las modificaciones que necesitemos desde JS para
+              finalmente, enviar dicho formulario desde JS.
+            </p>
+            <p>
+              Existen distintas webs que nos permiten capturar esos datos, como
+              por ejemplo
+              <a href="https://formsubmit.co/" target="_blank">FormSubmit</a>.
+            </p>
+            <p>
+              Si nos fijamos estamos realizado un envío por POST (que como ya
+              explicamos hace la petición “por debajo” para que no se vean los
+              datos en la URL). Y si realizamos el envío, podemos ver que nos
+              aparece que tenemos que confirmar el email.
+            </p>
+            <p>
+              Es aconsejable utilizar el código que tenemos asignado a nuestro
+              correo para reemplazarlo por dicho correo dentro del formulario.
+              Ya que así, nadie pueda saber cual es nuestro correo por razones
+              de seguridad.
+            </p>
+            <p>
+              El realizar esta modificación (es opcional) ya que si dejamos el
+              email también funcionará el envío del email.
+            </p>
+          </div>
         </section>
       </article>
     </main>
