@@ -86,6 +86,11 @@
           <li><a href="#html-porqueUtilizarInputs">Utilidad💡</a></li>
           <li><a href="#html-PopurriInputs">Inputs📝</a></li>
           <li><a href="#html-masElementos">Elementos🔧</a></li>
+          <li><a href="#html-AtributosFormulario">Atributos form🔖</a></li>
+          <li><a href="#html-abreviaturasEmmet">Abreviaturas🌐</a></li>
+          <li><a href="#html-OperadoresAtributo">Operadores➗</a></li>
+          <li><a href="#html-metodosGetPost">Get y Post📮</a></li>
+          <li><a href="#html-EmbebidoIncrustado">Embebido📺</a></li>
         </ul>
       </nav>
       <article class="content">
@@ -2633,7 +2638,7 @@
               <label for="jobTxt">Explica el porque te interesa el puesto</label
               ><br />
               <textarea name="jobTxt" id="jobTxt" cols="13" rows="1">
-                Escribe aquí</textarea
+Escribe aquí</textarea
               >
             </form>
             <p class="recuadro">
@@ -2800,6 +2805,498 @@
               </fieldset>
             </form>
           </div>
+        </section>
+        <section id="html-AtributosFormulario">
+          <h2>Atributos de los formularios</h2>
+          <div>
+            <p>
+              Hasta ahora hemos visto algunos atributos de formularios, en este
+              apartado aunque no los veremos todos (<a
+                href="https://developer.mozilla.org/es/docs/Web/HTML/Element/form#atributos"
+                target="_blank"
+                >os dejo la lista aquí con todos los atributos</a
+              >) vamos a profundizar un poco más en ellos.
+            </p>
+          </div>
+          <h3>Required</h3>
+          <div>
+            <p>
+              El atributo booleano required, nos permite indicar al formulario
+              que un campo sea obligatorio.
+            </p>
+            <form>
+              <input type="text" name="nom" id="nom" required />
+              <button>Enviar</button>
+            </form>
+            <p>
+              Si pulsamos sobre enviar con un campo required (requerido) sin
+              rellenar, el navegador no nos dejará realizar el envío del
+              formulario y nos arrojará una advertencia en el campo.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Igualmente, habrá que realizar una validación en el
+              servidor para confirmar que este campo se recibe bien, ya que si
+              editamos el código podríamos eliminar el required. Por lo que, es
+              simplemente la primera medida de seguridad de cliente. Pero lo
+              recomendable sería el realizar más validaciones.
+            </p>
+          </div>
+          <h3>Pattern</h3>
+          <div>
+            <p>
+              Nos permite definir una expresión regular que el input deberá de
+              validar para que el formulario pueda ser enviado.
+            </p>
+            <p class="recuadro">
+              📌 ️ — El atributo de pattern se puede utilizar sobre los campos
+              de texto, teléfono, correo electrónico, URL, contraseña y de
+              búsqueda.
+            </p>
+            <form action="#">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                pattern="[A-ZÑa-zñ]{3,}"
+                autocomplete="additional-name"
+              />
+              <input type="submit" />
+            </form>
+          </div>
+          <h3>Placerholder</h3>
+          <div>
+            <p>
+              Hasta ahora hemos visto como indicar que un campo es requerido y
+              como realizar una válidación desde regex con pattern. El
+              placehoder nos permite darle una pista al usuario del texto que
+              tiene que introducir en dicho campo el usuario.
+            </p>
+            <p>
+              Para ello, se introduce un texto en el campo que aunque depende
+              del navegador usualmente estará en un color gris suave y que se
+              mostrará hasta que el usuario haga focus (se situé sobre el
+              campo). Un ejemplo de ello, podría ser cuando queremos que el
+              usuario deba introducir un DNI/NIE y queremos indicarle el
+              formato. Vamos a ver dicho ejemplo:
+            </p>
+            <form>
+              <input
+                type="text"
+                name="dni"
+                id="dni"
+                required
+                placeholder="Ej. 12345678-A o X-12345678"
+              />
+              <button>Enviar</button>
+            </form>
+            <p class="recuadro">
+              📌 ️ — El atributo placeholder se puede utilizar en sobre los
+              elementos input y textarea. Y suele ser un texto temporal que
+              permanecerá allí hasta que el usuario haga focus en el campo.
+            </p>
+            <p>
+              Si nos fijamos, inmediatamente después de hacer clic en el input y
+              poner el focus en dicho campo, el placeholder desaparece y el
+              campo nos deja rellenarlo sin problema.
+            </p>
+          </div>
+          <h3>Readonly</h3>
+          <div>
+            <p>
+              Es un atributo booleano que nos permite indicar que el campo es
+              solo de lectura. Pese a ello, podremos hacer focus en el input con
+              dicho atributo e incluso copiar su contenido. Lo que no podremos
+              realizar es editar el valor, hasta que se cumpla una determinada
+              condición (aunque si que podemos copiar su valor). Vamos a ver un
+              ejemplo:
+            </p>
+            <form>
+              <input
+                type="text"
+                name="ciudad"
+                id="ciudad2"
+                readonly
+                value="Introduce un país"
+              />
+            </form>
+            <p>
+              Usualmente, el atributo readonly, será eliminado cuando el usuario
+              cumpla una determinada condición (o varias). Como por ejemplo,
+              rellenar un campo que sea necesario para poder rellenar dicho
+              campo, marcar una casilla de verificación, etc. Una vez cumplida
+              dicha condición, desde JavaScript podemos eliminar el atributo de
+              readonly haciendo que el campo pueda ser editado.
+            </p>
+            <p class="recuadro">
+              📌 ️ —Pese a que se trata de un campo de solo lectura, cuando
+              pulsemos el botón de enviar, el formulario si que enviará este
+              campo hacía el servidor.
+            </p>
+          </div>
+          <h3>Disabled</h3>
+          <div>
+            <p>
+              Desactiva un campo, no se podrá escribir en él, ni tampoco se
+              enviará al servidor cuando envíenos el formulario. Vamos a ver un
+              ejemplo:
+            </p>
+            <form>
+              <!-- Disabled sin value -->
+              <input
+                type="text"
+                name="pais"
+                id="pais"
+                disabled
+                value=""
+              /><br />
+              <!-- Disabled con value -->
+              <input
+                type="text"
+                name="ciudad"
+                id="ciudad"
+                disabled
+                value="Disabled con value"
+              />
+            </form>
+            <p class="recuadro">
+              📌 ️ — Si no lo queremos enviar un input al formulario, podemos
+              disabled, en cambio, si queremos enviar dicho input utilizaremos
+              el atributo readonly.
+            </p>
+          </div>
+          <h3>Min-Max</h3>
+          <div>
+            <p>
+              Mediante a los atributos min y max, podemos controlar el rango de
+              números que puede aceptar un input de tipo numérico. Ante el caso
+              que el valor del input no cumpla alguna de las dos condiciones,
+              mostrará una advertencia (witget). Vamos a ver un ejemplo:
+            </p>
+            <form>
+              <input type="number" name="edad" id="edad" min="0" max="120" />
+              <button>Enviar</button>
+            </form>
+            <p class="recuadro">
+              📌 ️ — No es necesario trabajar con ambos atributos a la vez.
+              Podemos trabajar solamente con uno sin problemas.
+            </p>
+          </div>
+          <h3>Minlength-Maxlength</h3>
+          <div>
+            <p>
+              De la misma forma que trabajamos con los atributos max y min en
+              los campos numéricos, lo podemos hacer minlength y maxlength en
+              los campos de texto. Vamos a ver un ejemplo:
+            </p>
+            <form>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre13"
+                minlength="3"
+                maxlength="40"
+              />
+              <button>Enviar</button>
+            </form>
+          </div>
+          <h3>OnInvalid</h3>
+          <div>
+            <p>
+              Nos permite personalizar el mensaje de advertencia (witget). Para
+              modificar el texto, además, es necesario llamar al método
+              setCustomValidaty con this delante. Vamos a ver un ejemplo:
+            </p>
+            <form>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre12"
+                required
+                oninvalid="this.setCustomValidity ('Escribelo mejor que no te escucho')"
+              />
+              <button>Enviar</button>
+            </form>
+          </div>
+          <h3>Autofocus</h3>
+          <div>
+            <p>
+              Cuando tenemos varios campos dentro de un formulario, es posible
+              que quisiéramos que por defecto cuando el formulario se cargue,
+              haga focus, es decir, se situé sobre uno de esos campos
+              automáticamente. Vamos a ver el código:
+            </p>
+            <form>
+              <input type="text" id="nombre14" name="nombre" autofocus /><br />
+            </form>
+          </div>
+          <h3>Selected</h3>
+          <div>
+            <p>
+              El atributo booleano selected, nos permite establecer un elemento
+              por defecto, es decir, nos permite indicarle al navegador cual
+              será el elemento que se visualizará en el select cuando cargemos
+              la página. Vamos a ver un ejemplo:
+            </p>
+            <form>
+              <label for="coche">Selecciona un coche:</label>
+              <select id="coche">
+                <option value="mercedes">Mercedes</option>
+                <option value="bmv">BMV</option>
+                <option value="audi" selected>Audi</option>
+              </select>
+            </form>
+          </div>
+        </section>
+        <section id="html-abreviaturasEmmet">
+          <h2>Abreviaturas avanzadas con Emmet</h2>
+          <h3>Child (>)</h3>
+          <div>
+            <p>
+              Nos permite crear varios elementos anidados uno dentro de otro.
+            </p>
+            <p class="recuadro">div>ul>li</p>
+          </div>
+          <h3>Sibling(+)</h3>
+          <div>
+            <p>Nos permite crear varios elementos en el mismo nivel.</p>
+            <p class="recuadro">div+p+bq</p>
+          </div>
+          <h3>Climb-up</h3>
+          <div>
+            <p>
+              Nos permite crear varios elementos y en uno de ellos anidados
+              dentro de el, y inclusive, dentro del anidado crear varios
+              separados
+            </p>
+            <p class="recuadro">div+div>p>span+em</p>
+            <p>
+              Pero si queremos subir un nivel evitando así que elemento continué
+              anidándose el elemento que vamos a crear dentro del elemento P
+              utilizaríamos el operador ^ y realizaríamos lo siguiente:
+            </p>
+            <p class="recuadro">div+div>p>span+em^bq</p>
+            <p>
+              Si nos fijamos hemos sacado el elemento BLOCKQUOTE del interior
+              del elemento P.
+            </p>
+            <p>
+              Si basándonos en el mismo ejemplo queremos sacar el elemento
+              BLOCKQUOTE del interior del elemento podemos realizando
+              concatenando varios ^ con la finalidad de subir varios niveles.
+              Vamos a ver un ejemplo:
+            </p>
+            <p class="recuadro">div+div>p>span+em^^bq</p>
+            <p>
+              Si nos fijamos, ahora si hemos sacado el BLOCKQUOTE fuera del div.
+            </p>
+          </div>
+          <h3>Multiplicación (*)</h3>
+          <div>
+            <p>
+              Con el * podemos crear varios elementos a la vez. Por ejemplo, si
+              queremos crear una lista UL con 4 LI en su interior, podemos hacer
+              lo siguiente:
+            </p>
+            <p class="recuadro">ul>li*4</p>
+          </div>
+          <h3>Texto ({})</h3>
+          <div>
+            <p>
+              Para crear un elemento por ejemplo un párrafo y a la vez añadir
+              contenido realizamos lo siguiente:
+            </p>
+            <p class="recuadro">p{Mi primer párrafo}</p>
+            <p>
+              Se pueden combinar varios elemento con texto en su interior. Vamos
+              a ver un ejemplo:
+            </p>
+            <p class="recuadro">p>{Haz click }+a{aquí}+{ para continuar}</p>
+          </div>
+          <h3>Agrupamiento(())</h3>
+          <div>
+            <p>
+              También podemos utilizar () para crear grupos. Vamos a ver un
+              ejemplo:
+            </p>
+            <p>
+              (header>nav>ul>li*2>a)+(main>h1{Titulo 1})+footer>p{Copyrith 2022}
+            </p>
+          </div>
+        </section>
+        <section id="html-OperadoresAtributo">
+          <h2>Attribute operators</h2>
+          <h3>ID</h3>
+          <div>
+            <p>
+              Para crear un elemento con el atributo ID hacemos lo siguiente:
+            </p>
+            <p class="recuadro">p#firstP</p>
+            <p>
+              Si no especificamos el elemento automáticamente se creará un DIV.
+              Vamos a ver un ejemplo:
+            </p>
+            <p class="recuadro">#example</p>
+          </div>
+          <h3>CLASS</h3>
+          <div>
+            <p>
+              Para crear un elemento con el atributo CLASS hacemos lo siguiente:
+            </p>
+            <p class="recuadro">p.article</p>
+            <p>
+              También podemos añadir más de una clase de la siguiente manera:
+            </p>
+            <p class="recuadro">p.article.text-red.bg-yellow</p>
+          </div>
+          <h3>Custom attributes</h3>
+          <div>
+            <p>También podemos añadir otros atributos:</p>
+            <p class="recuadro">
+              abbr[title="Hyper Text Markup Language"]{HTML}
+            </p>
+            <p>
+              Si no especificamos un elemento, nuevamente nos creará un DIV.
+              Vamos a ver un ejemplo:
+            </p>
+            <p class="recuadro">[class="englishTxt" lang="en"]</p>
+          </div>
+          <h3>Item numbering ($)</h3>
+          <div>
+            <p>
+              Si combinamos el operador de multiplicación * con el operador $
+              podemos numerar los ids, las clases o el contenido de un item.
+              Vamos a ver un ejemplo:
+            </p>
+            <p class="recuadro">ol>li#item$*4</p>
+            <p>
+              Si queremos añadir más dígitos ponemos un $ por cada uno de los
+              dígitos. Vamos a ver un ejemplo:
+            </p>
+            <p class="recuadro">h${Header $$}*3</p>
+          </div>
+          <h3>Changing numbering base and direction</h3>
+          <div>
+            <p>
+              Si utilizamos el $@-*4 le estamos diciendo a Emmet que invierta el
+              orden, es decir que empiece por el primer item con item4, después
+              item3, item2… Vamos a ver un ejemplo:
+            </p>
+            <p class="recuadro">ul>li.item$@-*4</p>
+            <p>
+              Si quisiéramos que no empezará en el primer número y que por
+              ejemplo empezará en el 3, haríamos lo siguiente:
+            </p>
+            <p class="recuadro">ul>li.item$@2*4</p>
+          </div>
+        </section>
+        <section id="html-metodosGetPost">
+          <h2>Método HTTP GET vs Método HTTP POST</h2>
+          <div>
+            <p>
+              Anteriormente, en el bloque de
+              <a
+                href="https://medium.com/@davidbernalgonzalez/fundamentos-previos-al-desarrollo-de-p%C3%A1ginas-webs-bbcc4231df03"
+                target="_blank"
+                >Fundamentos previos al desarrollo de páginas webs</a
+              >
+              ya expliquemos los verbos HTTP. En esta sección, vamos a
+              profundizar, es decir, a hablar más a detalle sobre las
+              diferencias entre enviar un formulario (GET y POST).
+            </p>
+            <p>
+              El atributo encargado de indicarle al navegador como se realizará
+              el envío del formulario es method. Si no especificamos un valor
+              por defecto, el envío hacía el servidor se realizará mediante a
+              GET. Por tanto, mediante el valor que asígnanos el atributo method
+              definimos la forma en la que se va a enviar dicho formulario hacía
+              el servidor.
+            </p>
+            <p>
+              Además de un método de envío, si no capturamos el envío del
+              formulario desde JS, y por tanto, el formulario se mandará
+              directamente desde el HTML hacía un servidor, es necesario definir
+              mediante a action la ruta a la enviaremos dicho formulario.
+            </p>
+          </div>
+          <h3>Profundizando en el método GET</h3>
+          <div>
+            <p>Vamos a comenzar viendo un ejemplo de envío por GET:</p>
+            <code
+              >&lt;form action=" /server.php" method= "get"> &lt;/form></code
+            >
+            <p>
+              Si nos fijamos a detalle, podemos ver que cuando realizamos el
+              envío por GET, ante el caso que no se encuentre el formulario se
+              recibe un “Cannot GET + URL”
+            </p>
+            <p>
+              Y que además, independientemente de si trabajamos con el método de
+              envío POST o GET, es muy importante que los elementos que vayamos
+              a mandar hacía el servidor siempre tengan el atributo name, ya que
+              sino, al no tener un nombre especificado no se podrán mandar hacía
+              el servidor, porque este no sería capaz de identificar ante que
+              input.
+            </p>
+            <p>
+              Si por ejemplo realizo una petición de envío del formulario con
+              los siguientes datos:
+            </p>
+            <img src="/images/html/Get1.png" id="img-sw" alt="" />
+            <p>
+              Podemos ver que la URL con GET muestra dichos datos en la pantalla
+            </p>
+            <img src="/images/html/Get2.png" id="img-sw" alt="" />
+            <p>
+              En el caso al realizarse un envío mediante al método GET, podemos
+              ver que cuando enviamos el formulario, se utiliza la ruta que
+              hemos mandado en el action junto a un ?. Y, posteriormente, el
+              nombre definido como valor en el atributo name seguido del valor
+              enviado. En el caso que tengamos más de un input en el form, los
+              elementos son concatenados a través del atributo &.
+            </p>
+            <p>
+              Este tipo de envío por tanto, se realiza mediante a la barra de
+              navegación y el principal problema de estos tipos de envíos es que
+              la información es visible desde el navegador. Por lo que su
+              seguridad es menor que cuando realizamos el envío por POST.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Cada vez que hacemos una petición a una URL de Google u
+              otra página desde la URL, estamos utilizando el método GET.
+            </p>
+          </div>
+          <h3>Profundizando en el método POST</h3>
+          <p>
+            El envío de un formulario mediante al método POST, sería por la
+            parte de atrás, es decir, no puede ser visualizado directamente
+            desde el navegador (a excepción de que abramos el inspector).
+          </p>
+          <p>Vamos a ver un ejemplo de envío por POST:</p>
+          <code>&lt;form action=" /server.php" method= "post"> &lt;/form></code>
+          <p>
+            Ante el caso que realicemos una petición mediante el método POST y
+            no seamos capaces de comunicarnos con el servidor, podemos ver que
+            el tipo de mensaje que aparece cambia completamente por: “Está
+            pagina no funciona…” el cual, además, irá acompañada del código de
+            error (status code). En este caso, HTTP ERROR 405 ya que no es capaz
+            de comunicarse con el servidor.
+          </p>
+          <p>
+            Pese a no haber podido comunicarse con el servidor, si nos fijamos
+            en la URL es literalmente la definida en el action. Por lo que los
+            datos no pueden verse en la barra de direccionamiento con este tipo
+            de envíos.
+          </p>
+          <p>
+            Para realizar la visualización de los datos que enviamos mediante al
+            método POST, vamos al inspector y abrimos Network, y finalmente nos
+            situamos en Payload. Es necesario tener abierto el inspector
+            previamente antes de realizar la petición para poder capturarla y
+            que se muestre en la pestaña de Network.
+          </p>
+        </section>
+        <section id="html-EmbebidoIncrustado">
+          <h2>Contenido embebido/incrustado</h2>
         </section>
       </article>
     </main>
