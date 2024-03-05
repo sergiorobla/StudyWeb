@@ -91,6 +91,7 @@
           <li><a href="#html-OperadoresAtributo">Operadores➗</a></li>
           <li><a href="#html-metodosGetPost">Get y Post📮</a></li>
           <li><a href="#html-EmbebidoIncrustado">Embebido📺</a></li>
+          <li><a href="#html-imagenes">Imagenes🖼️</a></li>
         </ul>
       </nav>
       <article class="content">
@@ -1229,12 +1230,12 @@
               Para el navegador y el IDE, nuestra ruta relativa es en la que se
               encuentra el fichero index.html. En este caso:
             </p>
-            <img src="/images/html/rutaRelativa.png" id="img-sw" alt="" />
+            <img src="../images/html/rutaRelativa.png" id="img-sw" alt="" />
             <p>
               En este caso, si quisiéramos trabajar con rutas raíz en el
               index.html, solamente tendriamos que realizar lo siguiente:
             </p>
-            <img src="/images/html/rutaRelativaCode.png" id="img-sw" alt="" />
+            <img src="../images/html/rutaRelativaCode.png" id="img-sw" alt="" />
             <p>
               En el fichero noticias.html que está al mismo nivel, podríamos
               realizar lo siguiente:
@@ -1895,7 +1896,7 @@
               >
               Vamos a ver los más importantes:
             </p>
-            <img src="/images/html/tiposInput.png" id="img-sw" alt="" />
+            <img src="../images/html/tiposInput.png" id="img-sw" alt="" />
             <h4>&lt;input type="text" /></h4>
             <p>
               Hasta ahora hemos visto el input más utilizado de todos, el
@@ -3241,11 +3242,11 @@ Escribe aquí</textarea
               Si por ejemplo realizo una petición de envío del formulario con
               los siguientes datos:
             </p>
-            <img src="/images/html/Get1.png" id="img-sw" alt="" />
+            <img src="../images/html/Get1.png" id="img-sw" alt="" />
             <p>
               Podemos ver que la URL con GET muestra dichos datos en la pantalla
             </p>
-            <img src="/images/html/Get2.png" id="img-sw" alt="" />
+            <img src="../images/html/Get2.png" id="img-sw" alt="" />
             <p>
               En el caso al realizarse un envío mediante al método GET, podemos
               ver que cuando enviamos el formulario, se utiliza la ruta que
@@ -3297,6 +3298,356 @@ Escribe aquí</textarea
         </section>
         <section id="html-EmbebidoIncrustado">
           <h2>Contenido embebido/incrustado</h2>
+          <div>
+            <p>
+              El contenido incrustado o embebido, es todo aquel contenido que se
+              añade a nuestro documento HTML. Por tanto, todo lo que no está
+              dentro de nuestro documento HTML. Ya sean imágenes, videos,
+              documentos PDF, archivos de Word…
+            </p>
+            <p>
+              Por ejemplo, si abrimos el inspector del browser y nos metemos en
+              la web de Google, buscamos “Pulp fiction” podemos ver algunos de
+              los ficheros embebidos a nuestro documento como GIFs u otro tipo
+              de imágenes.
+            </p>
+            <p>
+              Pese a que estos ficheros no están dentro del HTML, sino que
+              vienen de una fuente externa, si que están llamados desde el HTML
+              para poder introducirlos dentro de nuestro documento.
+            </p>
+            <p>
+              Si nos metemos en el aparatado de imágenes, por ejemplo, podemos
+              marcar la pestaña de IMG para ver las imágenes que Google ha
+              embebido en dicha página. E inclusive las podemos ordenar en
+              función del tamaño que ocupa cada una de las imágenes.
+            </p>
+            <p>
+              Los elementos embebidos suelen ser lo que más peso le otorga a una
+              web. Ya que sino, las webs serían prácticamente texto con un
+              poquito de formato y su tamaño se reduciría en gran medida, pero
+              su estética sería mucho menos atractiva para el usuario que visita
+              la página.
+            </p>
+            <p>
+              Los principales elementos que son incrustados dentro de las webs
+              son: Imágenes, audio, vídeo…
+            </p>
+            <p>
+              Existe un tipo de elemento que se podría considerarse que está en
+              tierra de nadie a medio camino entre los elementos embebidos es el
+              elemento iframe. Iframe, nos permite crear una especie de
+              contenedor/marco dentro del documento en el que incrustar otra
+              página HTML.
+            </p>
+          </div>
+        </section>
+        <section id="html-imagenes">
+          <h2>Imagenes</h2>
+          <div>
+            <p>
+              Suelen ser el elemento embebido más utilizado y el que más
+              problema suele dar.
+            </p>
+            <p>
+              Las imágenes las podemos subdividir principalmente en dos
+              categorías:
+            </p>
+          </div>
+          <h3>Imágenes vectoriales (Vector graphics)</h3>
+          <div>
+            <p>Su uso es recomendado siempre y que sea posible.</p>
+            <p class="recuadro">
+              📌 ️ — Las imágenes vectoriales tienen como extensión .svg que son
+              las iniciales de Scalable Vector Graphics
+            </p>
+            <p>
+              El principal beneficio de las imágenes vectoriales respecto a las
+              imágenes de mapas de bits es que cuando hacemos zoom en la imagen,
+              el vector al utilizar formulas matemáticas para representar el
+              contenido no se pixela. En cambio, si hacemos zoom en una imagen
+              de tipo el bitmap podemos observar que se empieza a presentar los
+              cuadraditos (pixeles) y que se genera lo que conoce como “dientes
+              de hoja de sierra” o también conocido como “escalera de pixeles”.
+            </p>
+            <img src="../images/html/imagenesBits.png" id="img-sw" alt="" />
+            <p class="recuadro">
+              📌 ️ —En los bitmap, cuanto peor sea la calidad de la imagen,
+              mayor será distorsión cuando se hace zoom/expande. Esto pasa
+              inclusive hasta en las imágenes con mayor calidad aunque en menor
+              proporción. En cambio, cuando una imagen vectorial se expande, las
+              formas se agrandan proporcionalmente evitando así que se pixele la
+              imagen.
+            </p>
+            <p>
+              Otro de los beneficios de los vectores es que estás etiquetas es
+              que se puede crear/editar. Además, al dibujarse mediante a
+              coordenadas matemáticas, si la imagen es sencilla reduce en gran
+              medida el peso de dicha img. Por tanto, en las situaciones que
+              acabamos de comentar, los archivos SVG pesan poco, y también
+              destacan por soportan estilos CSS.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Normalmente las imágenes vectoriales se suelen abrir desde
+              el browser
+            </p>
+            <h4>¿Por qué no se pixelan los vectores?</h4>
+            <p>
+              Al basarse en coordenadas matemáticas que definen su posición,
+              forma, color y otros atributos. Estás imágenes se componen de
+              vectores, que son unas figuras geométricas que pueden ser puntos,
+              líneas, polígonos o segmentos.
+            </p>
+            <p>
+              Las imágenes vectoriales se basan en una serie de coordenadas
+              matemáticas que definen su posición, forma, color y otros
+              atributos. Estas imágenes se componen de vectores, que son unas
+              figuras geométricas que pueden ser puntos, líneas, polígonos o
+              segmentos. Por ejemplo, un rectángulo está definido por dos
+              puntos, el círculo por un centro y un radio, mientras que una
+              curva por varios puntos y una ecuación.
+            </p>
+            <p>
+              Cuando realizamos zoom en una pagina web con una imagen el
+              navegador vuelve a calcular las coordenadas matemáticas adaptando
+              la imagen vectorial y, por tanto, visualizándose correctamente.
+            </p>
+            <h4>¿Cuándo es recomendable utilizar un vector?</h4>
+            <p>
+              Cuando trabajamos con imágenes poco pesadas como logotipos, iconos
+              o imágenes que no tengan muchos detalles lo recomendable es
+              utilizar imágenes vectoriales.
+            </p>
+          </div>
+          <h3>Transformando una imagen de tipo bitmap a vectorial</h3>
+          <div>
+            <p>
+              Si hacemos zoom en la imagen y podemos ver que se empieza a
+              difuminar.
+            </p>
+            <p>
+              Si la transformamos a un vector, con algún conversor como por
+              ejemplo
+              <a href="https://www.vectorizer.io/" target="_blank"
+                >Vectorizer</a
+              >
+              nos permiten hacer transformar una imagen a vector.
+            </p>
+            <p>
+              Podemos ver que si hacemos zoom en la imagen la que es un vector
+              en formato SVG se continua viendo nítida. En cambio, la otra se
+              empieza a difuminar.
+            </p>
+            <p>
+              Si comparamos el tamaño podemos observar que el tamaño, en este
+              caso, podemos observar que no aumenta prácticamente para el
+              beneficio de calidad que nos supone.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Para transformar una imagen de bitmap a vector, siempre
+              será recomendado el utilizar una imagen de bitmap con una alta
+              calidad, ya que a mayor calidad, mejor será el resultado que
+              obtendremos de la transformación de bitmap a vector.
+            </p>
+          </div>
+          <h3>Cargando una imagen SVG en un HTML</h3>
+          <div>
+            <p>
+              Para cargar una imagen de tipo vectorial con formato SVG en la web
+              tenemos dos opciones:
+            </p>
+            <h4>Asociar el SVG con el elemento img:</h4>
+            <p class="recuadro">
+              🚨Esta manera de trabajar con imágenes vectorizadas se utiliza
+              principalmente en situaciones en las que solamente queremos
+              mostrar una imagen pero no tenemos intenciones de realizar
+              modificaciones del SVG desde CSS/JS. Ya que el HTML quedará mucho
+              más limpio.
+            </p>
+            <h4>
+              La segunda opción es realizar clic la imagen vectorial desde VSC y
+              posteriormente pegar dicho código dentro de nuestro HTML
+            </h4>
+            <img src="../images/html/imagenVectorial.png" id="img-sw" alt="" />
+            <p class="recuadro">
+              🚨Esta manera de trabajar con imágenes vectorizadas se utiliza
+              principalmente en situaciones en las que además de mostrar una
+              imagen, tenemos intenciones de realizar modificaciones del SVG
+              desde CSS/JS.
+            </p>
+            <p>
+              El atributo ALT es el atributo que utilizan los motores de
+              búsqueda la utiliza para identificar el contenido de la imagen.
+              Por lo que, el uso de el atributo ALT puede ayudar a posicionar
+              una web en los buscadores, es decir, al SEO de la página. Además,
+              también es utilizado para los usuario con discapacidad visual que
+              utilizan programas de lectura.
+            </p>
+            <p class="recuadro">
+              🚨Habitualmente el atributo ALT suele contener un texto que
+              represente lo que la imagen quiere representar o lo que queremos
+              transmitir dentro de dicha imagen.🚨
+            </p>
+            <p class="recuadro">
+              📌 ️ — El atributo SRC en una imagen nos sirve para indicar la
+              ruta en la que se encuentra dicha imagen.
+            </p>
+            <p>
+              El atributo ALT es obligatorio ya que así lo definió el W3C en el
+              estándar de HTML. Pese a ello, si no lo definimos nuestras webs
+              continuarán funcionando sin problemas. Aunque si validamos dicho
+              documento mediante al
+              <a
+                href="https://validator.w3.org/#validate_by_input"
+                target="_blank"
+                >validador que nos ofrece la W3C</a
+              >
+              podemos ver que si no tiene dicho atributo la web no puede ser
+              validada correctamente.
+            </p>
+            <p>
+              📌 ️ — En caso de que la ruta de la imagen no pueda ser cargada,
+              (ya sea porque se ha eliminado la imagen, el servidor esté caído,
+              etc.) se mostrará una especie de icono con una imagen “roat” que
+              indica que la imagen no puede ser cargada junto al texto
+              introducido en el atributo alt.
+            </p>
+          </div>
+          <h3>Imágenes rasterizadas o mapa de bits (Bitmap image)</h3>
+          <div>
+            <p>
+              Se recomienda su uso cuando no no sea posible utilizar las
+              imágenes vectoriales. Las situaciones en las que se suelen
+              utilizar este tipos de imágenes suelen ser en las que no se puede
+              utilizar.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Las imágenes de mapas de bits también son conocidas como
+              imágenes ráster: son imágenes pixeladas, es decir que están
+              formadas por un conjunto de puntos (píxeles) contenidos en una
+              tabla. <br />
+              📌 ️ — Un Píxel por tanto, será un punto que componen nuestra
+              imagen. Por tanto, un mapa de bits está formado por una sucesión
+              de pixeles. Cuanto mayor resolución tenga una imagen mayor será la
+              cantidad de pixeles que tendrá lo que supone que podremos hacer
+              más zoom sin que se notén los pixeles.
+            </p>
+            <p>Este tipo de imagen suelen tener formatos como:</p>
+            <p>
+              JPG → se utiliza cuando queremos comprimir el tamaño de la imagen
+              y no necesitamos utilizar realizar transparencias ni animaciones.
+              Vamos a ver un ejemplo de un uso de un JPG:
+            </p>
+            <p class="recuadro">
+              📌 ️ — JPG = Joint Photographic Experts Group
+            </p>
+            <p>
+              PNG → se utilizan cuando necesitamos trabajar con transparencias.
+              Habitualmente, estas transparencias suelen ser el fondo de la
+              imagen.
+            </p>
+            <p>
+              Para poder quitar el background de una imagen podemos utilizar
+              aplicaciones como
+              <a href="https://www.remove.bg/es/upload" target="_blank"
+                >remove.bg</a
+              >
+              la cual hará el trabajo “sucio” por nosotros.
+            </p>
+            <p class="recuadro">📌 ️ — PNG = Portable Network Graphics</p>
+            <p>GIF → se utilizan cuando necesitamos realizar animaciones.</p>
+            <p>
+              Existe una plataforma que está muy bien para conseguir fichero GIF
+              llamada <a href="https://giphy.com/" target="_blank">Giphy</a>.
+            </p>
+            <p class="recuadro">📌 ️ — GIF = Graphics Interchange Format</p>
+            <p>WEBP → creado por Google soporta animaciones, transparencias.</p>
+            <p>
+              Y por si todo esto fuera poco, además, comprime las imágenes de
+              una forma superior a lo que lo hace JPG.
+            </p>
+            <p>
+              Tal y como podemos ver en la
+              <a
+                href="https://developers.google.com/speed/webp/gallery1?hl=es-419"
+                target="_blank"
+                >siguiente web</a
+              >
+              usualmente las imágenes WEBP son un 30% más pequeñas que las JPG.
+            </p>
+          </div>
+          <h3>¿Por qué trabajar con WEBP siempre que sea posible?</h3>
+          <div>
+            <p>
+              El trabajar con imágenes optimizadas para que pesen poco en la web
+              es muy importante ya que si una imagen es muy pesada el proceso de
+              carga de la web más lento y esto afecta al posicionamiento de
+              nuestra web en los buscadores, en la experiencia de usuario, en
+              necesitar un mayor alojamiento en el servidor, etc.
+            </p>
+            <p>
+              Por ello, siempre que trabajemos con mapas de bits es altamente
+              recomendable el uso del format WEBP. Por tanto, si tenemos una
+              imagen de otro tipo GIF, JPG o PNG lo más recomendable es utilizar
+              un conversor para transformarla a WEBP.
+            </p>
+          </div>
+          <h3>Transformando un bitmap (PNG, JPG, GIF…) a WEBP</h3>
+          <div>
+            <p>
+              Para transformar una imagen en otro formato de bitmap a WEBP vamos
+              a utilizar alguna de las muchas webs gratuitas como por ejemplo:
+              <a
+                href="https://imagen.online-convert.com/es/convertir-a-webp"
+                target="_blank"
+                >imagen.onlinve-convert.com</a
+              >
+              o
+              <a
+                href="https://www.aconvert.com/image/bmp-to-webp/"
+                target="_blank"
+                >aconvert.com</a
+              >
+            </p>
+            <p>
+              Aunque, principalmente tenemos el problema con versiones muy muy
+              antiguas o con Internet Explorer. Pero hace poco Microsoft lanzó
+              un comunicado en el informaban que finalmente el 15 de junio de
+              2022 se retirará del mercado.
+            </p>
+          </div>
+        </section>
+        <section id="html-fallback">
+          <h2>Realizando nuestro primer fallback</h2>
+          <div>
+            <p>
+              Aunque existe una solución conocida como fallback que nos permite
+              utilizar este tipo de formatos solamente cuando no se produzca un
+              error y en caso contrario utilizar otra imagen en otro formato
+              como JPG, PNG, GIF…
+            </p>
+            <p>
+              Vamos a ver como realizar esto ya que nos puede ser útil en
+              múltiples situaciones no solo en esa sino cuando no se carga una
+              imagen:
+            </p>
+            <code
+              >&lt;img src=" /assets/img/lady_result.svg" alt= "Lady" onerror=
+              "this.src=' /assets/img/html5.png'" /></code
+            >
+            <p>
+              Aunque es difícil testearlo ya que Microsoft no al dejar de
+              mantener Internet Explorer no quiere que lo descargué en mi
+              computadora con Windows 11.
+            </p>
+            <p>
+              Pero podemos poner una ruta que no exista en la primera URL y así
+              cargar la ruta de la 2ª img
+            </p>
+          </div>
+        </section>
+        <section id="html-primitivasSVG">
+          <h2>Creación de formas primitivas de vectores mediante al elemento SVG</h2>
         </section>
       </article>
     </main>
