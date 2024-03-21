@@ -92,6 +92,10 @@
           <li><a href="#html-metodosGetPost">Get y Post📮</a></li>
           <li><a href="#html-EmbebidoIncrustado">Embebido📺</a></li>
           <li><a href="#html-imagenes">Imagenes🖼️</a></li>
+          <li><a href="#html-fallback">Fallback</a></li>
+          <li><a href="#html-primitivasSVG">Primitivas</a></li>
+          <li><a href="#html-metadatos">Metadatos</a></li>
+          <li><a href="#html-DevicePixelRatio">Pixel Ratio</a></li>
         </ul>
       </nav>
       <article class="content">
@@ -3647,7 +3651,344 @@ Escribe aquí</textarea
           </div>
         </section>
         <section id="html-primitivasSVG">
-          <h2>Creación de formas primitivas de vectores mediante al elemento SVG</h2>
+          <h2>
+            Creación de formas primitivas de vectores mediante al elemento SVG
+          </h2>
+          <div>
+            <p>
+              Vamos a ver un ejemplo de como escribir algunas formas básicas con
+              SVG. Los gráficos de vectores, utilizan XML para realizar formas.
+              Vamos a ver como
+            </p>
+            <p>
+              Para escribir un SVG, utilizamos el elemento SVG para indicarle al
+              browser lo que queremos realizar:
+            </p>
+            <code> &lt;svg> &lt;!-- Mi SVG --&gt; &lt;/svg> </code>
+            <p>
+              Usualmente además dentro del elemento SVG añadimos los valores
+              witdh y height mediante a los cuales definimos el ancho y el alto
+              que ocupará dicho elemento:
+            </p>
+            <code>
+              &lt;svg width="100" height="100"> &lt;!-- Mi SVG --&gt; &lt;/svg>
+            </code>
+            <p>
+              Aunque si no definimos un alto y un largo de nuestro elemento SVG,
+              este se adaptará a lo que metamos en su interior. En el caso en el
+              que definamos un width y un height, si el elemento dibujado en el
+              interior del SVG es mayor que las dimensiones del elemento SVG el
+              elemento de su interior será cortado.
+            </p>
+            <p>
+              Dentro de los vectores podemos utilizar distintas figuras para
+              realizar nuestros diseños. Vamos a ver algunas bastante
+              primitivas:
+            </p>
+            <h3>Circle</h3>
+            <p>
+              Para crear un circulo o un punto ya que ambos son un circulo
+              realizamos lo siguiente:
+            </p>
+            <code>
+              &lt;svg width="100" height="100"> &lt;circle cx="50" cy="50"
+              r="10" fill="black"/> &lt;/svg>
+            </code>
+            <br />
+            <svg width="100" height="100">
+              <circle cx="50" cy="50" r="10" fill="black" />
+            </svg>
+            <br />
+            <code>
+              &lt;svg width="100" height="100"> &lt;circle cx="50" cy="50"
+              r="40" stroke="red" stroke-width="4" fill="yellow" /> &lt;/svg>
+            </code>
+            <br />
+            <svg width="100" height="100">
+              <circle
+                cx="50"
+                cy="50"
+                r="40"
+                stroke="red"
+                stroke-width="4"
+                fill="yellow"
+              />
+            </svg>
+            <h3>Line</h3>
+            <p>
+              nos permite representar una línea. Los gráficos realizados con el
+              elemento SVG utilizan 3 ejes de coordenadas: X, Y y Z.
+            </p>
+            <code>
+              &lt;svg width="100" height="100"> &lt;line x1="0"x2="200"
+              style="stroke:black;stroke-width:1"/> &lt;/svg>
+            </code>
+            <br />
+            <svg width="100" height="100">
+              <line x1="0" x2="200" style="stroke: black; stroke-width: 1" />
+            </svg>
+            <br />
+            <p>Si queremos podemos trabajar con varios ejes:</p>
+            <code>
+              &lt;svg width="100" height="100"> &lt;line x1="0" y1="0" x2="200"
+              y2="500" style="stroke:black;stroke-width:1"/> &lt;/svg>
+            </code>
+            <br />
+            <svg width="100" height="100">
+              <line
+                x1="0"
+                y1="0"
+                x2="200"
+                y2="500"
+                style="stroke: black; stroke-width: 1"
+              />
+            </svg>
+            <h3>Rect</h3>
+            <p>
+              nos permite representar una rectángulo. Vamos a ver un ejemplo:
+            </p>
+            <code>
+              &lt;svg width="200" height="100"> &lt;rect width="200"
+              height="100" style="fill:chocolate;stroke- width:10;stroke:black;"
+              /> &lt;/svg>
+            </code>
+            <br />
+            <svg width="200" height="100">
+              <rect
+                width="200"
+                height="100"
+                fill="chocolate"
+                stroke="black"
+                stroke-width="1"
+              />
+            </svg>
+            <h3>Rect con los lados redondeados</h3>
+            <p>
+              también podemos redondear los lados de un rectángulo de la
+              siguiente manera:
+            </p>
+            <code>
+              &lt;svg> &lt;rect x="50" y="20" rx="20" ry="20" width="150"
+              height="100" style="fill: chocolate; stroke: black;
+              stroke-width:5;opacity:0.5" /> &lt;/svg>
+            </code>
+            <br />
+            <svg>
+              <rect
+                x="50"
+                y="20"
+                rx="20"
+                ry="20"
+                width="150"
+                height="100"
+                style="
+                  fill: chocolate;
+                  stroke: black;
+                  stroke-width: 5;
+                  opacity: 0.5;
+                "
+              />
+            </svg>
+            <h3>Star</h3>
+            <p>nos permite crear una estrella. Vamos a ver un ejemplo:</p>
+            <code>
+              &lt;svg width="300" height="200"> &lt;polygon points="100,10
+              40,198 190,78 10,78 160,198" style="fill: darkgoldenrod;
+              stroke:black; stroke-width:5; fill-rule:evenodd;" /> &lt;/svg>
+            </code>
+            <br />
+            <svg width="300" height="200">
+              <polygon
+                points="100,10 40,198 190,78 10,78 160,198"
+                style="
+                  fill: darkgoldenrod;
+                  stroke: black;
+                  stroke-width: 5;
+                  fill-rule: evenodd;
+                "
+              />
+            </svg>
+          </div>
+        </section>
+        <section id="html-metadatos">
+          <h2>Metadatos con el elemento meta</h2>
+          <div>
+            <p>
+              Cuando creemos la estructura con Emmet, automáticamente nos añadió
+              algunas etiquetas de metadatos. Vamos a explicarlas más a detalle:
+            </p>
+            <p>
+              El elemento <meta /> (abreviatura de metadatos) nos permite
+              definir metadatos que afectaran a un documento HTML. Los
+              metadatos, no son nada más y nada menos, que un conjunto de datos
+              (información) sobre datos.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Aunque los metadatos no se mostrarán en la página, pero si
+              que son analizables por el navegador.
+            </p>
+            <p>
+              Todas las etiquetas meta empiezan con la palabra meta acompañada
+              de un nombre que nos permite indicarle al navegador sobre que tipo
+              de metadato estamos trabajando.
+            </p>
+            <p>
+              Algunos usos de los metadatos en navegadores se utilizan para:
+              definir el nivel de zoom que se debe utilizar en el documento,
+              recargar una página, proporcionar una serie de palabras claves
+              para posicionar nuestra web en buscadores, es decir, hacer SEO en
+              los motores de búsqueda, etc.
+            </p>
+            <h3>&lt;meta charset=”UTF-8"></h3>
+            <p>
+              Para entender esta etiqueta primeramente es necesario hablar de la
+              codificación de caracteres.
+            </p>
+            <p>
+              La información que se introduce en un ordenador, ya sean números,
+              textos o imágenes, se almacena en lenguaje binario, es decir, como
+              unos y ceros (01000101).
+            </p>
+            <p>
+              El código ASCII (American Standard Code for Information
+              Interchange) se desarrolló para poder establecer un formato
+              estandarizado en el que se pudieran almacenar estos caracteres
+              alfanuméricos. Y es el código estándar estadounidense para el
+              intercambio de información.
+            </p>
+            <p>
+              Si visitamos a la
+              <a href="https://elcodigoascii.com.ar/">siguiente web</a> podemos
+              ver una tabla con que muestra los distintos valores/códigos que
+              pertenecen a ASCII. Si nos fijamos, los valores van del 0 al 127:
+            </p>
+            <p>
+              El estándar ASCII define diversos caracteres en siete bits, es
+              decir, siete posiciones que muestran 0 o 1. El octavo bit, que
+              pertenece a un byte completo, se utiliza normalmente para los
+              análisis.
+            </p>
+            <p>
+              Por lo que si elevamos 2⁷, podemos ver que el resultado es 128
+            </p>
+            <p>
+              Posteriormente a ASCII se añadió el ASCII extendido utilizando un
+              octavo bit.
+            </p>
+            <p>Por lo que tenemos en total 128x2 = 256 posibilidades.</p>
+            <p class="recuadro">
+              📌 ️ — Aunque en informática el primer valor siempre empieza en el
+              0. Por ello, el primer valor es 0 y el último 255 (formando pues
+              los 256 valores en total).
+            </p>
+            <p>
+              Si nos fijamos, además, podemos observar que los caracteres están
+              clasificados en categorías y son:
+            </p>
+            <ul>
+              <li>Caracteres de control (0–31 & 127)</li>
+              <li>Caracteres especiales (32–47 / 58–64 / 91–96 / 123–126)</li>
+              <li>Números (30–39)</li>
+              <li>Letras (65–90 / 97–122)</li>
+            </ul>
+            <h3>&lt;meta http-equiv=”X-UA-Compatible” content=”IE=edge”></h3>
+            <p>
+              Dependiendo de los navegadores de Microsoft sobre los que queramos
+              tener compatibilidad, es posible que no necesitemos utilizar la
+              etiqueta de meta que nos permite que los navegadores Internet
+              Explorer (IE) en sus versiones 8 y 9, le recomendaría usar la
+              etiqueta. Si solo es compatible con los navegadores más recientes
+              (IE11 y / o Edge), consideraría descartar esta etiqueta por
+              completo.
+            </p>
+            <h3>
+              &lt;meta name=”viewport” content=”width=device-width,
+              initial-scale=1.0">
+            </h3>
+            <p>
+              En sus orígenes la web tal y como vimos durante la explicación de
+              la historia de la WWW, la web, solamente era accesible desde los
+              navegadores de los ordenadores.
+            </p>
+            <p>
+              Con el paso del tiempo, empezaron a salir al mercado nuevos
+              dispositivos con distintas resoluciones como: móviles, tablets,
+              etc. Y, por tanto, surgió la necesidad de acceder a la web desde
+              dichos dispositivos.
+            </p>
+            <p>
+              Por lo que, la web tubo que evolucionar a multi-dispositivo ya que
+              tendría que ser accesible desde mobile, desktop, tablets… Y, a
+              “responsive design”, es decir, que tiene un diseño web adaptable o
+              diseño web flexible.
+            </p>
+            <p>
+              Es importante conocer esta situación. Ya que nos va a condicionar
+              en la manera en la que desarrollamos nuestras Webs.
+            </p>
+            <p>
+              La etiqueta viewport es muy importante ya que nos permite preparar
+              nuestro layout (diseño) HTML para que sea adaptable. Por tanto,
+              proporciona al navegador instrucciones sobre cómo controlar las
+              dimensiones y la escala de la página.
+            </p>
+            <p>
+              Para ello, deberemos incluir dentro del &lt;head> un metatag
+              «viewport» para adaptar la web a las diferentes resoluciones de
+              los dispositivos móviles/tablet.
+            </p>
+            <p class="recuadro">
+              📌 ️ — Los valores fijos pueden ir con el valor solamente o
+              acompañados del valor y px (de pixel)
+            </p>
+            <h3>
+              &lt;meta name=“description” content=“Texto que aparecerá en el
+              buscador”>
+            </h3>
+            <p>
+              Cuando realizamos una búsqueda en Google, podemos ver que Google
+              nos proporciona una serie de enlaces acompañados una descripción.
+            </p>
+            <p>
+              Si no especificamos una descripción en nuestra web, los buscadores
+              nos asignarán una automáticamente. Aunque lo recomendable es
+              definir dicho metadato para personalizar el texto que aparecerá en
+              los buscadores como Google.
+            </p>
+            <p>
+              Existe la posibilidad de utilizar otros metadatos. En estos casos,
+              vais a investigar vosotros mismos con realizar las tareas.
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://webinoly.com/es/tutorial/seo-etiquetas-meta-metatags/"
+                  >Link 1</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/los-meta-tags-mas-importantes-y-su-funcion/"
+                  >Link 2</a
+                >
+              </li>
+            </ul>
+            <p>
+              Además de ello, y aunque hablaremos más detenidamente de los
+              atributos más abajo, si nos fijamos tenemos el atributo lang
+              dentro de la etiqueta HTML podemos observar que está utilizando
+              como lenguaje EN (de ENglish).
+            </p>
+            <p class="recuadro">
+              📌 ️ — El utilizar el lenguaje correcto de nuestra web es muy
+              importante, ya que es un metadato importante que utiliza Google
+              para posicionar nuestra web en una determinada búsqueda en función
+              del idioma que se defina en este atributo.
+            </p>
+          </div>
+        </section>
+        <section id="html-DevicePixelRatio">
+          <h2>Device Pixel Ratio</h2>
         </section>
       </article>
     </main>
