@@ -56,150 +56,345 @@
       <h1>Bloque de JavaScript🧠</h1>
       <div>
         <h2>Métodos para cadenas (String)</h2>
+        <p>Teniendo en cuenta para todos los métodos:</p>
+        <p>let cadena = "Hola Mundo";</p>
         <div>
-          <ul>
+          <ul class="sep-lista code">
             <li>
               <b>charAt(index):</b> Devuelve el carácter en la posición
               especificada de la cadena.
+              <br />
+              <code> console.log(cadena.charAt(0)); // Devuelve "H" </code>
             </li>
             <li>
               <b>charCodeAt(index):</b> Devuelve el valor Unicode del carácter
               en la posición especificada de la cadena.
+              <br />
+              <code>
+                console.log(cadena.charCodeAt(1)); // Devuelve el valor Unicode
+                de "o"
+              </code>
             </li>
             <li>
               <b>concat(str1, str2, ..., strN):</b> Combina dos o más cadenas y
               devuelve una nueva cadena.
+              <br />
+              <code>
+                console.log(cadena.concat("!")); // Combina y devuelve "Hola
+                Mundo!"
+              </code>
             </li>
             <li>
               <b>includes(searchString, position):</b> Determina si una cadena
               contiene la cadena de búsqueda especificada. Devuelve true o
               false.
+              <br />
+              <code>
+                console.log(cadena.includes("Mundo")); // Devuelve true
+              </code>
             </li>
             <li>
               <b>indexOf(searchValue, fromIndex):</b> Devuelve la posición de la
               primera ocurrencia de un valor especificado en una cadena.
+              <br />
+              <code> console.log(cadena.indexOf("o")); // Devuelve 1 </code>
             </li>
             <li>
               <b>lastIndexOf(searchValue, fromIndex):</b> Devuelve la posición
               de la última ocurrencia de un valor especificado en una cadena.
+              <br />
+              <code> console.log(cadena.lastIndexOf("o")); // Devuelve 7 </code>
             </li>
             <li>
               <b>match(regexp):</b> Utiliza una expresión regular para buscar
               una coincidencia en una cadena. Devuelve un array con las
               coincidencias o null si no se encuentra ninguna.
+              <br />
+              <code>
+                console.log(cadena.match(/o/g)); // Devuelve ["o", "o"]
+              </code>
             </li>
             <li>
               <b>replace(searchValue, newValue):</b> Reemplaza las coincidencias
               de una cadena con otra cadena.
+              <br />
+              <code>
+                console.log(cadena.replace("Mundo", "Amigo")); // Reemplaza
+                "Mundo" con "Amigo"
+              </code>
             </li>
             <li>
               <b>search(regexp):</b> Busca una expresión regular dentro de una
               cadena y devuelve la posición de la primera coincidencia.
+              <br />
+              <code>
+                console.log(cadena.search(/Mundo/)); // Devuelve la posición de
+                "Mundo"
+              </code>
             </li>
             <li>
               <b>slice(start, end):</b> Extrae una sección de una cadena y
               devuelve una nueva cadena.
+              <br />
+              <code> console.log(cadena.slice(0, 4)); // Devuelve "Hola" </code>
             </li>
             <li>
               <b>split(separator, limit):</b> Divide una cadena en un array de
               subcadenas basadas en un separador.
+              <br />
+              <code>
+                console.log(cadena.split(" ")); // Divide la cadena en un array
+                ["Hola", "Mundo"]
+              </code>
             </li>
             <li>
               <b>substring(start, end):</b> Devuelve la parte de la cadena entre
               los índices especificados.
+              <br />
+              <code>
+                console.log(cadena.substring(2, 6)); // Devuelve "la M"
+              </code>
             </li>
             <li>
               <b>toLowerCase():</b> Convierte todos los caracteres de una cadena
               en minúsculas.
+              <br />
+              <code>
+                console.log(cadena.toLowerCase()); // Convierte la cadena a
+                minúsculas
+              </code>
             </li>
             <li>
               <b>toUpperCase():</b> Convierte todos los caracteres de una cadena
               en mayúsculas.
+              <br />
+              <code>
+                console.log(cadena.toUpperCase()); // Convierte la cadena a
+                mayúsculas
+              </code>
             </li>
             <li>
               <b>trim():</b> Elimina los espacios en blanco al principio y al
               final de una cadena.
+              <br />
+              <code>let cadenaConEspacios = " Hola Mundo ";</code>
+              <br />
+              <code>
+                console.log(cadenaConEspacios.trim()); // Elimina los espacios
+                en blanco al principio y al final
+              </code>
             </li>
           </ul>
         </div>
         <h2>Métodos para arrays</h2>
+        <p>Teniendo en cuenta para todos los métodos:</p>
+        <p>let array = [1, 2, 3, 4, 5];</p>
         <div>
-          <ul>
+          <ul class="sep-lista code">
             <li>
               <b>concat(arr1, arr2, ..., arrN): </b>Combina dos o más arrays y
               devuelve un nuevo array.
+              <br />
+              <code> let newArrayConcatenated = array.concat([6, 7, 8]); </code>
+              <br />
+              <code>
+                console.log(newArrayConcatenated); // Combina y devuelve un
+                nuevo array
+              </code>
             </li>
             <li>
               <b>copyWithin(target, start, end): </b>Copia parte de un array en
               otra ubicación del mismo array y devuelve el array modificado.
+              <br />
+              <code> let arrayCopyWithin = array.copyWithin(0, 3); </code>
+              <br />
+              <code>
+                console.log(arrayCopyWithin); // Copia parte de un array en otra
+                ubicación del mismo array
+              </code>
             </li>
             <li>
               <b>entries(): </b>Devuelve un nuevo objeto Array Iterator que
               contiene los pares clave/valor para cada índice en el array.
+              <br />
+              <code> let arrayEntries = array.entries(); </code>
+              <br />
+              <code>
+                console.log(Array.from(arrayEntries)); // Devuelve un nuevo
+                objeto Array Iterator que contiene los pares clave/valor
+              </code>
             </li>
             <li>
               <b>every(callback(currentValue, index, array), thisArg): </b
               >Comprueba si todos los elementos de un array cumplen una
               condición especificada por una función de callback.
+              <br />
+              <code>
+                let allGreaterThanZero = array.every((element) => element > 0);
+              </code>
+              <br />
+              <code>
+                console.log(allGreaterThanZero); // Comprueba si todos los
+                elementos cumplen una condición
+              </code>
             </li>
             <li>
               <b>fill(value, start, end): </b>Rellena todos los elementos de un
               array con un valor estático desde una posición de inicio hasta una
               posición de fin.
+              <br />
+              <code> let filledArray = array.fill(0, 2, 4); </code>
+              <br />
+              <code>
+                console.log(filledArray); // Rellena todos los elementos con un
+                valor estático desde una posición de inicio hasta una posición
+                de fin
+              </code>
             </li>
             <li>
               <b>filter(callback(currentValue, index, array), thisArg): </b>
               Crea un nuevo array con todos los elementos que pasan la prueba
               implementada por la función de callback.
+              <br />
+              <code>
+                let filteredArray = array.filter((element) => element % 2 ===
+                0);
+              </code>
+              <br />
+              <code>
+                console.log(filteredArray); // Crea un nuevo array con los
+                elementos que pasan la prueba de la función de callback
+              </code>
             </li>
             <li>
               <b>find(callback(currentValue, index, array), thisArg): </b
               >Devuelve el primer elemento de un array que cumple una condición
               especificada por una función de callback.
+              <br />
+              <code>
+                let foundElement = array.find((element) => element > 3);
+              </code>
+              <br />
+              <code>
+                console.log(foundElement); // Devuelve el primer elemento que
+                cumple una condición
+              </code>
             </li>
             <li>
               <b>findIndex(callback(currentValue, index, array), thisArg): </b
               >Devuelve el índice del primer elemento de un array que cumple una
               condición especificada por una función de callback.
+              <br />
+              <code>
+                let foundIndex = array.findIndex((element) => element > 3);
+              </code>
+              <br />
+              <code>
+                console.log(foundIndex); // Devuelve el índice del primer
+                elemento que cumple una condición
+              </code>
             </li>
             <li>
               <b>forEach(callback(currentValue, index, array), thisArg): </b
               >Ejecuta una función en cada elemento de un array.
+              <br />
+              <code>
+                array.forEach((element, index) => console.log(element, index));
+                // Ejecuta una función en cada elemento del array
+              </code>
             </li>
             <li>
               <b>includes(searchElement, fromIndex): </b>Determina si un array
               incluye un determinado elemento, devuelve true o false.
+              <br />
+              <code> let includesElement = array.includes(3); </code>
+              <br />
+              <code>
+                console.log(includesElement); // Determina si un array incluye
+                un determinado elemento
+              </code>
             </li>
             <li>
               <b>indexOf(searchElement, fromIndex): </b>Devuelve el primer
               índice en el que se encuentra un elemento especificado en un
               array.
+              <br />
+              <code> let indexElement = array.indexOf(3); </code>
+              <br />
+              <code>
+                console.log(indexElement); // Devuelve el primer índice donde se
+                encuentra un elemento
+              </code>
             </li>
             <li>
               <b>join(separator): </b>Une todos los elementos de un array en una
               cadena.
+              <br />
+              <code> let joinedArray = array.join("-"); </code>
+              <br />
+              <code>
+                console.log(joinedArray); // Une todos los elementos de un array
+                en una cadena
+              </code>
             </li>
             <li>
               <b>keys(): </b>Devuelve un nuevo objeto Array Iterator que
               contiene las claves para cada índice del array.
+              <br />
+              <code> let arrayKeys = array.keys(); </code>
+              <br />
+              <code>
+                console.log(Array.from(arrayKeys)); // Devuelve un nuevo objeto
+                Array Iterator que contiene las claves
+              </code>
             </li>
             <li>
               <b>lastIndexOf(searchElement, fromIndex): </b>Devuelve el último
               índice en el que se encuentra un elemento especificado en un
               array.
+              <br />
+              <code> let lastIndexElement = array.lastIndexOf(3); </code>
+              <br />
+              <code>
+                console.log(lastIndexElement); // Devuelve el último índice
+                donde se encuentra un elemento
+              </code>
             </li>
             <li>
               <b>map(callback(currentValue, index, array), thisArg): </b>Crea un
               nuevo array con los resultados de llamar a una función para cada
               elemento del array.
+              <br />
+              <code>
+                let mappedArray = array.map((element) => element * 2);
+              </code>
+              <br />
+              <code>
+                console.log(mappedArray); // Crea un nuevo array con los
+                resultados de aplicar una función a cada elemento
+              </code>
             </li>
             <li>
               <b>pop(): </b>Elimina el último elemento de un array y lo
               devuelve.
+              <br />
+              <code> let poppedElement = array.pop(); </code>
+              <br />
+              <code>
+                console.log(poppedElement, array); // Elimina el último elemento
+                del array y lo devuelve
+              </code>
             </li>
             <li>
               <b>push(element1, ..., elementN): </b>Añade uno o más elementos al
               final de un array y devuelve la nueva longitud del array.
+              <br />
+              <code> let newLength = array.push(6, 7); </code>
+              <br />
+              <code>
+                console.log(newLength, array); // Añade uno o más elementos al
+                final del array y devuelve la nueva longitud
+              </code>
             </li>
             <li>
               <b
@@ -207,6 +402,15 @@
                 array), initialValue): </b
               >Reduce los elementos de un array a un solo valor aplicando una
               función específica de izquierda a derecha.
+              <br />
+              <code>
+                let sum = array.reduce((accumulator, currentValue) =>
+                accumulator + currentValue, 0);
+              </code>
+              <br />
+              <code>
+                console.log(sum); // Reduce los elementos a un solo valor
+              </code>
             </li>
             <li>
               <b
@@ -214,128 +418,356 @@
                 array), initialValue): </b
               >Reduce los elementos de un array a un solo valor aplicando una
               función específica de derecha a izquierda.
+              <br />
+              <code>
+                let reversedSum = array.reduceRight((accumulator, currentValue)
+                => accumulator + currentValue, 0);
+              </code>
+              <br />
+              <code>
+                console.log(reversedSum); // Reduce los elementos de derecha a
+                izquierda
+              </code>
             </li>
             <li>
               <b>reverse(): </b>Invierte el orden de los elementos de un array.
+              <br />
+              <code> let reversedArray = array.reverse(); </code>
+              <br />
+              <code>
+                console.log(reversedArray); // Invierte el orden de los
+                elementos del array
+              </code>
             </li>
             <li>
               <b>shift(): </b>Elimina el primer elemento de un array y lo
               devuelve.
+              <br />
+              <code> let shiftedElement = array.shift(); </code>
+              <br />
+              <code>
+                console.log(shiftedElement, array); // Elimina el primer
+                elemento del array y lo devuelve
+              </code>
             </li>
             <li>
               <b>slice(start, end): </b>Devuelve una parte del array dentro de
               un nuevo array determinado por los índices de inicio y fin.
+              <br />
+              <code> let slicedArray = array.slice(1, 3); </code>
+              <br />
+              <code>
+                console.log(slicedArray); // Devuelve una parte del array
+              </code>
             </li>
             <li>
               <b>some(callback(currentValue, index, array), thisArg): </b
               >Comprueba si al menos uno de los elementos de un array cumple una
               condición especificada por una función de callback.
+              <br />
+              <code>
+                let someGreaterThanThree = array.some((element) => element > 3);
+              </code>
+              <br />
+              <code>
+                console.log(someGreaterThanThree); // Comprueba si al menos un
+                elemento cumple una condición
+              </code>
             </li>
             <li>
               <b>sort(compareFunction): </b>Ordena los elementos de un array
               localmente y devuelve el array ordenado.
+              <br />
+              <code> let sortedArray = array.sort((a, b) => a - b); </code>
+              <br />
+              <code>
+                console.log(sortedArray); // Ordena los elementos del array
+              </code>
             </li>
             <li>
               <b>splice(start, deleteCount, item1, ..., itemN): </b>Cambia el
               contenido de un array eliminando elementos existentes y/o
               agregando nuevos elementos.
+              <br />
+              <code> let splicedArray = array.splice(2, 1, 6); </code>
+              <br />
+              <code>
+                console.log(splicedArray, array); // Cambia el contenido del
+                array
+              </code>
             </li>
             <li>
               <b>toString(): </b>Devuelve una cadena que representa al array y
               sus elementos.
+              <br />
+              <code> let stringRepresentation = array.toString(); </code>
+              <br />
+              <code>
+                console.log(stringRepresentation); // Devuelve una cadena que
+                representa el array
+              </code>
             </li>
             <li>
               <b>unshift(element1, ..., elementN): </b>Añade uno o más elementos
               al inicio de un array y devuelve la nueva longitud del array.
+              <br />
+              <code> let newLengthAfterUnshift = array.unshift(0); </code>
+              <br />
+              <code>
+                console.log(newLengthAfterUnshift, array); // Añade uno o más
+                elementos al principio del array y devuelve la nueva longitud
+              </code>
             </li>
             <li>
               <b>values(): </b>Devuelve un nuevo objeto Array Iterator que
               contiene los valores para cada índice en el array.
+              <br />
+              <code> let arrayValues = array.values(); </code>
+              <br />
+              <code>
+                console.log(Array.from(arrayValues)); // Devuelve un nuevo
+                objeto Array Iterator que contiene los valores
+              </code>
             </li>
           </ul>
         </div>
         <h2>Métodos para números</h2>
+        <p>Teniendo en cuenta para todos los métodos:</p>
+        <p>let number = 1234.5678;</p>
         <div>
-          <ul>
+          <ul class="sep-lista code">
             <li>
               <b>toExponential(fractionDigits): </b>Devuelve una representación
               de cadena de un número en notación exponencial.
+              <br />
+              <code>
+                let exponentialRepresentation = number.toExponential(2);
+              </code>
+              <br />
+              <code>
+                console.log(exponentialRepresentation); // Devuelve una
+                representación en notación exponencial
+              </code>
             </li>
             <li>
               <b>toFixed(fractionDigits): </b>Devuelve una representación de
               cadena de un número con un número especificado de decimales.
+              <br />
+              <code> let fixedRepresentation = number.toFixed(2); </code>
+              <br />
+              <code>
+                console.log(fixedRepresentation); // Devuelve una representación
+                con un número específico de decimales
+              </code>
             </li>
             <li>
               <b>toLocaleString(): </b>Devuelve una representación de cadena de
               un número usando la configuración regional del usuario.
+              <br />
+              <code>
+                let localeStringRepresentation = number.toLocaleString();
+              </code>
+              <br />
+              <code>
+                console.log(localeStringRepresentation); // Devuelve una
+                representación usando la configuración regional del usuario
+              </code>
             </li>
             <li>
               <b>toPrecision(precision): </b>Devuelve una representación de
               cadena de un número con una longitud específica.
+              <br />
+              <code>
+                let precisionRepresentation = number.toPrecision(4);
+              </code>
+              <br />
+              <code>
+                console.log(precisionRepresentation); // Devuelve una
+                representación con una longitud específica
+              </code>
             </li>
             <li>
               <b>toString(radix): </b>Devuelve una representación de cadena de
               un número en una base específica.
+              <br />
+              <code> let binaryRepresentation = number.toString(2); </code>
+              <br />
+              <code>
+                console.log(binaryRepresentation); // Devuelve una
+                representación en una base específica (en este caso, binaria)
+              </code>
             </li>
             <li>
               <b>valueOf(): </b>Devuelve el valor primitivo del objeto Number.
+              <br />
+              <code> let primitiveValue = number.valueOf(); </code>
+              <br />
+              <code>
+                console.log(primitiveValue); // Devuelve el valor primitivo del
+                objeto Number
+              </code>
             </li>
           </ul>
         </div>
         <h2>Métodos para objetos</h2>
+        <p>Teniendo en cuenta para todos los métodos:</p>
+        <pre>
+    let objeto = {
+    nombre: "John",
+    edad: 30
+    };
+        </pre>
         <div>
-          <ul>
+          <ul class="sep-lista code">
             <li>
               <b>hasOwnProperty(propiedad): </b>Devuelve un booleano indicando
               si el objeto tiene la propiedad especificada como una propiedad
               directa del objeto.
+              <br />
+              <code> let tieneNombre = objeto.hasOwnProperty("nombre"); </code>
+              <br />
+              <code>
+                console.log(tieneNombre); // Devuelve un booleano indicando si
+                el objeto tiene la propiedad especificada
+              </code>
             </li>
             <li>
               <b>isPrototypeOf(objeto): </b>Devuelve un booleano indicando si el
               objeto que llama es el prototipo del objeto especificado.
+              <br />
+              <code> let prototipo = {}; </code>
+              <br />
+              <code>
+                let resultadoPrototipo = prototipo.isPrototypeOf(objeto);
+              </code>
+              <br />
+              <code>
+                console.log(resultadoPrototipo); // Devuelve un booleano
+                indicando si el objeto que llama es el prototipo del objeto
+                especificado
+              </code>
             </li>
             <li>
               <b>propertyIsEnumerable(propiedad):</b>Devuelve un booleano que
               indica si la propiedad especificada es enumerable.
+              <br />
+              <code>
+                let enumerable = objeto.propertyIsEnumerable("nombre");
+              </code>
+              <br />
+              <code>
+                console.log(enumerable); // Devuelve un booleano que indica si
+                la propiedad especificada es enumerable
+              </code>
             </li>
             <li>
               <b>toLocaleString(): </b>Devuelve una cadena que representa el
               objeto. Esta versión del método está destinada a ser sobrescrita
               por las clases derivadas para personalizar el comportamiento de
               localización.
+              <br />
+              <code> let cadenaLocalizada = objeto.toLocaleString(); </code>
+              <br />
+              <code>
+                console.log(cadenaLocalizada); // Devuelve una cadena que
+                representa el objeto
+              </code>
             </li>
             <li>
               <b>toString(): </b>Devuelve una cadena que representa el objeto.
+              <br />
+              <code> let cadenaObjeto = objeto.toString(); </code>
+              <br />
+              <code>
+                console.log(cadenaObjeto); // Devuelve una cadena que representa
+                el objeto
+              </code>
             </li>
             <li>
               <b>valueOf(): </b>Devuelve el valor primitivo del objeto
               especificado.
+              <br />
+              <code> let valorPrimitivo = objeto.valueOf(); </code>
+              <br />
+              <code>
+                console.log(valorPrimitivo); // Devuelve el valor primitivo del
+                objeto especificado
+              </code>
             </li>
           </ul>
         </div>
         <h2>Otros métodos útiles</h2>
         <div>
-          <ul>
+          <ul class="sep-lista code">
             <li>
               <b>isNaN(): </b>Determina si un valor es NaN (Not-a-Number).
+              <br />
+              <code> let valor1 = NaN; </code>
+              <br />
+              <code> let esNaN = isNaN(valor1); </code>
+              <br />
+              <code> console.log(esNaN); // Determina si un valor es NaN </code>
             </li>
             <li>
               <b>parseFloat(): </b>Convierte una cadena en un número de coma
               flotante (de punto flotante).
+              <br />
+              <code> let cadenaFloat = "3.14"; </code>
+              <br />
+              <code> let numeroFloat = parseFloat(cadenaFloat); </code>
+              <br />
+              <code>
+                console.log(numeroFloat); // Convierte una cadena en un número
+                de coma flotante
+              </code>
             </li>
             <li>
               <b>parseInt(): </b>Convierte una cadena en un número entero.
+              <br />
+              <code> let cadenaEntero = "10"; </code>
+              <br />
+              <code> let numeroEntero = parseInt(cadenaEntero); </code>
+              <br />
+              <code>
+                console.log(numeroEntero); // Convierte una cadena en un número
+                entero
+              </code>
             </li>
             <li>
               <b>isFinite(): </b> Determina si un valor es un número finito.
+              <br />
+              <code> let numeroFin = 10; </code>
+              <br />
+              <code> let esFin = isFinite(numeroFin); </code>
+              <br />
+              <code>
+                console.log(esFin); // Determina si un valor es un número finito
+              </code>
             </li>
             <li>
               <b>setTimeout(): </b>Ejecuta una función después de esperar una
               cantidad especificada de milisegundos.
+              <br />
+              <code>
+                function saludar() { console.log("¡Hola!"); }
+                setTimeout(saludar, 2000); // Ejecuta la función después de 2000
+                milisegundos (2 segundos)
+              </code>
             </li>
             <li>
               <b>setInterval(): </b>Ejecuta una función a intervalos
               especificados de tiempo.
+              <br />
+              <code>
+                function mostrarHora() { let ahora = new Date();
+                console.log("Hora actual:", ahora.getHours() + ":" +
+                ahora.getMinutes() + ":" + ahora.getSeconds()); }
+              </code>
+              <br />
+              <code>
+                setInterval(mostrarHora, 1000); // Ejecuta la función cada
+                segundo para mostrar la hora actual
+              </code>
             </li>
           </ul>
         </div>
